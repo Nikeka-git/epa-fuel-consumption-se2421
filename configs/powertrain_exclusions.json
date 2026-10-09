@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "ruleset_version": "20261009_pre_freeze_v1",
+  "purpose": "Source-reviewed hybrid exclusions and explicit uncertainty quarantine supplement incomplete EPA technology labels; never use target values.",
+  "review_date": "2026-10-09",
+  "sources": {
+    "volvo_b_badge_definition": {
+      "url": "https://www.volvocars.com/us/media/press-releases/5480D4AEA1EC20F7/",
+      "publication_date": "2019-02-22",
+      "finding": "Volvo defines its new B-badged B4/B5/B6 powertrains as mild hybrids.",
+      "limitation": "This release states that the launch was not available in the US at that time. It defines technology; it does not establish the US introduction model year."
+    },
+    "volvo_us_s60_2022": {
+      "url": "https://www.volvocars.com/us/media/press-releases/E5D60A48965250A2/",
+      "publication_date": "2022-02-22",
+      "finding": "The US-specific model-year 2022 S60 Black Edition announcement distinguishes Recharge PHEV and mild-hybrid Momentum/R-Design versions.",
+      "mapping_limit": "Mapping the EPA name S60 B5 AWD to this mild-hybrid gasoline powertrain also uses the manufacturer's B-badge definition."
+    },
+    "volvo_us_xc60_2022": {
+      "url": "https://downloads.regulations.gov/NHTSA-2023-0022-0080/attachment_4.pdf",
+      "document": "2022 Volvo XC60 US manufacturer brochure, page 13",
+      "finding": "The manufacturer brochure states that B5/B6 48V mild-hybrid engines are introduced in the US for 2022.",
+      "access_note": "Relevant manufacturer text was available through the indexed government-hosted document. Direct PDF retrieval returned HTTP 403; no successful local PDF inspection is claimed."
+    },
+    "audi_us_2021_a4_a5": {
+      "url": "https://media.audiusa.com/assets/documents/original/7530-AudiofAmericaannouncesfull2021modelyearupdates.pdf",
+      "publication_date": "2020-05-06",
+      "finding": "Audi of America announces 12V MHEV for MY2021 A4/A5 four-cylinder models. The pricing table specifies 2.0L engines.",
+      "release_url": "https://media.audiusa.com/releases/408",
+      "verified_json_sha256": "c2afa94318146500865196bcc9b27468dc855871fd2a5f85a81a8d01587af80b"
+    },
+    "audi_us_2021_q5": {
+      "url": "https://media.audiusa.com/releases/419",
+      "publication_date": "2020-06-29",
+      "finding": "MY2021 Q5 2.0 TFSI receives 12V MHEV; SQ5 3.0 and plug-in Q5 are described separately.",
+      "verified_json_sha256": "6fed5eff45590650881ef1c8479417f9b7290431152708ca2f0388600af9e878"
+    },
+    "audi_us_2021_2022_2l_tsb": {
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005862-0001.pdf",
+      "finding": "Audi of America bulletin identifies MY2021-2022 A4/A5/Q5 with four-cylinder 2.0 TFSI mild-hybrid engines.",
+      "limitation": "No extrapolation to MY2020, later model years, S4/S5/SQ5 or Q3."
+    },
+    "audi_sq_48v_tsb": {
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10251623-0001.pdf",
+      "finding": "The 48V MHEV bulletin includes MY2020-2025 SQ7/SQ8 conditional on belt-driven starter alternator equipment.",
+      "limitation": "An equipment-conditioned service bulletin does not prove that every configuration has hybrid traction technology."
+    },
+    "audi_sq_chassis_tsb": {
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10239681-0001.pdf",
+      "finding": "A separate 48V battery bulletin for SQ7/SQ8 concerns Active Roll Stabilization.",
+      "limitation": "A 48V chassis system alone is not evidence of a hybrid powertrain."
+    },
+    "audi_sq8_parts": {
+      "url": "https://parts.audiusa.com/productSearch.aspx?modelYear=ALL&ukey_make=5792&ukey_model=108553",
+      "finding": "The US manufacturer parts catalogue labels the SQ8 4.0L V8 driveline MHEV and lists MY2020-2025 among selectable years.",
+      "access_note": "Indexed primary-source text inspected; direct retrieval was inaccessible. Parts-catalogue taxonomy does not independently certify EPA configurations."
+    },
+    "audi_sq7_2025_parts": {
+      "url": "https://parts.audiusa.com/a/Audi_2025_SQ7-40L-V8-MILD-HYBRID-EV-GAS-MHEV-AT/64367574__8433294/AIR-CONDITIONER--HEATER-COMPRESSOR--LINES-CONDENSER/1354122.html",
+      "finding": "The primary US parts page labels the 2025 SQ7 4.0L V8 driveline MHEV.",
+      "access_note": "Indexed primary-source text inspected; direct retrieval returned HTTP 403. Parts-catalogue taxonomy does not independently certify EPA configurations."
+    },
+    "volvo_us_2023": {
+      "url": "https://www.volvocars.com/us/media/press-releases/FA17F4D40568AC7B/",
+      "publication_date": "2022-05-04",
+      "finding": "Volvo Car USA describes its MY2023 US lineup as hybrid or electric, with B4/B5/B6 mild-hybrid badging."
+    }
+  },
+  "rules": [
+    {
+      "rule_id": "audi_2021_2022_a4_a5_q5_2l_mild_hybrid",
+      "manufacturer": "Audi",
+      "model_year_min": 2021,
+      "model_year_max": 2022,
+      "model_regex": "^(?:A4|A5|Q5)\\b",
+      "displacement_l": 2.0,
+      "cylinders": 4,
+      "technology": "mild_hybrid",
+      "source_ids": ["audi_us_2021_a4_a5", "audi_us_2021_q5", "audi_us_2021_2022_2l_tsb"],
+      "rationale": "US model-year and engine-specific manufacturer evidence. Do not carry this rule to 2020 or performance S/SQ models."
+    },
+    {
+      "rule_id": "audi_sq7_sq8_4l_technology_uncertain",
+      "manufacturer": "Audi",
+      "model_year_min": 2020,
+      "model_year_max": 2025,
+      "model_regex": "^(?:SQ7|SQ8)\\b",
+      "displacement_l": 4.0,
+      "cylinders": 8,
+      "technology": "powertrain_uncertain",
+      "source_ids": ["audi_sq_48v_tsb", "audi_sq_chassis_tsb", "audi_sq8_parts", "audi_sq7_2025_parts"],
+      "rationale": "Conservative quarantine: blank EPA labels conflict with manufacturer MHEV catalogue labels and equipment-conditioned bulletins. These records are not asserted to be confirmed hybrids; unresolved technology is excluded from the strict non-hybrid task before splitting."
+    },
+    {
+      "rule_id": "volvo_b_badge_mild_hybrid",
+      "manufacturer": "Volvo",
+      "model_year_min": 2022,
+      "model_year_max": 2025,
+      "model_regex": "\\bB[456]\\b",
+      "technology": "mild_hybrid",
+      "source_ids": ["volvo_b_badge_definition", "volvo_us_s60_2022", "volvo_us_xc60_2022", "volvo_us_2023"],
+      "rationale": "Identify the observed US catalogue's B-badged powertrain by manufacturer technology definition. This is a documented badge mapping, not a claim that every model was offered in every listed year. Original EPA labels remain unchanged."
+    }
+  ],
+  "limitations": [
+    "This review corrects confirmed omissions; it is not an exhaustive independent certification of every retained vehicle's powertrain.",
+    "Start/stop, a chassis 48V battery, European availability or a manufacturer name alone do not justify hybrid exclusion.",
+    "No target, fuel-economy value, emission measurement, model error or test result is used to construct or apply these rules."
+  ]
+}

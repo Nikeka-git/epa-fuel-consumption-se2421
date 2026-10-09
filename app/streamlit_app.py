@@ -61,9 +61,9 @@ with st.form("vehicle_specs"):
         transmission = st.selectbox("Transmission", choices["transmission"])
         drivetrain = st.selectbox("Drivetrain", choices["drivetrain"])
         vehicle_class = st.selectbox("Vehicle class", choices["vehicle_class"])
-    model_name = engine_description = ""
-    if "model_name" in schema["text_fields"]:
-        model_name = st.text_input("Model name (optional)", max_chars=1000)
+    engine_description = ""
+    model_name = st.text_input("Model designation", max_chars=1000,
+                              help="Needed for reviewed Audi and Volvo powertrain checks. Used for prediction when the saved model includes model-name text.")
     if "engine_description" in schema["text_fields"]:
         engine_description = st.text_input("Engine description (optional)", max_chars=1000,
                                            help="Use the available description of the engine or leave this field empty.")

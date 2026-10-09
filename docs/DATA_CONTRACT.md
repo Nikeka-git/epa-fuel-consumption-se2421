@@ -2,7 +2,11 @@
 
 Версия плана 0.1, 9 октября 2026 года. Это выбранные правила проекта. Фактическая полнота данных, все категории и достижение 1 000 или 3 000 строк устанавливаются после collection, а не по пяти pilot records.
 
+Предметное дополнение до первого benchmark freeze, 9 октября 2026 года: пустые `atvType`/`evMotor` не всегда означают отсутствие MHEV. Реальные MY2022 Volvo S60 B5 AWD (ID44187) и XC60 B5 AWD (ID44205) имеют такие пустые labels. [Реестр reviewed powertrain exclusions](../configs/powertrain_exclusions.json) содержит точные manufacturer/year/model условия, первичные источники и ограничения привязки. `powertrain.py` применяет его без доступа к target; cleaner сохраняет отдельную причину и hashes rules/module. Raw responses и исходный collection config не изменяются. Start/stop или батарея chassis сами по себе не служат основанием исключения. Остаточная неопределенность source metadata явно указывается в итоговой data card.
+
 ## Источник и единица наблюдения
+
+Supplemental review также ограничивает Audi A4/A5/Q5 2.0L/4-cylinder строго MY2021–2022 по материалам Audi of America. SQ7/SQ8 4.0L/V8 MY2020–2025 получают отдельное решение `powertrain_uncertain`, поскольку manufacturer catalogue labels и equipment-conditional bulletins не дают однозначного подтверждения обычного бензинового powertrain. Это явный quarantine суженного scope, а не утверждение, что все такие записи доказанно hybrid. Подробности и ограничения — [POWERTRAIN_REVIEW.md](POWERTRAIN_REVIEW.md).
 
 Одна строка описывает отдельную EPA-конфигурацию автомобиля определенного модельного года. `vehicle_id` является исходным идентификатором записи; это не VIN, не владелец и не отдельный проданный автомобиль. Основной источник — [официальный API и словарь](https://www.fueleconomy.gov/feg/ws/index.shtml). Используем только catalogue endpoints, без My MPG driver records.
 

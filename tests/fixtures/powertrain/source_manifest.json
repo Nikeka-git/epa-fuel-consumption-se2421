@@ -1,0 +1,14 @@
+[
+  {
+    "file": "vehicles/44187.json",
+    "url": "https://www.fueleconomy.gov/ws/rest/vehicle/44187",
+    "sha256": "29152d3d19929f60f1dd03d25b867f0505b5d51cc35af3750fc2311926bc8a4f",
+    "received_at_utc": "2026-10-09T01:25:49.132229+00:00"
+  },
+  {
+    "file": "vehicles/44205.json",
+    "url": "https://www.fueleconomy.gov/ws/rest/vehicle/44205",
+    "sha256": "d824d0762c70407ebef2475ff3923b0763713f1ffc96dacca67f280a739f7a5e",
+    "received_at_utc": "2026-10-09T01:32:05.561651+00:00"
+  }
+]

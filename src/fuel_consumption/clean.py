@@ -16,6 +16,7 @@ import re
 from typing import Any
 
 from .utils import load_config, project_root, sha256_file, write_json
+from .powertrain import reviewed_hybrid_rules, reviewed_uncertain_rules, reviewed_missing_engine_rules, ruleset_evidence
 
 
 FIELD_MAP = {
@@ -41,7 +42,7 @@ CANDIDATE_FIELDS = [
 FILTER_ORDER = [
     "raw_integrity", "required_identity", "model_year", "powertrain_metadata",
     "primary_fuel", "secondary_fuel", "alternative_technology", "electric_motor",
-    "phev", "hybrid_text", "vehicle_class", "target", "engine_specs",
+    "phev", "hybrid_text", "reviewed_powertrain", "vehicle_class", "target", "engine_specs",
 ]
 
 
@@ -152,6 +153,13 @@ def normalize_record(record: dict, provenance: dict, config: dict) -> tuple[dict
         reasons.append("phev_blended")
     if HYBRID_TEXT.search(" ".join([out["model_name"] or "", out["engine_description"] or ""])):
         reasons.append("hybrid_text_signal")
+    technology_identity = [out[field] for field in ("manufacturer", "model_name", "model_year", "displacement_l", "cylinders")]
+    for rule_id in reviewed_hybrid_rules(*technology_identity):
+        reasons.append("reviewed_powertrain_hybrid:" + rule_id)
+    for rule_id in reviewed_uncertain_rules(*technology_identity):
+        reasons.append("reviewed_powertrain_uncertain:" + rule_id)
+    for rule_id in reviewed_missing_engine_rules(*technology_identity):
+        reasons.append("reviewed_powertrain_uncertain:" + rule_id + ":missing_engine_condition")
     if out["vehicle_class"] not in scope["vehicle_class_allowlist"]:
         reasons.append("vehicle_class_out_of_scope")
     mpg = out["combined_mpg"]
@@ -188,6 +196,8 @@ def normalize_record(record: dict, provenance: dict, config: dict) -> tuple[dict
 
 
 def _stage(reason: str) -> str:
+    if reason.startswith(("reviewed_powertrain_hybrid:", "reviewed_powertrain_uncertain:")):
+        return "reviewed_powertrain"
     if reason.startswith(("raw_", "missing_provenance", "invalid_record", "filename_")):
         return "raw_integrity"
     if reason == "invalid_vehicle_id" or reason.startswith("missing_required"):
@@ -444,6 +454,7 @@ def build_dataset(snapshot_dir: Path, output_root: Path, config: dict) -> dict:
         "processed_parquet_sha256": sha256_file(processed / "vehicles.parquet"),
         "config_sha256": _fingerprint(config),
         "cleaning_module_sha256": sha256_file(Path(__file__)),
+        "reviewed_powertrain_rules": ruleset_evidence(),
     }
     write_json(interim / "cleaned_summary.json", summary)
     roles = {key: "audit_only" for key in NORMALIZED_COLUMNS}

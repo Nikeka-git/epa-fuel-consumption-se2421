@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 
 from .clean import HYBRID_TEXT
+from .powertrain import reviewed_hybrid_rules, reviewed_uncertain_rules, reviewed_missing_engine_rules, requires_model_designation
 from .features import CATEGORICAL_FEATURES, MIDTERM_FEATURES, NUMERIC_FEATURES, validate_feature_config
 from .split import read_dataset
 from .text import ARMS, ARM_TEXT, SANITIZER_VERSION, TEXT_FIELDS, validate_stage_config
@@ -156,6 +157,15 @@ def validate_specifications(values: dict, config: dict, gasoline_nonhybrid: bool
         out[field] = value.strip()
     if HYBRID_TEXT.search(" ".join(out[field] for field in TEXT_FIELDS)):
         raise ValueError("Choose a gasoline car or SUV without a hybrid powertrain")
+    technology_identity = [out[field] for field in ("manufacturer", "model_name", "model_year", "displacement_l", "cylinders")]
+    if requires_model_designation(out["manufacturer"], out["model_year"]) and not out["model_name"]:
+        raise ValueError("Enter the model designation so its powertrain can be checked")
+    if reviewed_missing_engine_rules(*technology_identity):
+        raise ValueError("Enter both engine displacement and cylinder count to resolve this model's powertrain scope")
+    if reviewed_hybrid_rules(*technology_identity):
+        raise ValueError("This model designation identifies a reviewed hybrid powertrain outside the project's scope")
+    if reviewed_uncertain_rules(*technology_identity):
+        raise ValueError("This powertrain is outside the validated scope because its source technology labels need clarification")
     return pd.DataFrame([out])
 
 
