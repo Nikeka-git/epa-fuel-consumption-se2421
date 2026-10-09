@@ -472,3 +472,90 @@ def test_menu_batch_corrupt_cache_is_rejected_without_network(tmp_path):
     raw.write_bytes(raw.read_bytes() + b" ")
     with pytest.raises(CorruptCacheError, match="Checksum"):
         batch_client(tmp_path, lambda *args: pytest.fail("Corrupt evidence must not be replaced"), FakeClock())
+
+
+def test_batch_publishes_one_compact_atomic_index_per_successful_wave_and_no_cache_hit_writes(tmp_path):
+    api = batch_client(tmp_path, lambda url, *args: batch_response(url.rsplit("/", 1)[-1]), FakeClock())
+    save_index, calls = api._save_index, []
+    def observed_save():
+        calls.append(len(api.entries))
+        save_index()
+    api._save_index = observed_save
+    results = api.fetch_vehicles(batch_requests())
+    assert all(error is None for _, error in results)
+    assert calls == [4]
+    body = api.index_path.read_text()
+    assert body.count("\n") == 1
+    assert json.loads(body) == {"schema_version": "1", "entries": api.entries}
+    assert not list(tmp_path.glob("cache_index.json.*.tmp"))
+    assert api.fetch_vehicles(batch_requests()) == results
+    assert calls == [4]
+
+
+def test_batch_retry_waves_publish_only_when_new_successes_are_committed(tmp_path):
+    attempts = {}
+    def transport(url, *args):
+        vehicle_id = url.rsplit("/", 1)[-1]
+        attempts[vehicle_id] = attempts.get(vehicle_id, 0) + 1
+        if vehicle_id == "1" and attempts[vehicle_id] == 1:
+            return response(b"busy", 503)
+        return batch_response(vehicle_id)
+    api = batch_client(tmp_path, transport, FakeClock())
+    save_index, calls = api._save_index, []
+    def observed_save():
+        calls.append(len(api.entries))
+        save_index()
+    api._save_index = observed_save
+    assert all(error is None for _, error in api.fetch_vehicles(batch_requests()))
+    assert calls == [3, 4]
+    assert len(json.loads(api.index_path.read_bytes())["entries"]) == 4
+
+
+def test_batch_partial_writer_crash_flushes_previous_successes_and_recovers_pending_record(tmp_path):
+    api = batch_client(tmp_path, lambda url, *args: batch_response(url.rsplit("/", 1)[-1]), FakeClock())
+    append_manifest = api._append_manifest
+    calls = []
+    def crash_second(entry):
+        calls.append(entry["url"])
+        if len(calls) == 2:
+            raise OSError("second manifest write crashed")
+        append_manifest(entry)
+    api._append_manifest = crash_second
+    with pytest.raises(OSError, match="second manifest"):
+        api.fetch_vehicles(batch_requests())
+    cached = json.loads(api.index_path.read_bytes())["entries"]
+    assert len(cached) == 1 and next(iter(cached.values()))["file"] == "vehicles/1.json"
+    first_bytes, second_bytes = (tmp_path / "vehicles/1.json").read_bytes(), (tmp_path / "vehicles/2.json").read_bytes()
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("Manifest/journal successes must recover"), FakeClock())
+    assert all(error is None for _, error in resumed.fetch_vehicles(batch_requests((1, 2))))
+    assert len(resumed.entries) == 2 and resumed.request_count == 0
+    assert (tmp_path / "vehicles/1.json").read_bytes() == first_bytes
+    assert (tmp_path / "vehicles/2.json").read_bytes() == second_bytes
+
+
+def test_failed_atomic_index_replace_retains_readable_old_index_and_manifest_recovers(tmp_path, monkeypatch):
+    import fuel_consumption.api as api_module
+    api = batch_client(tmp_path, lambda url, *args: batch_response(url.rsplit("/", 1)[-1]), FakeClock())
+    original_index = api.index_path.read_bytes()
+    replace = api_module.os.replace
+    def fail_index_only(source, destination):
+        if Path(destination) == api.index_path:
+            raise OSError("simulated index replace failure")
+        return replace(source, destination)
+    with monkeypatch.context() as patch:
+        patch.setattr(api_module.os, "replace", fail_index_only)
+        with pytest.raises(OSError, match="index replace"):
+            api.fetch_vehicles(batch_requests())
+    assert api.index_path.read_bytes() == original_index
+    assert not list(tmp_path.glob("cache_index.json.*.tmp"))
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("Durable manifest must recover all raw records"), FakeClock())
+    assert all(error is None for _, error in resumed.fetch_vehicles(batch_requests()))
+    assert len(json.loads(resumed.index_path.read_bytes())["entries"]) == 4
+    assert resumed.request_count == 0
+
+
+def test_standalone_fetch_json_still_publishes_index_immediately(tmp_path):
+    api = client(tmp_path, lambda *args: response({"menuItem": []}))
+    api.fetch_json("vehicle/menu/year", file="menus/year.json", kind="menu")
+    cached = json.loads(api.index_path.read_bytes())["entries"]
+    assert cached == api.entries and len(cached) == 1

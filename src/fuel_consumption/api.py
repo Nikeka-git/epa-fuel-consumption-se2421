@@ -21,6 +21,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from tempfile import NamedTemporaryFile
 from typing import Any, Callable, Mapping
 
 from .utils import write_json
@@ -203,7 +204,23 @@ class RawAPIClient:
             os.fsync(stream.fileno())
 
     def _save_index(self) -> None:
-        write_json(self.index_path, {"schema_version": "1", "entries": self.entries})
+        # This growing lookup table is a derived cache, not primary evidence.
+        # Compact dumps uses the fast encoder and one write; pretty json.dump
+        # emits thousands of tiny writes for every checkpoint at catalogue scale.
+        body = json.dumps({"schema_version": "1", "entries": self.entries}, ensure_ascii=False,
+                          allow_nan=False, default=str, separators=(",", ":")) + "\n"
+        temporary = None
+        try:
+            with NamedTemporaryFile("w", encoding="utf-8", dir=self.root,
+                                    prefix=self.index_path.name + ".", suffix=".tmp", delete=False) as stream:
+                temporary = Path(stream.name)
+                stream.write(body)
+                stream.flush()
+                os.fsync(stream.fileno())
+            os.replace(temporary, self.index_path)
+        finally:
+            if temporary is not None and temporary.exists():
+                temporary.unlink()
 
     def _manifest_entries(self) -> list[dict[str, Any]]:
         if not self.manifest_path.exists():
@@ -379,7 +396,6 @@ class RawAPIClient:
             self._append_manifest(entry)
         if entry["valid"]:
             self.entries[request["url"]] = entry
-            self._save_index()
 
     def fetch_vehicles(self, requests: list[Mapping[str, Any]]) -> list[tuple[Any, APIError | RequestLimitReached | None]]:
         """Fetch at most ``workers`` individual records, returning results in input order.
@@ -441,24 +457,32 @@ class RawAPIClient:
                 futures = [(request, executor.submit(self._batch_attempt, request, attempt)) for request in pending]
                 retry = []
                 fatal = None
-                for request, future in futures:
-                    try:
-                        entry, response, payload, error = future.result()
-                    except RequestLimitReached as exc:
-                        results[request["position"]] = (None, exc)
-                        continue
-                    except BaseException as exc:
-                        # Drain and commit the other completed responses before
-                        # propagating an interruption or unexpected worker failure.
-                        fatal = fatal or exc
-                        continue
-                    self._commit_batch_attempt(request, entry, response)
-                    if error is None:
-                        results[request["position"]] = (payload, None)
-                    elif error.retryable and attempt < self.max_attempts:
-                        retry.append(request)
-                    else:
-                        results[request["position"]] = (None, error)
+                entries_before = len(self.entries)
+                try:
+                    for request, future in futures:
+                        try:
+                            entry, response, payload, error = future.result()
+                        except RequestLimitReached as exc:
+                            results[request["position"]] = (None, exc)
+                            continue
+                        except BaseException as exc:
+                            # Drain and commit the other completed responses before
+                            # propagating an interruption or unexpected worker failure.
+                            fatal = fatal or exc
+                            continue
+                        self._commit_batch_attempt(request, entry, response)
+                        if error is None:
+                            results[request["position"]] = (payload, None)
+                        elif error.retryable and attempt < self.max_attempts:
+                            retry.append(request)
+                        else:
+                            results[request["position"]] = (None, error)
+                finally:
+                    # Primary raw+manifest evidence is already durable per response.
+                    # Publish the derived lookup once per wave, including partial
+                    # successes before a writer error or worker interruption.
+                    if len(self.entries) != entries_before:
+                        self._save_index()
                 if fatal is not None:
                     raise fatal
                 if not retry:
