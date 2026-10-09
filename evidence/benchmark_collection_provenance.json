@@ -1,0 +1,37 @@
+{
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "resumed_collection_code_commit": "ceb12bf123ef72edd757b98b1d87e40c76dbe97a",
+  "module_sha256_at_resume": {
+    "api.py": "3f69894beb386b749967e0f2bc3ee22cc7fbf154e21f5cecbb8b25523511f085",
+    "collect.py": "5e3f0148b1fe60d24206521dd6f0e1c338652653a02c14ed3d444637059c4fb6",
+    "utils.py": "359460e2443ca3ce0b0f2659a9a045790c3d74c42913f749048cabf17f246706"
+  },
+  "frozen_config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "resumption_reason": "The initial uncommitted concurrent scheduler was replaced by its tested final implementation, which lets Retry-After install a cooldown while another worker awaits admission. The exact verified collector PID was stopped; existing raw bytes and request evidence were preserved and verified on resume.",
+  "initial_invocation": {
+    "source_revision": "initial uncommitted batch scheduler; exact commit unavailable",
+    "last_durable_fetched_count_before_stop": 44,
+    "last_snapshot_update_utc_before_stop": "2026-10-09T00:56:42.919356+00:00",
+    "completion_status": "forced process stop; original unfinished invocation retained"
+  },
+  "sampling": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "manufacturers": "all names supplied by each model-year make menu",
+    "seed": 42,
+    "initial_successful_raw_record_budget": 6000,
+    "target_values_used_for_sampling_order": false,
+    "claim_full_catalogue_census": false
+  }
+}
