@@ -1,0 +1,15 @@
+scope,field,n_rows,missing_count,missing_fraction
+cleaned_rows,model_year,3247,0,0.0
+cleaned_rows,displacement_l,3247,0,0.0
+cleaned_rows,cylinders,3247,0,0.0
+cleaned_rows,manufacturer,3247,0,0.0
+cleaned_rows,transmission,3247,0,0.0
+cleaned_rows,drivetrain,3247,0,0.0
+cleaned_rows,vehicle_class,3247,0,0.0
+scope_eligible_before_duplicates,model_year,3247,0,0.0
+scope_eligible_before_duplicates,displacement_l,3247,0,0.0
+scope_eligible_before_duplicates,cylinders,3247,0,0.0
+scope_eligible_before_duplicates,manufacturer,3247,0,0.0
+scope_eligible_before_duplicates,transmission,3247,0,0.0
+scope_eligible_before_duplicates,drivetrain,3247,0,0.0
+scope_eligible_before_duplicates,vehicle_class,3247,0,0.0

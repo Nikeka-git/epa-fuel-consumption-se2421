@@ -1,0 +1,98 @@
+{
+  "pptx_sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+  "reviewed_slides": 8,
+  "reviewed_at_utc": "2026-10-09T02:25:38.387671+00:00",
+  "reviewer": "Codex /root/midterm_reporting",
+  "findings": [],
+  "claim_boundary": "Each final PPTX slide was inspected individually as an original-size 1280x720 PNG. Native PowerPoint opening and native font rendering were not verified.",
+  "slides": [
+    {
+      "slide": 1,
+      "sha256": "f4aef799d849fc878fdfe9dafa8ddb0e30922390d9079502bcebb30d4ce054a3",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "Title, source, scope, question and simulated team labels fit and remain readable."
+    },
+    {
+      "slide": 2,
+      "sha256": "daca9dd550cfc432f4d59ff027b205fbb11ef351551656d9a1226cdddd5c5cb7",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "4500 raw,1253 excluded,3247 retained,49 manufacturers and bounded-sample limitation agree with saved summary."
+    },
+    {
+      "slide": 3,
+      "sha256": "f1e792356e05c9e634034400f29d22178039329582ec8f6c8423ff39d7822ddb",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "Train-only engine and class charts have visible values and counts; counts sum to2628; no causal claim."
+    },
+    {
+      "slide": 4,
+      "sha256": "64aa09c8d98a47b1b3b9cd18b32edbe9928c1501d56201b1cfe14adf13cd8430",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "Seven strict predictors and fold-fitted preprocessing are readable; leakage exclusions stated."
+    },
+    {
+      "slide": 5,
+      "sha256": "295dbd260b26baacaf7bf10c5e58618091223e305f860e5ec47d61924d34a93d",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "2628 train619test,311train78test families and five CV folds agree with frozen split; parameters fit table."
+    },
+    {
+      "slide": 6,
+      "sha256": "23d2abef732f2d6e0b4b62150f9d7bd6d602ac460a1e80a3c75cb1f89617fa5d",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "All four saved CV/test rows agree with metrics; linear wins by CV despite lower KNN test MAE; 72.5 percent baseline improvement is correctly rounded."
+    },
+    {
+      "slide": 7,
+      "sha256": "332a99feb6ffe4df65b046785f0d36d2be3a7c552cb98246a161bc0d7c2a06bc",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "Descriptive selected-linear subgroup counts, bias sign and actual large-error example agree with saved reports; n<30 limitation visible."
+    },
+    {
+      "slide": 8,
+      "sha256": "73783443833a9e8bb5b0dd5c835b8a67e0beb3de30d173d4542d93680a9d252b",
+      "review_method": "individual_full_size_png",
+      "image_size_px": [
+        1280,
+        720
+      ],
+      "findings": [],
+      "observations": "Selected linear testMAE0.714, bounded EPA/family limits, stage roadmap and AI-demo role disclosure fit without overlap."
+    }
+  ]
+}

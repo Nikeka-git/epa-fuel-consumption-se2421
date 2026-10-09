@@ -219,6 +219,12 @@ def build(args):
     endterm_meta, endterm_tables, _ = next(item for item in runs if item[0]["stage"] == "endterm")
     endterm_artifact_root = endterm_tables.parent.parent.parent
     segment_dir, segment, assignments = checked_segments(endterm_artifact_root, endterm_meta, manifest)
+    groups = pd.read_csv(final_tables / "subgroup_errors.csv")
+    groups = groups.loc[groups.model.eq(final_meta["selected_model"]) & groups.split.eq("test")]
+    if set(groups.subgroup_field) != {"vehicle_class", "engine_size_bin"}:
+        raise ValueError("Missing selected application-model subgroup diagnostics")
+    if not groups.groupby("subgroup_field").n.sum().eq(split["n_test"]).all():
+        raise ValueError("Application-model subgroup counts do not cover the test rows")
     output.mkdir(parents=True)
     metrics.to_csv(output / "all_models.csv", index=False)
     selected = metrics.loc[metrics.selected_by_cv]
@@ -255,6 +261,20 @@ def build(args):
     for row in selected.itertuples():
         report.append(f"- **{row.stage}: {row.model}**, CV MAE {row.cv_mae_mean:.4f}; held-out MAE {row.test_mae:.4f}, "
                       f"RMSE {row.test_rmse:.4f}, R² {row.test_r2:.4f}.")
+    mid_winner = selected.loc[selected.stage.eq("midterm")].iloc[0]
+    end_winner = selected.loc[selected.stage.eq("endterm")].iloc[0]
+    final_winner = selected.loc[selected.stage.eq("final")].iloc[0]
+    dummy = metrics.loc[metrics.stage.eq("midterm") & metrics.model.eq("dummy")].iloc[0]
+    ridge_reference = metrics.loc[metrics.stage.eq("final") & metrics.model.eq("structured")].iloc[0]
+    report += ["", "## What the comparisons establish", "",
+               f"The Midterm CV-selected model reduces held-out MAE by {100 * (1 - mid_winner.test_mae / dummy.test_mae):.1f}% "
+               f"relative to the median baseline, with an average absolute error of {mid_winner.test_mae:.4f} L/100 km. "
+               "This is useful predictive information for the declared catalogue sample, not a guarantee for an individual car or road trip.", "",
+               f"The Endterm CV-selected model changes test MAE by {end_winner.test_mae - mid_winner.test_mae:+.4f} L/100 km "
+               "relative to the Midterm CV-selected model. Positive change means worse held-out error. "
+               f"The Final CV-selected arm changes test MAE by {final_winner.test_mae - ridge_reference.test_mae:+.4f} L/100 km "
+               "relative to structured Ridge. These are descriptive test comparisons; the selections remain those made from training CV. "
+               "A lower selection or outer CV score does not guarantee improvement on the fixed test set.", ""]
     report += ["", "## Contribution of text", "",
                "Four equally tuned Ridge arms isolate model names and available engine-description text. "
                "TF-IDF vocabularies fit only each training fold. The deterministic sanitizer removes explicit "
@@ -279,7 +299,9 @@ def build(args):
                "![Training segments](training_segments.png)", "",
                markdown_table(pd.read_csv(segment_dir / "cluster_summary.csv")), "",
                "The MLP uses training-fold target scaling, grouped parameter search and no random-row early-stopping validation split. "
-               "Convergence warnings are retained in the Endterm training-warning table.", "", "## Errors, application and limits", "",
+               f"The final MLP fit used {endterm_meta['training_details']['mlp']['n_iter']} iterations; "
+               f"the run recorded {endterm_meta['warning_count']} training warnings, including {endterm_meta['convergence_warning_count']} convergence warnings. "
+               "All warning records are retained in the Endterm training-warning table.", "", "## Errors, application and limits", "",
                "Per-row predictions, train OOF and test subgroup MAE/bias/sample counts and difficult examples are available "
                "in `reports/tables/<run>/`. Sparse groups are descriptive and should not be used for strong reliability claims. "
                "Associations between specifications and consumption are not causal effects.", "",
@@ -287,10 +309,22 @@ def build(args):
                "It validates specifications, uses training-only category options, checks saved-model hashes and returns L/100 km. "
                "It is the controlled Final text model, not a claim of being the globally best architecture. "
                "Missing optional text remains empty; predictions depend on the catalogue’s coverage.", "",
+               "Blank EPA technology labels do not independently certify a non-hybrid powertrain. "
+               "Manufacturer-reviewed corrections and explicit uncertainty quarantine were fixed before splitting; "
+               "further source omissions may remain. Seven auxiliary source encodings are unconfirmed and excluded from model inputs. "
+               "The reviewed family aliases preserve conservative source taxonomy, not certified physical generations or platforms. "
+               "See the [data card](../../docs/DATA_CARD.md) and [powertrain review](../../docs/POWERTRAIN_REVIEW.md).", "",
                "All stages reuse the same test set as requested. Test results are comparisons, not a fresh independent confirmation "
                "of a later development process. No parameter, seed or feature choice is made from these reported test scores. "
                "Rounded source MPG creates a discrete converted target. Separate Endterm/Final course briefs were not supplied; "
                "these stages implement the user’s proposal. Live defense and submission are outside this demonstration.", ""]
+    report += ["## Descriptive errors of the application model", "",
+               "The following groups come from saved test diagnostics of the Final CV-selected arm. "
+               "`small_support=True` means fewer than 30 observations; such groups do not establish a stable reliability ranking.", "",
+               markdown_table(groups.loc[groups.subgroup_field.eq("vehicle_class")].sort_values("mae", ascending=False).head(5)
+                              [["subgroup", "n", "mae", "bias", "small_support"]]), "",
+               markdown_table(groups.loc[groups.subgroup_field.eq("engine_size_bin")]
+                              [["subgroup", "n", "mae", "bias", "small_support"]]), ""]
     figure, ax = plt.subplots(figsize=(10, 7))
     labels = metrics.stage + ": " + metrics.model
     ax.barh(labels, metrics.test_mae, color=["#2874a6" if v else "#9cb9cc" for v in metrics.selected_by_cv])

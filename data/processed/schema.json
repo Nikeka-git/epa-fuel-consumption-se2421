@@ -1,0 +1,352 @@
+{
+  "schema_version": "0.1",
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "target_unit": "L/100 km",
+  "target_formula": "235.2145833333333 / comb08",
+  "columns": [
+    {
+      "name": "vehicle_id",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": "id"
+    },
+    {
+      "name": "model_year",
+      "dtype": "Int64",
+      "role": "structured_predictor",
+      "api_field": "year"
+    },
+    {
+      "name": "manufacturer",
+      "dtype": "str",
+      "role": "structured_predictor",
+      "api_field": "make"
+    },
+    {
+      "name": "model_name",
+      "dtype": "str",
+      "role": "original_text_final_only_requires_sanitization",
+      "api_field": "model"
+    },
+    {
+      "name": "base_model",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": "baseModel"
+    },
+    {
+      "name": "displacement_l",
+      "dtype": "float64",
+      "role": "structured_predictor",
+      "api_field": "displ"
+    },
+    {
+      "name": "cylinders",
+      "dtype": "Int64",
+      "role": "structured_predictor",
+      "api_field": "cylinders"
+    },
+    {
+      "name": "transmission",
+      "dtype": "str",
+      "role": "structured_predictor",
+      "api_field": "trany"
+    },
+    {
+      "name": "drivetrain",
+      "dtype": "str",
+      "role": "structured_predictor",
+      "api_field": "drive"
+    },
+    {
+      "name": "vehicle_class",
+      "dtype": "str",
+      "role": "structured_predictor",
+      "api_field": "VClass"
+    },
+    {
+      "name": "engine_description",
+      "dtype": "str",
+      "role": "original_text_final_only_requires_sanitization",
+      "api_field": "eng_dscr"
+    },
+    {
+      "name": "engine_id",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": "engId"
+    },
+    {
+      "name": "atv_type",
+      "dtype": "object",
+      "role": "audit_only",
+      "api_field": "atvType"
+    },
+    {
+      "name": "fuel_type_primary",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": "fuelType1"
+    },
+    {
+      "name": "fuel_type_secondary",
+      "dtype": "object",
+      "role": "audit_only",
+      "api_field": "fuelType2"
+    },
+    {
+      "name": "electric_motor",
+      "dtype": "object",
+      "role": "audit_only",
+      "api_field": "evMotor"
+    },
+    {
+      "name": "phev_blended",
+      "dtype": "bool",
+      "role": "audit_only",
+      "api_field": "phevBlended"
+    },
+    {
+      "name": "combined_mpg",
+      "dtype": "float64",
+      "role": "audit_only",
+      "api_field": "comb08"
+    },
+    {
+      "name": "combined_mpg_unrounded",
+      "dtype": "float64",
+      "role": "audit_only",
+      "api_field": "comb08U"
+    },
+    {
+      "name": "target_l100km",
+      "dtype": "float64",
+      "role": "target",
+      "api_field": null
+    },
+    {
+      "name": "source_url",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": null
+    },
+    {
+      "name": "fetched_at_utc",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": null
+    },
+    {
+      "name": "raw_sha256",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": null
+    },
+    {
+      "name": "snapshot_id",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": null
+    },
+    {
+      "name": "model_group",
+      "dtype": "str",
+      "role": "split_group_never_predictor",
+      "api_field": null
+    },
+    {
+      "name": "audit_flags",
+      "dtype": "str",
+      "role": "audit_only",
+      "api_field": null
+    }
+  ],
+  "structured_feature_allowlist": [
+    "model_year",
+    "displacement_l",
+    "cylinders",
+    "manufacturer",
+    "transmission",
+    "drivetrain",
+    "vehicle_class"
+  ],
+  "source_config": {
+    "schema_version": "0.1",
+    "status": "benchmark_collection_and_audit_in_progress",
+    "project": {
+      "name": "EPA combined fuel consumption",
+      "group": "SE-2421",
+      "members": [
+        "Tsybus Nikita",
+        "Bakytzhan Kassymgali"
+      ],
+      "direction": "8. New-car catalogues",
+      "task_type": "regression"
+    },
+    "source": {
+      "base_url": "https://www.fueleconomy.gov/ws/rest/",
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "individual_records_required": true,
+      "accept": "application/json",
+      "workers": 4,
+      "min_interval_seconds": 0.25,
+      "timeout_seconds": 30,
+      "max_attempts": 5,
+      "respect_retry_after": true
+    },
+    "scope": {
+      "minimum_distinct_rows": 1000,
+      "desired_distinct_rows": 3000,
+      "collection_policy": "seeded_round_robin_bounded_all_years_all_manufacturers",
+      "initial_raw_record_budget": 6000,
+      "collection_seed": 42,
+      "fuel_type_primary_allowlist": [
+        "Regular Gasoline",
+        "Premium Gasoline",
+        "Midgrade Gasoline"
+      ],
+      "require_empty_fuel_type_secondary": true,
+      "require_empty_atv_type": true,
+      "require_empty_electric_motor": true,
+      "exclude_phev_blended": true,
+      "include_station_wagons": true,
+      "unknown_powertrain_metadata_policy": "quarantine",
+      "class_allowlist_status": "verify_against_full_inventory_before_freeze",
+      "vehicle_class_allowlist": [
+        "Two Seaters",
+        "Minicompact Cars",
+        "Subcompact Cars",
+        "Compact Cars",
+        "Midsize Cars",
+        "Large Cars",
+        "Small Station Wagons",
+        "Midsize Station Wagons",
+        "Large Station Wagons",
+        "Small Sport Utility Vehicle 2WD",
+        "Small Sport Utility Vehicle 4WD",
+        "Standard Sport Utility Vehicle 2WD",
+        "Standard Sport Utility Vehicle 4WD"
+      ],
+      "missing_both_engine_numeric_fields": "exclude",
+      "missing_required_fields": "exclude",
+      "required_fields": [
+        "vehicle_id",
+        "model_year",
+        "manufacturer",
+        "model_name",
+        "vehicle_class",
+        "combined_mpg"
+      ]
+    },
+    "target": {
+      "name": "target_l100km",
+      "api_field": "comb08",
+      "unit": "L/100 km",
+      "us_mpg_conversion_constant": 235.2145833333333,
+      "allow_comb08u_fallback": false,
+      "imputation": "forbidden"
+    },
+    "features": {
+      "numeric": [
+        "model_year",
+        "displacement_l",
+        "cylinders"
+      ],
+      "categorical": [
+        "manufacturer",
+        "transmission",
+        "drivetrain",
+        "vehicle_class"
+      ],
+      "final_text": [
+        "model_name",
+        "engine_description"
+      ],
+      "selection_policy": "strict_allowlist",
+      "text_in_midterm": false
+    },
+    "split": {
+      "group_fields": [
+        "manufacturer",
+        "base_model"
+      ],
+      "fallback_group_field": "model_name",
+      "group_alias_audit_required": true,
+      "group_across_years": true,
+      "method": "GroupShuffleSplit",
+      "n_splits": 1,
+      "test_group_fraction": 0.2,
+      "random_state": 42,
+      "cv_method": "GroupKFold",
+      "cv_n_splits": 5,
+      "cv_shuffle": false,
+      "reuse_manifest_across_stages": true
+    },
+    "evaluation": {
+      "primary_metric": "mae",
+      "secondary_metrics": [
+        "rmse",
+        "r2"
+      ],
+      "residual_definition": "prediction_minus_actual",
+      "cv_std_ddof": 0,
+      "selection_source": "train_group_cv",
+      "small_subgroup_threshold": 30,
+      "displacement_bins_l": [
+        0,
+        2,
+        3,
+        4,
+        null
+      ],
+      "bins_closed": "right"
+    },
+    "midterm_models": {
+      "dummy": {
+        "class": "DummyRegressor",
+        "params": {
+          "strategy": "median"
+        }
+      },
+      "linear": {
+        "class": "LinearRegression",
+        "params": {
+          "fit_intercept": true
+        }
+      },
+      "knn": {
+        "class": "KNeighborsRegressor",
+        "params": {
+          "n_neighbors": 15,
+          "weights": "distance",
+          "p": 2
+        }
+      },
+      "tree": {
+        "class": "DecisionTreeRegressor",
+        "params": {
+          "criterion": "squared_error",
+          "max_depth": 8,
+          "min_samples_leaf": 10,
+          "random_state": 42
+        }
+      }
+    }
+  },
+  "artifact_hashes": {
+    "vehicles.csv": "52147684e949515449cfda4a79783d695f0265b361cd2113e0e958e316a7d00c",
+    "vehicles.parquet": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739"
+  }
+}

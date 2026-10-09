@@ -1,6 +1,6 @@
 # Контракт данных
 
-Версия плана 0.1, 9 октября 2026 года. Это выбранные правила проекта. Фактическая полнота данных, все категории и достижение 1 000 или 3 000 строк устанавливаются после collection, а не по пяти pilot records.
+Первоначальные правила версии 0.1, 9 октября 2026 года, дополненные результатом завершенного сбора. Фактические counts установлены по основному snapshot: 4 500 индивидуальных записей → 3 247 очищенных конфигураций. Полные категории, missingness, hashes и ограничения находятся в [DATA_CARD](DATA_CARD.md); пять pilot records не служат подтверждением основной полноты.
 
 Предметное дополнение до первого benchmark freeze, 9 октября 2026 года: пустые `atvType`/`evMotor` не всегда означают отсутствие MHEV. Реальные MY2022 Volvo S60 B5 AWD (ID44187) и XC60 B5 AWD (ID44205) имеют такие пустые labels. [Реестр reviewed powertrain exclusions](../configs/powertrain_exclusions.json) содержит точные manufacturer/year/model условия, первичные источники и ограничения привязки. `powertrain.py` применяет его без доступа к target; cleaner сохраняет отдельную причину и hashes rules/module. Raw responses и исходный collection config не изменяются. Start/stop или батарея chassis сами по себе не служат основанием исключения. Остаточная неопределенность source metadata явно указывается в итоговой data card.
 
@@ -35,7 +35,7 @@ Supplemental review также ограничивает Audi A4/A5/Q5 2.0L/4-cyl
 
 Production collector должен:
 
-1. Обнаруживать конфигурации через документированные меню годов 2015–2025 и доступных manufacturers; дедуплицировать discovered IDs. Сохранить связь ID с меню. Для основного benchmark до его первого freeze выбран bounded seeded round-robin всех годов/марок с исходным бюджетом 6 000 raw records и seed 42. Чередование и порядок не используют target. Это выборка с неодинаковыми вероятностями включения, не полный census и не выборка продаж. Полный обход остается отдельным режимом collector.
+1. Обнаруживать конфигурации через документированные меню годов 2015–2025 и доступных manufacturers; дедуплицировать discovered IDs. Сохранить связь ID с меню. Для основного benchmark до его первого freeze выбран bounded seeded round-robin всех годов/марок с исходным бюджетом 6 000 raw records и seed 42. До обучения бюджет снижен до 4 500 по checkpoint counts, без просмотра модельных ошибок; решение сохранено в [collection provenance](../evidence/benchmark_collection_provenance.json). Чередование и порядок не используют target. Это выборка с неодинаковыми вероятностями включения, не полный census и не выборка продаж. Полный обход остается отдельным режимом collector.
 2. Получать individual vehicle records собственным кодом. Первая версия использовала один worker и интервал 1 s; перед новым benchmark выбраны максимум четыре одновременных запроса и общий минимальный интервал старта HTTP attempts 0.25 s. Timeout 30 s, максимум 5 попыток; Retry-After при ограничении сервера вводит общий cooldown. Запись raw/manifests/cache выполняется одним потоком. Это настройки проекта, не заявленный лимит сайта. Frozen config исторического smoke не меняется.
 3. Для сетевых ошибок, 408, 429 и временных 5xx использовать ограниченный exponential backoff с jitter; учитывать Retry-After. Неповторяемые 4xx не запускать бесконечно. Не обходить ограничения сервера.
 4. Сохранять exact response bytes атомарно. Metadata: request URL и params, HTTP status, UTC fetched_at, content type, SHA-256, файл, attempt, error. Сохранять raw menus тоже.
@@ -87,7 +87,7 @@ Raw хранит все исходные поля. В data card дополнит
 Применять все проверки и сохранять **все** reason codes. Для последовательной таблицы before/after фиксировать один порядок фильтров; totals по независимым причинам могут перекрываться.
 
 1. Валидные ID и model_year 2015–2025. `manufacturer`, `model_name`, `vehicle_class` непустые. Имя модели не генерировать и не импутировать.
-2. `fuelType1` в allowlist Regular Gasoline, Premium Gasoline, Midgrade Gasoline; последнее пока не наблюдалось в pilot. `fuelType2` пустое. Не использовать `contains('gas')`, которое пропустит смешанные топлива.
+2. `fuelType1` в allowlist Regular Gasoline, Premium Gasoline, Midgrade Gasoline; последнее отсутствовало в pilot, но присутствует в 30 retained main records. `fuelType2` пустое. Не использовать `contains('gas')`, которое пропустит смешанные топлива.
 3. `atvType` пустое. Любая непустая технология исключается либо уходит в audit при неизвестном значении. Пропавший ожидаемый metadata key нельзя автоматически трактовать как подтвержденное отсутствие hybrid.
 4. `evMotor` пустое, `phevBlended` false или известное пустое значение. Неизвестные boolean-like значения и электрические sentinels проверяются отдельно. Не приводить `evMotor` к float.
 5. Токены HEV, PHEV, MHEV, hybrid, mild hybrid, eAssist в model/engine text — дополнительный сигнал исключения или ручного аудита. Использовать нормализованные слова/границы токенов, не произвольную подстроку. Отсутствие этих слов не отменяет предыдущие проверки.
@@ -98,7 +98,7 @@ Raw хранит все исходные поля. В data card дополнит
 
 Не удалять большой расход или редкий большой двигатель просто потому, что он ухудшает MAE. Аномалии проверять по raw и предметному смыслу. Пороговые статистические правила, если понадобятся, обучать на train; target-dependent outlier pruning всего датасета запрещен.
 
-Предварительный class allowlist находится в config. Он включает Two Seaters, классы Cars, Station Wagons и четыре Small/Standard Sport Utility Vehicle 2WD/4WD. Из этого списка в pilot наблюдались только четыре класса из таблицы выше; окончательно проверить весь inventory до freeze. Любые расширения отражать в contract/config и audit report.
+Class allowlist находится в config. Он включает Two Seaters, классы Cars, Station Wagons и четыре Small/Standard Sport Utility Vehicle 2WD/4WD. В pilot наблюдались четыре класса; основной audit до freeze подтвердил 12 наблюдаемых категорий из 13 разрешенных, без новых категорий. Любые будущие расширения отражать в новой версии contract/config и audit report.
 
 ## Target
 
@@ -138,7 +138,7 @@ transmission, drivetrain, vehicle_class, manufacturer
 
 ## Freeze и выходные файлы
 
-Ожидаемые будущие артефакты:
+Основные артефакты завершенного snapshot (полный перечень и команды воспроизведения — в [RUNNING](RUNNING.md)):
 
 ```text
 data/raw/<snapshot_id>/menus/...

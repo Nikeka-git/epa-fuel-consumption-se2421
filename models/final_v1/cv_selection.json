@@ -1,0 +1,49 @@
+{
+  "run_id": "final_v1",
+  "selected_model": "structured_engine",
+  "selection_source": "train_group_cv",
+  "selected_at_utc": "2026-10-09T02:22:32.614549+00:00",
+  "test_evaluation_started": false,
+  "protocol": "minimum mean five-fold training-group CV MAE, then std, then fixed arm/grid order",
+  "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure",
+  "arm_choices": [
+    {
+      "model": "structured",
+      "alpha": 10.0,
+      "cv_mae_mean": 0.7987926455893799,
+      "cv_mae_std": 0.08164969183401645,
+      "cv_fit_seconds": 0.3229726000008668,
+      "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure"
+    },
+    {
+      "model": "structured_model",
+      "alpha": 10.0,
+      "cv_mae_mean": 0.8054874115957915,
+      "cv_mae_std": 0.07587811398641298,
+      "cv_fit_seconds": 0.7186079999992216,
+      "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure"
+    },
+    {
+      "model": "structured_engine",
+      "alpha": 10.0,
+      "cv_mae_mean": 0.7887878761249782,
+      "cv_mae_std": 0.0849500617576302,
+      "cv_fit_seconds": 0.5737354999982927,
+      "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure"
+    },
+    {
+      "model": "structured_model_engine",
+      "alpha": 10.0,
+      "cv_mae_mean": 0.7958792551809578,
+      "cv_mae_std": 0.07331646850839345,
+      "cv_fit_seconds": 0.9857083000006241,
+      "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure"
+    }
+  ],
+  "alpha_grid": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ]
+}

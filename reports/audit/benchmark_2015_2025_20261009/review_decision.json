@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at_utc": "2026-10-09 02:22:42 UTC",
+  "reviewer": "Codex independent review agent (AI demonstration; no human course approval asserted)",
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "decision": "passed_for_freeze_with_specified_reviewed_alias_map",
+  "cleaned_data_review_passed": true,
+  "source_counts": {
+    "cache_entries": 8568,
+    "manifest_entries": 8568,
+    "raw_records": 4500,
+    "integrity_failures": [],
+    "successful_manifest_entries": 8568
+  },
+  "retained_rows": 3247,
+  "excluded_rows": 1253,
+  "category_allowlist_review": {
+    "status": "approved_for_observed_snapshot",
+    "allowlist_extended": false,
+    "retained_classes": {
+      "Minicompact Cars": 190,
+      "Two Seaters": 347,
+      "Small Sport Utility Vehicle 4WD": 496,
+      "Large Cars": 308,
+      "Compact Cars": 390,
+      "Midsize Cars": 474,
+      "Small Sport Utility Vehicle 2WD": 267,
+      "Standard Sport Utility Vehicle 2WD": 111,
+      "Standard Sport Utility Vehicle 4WD": 294,
+      "Subcompact Cars": 232,
+      "Small Station Wagons": 108,
+      "Midsize Station Wagons": 30
+    },
+    "excluded_class_values": [
+      "Minivan - 2WD",
+      "Minivan - 4WD",
+      "Small Pickup Trucks 2WD",
+      "Small Pickup Trucks 4WD",
+      "Special Purpose Vehicle 2WD",
+      "Special Purpose Vehicle 4WD",
+      "Standard Pickup Trucks 2WD",
+      "Standard Pickup Trucks 4WD",
+      "Vans, Passenger Type"
+    ],
+    "unobserved_allowlisted_class_values": [
+      "Large Station Wagons"
+    ],
+    "fuel_types_retained": {
+      "Premium Gasoline": 1934,
+      "Regular Gasoline": 1283,
+      "Midgrade Gasoline": 30
+    },
+    "unknown_technology_retained": 0,
+    "missing_or_null_required_powertrain_keys": {},
+    "unknown_phev_boolean_ids": []
+  },
+  "scope_reproduction": {
+    "independent_eligible": 3247,
+    "cleaned_rows": 3247,
+    "raw_eligible_missing_in_cleaned": [],
+    "unexpected_cleaned_ids": []
+  },
+  "feature_or_target_integrity": {
+    "target_conversion_errors": [],
+    "feature_errors": []
+  },
+  "missing_predictors": {
+    "model_year": 0,
+    "manufacturer": 0,
+    "displacement_l": 0,
+    "cylinders": 0,
+    "transmission": 0,
+    "drivetrain": 0,
+    "vehicle_class": 0
+  },
+  "missing_engine_description": 777,
+  "target_range_l100km": [
+    6.031143162393162,
+    26.1349537037037
+  ],
+  "target_outlier_pruning": false,
+  "coverage": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "rows_per_year": {
+      "2015": 310,
+      "2016": 322,
+      "2017": 330,
+      "2018": 332,
+      "2019": 325,
+      "2020": 325,
+      "2021": 317,
+      "2022": 289,
+      "2023": 276,
+      "2024": 227,
+      "2025": 194
+    },
+    "manufacturers": 49,
+    "classes": 12
+  },
+  "rule_effects": {
+    "audi_2021_2022_a4_a5_q5_2l_mild_hybrid": {
+      "matches": 4,
+      "incremental_exclusions_without_other_reasons": 0,
+      "incremental_vehicle_ids": []
+    },
+    "audi_sq7_sq8_4l_technology_uncertain": {
+      "matches": 3,
+      "incremental_exclusions_without_other_reasons": 3,
+      "incremental_vehicle_ids": [
+        "47806",
+        "43029",
+        "47178"
+      ]
+    },
+    "volvo_b_badge_mild_hybrid": {
+      "matches": 24,
+      "incremental_exclusions_without_other_reasons": 3,
+      "incremental_vehicle_ids": [
+        "44187",
+        "44205",
+        "44481"
+      ]
+    }
+  },
+  "additional_unique_scope_exclusions": 6,
+  "duplicate_candidate_groups_independent": 0,
+  "confirmed_duplicates_removed": 0,
+  "unresolved_duplicate_groups": 0,
+  "family_review": {
+    "issues": [],
+    "literal_edges": 18,
+    "connected_components": 13,
+    "explicit_aliases": 86,
+    "groups_before": 405,
+    "groups_after": 389,
+    "changed_row_groups": 112,
+    "identical_fullnames_left_in_multiple_groups": 0,
+    "identity_only": true,
+    "reviewed_alias_map_sha256": "9dc5e6f72b7b7349642946730a43236e921ff470b9bb78297d6afa1d24f6c559",
+    "reviewed_map_source": "reports/audit/benchmark_2015_2025_20261009/family_review/final/reviewed_family_aliases.csv"
+  },
+  "freeze_condition": "Use the specified reviewed alias map when creating the immutable grouped split; do not infer further aliases from prefixes, target, or model errors.",
+  "unconfirmed_dictionary_encodings": {
+    "battery": {
+      "meaning_review_status": "undocumented_source_encoding",
+      "disposition": "source_audit_only_excluded_from_predictors",
+      "internal_field": null
+    },
+    "cylDeact": {
+      "meaning_review_status": "field_name_inference_encoding_unconfirmed",
+      "disposition": "source_audit_only_excluded_from_predictors",
+      "internal_field": null
+    },
+    "cylDeactYesNo": {
+      "meaning_review_status": "field_name_inference_encoding_unconfirmed",
+      "disposition": "source_audit_only_excluded_from_predictors",
+      "internal_field": null
+    },
+    "mpgRevised": {
+      "meaning_review_status": "field_name_inference_encoding_unconfirmed",
+      "disposition": "source_audit_only_excluded_from_predictors",
+      "internal_field": null
+    },
+    "range": {
+      "meaning_review_status": "undocumented_source_encoding",
+      "disposition": "excluded_from_predictors_leakage_or_output",
+      "internal_field": null
+    },
+    "rangeCity": {
+      "meaning_review_status": "undocumented_source_encoding",
+      "disposition": "excluded_from_predictors_leakage_or_output",
+      "internal_field": null
+    },
+    "rangeHwy": {
+      "meaning_review_status": "undocumented_source_encoding",
+      "disposition": "excluded_from_predictors_leakage_or_output",
+      "internal_field": null
+    }
+  },
+  "historical_metadata_unchanged": true,
+  "source_or_cleaned_or_split_modified": false,
+  "input_sha256": {
+    "reports/audit/benchmark_2015_2025_20261009/audit_summary.json": "6c9b1b2da13864ba34ba3ce08da3486f1120a88694428766a3a517b38d2f69ca",
+    "data/interim/cleaned_summary.json": "9e5b64099ed51d1d95aedfa7f88603f6b3493551d786e55801a0404d7d8aee1d",
+    "data/interim/raw_field_dictionary.json": "8cd0ca9c968b16da9c9eda996f36f93ccef121ca5587e61f3b337655add0c56f",
+    "configs/project.json": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+    "configs/powertrain_exclusions.json": "513e080d53dddcc9f4bdd94ba53082c2029c7b18c4ee41d8617c9db8dd563584",
+    "data/processed/vehicles.parquet": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+    "data/raw/benchmark_2015_2025_20261009/cache_index.json": "895df81525b5932db4bec80122f85fe4d89dd495bb4c5535584e271ee76bd353",
+    "data/raw/benchmark_2015_2025_20261009/requests.jsonl": "0000bb0bf6593b4c4a5e1f5b3182114a211ca35672986073aa4b60f6aff4768b",
+    "data/raw/benchmark_2015_2025_20261009/snapshot.json": "7f503227e24cebe6413270fa62756e2584027c96f925482af8ef23b1a9aedd2f",
+    "reports/audit/benchmark_2015_2025_20261009/family_review/final/reviewed_family_aliases.csv": "9dc5e6f72b7b7349642946730a43236e921ff470b9bb78297d6afa1d24f6c559",
+    "data/raw/benchmark_2015_2025_20261009/inventory.json": "61b31f32027500848808108897789d806b54874b6d5abc8d2ac97558b8047751",
+    "reports/audit/benchmark_2015_2025_20261009/category_counts.csv": "84a36e11968943aea109ab965526c5241f068deb5dbd3644de03d896efd11513",
+    "reports/audit/benchmark_2015_2025_20261009/cleaned_integrity_issues.csv": "b43159d2024760e816eafa292c759e31c6cf3fd6113b290d1c94c490b6c9a3e2",
+    "reports/audit/benchmark_2015_2025_20261009/duplicate_candidates.csv": "69fd3fa2648f00bf09f7d8c169e0f3284a210cb118170445fd85cb7459f3f522",
+    "reports/audit/benchmark_2015_2025_20261009/duplicate_raw_differences.csv": "2855b11c1769f9c4b97b1a99217900d76acecd03e94cf1c092086e2263b98996",
+    "reports/audit/benchmark_2015_2025_20261009/model_family_consistency.csv": "c676cd554e79df1d4d8eea5984d7b590e8159ec42b49c0845c094f2b2e1fb135",
+    "reports/audit/benchmark_2015_2025_20261009/model_family_fallbacks.csv": "0c4ce844601a469bf2fe4c5ed846c39b8e421a8db2b304f82076ca4c136e202b",
+    "reports/audit/benchmark_2015_2025_20261009/powertrain_metadata_presence.csv": "2669dc37b1b207d4e763241b4bd580f9a424615d2e0a9499f5d7dd01056f67be",
+    "reports/audit/benchmark_2015_2025_20261009/raw_field_observations.csv": "82dfabf49871cdb63055ebf9a42b3799281b5bd46a70c6f3f30c125f17deae7b",
+    "reports/audit/benchmark_2015_2025_20261009/raw_integrity.csv": "6086bc4b1ce4d6da1c42d590ce1863187204b224e70d7e7b36864da0a9b1db8d",
+    "reports/audit/benchmark_2015_2025_20261009/raw_scope_decisions.csv": "b47f3a4205a4e002de0b86de6688752d4844cf8c6f88802b5ac7b64c757e5243",
+    "reports/audit/benchmark_2015_2025_20261009/x_missingness.csv": "aa997dda8f1b14ac785fa9eaedf612e38ece680d59f80dfccc687bdf33921c7d"
+  },
+  "limitations": [
+    "Partial bounded catalogue sample; not a complete census, sales-weighted sample, or future-year evaluation.",
+    "All retained alternative-technology/electric-motor/secondary-fuel labels are blank, but blank EPA metadata does not independently certify absence of mild-hybrid technology.",
+    "Manufacturer rules are focused corrections and explicit uncertainty quarantine, not exhaustive certification of all retained powertrains. SQ7/SQ8 are not asserted confirmed hybrids.",
+    "Broad source baseModel components are conservative taxonomy groups; physical generations or products are not inferred. Further undiscovered relations may remain.",
+    "Seven raw encodings remain explicitly unconfirmed and excluded from all predictors. This review did not newly verify every external primary-source URL.",
+    "No train/test split or model fit was performed by this independent review."
+  ]
+}

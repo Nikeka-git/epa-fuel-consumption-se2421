@@ -8,7 +8,7 @@
 
 ## Текущее состояние
 
-API-клиент, resumable collector, cleaner, grouped split, семь structured features, Midterm-модели и evaluation реализованы. Итоговый offline suite прошел без ошибок: 91 тест (47 cleaner, 36 API/collector, 8 modeling). Ограниченный реальный пример содержит 250 raw records и 146 принятых строк; notebook выполнен без ошибок, 8 code cells. Scope и результаты описаны в examples/smoke/README.md. Полный benchmark не менее 1 000 пригодных различных конфигураций, предметный audit и полноценная сдача Midterm остаются следующими задачами.
+Техническая AI-демонстрация завершена: 4 500 исходных API-ответов, 3 247 очищенных строк, фиксированные группы, split и folds, Midterm/Endterm/Final, notebook из 12 ячеек, 8 слайдов, итоговый отчет и Streamlit app. Все 213 offline tests прошли. Фактические counts, scores и ограничения — README, DATA_CARD и reports/project_v1/RESULTS.md. Исторический smoke остается отдельным example. Продолжай по обновленному HANDOFF; основной benchmark не пересоздавай и существующие runs не перезаписывай.
 
 ## Работа с доказательствами
 

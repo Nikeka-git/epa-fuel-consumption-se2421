@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "stage": "final",
+  "arms": [
+    "structured",
+    "structured_model",
+    "structured_engine",
+    "structured_model_engine"
+  ],
+  "estimator": "Ridge",
+  "solver": "lsqr",
+  "alpha_grid": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "text": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "sanitizer_version": "1.0"
+  },
+  "selection": "minimum mean five-fold training-group CV MAE, then std, then fixed arm/grid order",
+  "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure",
+  "paired_delta": "text absolute error minus structured absolute error; negative favours text"
+}

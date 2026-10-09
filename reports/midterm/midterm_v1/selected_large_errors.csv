@@ -1,0 +1,11 @@
+vehicle_id,model,split,model_year,manufacturer,model_name,displacement_l,cylinders,transmission,drivetrain,vehicle_class,engine_size_bin,y_true,y_pred,residual,abs_error
+38135,linear,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,15.97340175629176,-3.6278135214860168,3.6278135214860168
+35481,linear,test,2015,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.08676114006809,-2.614150318265242,2.614150318265242
+36379,linear,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.110363400456643,-2.590548057876686,2.590548057876686
+48578,linear,test,2025,Bugatti,Mistral,8.0,16,Automatic (AM-S7),All-Wheel Drive,Two Seaters,"(4,+inf) L",26.1349537037037,23.63452399978786,-2.5004297039158416,2.5004297039158416
+42652,linear,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.67910176047312,-2.3883750913787303,2.3883750913787303
+47759,linear,test,2024,Porsche,718 Spyder RS,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",14.700911458333332,12.370181708647689,-2.330729749685643,2.330729749685643
+45105,linear,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.749908541638789,-2.317568310213064,2.317568310213064
+48816,linear,test,2025,Porsche,718 GT4 RS,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",14.700911458333332,12.393783969036244,-2.307127489297088,2.307127489297088
+37192,linear,test,2016,Buick,Cascada,1.6,4,Automatic (S6),Front-Wheel Drive,Subcompact Cars,"(0,2] L",10.226721014492751,8.012521829061725,-2.214199185431028,2.214199185431028
+37605,linear,test,2017,Ferrari,F12 tdf,6.3,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.405621342866667,-2.195593934911109,2.195593934911109

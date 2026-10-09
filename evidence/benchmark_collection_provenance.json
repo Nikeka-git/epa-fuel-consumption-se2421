@@ -51,5 +51,21 @@
     "last_durable_fetched_count_before_stop": 946,
     "last_snapshot_update_utc_before_stop": "2026-10-09T01:19:30.140617+00:00",
     "recorded_attempts_note": "Snapshot attempts count durable recorded attempts; interrupted in-flight HTTP requests may not have produced retained responses."
+  },
+  "count_based_budget_revision": {
+    "decision_at_utc": "2026-10-09T02:12:20.826446+00:00",
+    "initial_raw_budget": 6000,
+    "revised_raw_budget": 4500,
+    "basis": "Verified checkpoint: 3920 raw records, 2827 scope-eligible before duplicate resolution, zero duplicate candidates and integrity issues. Reach the desired >=3000 cleaned configurations while avoiding unnecessary HTTP requests.",
+    "checkpoint_summary_sha256": "b49e6476f070f95818e59ce976741149d51f6e356b880edc4cd875d4a6764574",
+    "pre_model_fitting": true,
+    "test_results_available": false,
+    "target_magnitudes_used_for_decision": false,
+    "fallback_if_final_cleaned_below_3000": "Resume to the original 6000-record budget before freeze or any main fit; do not weaken scope.",
+    "last_durable_fetched_count_before_stop": 4404,
+    "last_snapshot_update_utc_before_stop": "2026-10-09T02:12:20.661446+00:00",
+    "collection_source_changed": false,
+    "config_changed": false,
+    "limitation": "Controlled restart may leave interrupted in-flight requests without retained responses. The bounded snapshot is not a census or a sales-weighted sample."
   }
 }

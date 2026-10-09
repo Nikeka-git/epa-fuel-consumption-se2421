@@ -1,0 +1,1139 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "EPA combined fuel consumption",
+    "group": "SE-2421",
+    "members": [
+      "Tsybus Nikita",
+      "Bakytzhan Kassymgali"
+    ],
+    "direction": "8. New-car catalogues",
+    "task_type": "regression"
+  },
+  "dataset": {
+    "snapshot_id": "benchmark_2015_2025_20261009",
+    "development_small_dataset": false,
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "requested_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "manufacturers_n": 49,
+    "manufacturers": [
+      "Acura",
+      "Alfa Romeo",
+      "Aston Martin",
+      "Audi",
+      "BMW",
+      "Bentley",
+      "Bugatti",
+      "Buick",
+      "Cadillac",
+      "Chevrolet",
+      "Chrysler",
+      "Dodge",
+      "Ferrari",
+      "Fiat",
+      "Ford",
+      "GMC",
+      "Genesis",
+      "Honda",
+      "Hyundai",
+      "INEOS Automotive",
+      "Infiniti",
+      "Jaguar",
+      "Jeep",
+      "Kia",
+      "Koenigsegg",
+      "Lamborghini",
+      "Land Rover",
+      "Lexus",
+      "Lincoln",
+      "Lotus",
+      "MINI",
+      "Maserati",
+      "Mazda",
+      "McLaren Automotive",
+      "Mercedes-Benz",
+      "Mitsubishi",
+      "Nissan",
+      "Pagani",
+      "Porsche",
+      "RUF Automobile",
+      "Rolls-Royce",
+      "Roush Performance",
+      "STI",
+      "Scion",
+      "Subaru",
+      "Toyota",
+      "Volkswagen",
+      "Volvo",
+      "smart"
+    ],
+    "raw_records": 4500,
+    "cleaned_rows": 3247,
+    "excluded_records": 1253,
+    "duplicates_removed": 0,
+    "unresolved_duplicates": 0,
+    "distinct_count_status": "source_configurations_after_confirmed_duplicates",
+    "missingness": {
+      "model_year": 0,
+      "displacement_l": 0,
+      "cylinders": 0,
+      "manufacturer": 0,
+      "transmission": 0,
+      "drivetrain": 0,
+      "vehicle_class": 0
+    },
+    "full_catalogue_complete": false,
+    "collection_dates": [
+      "2026-10-09T00:55:02.056715+00:00",
+      "2026-10-09T02:14:20.303923+00:00"
+    ],
+    "collection_mode": "interleaved_bounded",
+    "request_attempts": 8568,
+    "requested_scope": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "makes": null,
+      "seed": 42,
+      "ordering": "seeded_round_robin"
+    },
+    "source_config": {
+      "base_url": "https://www.fueleconomy.gov/ws/rest/",
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "individual_records_required": true,
+      "accept": "application/json",
+      "workers": 4,
+      "min_interval_seconds": 0.25,
+      "timeout_seconds": 30,
+      "max_attempts": 5,
+      "respect_retry_after": true
+    },
+    "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739"
+  },
+  "cleaning_stages": [
+    {
+      "stage": "raw_integrity",
+      "before": 4500,
+      "removed": 0,
+      "after": 4500
+    },
+    {
+      "stage": "required_identity",
+      "before": 4500,
+      "removed": 0,
+      "after": 4500
+    },
+    {
+      "stage": "model_year",
+      "before": 4500,
+      "removed": 0,
+      "after": 4500
+    },
+    {
+      "stage": "powertrain_metadata",
+      "before": 4500,
+      "removed": 0,
+      "after": 4500
+    },
+    {
+      "stage": "primary_fuel",
+      "before": 4500,
+      "removed": 467,
+      "after": 4033
+    },
+    {
+      "stage": "secondary_fuel",
+      "before": 4033,
+      "removed": 225,
+      "after": 3808
+    },
+    {
+      "stage": "alternative_technology",
+      "before": 3808,
+      "removed": 292,
+      "after": 3516
+    },
+    {
+      "stage": "electric_motor",
+      "before": 3516,
+      "removed": 0,
+      "after": 3516
+    },
+    {
+      "stage": "phev",
+      "before": 3516,
+      "removed": 0,
+      "after": 3516
+    },
+    {
+      "stage": "hybrid_text",
+      "before": 3516,
+      "removed": 0,
+      "after": 3516
+    },
+    {
+      "stage": "reviewed_powertrain",
+      "before": 3516,
+      "removed": 6,
+      "after": 3510
+    },
+    {
+      "stage": "vehicle_class",
+      "before": 3510,
+      "removed": 263,
+      "after": 3247
+    },
+    {
+      "stage": "target",
+      "before": 3247,
+      "removed": 0,
+      "after": 3247
+    },
+    {
+      "stage": "engine_specs",
+      "before": 3247,
+      "removed": 0,
+      "after": 3247
+    },
+    {
+      "stage": "confirmed_complete_source_duplicates",
+      "before": 3247,
+      "removed": 0,
+      "after": 3247
+    }
+  ],
+  "split": {
+    "schema_version": "1.0",
+    "frozen_at_utc": "2026-10-09T02:21:45.919888+00:00",
+    "dataset_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\processed\\vehicles.parquet",
+    "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+    "config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+    "artifact_sha256": {
+      "group_mapping.csv": "ea002eeb6db16b7e83cf51cb968af65a773857211fb013511ef298a7029cb5a4",
+      "group_alias_audit.csv": "a931d8abe96c1879646e823f11bad5634e82405c8609da68f831bf2b1544014b",
+      "split_manifest.csv": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+      "split_coverage.csv": "07d2fef6a01d66640d9aeec57fc1dc36aa5dd36da2e055be91e741d0ec0d6df0"
+    },
+    "alias_map_sha256": "9dc5e6f72b7b7349642946730a43236e921ff470b9bb78297d6afa1d24f6c559",
+    "group_definition": "normalized manufacturer + base_model; fallback full model_name; across years",
+    "method": "GroupShuffleSplit",
+    "test_group_fraction": 0.2,
+    "random_state": 42,
+    "cv_method": "GroupKFold",
+    "cv_n_splits": 5,
+    "cv_shuffle": false,
+    "python_version": "3.12.14",
+    "sklearn_version": "1.9.1",
+    "development_small_dataset": false,
+    "unresolved_fallback_rows": 0,
+    "alias_limitation": "Unresolved full-name fallbacks may represent related families; inspect group_alias_audit.csv before claims of family independence.",
+    "n_train": 2628,
+    "n_test": 619,
+    "n_train_groups": 311,
+    "n_test_groups": 78,
+    "test_row_fraction": 0.19063751154912226,
+    "train_test_id_overlap": 0,
+    "train_test_group_overlap": 0,
+    "cv_group_overlap": 0,
+    "fold_sizes": {
+      "0": {
+        "n_train": 2102,
+        "n_valid": 526
+      },
+      "1": {
+        "n_train": 2102,
+        "n_valid": 526
+      },
+      "2": {
+        "n_train": 2102,
+        "n_valid": 526
+      },
+      "3": {
+        "n_train": 2103,
+        "n_valid": 525
+      },
+      "4": {
+        "n_train": 2103,
+        "n_valid": 525
+      }
+    }
+  },
+  "eda": {
+    "scope": "training rows only",
+    "n_train": 2628,
+    "engine_bin_target": [
+      {
+        "label": "0–2 L",
+        "n": 881,
+        "mean_target": 8.8151559501
+      },
+      {
+        "label": "2–3 L",
+        "n": 694,
+        "mean_target": 10.528684348
+      },
+      {
+        "label": "3–4 L",
+        "n": 600,
+        "mean_target": 11.9459957605
+      },
+      {
+        "label": ">4 L",
+        "n": 453,
+        "mean_target": 15.6034387189
+      }
+    ],
+    "class_family_target": [
+      {
+        "label": "Cars",
+        "n": 1493,
+        "mean_target": 11.2973028247
+      },
+      {
+        "label": "SUV",
+        "n": 1023,
+        "mean_target": 11.1667241618
+      },
+      {
+        "label": "Station wagons",
+        "n": 112,
+        "mean_target": 9.0944874183
+      }
+    ],
+    "class_target": [
+      {
+        "label": "Compact Cars",
+        "n": 323,
+        "mean_target": 9.5839436414
+      },
+      {
+        "label": "Large Cars",
+        "n": 255,
+        "mean_target": 11.772675907
+      },
+      {
+        "label": "Midsize Cars",
+        "n": 379,
+        "mean_target": 9.9471734428
+      },
+      {
+        "label": "Midsize Station Wagons",
+        "n": 19,
+        "mean_target": 10.4080092027
+      },
+      {
+        "label": "Minicompact Cars",
+        "n": 121,
+        "mean_target": 12.3823766719
+      },
+      {
+        "label": "Small Sport Utility Vehicle 2WD",
+        "n": 229,
+        "mean_target": 9.4666400546
+      },
+      {
+        "label": "Small Sport Utility Vehicle 4WD",
+        "n": 445,
+        "mean_target": 10.2841358279
+      },
+      {
+        "label": "Small Station Wagons",
+        "n": 93,
+        "mean_target": 8.8261335053
+      },
+      {
+        "label": "Standard Sport Utility Vehicle 2WD",
+        "n": 89,
+        "mean_target": 12.6209735619
+      },
+      {
+        "label": "Standard Sport Utility Vehicle 4WD",
+        "n": 260,
+        "mean_target": 13.6768890561
+      },
+      {
+        "label": "Subcompact Cars",
+        "n": 150,
+        "mean_target": 11.4435321171
+      },
+      {
+        "label": "Two Seaters",
+        "n": 265,
+        "mean_target": 14.2809465473
+      }
+    ],
+    "target_hist": [
+      {
+        "label": "6.0–8.0",
+        "n": 248,
+        "lower": 6.031143162393162,
+        "upper": 8.041524216524216
+      },
+      {
+        "label": "8.0–10.1",
+        "n": 809,
+        "lower": 8.041524216524216,
+        "upper": 10.051905270655269
+      },
+      {
+        "label": "10.1–12.1",
+        "n": 737,
+        "lower": 10.051905270655269,
+        "upper": 12.062286324786323
+      },
+      {
+        "label": "12.1–14.1",
+        "n": 472,
+        "lower": 12.062286324786323,
+        "upper": 14.072667378917377
+      },
+      {
+        "label": "14.1–16.1",
+        "n": 204,
+        "lower": 14.072667378917377,
+        "upper": 16.083048433048432
+      },
+      {
+        "label": "16.1–18.1",
+        "n": 80,
+        "lower": 16.083048433048432,
+        "upper": 18.093429487179485
+      },
+      {
+        "label": "18.1–20.1",
+        "n": 50,
+        "lower": 18.093429487179485,
+        "upper": 20.103810541310537
+      },
+      {
+        "label": "20.1–22.1",
+        "n": 14,
+        "lower": 20.103810541310537,
+        "upper": 22.11419159544159
+      },
+      {
+        "label": "22.1–24.1",
+        "n": 9,
+        "lower": 22.11419159544159,
+        "upper": 24.12457264957264
+      },
+      {
+        "label": "24.1–26.1",
+        "n": 5,
+        "lower": 24.12457264957264,
+        "upper": 26.1349537037037
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "stage": "midterm",
+      "run_id": "midterm_v1",
+      "model": "dummy",
+      "feature_set": "structured",
+      "dataset_hash": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_hash": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+      "n_train": 2628,
+      "n_test": 619,
+      "n_folds": 5,
+      "parameters": "{\"strategy\": \"median\"}",
+      "cv_mae_mean": 2.2087597051,
+      "cv_mae_std": 0.30470545,
+      "test_mae": 2.5969806862,
+      "test_rmse": 3.1373341442,
+      "test_r2": -0.0172685043,
+      "fit_seconds": 0.0431855,
+      "cv_fit_seconds": 0.259951,
+      "selection_protocol": "minimum five-fold mean MAE; exact ties use std then fixed model order",
+      "selected_by_cv": false,
+      "development_small_dataset": false,
+      "cv_improvement_over_dummy_pct": 0.0,
+      "test_improvement_over_dummy_pct": 0.0
+    },
+    {
+      "stage": "midterm",
+      "run_id": "midterm_v1",
+      "model": "linear",
+      "feature_set": "structured",
+      "dataset_hash": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_hash": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+      "n_train": 2628,
+      "n_test": 619,
+      "n_folds": 5,
+      "parameters": "{\"fit_intercept\": true}",
+      "cv_mae_mean": 0.8134062944,
+      "cv_mae_std": 0.1199851141,
+      "test_mae": 0.7137638159,
+      "test_rmse": 0.8996056972,
+      "test_r2": 0.9163591494,
+      "fit_seconds": 0.0763275,
+      "cv_fit_seconds": 0.3286334,
+      "selection_protocol": "minimum five-fold mean MAE; exact ties use std then fixed model order",
+      "selected_by_cv": true,
+      "development_small_dataset": false,
+      "cv_improvement_over_dummy_pct": 63.1736176399,
+      "test_improvement_over_dummy_pct": 72.5156286421
+    },
+    {
+      "stage": "midterm",
+      "run_id": "midterm_v1",
+      "model": "knn",
+      "feature_set": "structured",
+      "dataset_hash": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_hash": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+      "n_train": 2628,
+      "n_test": 619,
+      "n_folds": 5,
+      "parameters": "{\"n_neighbors\": 15, \"p\": 2, \"weights\": \"distance\"}",
+      "cv_mae_mean": 0.9142856999,
+      "cv_mae_std": 0.0697450722,
+      "test_mae": 0.6924496228,
+      "test_rmse": 0.907060792,
+      "test_r2": 0.9149671303,
+      "fit_seconds": 0.0451501,
+      "cv_fit_seconds": 0.2253732,
+      "selection_protocol": "minimum five-fold mean MAE; exact ties use std then fixed model order",
+      "selected_by_cv": false,
+      "development_small_dataset": false,
+      "cv_improvement_over_dummy_pct": 58.6063754359,
+      "test_improvement_over_dummy_pct": 73.336358391
+    },
+    {
+      "stage": "midterm",
+      "run_id": "midterm_v1",
+      "model": "tree",
+      "feature_set": "structured",
+      "dataset_hash": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_hash": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+      "n_train": 2628,
+      "n_test": 619,
+      "n_folds": 5,
+      "parameters": "{\"criterion\": \"squared_error\", \"max_depth\": 8, \"min_samples_leaf\": 10, \"random_state\": 42}",
+      "cv_mae_mean": 0.892425389,
+      "cv_mae_std": 0.0613936687,
+      "test_mae": 0.9166726554,
+      "test_rmse": 1.4127181745,
+      "test_r2": 0.7937352042,
+      "fit_seconds": 0.0652618,
+      "cv_fit_seconds": 0.2389127,
+      "selection_protocol": "minimum five-fold mean MAE; exact ties use std then fixed model order",
+      "selected_by_cv": false,
+      "development_small_dataset": false,
+      "cv_improvement_over_dummy_pct": 59.5960852176,
+      "test_improvement_over_dummy_pct": 64.7023691674
+    }
+  ],
+  "selected_model": "linear",
+  "subgroups": [
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Compact Cars",
+      "n": 67,
+      "mae": 0.6366381,
+      "rmse": 0.7415024908,
+      "median_absolute_error": 0.6416853602,
+      "bias": 0.4395214515,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Large Cars",
+      "n": 53,
+      "mae": 0.3946228527,
+      "rmse": 0.4637257152,
+      "median_absolute_error": 0.4003112752,
+      "bias": 0.1859583034,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Midsize Cars",
+      "n": 95,
+      "mae": 0.7242481661,
+      "rmse": 0.8643562995,
+      "median_absolute_error": 0.7354578505,
+      "bias": 0.2506397444,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Midsize Station Wagons",
+      "n": 11,
+      "mae": 0.479400488,
+      "rmse": 0.4843387883,
+      "median_absolute_error": 0.4630571382,
+      "bias": 0.3582302614,
+      "small_support": true
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Minicompact Cars",
+      "n": 69,
+      "mae": 0.7614458634,
+      "rmse": 0.9482309536,
+      "median_absolute_error": 0.734365963,
+      "bias": -0.6241825586,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Small Sport Utility Vehicle 2WD",
+      "n": 38,
+      "mae": 0.7535281703,
+      "rmse": 0.8995054546,
+      "median_absolute_error": 0.7190178739,
+      "bias": 0.3590015853,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Small Sport Utility Vehicle 4WD",
+      "n": 51,
+      "mae": 0.6345673208,
+      "rmse": 0.8024299456,
+      "median_absolute_error": 0.5326483709,
+      "bias": 0.1735995854,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Small Station Wagons",
+      "n": 15,
+      "mae": 1.0794253538,
+      "rmse": 1.3593020779,
+      "median_absolute_error": 0.707897372,
+      "bias": -0.980996509,
+      "small_support": true
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Standard Sport Utility Vehicle 2WD",
+      "n": 22,
+      "mae": 0.6619296199,
+      "rmse": 0.7942370616,
+      "median_absolute_error": 0.5039975296,
+      "bias": 0.0390210783,
+      "small_support": true
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Standard Sport Utility Vehicle 4WD",
+      "n": 34,
+      "mae": 1.0304600142,
+      "rmse": 1.2789805926,
+      "median_absolute_error": 0.6425178041,
+      "bias": -0.1971149379,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Subcompact Cars",
+      "n": 82,
+      "mae": 0.5800832616,
+      "rmse": 0.7615643803,
+      "median_absolute_error": 0.4360601183,
+      "bias": 0.2280487526,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Two Seaters",
+      "n": 82,
+      "mae": 0.9424388867,
+      "rmse": 1.151695028,
+      "median_absolute_error": 0.7723831652,
+      "bias": -0.2142452422,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Compact Cars",
+      "n": 323,
+      "mae": 0.8068170769,
+      "rmse": 1.0623171636,
+      "median_absolute_error": 0.6788815744,
+      "bias": -0.0025050425,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Large Cars",
+      "n": 255,
+      "mae": 0.5866671618,
+      "rmse": 0.741285912,
+      "median_absolute_error": 0.5450053881,
+      "bias": -0.003013847,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Midsize Cars",
+      "n": 379,
+      "mae": 0.5619045058,
+      "rmse": 0.7842118394,
+      "median_absolute_error": 0.4355184735,
+      "bias": 0.0428096277,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Midsize Station Wagons",
+      "n": 19,
+      "mae": 0.5498412584,
+      "rmse": 0.7791434583,
+      "median_absolute_error": 0.3371121772,
+      "bias": 0.3096972739,
+      "small_support": true
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Minicompact Cars",
+      "n": 121,
+      "mae": 1.0908196952,
+      "rmse": 1.3136099685,
+      "median_absolute_error": 0.8865723589,
+      "bias": 0.1152239183,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Small Sport Utility Vehicle 2WD",
+      "n": 229,
+      "mae": 0.6693956,
+      "rmse": 0.8402446209,
+      "median_absolute_error": 0.5892101364,
+      "bias": -0.0296466467,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Small Sport Utility Vehicle 4WD",
+      "n": 445,
+      "mae": 0.692024755,
+      "rmse": 0.8950872991,
+      "median_absolute_error": 0.6178938638,
+      "bias": 0.0122431341,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Small Station Wagons",
+      "n": 93,
+      "mae": 0.6598615804,
+      "rmse": 0.8272838461,
+      "median_absolute_error": 0.5199290943,
+      "bias": 0.2519805924,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Standard Sport Utility Vehicle 2WD",
+      "n": 89,
+      "mae": 0.7632325822,
+      "rmse": 0.990590755,
+      "median_absolute_error": 0.6081715459,
+      "bias": 0.0630140793,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Standard Sport Utility Vehicle 4WD",
+      "n": 260,
+      "mae": 1.1329620042,
+      "rmse": 1.4900007419,
+      "median_absolute_error": 0.9128653765,
+      "bias": 0.1089970312,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Subcompact Cars",
+      "n": 150,
+      "mae": 0.7357461947,
+      "rmse": 0.960408375,
+      "median_absolute_error": 0.5131154542,
+      "bias": -0.1084660474,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "vehicle_class",
+      "subgroup": "Two Seaters",
+      "n": 265,
+      "mae": 1.4210786136,
+      "rmse": 1.9353502875,
+      "median_absolute_error": 0.9303917778,
+      "bias": 0.1311245775,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(0,2] L",
+      "n": 285,
+      "mae": 0.7471216093,
+      "rmse": 0.9330411231,
+      "median_absolute_error": 0.652724501,
+      "bias": 0.0141806157,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(2,3] L",
+      "n": 63,
+      "mae": 0.6977860726,
+      "rmse": 0.9012245964,
+      "median_absolute_error": 0.5849596761,
+      "bias": 0.1598647466,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(3,4] L",
+      "n": 108,
+      "mae": 0.563062811,
+      "rmse": 0.7271814005,
+      "median_absolute_error": 0.4191807652,
+      "bias": -0.1350054759,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "test",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(4,+inf) L",
+      "n": 163,
+      "mae": 0.761465259,
+      "rmse": 0.9417414489,
+      "median_absolute_error": 0.6897223248,
+      "bias": 0.1688540578,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(0,2] L",
+      "n": 881,
+      "mae": 0.6278216112,
+      "rmse": 0.8218131149,
+      "median_absolute_error": 0.5341285325,
+      "bias": 0.0280602096,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(2,3] L",
+      "n": 694,
+      "mae": 0.8190907432,
+      "rmse": 1.0796575206,
+      "median_absolute_error": 0.6721230547,
+      "bias": -0.049854091,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(3,4] L",
+      "n": 600,
+      "mae": 0.7611297666,
+      "rmse": 1.0008046617,
+      "median_absolute_error": 0.6062511187,
+      "bias": 0.1344351866,
+      "small_support": false
+    },
+    {
+      "model": "linear",
+      "split": "train_oof",
+      "subgroup_field": "engine_size_bin",
+      "subgroup": "(4,+inf) L",
+      "n": 453,
+      "mae": 1.234917571,
+      "rmse": 1.7137606901,
+      "median_absolute_error": 0.8472776262,
+      "bias": 0.0843465979,
+      "small_support": false
+    }
+  ],
+  "large_errors": [
+    {
+      "vehicle_id": "38135",
+      "model": "linear",
+      "split": "test",
+      "model_year": 2017,
+      "manufacturer": "Aston Martin",
+      "model_name": "V12 Vantage S",
+      "displacement_l": 6.0,
+      "cylinders": 12,
+      "transmission": "Manual 7-spd",
+      "drivetrain": "Rear-Wheel Drive",
+      "vehicle_class": "Two Seaters",
+      "engine_size_bin": "(4,+inf) L",
+      "y_true": 19.6012152778,
+      "y_pred": 15.9734017563,
+      "residual": -3.6278135215,
+      "abs_error": 3.6278135215
+    },
+    {
+      "vehicle_id": "35481",
+      "model": "linear",
+      "split": "test",
+      "model_year": 2015,
+      "manufacturer": "Land Rover",
+      "model_name": "LR4",
+      "displacement_l": 3.0,
+      "cylinders": 6,
+      "transmission": "Automatic (S8)",
+      "drivetrain": "4-Wheel Drive",
+      "vehicle_class": "Standard Sport Utility Vehicle 4WD",
+      "engine_size_bin": "(2,3] L",
+      "y_true": 14.7009114583,
+      "y_pred": 12.0867611401,
+      "residual": -2.6141503183,
+      "abs_error": 2.6141503183
+    },
+    {
+      "vehicle_id": "36379",
+      "model": "linear",
+      "split": "test",
+      "model_year": 2016,
+      "manufacturer": "Land Rover",
+      "model_name": "LR4",
+      "displacement_l": 3.0,
+      "cylinders": 6,
+      "transmission": "Automatic (S8)",
+      "drivetrain": "4-Wheel Drive",
+      "vehicle_class": "Standard Sport Utility Vehicle 4WD",
+      "engine_size_bin": "(2,3] L",
+      "y_true": 14.7009114583,
+      "y_pred": 12.1103634005,
+      "residual": -2.5905480579,
+      "abs_error": 2.5905480579
+    }
+  ],
+  "limitations": [
+    "The bounded catalogue sample has unequal inclusion probabilities and does not represent vehicle sales.",
+    "The target describes EPA estimates. Real driving conditions and driver behaviour can change consumption.",
+    "Rounded comb08 values make the converted target discrete. These results assess held-out vehicle families, not future years.",
+    "The course reuses this test split across stages. Further model choices use grouped training CV, with test results reported as comparisons."
+  ],
+  "human_contributions_status": "not_confirmed",
+  "ai_log_text": "Codex prepared code, collection and analysis artifacts, reviewed tests, and drafted the notebook and slides. The team must verify and explain these artifacts. Human contributions still require confirmation.",
+  "sources": [
+    "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "references/Project_Guide.pdf",
+    "references/Midterm_Rubric.docx",
+    "references/Lecture_3.pdf",
+    "references/Lecture_4.pdf",
+    "docs/EXPERIMENT_PROTOCOL.md",
+    "docs/CONTRIBUTIONS.md"
+  ],
+  "source_files": [
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\processed\\vehicles.parquet",
+      "sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\reports\\tables\\midterm_v1\\metrics.csv",
+      "sha256": "5f86ba3b51206d6075d5703a1c1169310de7f54b278a9c063df7bee88ffff681"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\reports\\tables\\midterm_v1\\subgroup_errors.csv",
+      "sha256": "5574b31e0b59a0b4ac1da3b5dad5aa3c2833b799d908162d7f4860bd56c5bcb0"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\reports\\tables\\midterm_v1\\large_errors.csv",
+      "sha256": "d26126c12b338b8d4d2dacdab76bb990124bb90c126c42922be32c90b46c05cf"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\splits\\split_manifest.csv",
+      "sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\splits\\split_metadata.json",
+      "sha256": "e4c14ba4b64370179504006b78a65f69a2ed08d2c5ffbe7c3396898d010b594b"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\interim\\cleaned_summary.json",
+      "sha256": "9e5b64099ed51d1d95aedfa7f88603f6b3493551d786e55801a0404d7d8aee1d"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\raw\\benchmark_2015_2025_20261009\\snapshot.json",
+      "sha256": "7f503227e24cebe6413270fa62756e2584027c96f925482af8ef23b1a9aedd2f"
+    },
+    {
+      "path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\configs\\project.json",
+      "sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8"
+    }
+  ],
+  "models": {
+    "dummy": {
+      "class": "DummyRegressor",
+      "params": {
+        "strategy": "median"
+      }
+    },
+    "linear": {
+      "class": "LinearRegression",
+      "params": {
+        "fit_intercept": true
+      }
+    },
+    "knn": {
+      "class": "KNeighborsRegressor",
+      "params": {
+        "n_neighbors": 15,
+        "weights": "distance",
+        "p": 2
+      }
+    },
+    "tree": {
+      "class": "DecisionTreeRegressor",
+      "params": {
+        "criterion": "squared_error",
+        "max_depth": 8,
+        "min_samples_leaf": 10,
+        "random_state": 42
+      }
+    }
+  },
+  "features": {
+    "numeric": [
+      "model_year",
+      "displacement_l",
+      "cylinders"
+    ],
+    "categorical": [
+      "manufacturer",
+      "transmission",
+      "drivetrain",
+      "vehicle_class"
+    ],
+    "final_text": [
+      "model_name",
+      "engine_description"
+    ],
+    "selection_policy": "strict_allowlist",
+    "text_in_midterm": false
+  },
+  "evaluation": {
+    "primary_metric": "mae",
+    "secondary_metrics": [
+      "rmse",
+      "r2"
+    ],
+    "residual_definition": "prediction_minus_actual",
+    "cv_std_ddof": 0,
+    "selection_source": "train_group_cv",
+    "small_subgroup_threshold": 30,
+    "displacement_bins_l": [
+      0,
+      2,
+      3,
+      4,
+      null
+    ],
+    "bins_closed": "right"
+  }
+}

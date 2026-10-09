@@ -1,0 +1,591 @@
+field,value,count,scope
+manufacturer,MINI,118,included_rows
+manufacturer,Subaru,109,included_rows
+manufacturer,Mazda,107,included_rows
+manufacturer,Lincoln,106,included_rows
+manufacturer,Mitsubishi,105,included_rows
+manufacturer,Infiniti,104,included_rows
+manufacturer,Porsche,104,included_rows
+manufacturer,Jeep,102,included_rows
+manufacturer,Acura,100,included_rows
+manufacturer,Cadillac,99,included_rows
+manufacturer,Volkswagen,96,included_rows
+manufacturer,Maserati,96,included_rows
+manufacturer,Hyundai,94,included_rows
+manufacturer,BMW,93,included_rows
+manufacturer,Jaguar,92,included_rows
+manufacturer,Buick,92,included_rows
+manufacturer,Nissan,90,included_rows
+manufacturer,Dodge,90,included_rows
+manufacturer,Ferrari,89,included_rows
+manufacturer,Honda,86,included_rows
+manufacturer,Rolls-Royce,84,included_rows
+manufacturer,Kia,82,included_rows
+manufacturer,Genesis,79,included_rows
+manufacturer,Bentley,74,included_rows
+manufacturer,Lexus,74,included_rows
+manufacturer,Land Rover,73,included_rows
+manufacturer,Volvo,68,included_rows
+manufacturer,Audi,68,included_rows
+manufacturer,Lamborghini,68,included_rows
+manufacturer,Mercedes-Benz,67,included_rows
+manufacturer,Aston Martin,66,included_rows
+manufacturer,Chevrolet,65,included_rows
+manufacturer,Toyota,62,included_rows
+manufacturer,Alfa Romeo,54,included_rows
+manufacturer,Fiat,51,included_rows
+manufacturer,Ford,49,included_rows
+manufacturer,McLaren Automotive,41,included_rows
+manufacturer,GMC,39,included_rows
+manufacturer,Chrysler,31,included_rows
+manufacturer,Bugatti,15,included_rows
+manufacturer,Scion,15,included_rows
+manufacturer,Lotus,14,included_rows
+manufacturer,Roush Performance,12,included_rows
+manufacturer,smart,8,included_rows
+manufacturer,INEOS Automotive,6,included_rows
+manufacturer,Pagani,4,included_rows
+manufacturer,RUF Automobile,4,included_rows
+manufacturer,Koenigsegg,1,included_rows
+manufacturer,STI,1,included_rows
+transmission,Automatic (S8),797,included_rows
+transmission,Automatic (S6),384,included_rows
+transmission,Automatic 8-spd,296,included_rows
+transmission,Manual 6-spd,282,included_rows
+transmission,Automatic (AM-S7),205,included_rows
+transmission,Automatic (S10),123,included_rows
+transmission,Automatic 9-spd,119,included_rows
+transmission,Automatic (AM7),113,included_rows
+transmission,Automatic (variable gear ratios),100,included_rows
+transmission,Automatic (S9),95,included_rows
+transmission,Automatic (AV-S8),88,included_rows
+transmission,Automatic (S7),80,included_rows
+transmission,Automatic 6-spd,79,included_rows
+transmission,Automatic (AM-S8),79,included_rows
+transmission,Manual 5-spd,68,included_rows
+transmission,Automatic (AV-S7),66,included_rows
+transmission,Automatic (AV-S6),64,included_rows
+transmission,Automatic 7-spd,48,included_rows
+transmission,Automatic 10-spd,44,included_rows
+transmission,Manual 7-spd,30,included_rows
+transmission,Automatic (AM-S6),20,included_rows
+transmission,Automatic (AM8),18,included_rows
+transmission,Automatic (AM6),11,included_rows
+transmission,Automatic (AV-S1),10,included_rows
+transmission,Automatic (S5),8,included_rows
+transmission,Automatic 5-spd,7,included_rows
+transmission,Automatic (AV-S10),6,included_rows
+transmission,Automatic 4-spd,4,included_rows
+transmission,Automatic (AM5),2,included_rows
+transmission,Automatic (S4),1,included_rows
+drivetrain,All-Wheel Drive,1168,included_rows
+drivetrain,Rear-Wheel Drive,880,included_rows
+drivetrain,Front-Wheel Drive,874,included_rows
+drivetrain,4-Wheel Drive,282,included_rows
+drivetrain,Part-time 4-Wheel Drive,43,included_rows
+vehicle_class,Small Sport Utility Vehicle 4WD,496,included_rows
+vehicle_class,Midsize Cars,474,included_rows
+vehicle_class,Compact Cars,390,included_rows
+vehicle_class,Two Seaters,347,included_rows
+vehicle_class,Large Cars,308,included_rows
+vehicle_class,Standard Sport Utility Vehicle 4WD,294,included_rows
+vehicle_class,Small Sport Utility Vehicle 2WD,267,included_rows
+vehicle_class,Subcompact Cars,232,included_rows
+vehicle_class,Minicompact Cars,190,included_rows
+vehicle_class,Standard Sport Utility Vehicle 2WD,111,included_rows
+vehicle_class,Small Station Wagons,108,included_rows
+vehicle_class,Midsize Station Wagons,30,included_rows
+fuel_type_primary,Premium Gasoline,1934,included_rows
+fuel_type_primary,Regular Gasoline,1283,included_rows
+fuel_type_primary,Midgrade Gasoline,30,included_rows
+atv_type,<MISSING>,3247,included_rows
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::<EMPTY>,268,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::<EMPTY>,497,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::<EMPTY>,232,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::<EMPTY>,391,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::<EMPTY>,474,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Station Wagons::<EMPTY>,108,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::<EMPTY>,111,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::FFV,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Two Seaters::<EMPTY>,347,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::<EMPTY>,308,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::Hybrid,12,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::Hybrid,48,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::FFV,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::FFV,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::FFV,15,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minicompact Cars::<EMPTY>,190,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::Hybrid,55,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::FFV,16,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 2WD::<EMPTY>,37,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::<EMPTY>,297,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::FFV,13,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::Diesel,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::Diesel,5,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::FFV,5,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::EV,9,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minicompact Cars::EV,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::FFV,10,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,"Vans, Passenger Type::FFV",2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,"Vans, Passenger Type::<EMPTY>",4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 2WD::<EMPTY>,23,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minivan - 2WD::<EMPTY>,28,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minivan - 2WD::FFV,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::Hybrid,50,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::Hybrid,30,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Two Seaters::Plug-in Hybrid,15,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::<EMPTY>,55,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::FFV,11,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::Diesel,16,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::FFV,14,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::<EMPTY>,87,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::Diesel,17,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::EV,16,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Two Seaters::EV,13,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Station Wagons::<EMPTY>,30,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 4WD::<EMPTY>,6,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::EV,85,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::Diesel,11,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 4WD::<EMPTY>,15,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::Bifuel (CNG),1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::EV,71,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 4WD::Diesel,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::Plug-in Hybrid,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minivan - 4WD::<EMPTY>,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::Diesel,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Two Seaters::Hybrid,14,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::Plug-in Hybrid,18,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::Hybrid,19,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::EV,26,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::EV,65,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::Diesel,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::Plug-in Hybrid,24,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Station Wagons::Diesel,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 2WD::Diesel,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::Hybrid,17,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Station Wagons::Hybrid,14,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minivan - 2WD::Plug-in Hybrid,9,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::Plug-in Hybrid,25,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::Plug-in Hybrid,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 2WD::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 4WD::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::Diesel,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::Hybrid,14,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Station Wagons::EV,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::EV,49,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 2WD::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::Hybrid,12,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Station Wagons::Plug-in Hybrid,6,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::Plug-in Hybrid,7,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minicompact Cars::Plug-in Hybrid,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::Plug-in Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::EV,22,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::Hybrid,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Station Wagons::Hybrid,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 4WD::EV,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 2WD::Hybrid,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::FCV,5,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::FCV,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::EV,7,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Station Wagons::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 4WD::Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 2WD::EV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::eFCV,1,all_parseable_raw_records_including_excluded
+VClass,Compact Cars,446,all_parseable_raw_records_including_excluded
+VClass,Large Cars,433,all_parseable_raw_records_including_excluded
+VClass,Midsize Cars,631,all_parseable_raw_records_including_excluded
+VClass,Midsize Station Wagons,32,all_parseable_raw_records_including_excluded
+VClass,Minicompact Cars,202,all_parseable_raw_records_including_excluded
+VClass,Minivan - 2WD,40,all_parseable_raw_records_including_excluded
+VClass,Minivan - 4WD,8,all_parseable_raw_records_including_excluded
+VClass,Small Pickup Trucks 2WD,29,all_parseable_raw_records_including_excluded
+VClass,Small Pickup Trucks 4WD,19,all_parseable_raw_records_including_excluded
+VClass,Small Sport Utility Vehicle 2WD,325,all_parseable_raw_records_including_excluded
+VClass,Small Sport Utility Vehicle 4WD,629,all_parseable_raw_records_including_excluded
+VClass,Small Station Wagons,138,all_parseable_raw_records_including_excluded
+VClass,Special Purpose Vehicle 2WD,39,all_parseable_raw_records_including_excluded
+VClass,Special Purpose Vehicle 4WD,14,all_parseable_raw_records_including_excluded
+VClass,Standard Pickup Trucks 2WD,99,all_parseable_raw_records_including_excluded
+VClass,Standard Pickup Trucks 4WD,151,all_parseable_raw_records_including_excluded
+VClass,Standard Sport Utility Vehicle 2WD,132,all_parseable_raw_records_including_excluded
+VClass,Standard Sport Utility Vehicle 4WD,471,all_parseable_raw_records_including_excluded
+VClass,Subcompact Cars,267,all_parseable_raw_records_including_excluded
+VClass,Two Seaters,389,all_parseable_raw_records_including_excluded
+VClass,"Vans, Passenger Type",6,all_parseable_raw_records_including_excluded
+fuelType1,<EMPTY>,1,all_parseable_raw_records_including_excluded
+fuelType1,Diesel,70,all_parseable_raw_records_including_excluded
+fuelType1,Electricity,388,all_parseable_raw_records_including_excluded
+fuelType1,Hydrogen,8,all_parseable_raw_records_including_excluded
+fuelType1,Midgrade Gasoline,71,all_parseable_raw_records_including_excluded
+fuelType1,Premium Gasoline,2225,all_parseable_raw_records_including_excluded
+fuelType1,Regular Gasoline,1737,all_parseable_raw_records_including_excluded
+fuelType2,<EMPTY>,4275,all_parseable_raw_records_including_excluded
+fuelType2,E85,103,all_parseable_raw_records_including_excluded
+fuelType2,Electricity,121,all_parseable_raw_records_including_excluded
+fuelType2,Natural Gas,1,all_parseable_raw_records_including_excluded
+atvType,<EMPTY>,3516,all_parseable_raw_records_including_excluded
+atvType,Bifuel (CNG),1,all_parseable_raw_records_including_excluded
+atvType,Diesel,70,all_parseable_raw_records_including_excluded
+atvType,EV,388,all_parseable_raw_records_including_excluded
+atvType,FCV,8,all_parseable_raw_records_including_excluded
+atvType,FFV,103,all_parseable_raw_records_including_excluded
+atvType,Hybrid,292,all_parseable_raw_records_including_excluded
+atvType,Plug-in Hybrid,121,all_parseable_raw_records_including_excluded
+atvType,eFCV,1,all_parseable_raw_records_including_excluded
+evMotor,100 kW AC Induction,5,all_parseable_raw_records_including_excluded
+evMotor,100 kW AC PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,100kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,101V Ni-MH,1,all_parseable_raw_records_including_excluded
+evMotor,103 kW AC Induction,4,all_parseable_raw_records_including_excluded
+evMotor,104 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,105 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,105 kW DCPM,3,all_parseable_raw_records_including_excluded
+evMotor,105 kW PMSM,3,all_parseable_raw_records_including_excluded
+evMotor,"108, 108 and 108 kW ACPM 3-Phase",1,all_parseable_raw_records_including_excluded
+evMotor,110 kW AC Induction,3,all_parseable_raw_records_including_excluded
+evMotor,110 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,110 kW DCPM,4,all_parseable_raw_records_including_excluded
+evMotor,111 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,113 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,113 kW AC Synchronous,1,all_parseable_raw_records_including_excluded
+evMotor,115 and 185 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,115V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,120 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,120 kW AC Synchronous,1,all_parseable_raw_records_including_excluded
+evMotor,120 kW IPMSM,4,all_parseable_raw_records_including_excluded
+evMotor,125 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,126V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,127 and 180 kW PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,12V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,130 and 130 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,130 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,130 kW DC Brushless,1,all_parseable_raw_records_including_excluded
+evMotor,131 and 190 kW AC 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,132 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,132 kW AC Synchronous,1,all_parseable_raw_records_including_excluded
+evMotor,133 and 179 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,135 and 200 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,135 and 215 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,135 and 243 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,135 kW AC Induction,3,all_parseable_raw_records_including_excluded
+evMotor,135 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,135kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,136 and 136 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,137 kW PMSM,3,all_parseable_raw_records_including_excluded
+evMotor,138 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,140 (front) 140 (rear) (70 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,140 (front) 140 (rear) (85 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,140 (front) 140 (rear) (90 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,140 and 140 kW EESM,2,all_parseable_raw_records_including_excluded
+evMotor,140 kW DCPM,6,all_parseable_raw_records_including_excluded
+evMotor,141 and 141 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,141 and 172 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,141 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,141 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,144V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,144V Ni-MH,1,all_parseable_raw_records_including_excluded
+evMotor,147 and 147 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,147 and 188 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,147 and 202 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,147 and 211 kW AC 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,147 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,149 and 276 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,14V Li-Ion,11,all_parseable_raw_records_including_excluded
+evMotor,150 and 150 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,150 and 150 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,150 and 150 kW ACPMSM,3,all_parseable_raw_records_including_excluded
+evMotor,150 and 150 kw DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,150 and 150kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,150 and 354 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,150 kW AC 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,150 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,150 kW AC Synchronous,1,all_parseable_raw_records_including_excluded
+evMotor,150 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,150 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,150 kW IPMSM,2,all_parseable_raw_records_including_excluded
+evMotor,150 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,150 kW PMSM (IPM),1,all_parseable_raw_records_including_excluded
+evMotor,151 and 273 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,155 and 200 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,155 and 220 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,157 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,158 and 203 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,158 and 219 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,160 and 160 AC 3-phase,1,all_parseable_raw_records_including_excluded
+evMotor,160 and 160 kW AC 3-phase,4,all_parseable_raw_records_including_excluded
+evMotor,160 and 160 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,160 kW DCPM,5,all_parseable_raw_records_including_excluded
+evMotor,160 kW PMSM,3,all_parseable_raw_records_including_excluded
+evMotor,"162, 162, 162 and 162 kW AC 3-Phase",1,all_parseable_raw_records_including_excluded
+evMotor,"162, 162, 163 and 135 kW ACPM 3-Phase",1,all_parseable_raw_records_including_excluded
+evMotor,"162, 162, 163, 163 kW AC 3-Phase",1,all_parseable_raw_records_including_excluded
+evMotor,"162, 162, 163, 163kW AC 3-Phase",6,all_parseable_raw_records_including_excluded
+evMotor,164 (front) 350 (rear) (85 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,164 (front) 350 (rear) (90 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,165 and 165 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,165 kW PMSM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,168 kW PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,170 and 448 kW ACPM,5,all_parseable_raw_records_including_excluded
+evMotor,170 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,170 kW ACPMSM,1,all_parseable_raw_records_including_excluded
+evMotor,173 and 180 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,173 and 200 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,174 and 310 kW ACPM 6-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,175 and 175 kW ACPMSM,2,all_parseable_raw_records_including_excluded
+evMotor,175 and 175 kw DCPM,3,all_parseable_raw_records_including_excluded
+evMotor,175 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,178 and 433 kW ACPM,10,all_parseable_raw_records_including_excluded
+evMotor,178 and 433kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,179 and 186 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,180 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,185 and 220 kW PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,189 and 189 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,190 and 215 kW PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,190 and 230 kW EESM,1,all_parseable_raw_records_including_excluded
+evMotor,190 and 360 kW EESM,8,all_parseable_raw_records_including_excluded
+evMotor,190 kW EESM,3,all_parseable_raw_records_including_excluded
+evMotor,191 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,192 kW AC 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,192 kW ACPM 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 193 (rear) (100 kW-hr battery pack),4,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 193 (rear) (60 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 193 (rear) (70 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 193 (rear) (75 kW-hr battery pack),5,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 193 (rear) (85 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 193 (rear) (90 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 375 (rear) (100 kW-hr battery pack),7,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 375 (rear) (85 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,193 (front) 375 (rear) (90 kW-hr battery pack),4,all_parseable_raw_records_including_excluded
+evMotor,193 and 205 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,193 and 375 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,198 and 498kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,198 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,20 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,200 and 215 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,200 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,200 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,201 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,"201, 201 and 233 kW ACPM",1,all_parseable_raw_records_including_excluded
+evMotor,202 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,202V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,202V Ni-MH,4,all_parseable_raw_records_including_excluded
+evMotor,205 and 205 kW DCPM,1,all_parseable_raw_records_including_excluded
+evMotor,205 and 375 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,207 and 207  kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,207 kW AC PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,207V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,208 and 208 kW ACPM,12,all_parseable_raw_records_including_excluded
+evMotor,208 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,209 kW AC 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,210 and 210 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,210 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,210 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,210 kW ACPM 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,210 kW PMSM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,211 kW AC 3-Phase,6,all_parseable_raw_records_including_excluded
+evMotor,214 and 214 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,214 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,215 kW ACPM 6-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,216 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,216V Li-Ion,5,all_parseable_raw_records_including_excluded
+evMotor,216V Ni-MH,4,all_parseable_raw_records_including_excluded
+evMotor,216V NiMH,1,all_parseable_raw_records_including_excluded
+evMotor,22 and 53 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,220 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,220 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,220V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,221 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,221V Li-Ion,2,all_parseable_raw_records_including_excluded
+evMotor,222V Li-Ion,6,all_parseable_raw_records_including_excluded
+evMotor,224 and 239 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,225 kW AC Induction (60 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,226 and 500 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,226 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,"226, 226, 450 and 450 kW AC Induction",1,all_parseable_raw_records_including_excluded
+evMotor,"230, 230 and 230 kW AC 3-Phase",4,all_parseable_raw_records_including_excluded
+evMotor,"230, 230 and 230 kW ACPM 3-Phase",3,all_parseable_raw_records_including_excluded
+evMotor,234V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,235 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,240V Li-Ion,14,all_parseable_raw_records_including_excluded
+evMotor,243 and 248 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,243 and 248 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,243 and 248 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,245V Ni-MH,8,all_parseable_raw_records_including_excluded
+evMotor,247 and 247 kW AC 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,247 and 247 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,250 and 250 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,250 and 250 kW DCPM,10,all_parseable_raw_records_including_excluded
+evMotor,250 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,250 kW EESM,2,all_parseable_raw_records_including_excluded
+evMotor,"250, 250 and 250 kW AC 3-Phase",2,all_parseable_raw_records_including_excluded
+evMotor,"250, 250 and 250 kW ACPM 3-Phase",2,all_parseable_raw_records_including_excluded
+evMotor,255 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,258 and 258 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,259V Li-Ion,15,all_parseable_raw_records_including_excluded
+evMotor,260 and 300 kW ACPM 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,260 kW ACPM 3-Phase,2,all_parseable_raw_records_including_excluded
+evMotor,260V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,263V Li-Ion,2,all_parseable_raw_records_including_excluded
+evMotor,264 and 264 kW ACPM,7,all_parseable_raw_records_including_excluded
+evMotor,266V Li-Ion,2,all_parseable_raw_records_including_excluded
+evMotor,270 kW AC Induction (75 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,270 kW AC Induction (85 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,270V Li-Ion,10,all_parseable_raw_records_including_excluded
+evMotor,"275, 275 and 275 kW DCPM",3,all_parseable_raw_records_including_excluded
+evMotor,280 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,280V Li-Ion,8,all_parseable_raw_records_including_excluded
+evMotor,281V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,285 kW AC Induction (60 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,285 kW AC Induction (75 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,285 kW AC Induction (85 kW-hr battery pack),1,all_parseable_raw_records_including_excluded
+evMotor,285 kW AC Induction (90 kW-hr battery pack),2,all_parseable_raw_records_including_excluded
+evMotor,288V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,288V Ni-MH,11,all_parseable_raw_records_including_excluded
+evMotor,295V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,300 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,300V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,"310, 310 and 310 kW ACPM",1,all_parseable_raw_records_including_excluded
+evMotor,"310, 310 and 330 kW ACPM",1,all_parseable_raw_records_including_excluded
+evMotor,311V Li-Ion,5,all_parseable_raw_records_including_excluded
+evMotor,32kW IPMSM,1,all_parseable_raw_records_including_excluded
+evMotor,330 kW ACPM,4,all_parseable_raw_records_including_excluded
+evMotor,34 and 107 kW 3-phase Sync.,5,all_parseable_raw_records_including_excluded
+evMotor,34 and 65 kW 3-phase Sync.,9,all_parseable_raw_records_including_excluded
+evMotor,34 kW 3-phase Sync.,1,all_parseable_raw_records_including_excluded
+evMotor,346V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,358 and 358 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,36 and 50 kW DCPM,1,all_parseable_raw_records_including_excluded
+evMotor,370 and 370kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,370 and 459kW ACPM,3,all_parseable_raw_records_including_excluded
+evMotor,397V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,40 and 134 kW AC Induction,2,all_parseable_raw_records_including_excluded
+evMotor,40V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,418 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,44V Li-Ion,20,all_parseable_raw_records_including_excluded
+evMotor,45V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,45kW IPMSM,1,all_parseable_raw_records_including_excluded
+evMotor,46V Li-Ion,16,all_parseable_raw_records_including_excluded
+evMotor,48V Li-Ion,111,all_parseable_raw_records_including_excluded
+evMotor,49 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,496 kW ACPM,3,all_parseable_raw_records_including_excluded
+evMotor,50 and 96 kW DCPM,3,all_parseable_raw_records_including_excluded
+evMotor,50kW IPMSM,1,all_parseable_raw_records_including_excluded
+evMotor,"52, 85, 86kW 3-phase Sync.",2,all_parseable_raw_records_including_excluded
+evMotor,55 kW DCPM,4,all_parseable_raw_records_including_excluded
+evMotor,56 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,59 and 61 kW 3-Phase AC,1,all_parseable_raw_records_including_excluded
+evMotor,59 and 61kW 3-Phase AC,1,all_parseable_raw_records_including_excluded
+evMotor,60 KW AC Synchronous,6,all_parseable_raw_records_including_excluded
+evMotor,60 and 70 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,60 kW DCPM,3,all_parseable_raw_records_including_excluded
+evMotor,62 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,62 kW DCPM,1,all_parseable_raw_records_including_excluded
+evMotor,65 kW AC Induction,2,all_parseable_raw_records_including_excluded
+evMotor,67 and 180 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,67 kW AC PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,67 kW PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,68 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,686V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,69 and 201 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,70 kW DC Brushless,6,all_parseable_raw_records_including_excluded
+evMotor,700V Li-Ion,2,all_parseable_raw_records_including_excluded
+evMotor,71 kW DCPM,1,all_parseable_raw_records_including_excluded
+evMotor,74 and 160 kW PMSM,3,all_parseable_raw_records_including_excluded
+evMotor,74 and 165 kW PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,74 kW PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,75 kW DCPM,4,all_parseable_raw_records_including_excluded
+evMotor,80 and 150 kW AC 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,80 and 150 kW AC Synchronous,2,all_parseable_raw_records_including_excluded
+evMotor,80 and 150 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,80 and 210 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,80 and 80 kW AC Synchronous,3,all_parseable_raw_records_including_excluded
+evMotor,80 kW Asynchron 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,80 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,81 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,82 kW AC Induction,4,all_parseable_raw_records_including_excluded
+evMotor,83 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,85 and 100 kW DCPM,2,all_parseable_raw_records_including_excluded
+evMotor,85 and 191 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,85 and 192 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,85 and 88 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,85 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,86V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,87 kW DCPM,4,all_parseable_raw_records_including_excluded
+evMotor,88 kW AC Induction,2,all_parseable_raw_records_including_excluded
+evMotor,88 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,89 kW AC Induction,12,all_parseable_raw_records_including_excluded
+evMotor,90 kW DCPM,1,all_parseable_raw_records_including_excluded
+evMotor,91 and 183 kW ACPM 3-Phase,1,all_parseable_raw_records_including_excluded
+evMotor,91 and 200 kW AC 3-Phase,4,all_parseable_raw_records_including_excluded
+evMotor,91 and 200 kW AC Induction,1,all_parseable_raw_records_including_excluded
+evMotor,"96, 96, 96 and 96 kW AC PMSM",1,all_parseable_raw_records_including_excluded
+evMotor,98 and 195 kW AC 3-Phase,3,all_parseable_raw_records_including_excluded
+evMotor,99 and 150 kW PMSM,3,all_parseable_raw_records_including_excluded
+evMotor,99 kW DC Brushless,1,all_parseable_raw_records_including_excluded
+evMotor,"99, 99 and 150 kW PMSM",4,all_parseable_raw_records_including_excluded
+evMotor,"99, 99, 150kW 3-phase Sync.",3,all_parseable_raw_records_including_excluded
+evMotor,<EMPTY>,3691,all_parseable_raw_records_including_excluded
+evMotor,TBD,13,all_parseable_raw_records_including_excluded
+evMotor,Two 444V Li-Ion,1,all_parseable_raw_records_including_excluded
+make,Acura,111,all_parseable_raw_records_including_excluded
+make,Alfa Romeo,56,all_parseable_raw_records_including_excluded
+make,Aston Martin,66,all_parseable_raw_records_including_excluded
+make,Audi,115,all_parseable_raw_records_including_excluded
+make,BMW,114,all_parseable_raw_records_including_excluded
+make,BYD,4,all_parseable_raw_records_including_excluded
+make,Bentley,90,all_parseable_raw_records_including_excluded
+make,Bugatti,15,all_parseable_raw_records_including_excluded
+make,Bugatti Rimac,3,all_parseable_raw_records_including_excluded
+make,Buick,101,all_parseable_raw_records_including_excluded
+make,Cadillac,115,all_parseable_raw_records_including_excluded
+make,Chevrolet,117,all_parseable_raw_records_including_excluded
+make,Chrysler,82,all_parseable_raw_records_including_excluded
+make,Dodge,111,all_parseable_raw_records_including_excluded
+make,Ferrari,103,all_parseable_raw_records_including_excluded
+make,Fiat,59,all_parseable_raw_records_including_excluded
+make,Fisker,3,all_parseable_raw_records_including_excluded
+make,Ford,111,all_parseable_raw_records_including_excluded
+make,GMC,111,all_parseable_raw_records_including_excluded
+make,Genesis,90,all_parseable_raw_records_including_excluded
+make,Honda,106,all_parseable_raw_records_including_excluded
+make,Hyundai,116,all_parseable_raw_records_including_excluded
+make,INEOS Automotive,6,all_parseable_raw_records_including_excluded
+make,Infiniti,108,all_parseable_raw_records_including_excluded
+make,Jaguar,106,all_parseable_raw_records_including_excluded
+make,Jeep,123,all_parseable_raw_records_including_excluded
+make,Kandi,1,all_parseable_raw_records_including_excluded
+make,Karma,5,all_parseable_raw_records_including_excluded
+make,Kia,117,all_parseable_raw_records_including_excluded
+make,Koenigsegg,3,all_parseable_raw_records_including_excluded
+make,Lamborghini,71,all_parseable_raw_records_including_excluded
+make,Land Rover,116,all_parseable_raw_records_including_excluded
+make,Lexus,106,all_parseable_raw_records_including_excluded
+make,Lincoln,122,all_parseable_raw_records_including_excluded
+make,Lordstown,1,all_parseable_raw_records_including_excluded
+make,Lotus,14,all_parseable_raw_records_including_excluded
+make,Lucid,36,all_parseable_raw_records_including_excluded
+make,MINI,124,all_parseable_raw_records_including_excluded
+make,Maserati,102,all_parseable_raw_records_including_excluded
+make,Mazda,117,all_parseable_raw_records_including_excluded
+make,McLaren Automotive,44,all_parseable_raw_records_including_excluded
+make,Mercedes-Benz,118,all_parseable_raw_records_including_excluded
+make,Mitsubishi,113,all_parseable_raw_records_including_excluded
+make,Mobility Ventures LLC,2,all_parseable_raw_records_including_excluded
+make,Nissan,126,all_parseable_raw_records_including_excluded
+make,Pagani,4,all_parseable_raw_records_including_excluded
+make,Polestar,23,all_parseable_raw_records_including_excluded
+make,Porsche,116,all_parseable_raw_records_including_excluded
+make,RUF Automobile,4,all_parseable_raw_records_including_excluded
+make,Ram,111,all_parseable_raw_records_including_excluded
+make,Rivian,36,all_parseable_raw_records_including_excluded
+make,Rolls-Royce,92,all_parseable_raw_records_including_excluded
+make,Roush Performance,22,all_parseable_raw_records_including_excluded
+make,STI,1,all_parseable_raw_records_including_excluded
+make,Scion,15,all_parseable_raw_records_including_excluded
+make,Subaru,116,all_parseable_raw_records_including_excluded
+make,Tesla,111,all_parseable_raw_records_including_excluded
+make,Toyota,113,all_parseable_raw_records_including_excluded
+make,Vinfast,9,all_parseable_raw_records_including_excluded
+make,Volkswagen,111,all_parseable_raw_records_including_excluded
+make,Volvo,118,all_parseable_raw_records_including_excluded
+make,smart,18,all_parseable_raw_records_including_excluded

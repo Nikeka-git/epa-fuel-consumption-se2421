@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "presentation-finalization-portable-evidence.v1",
+  "finalSha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+  "byteCount": 59786,
+  "packageIntegrity": {
+    "status": "pass",
+    "slide_count": 8,
+    "finding_count": 0,
+    "exitCode": 0
+  },
+  "presentationLayout": {
+    "slide_count": 8,
+    "exitCode": 0,
+    "findingCount": 0
+  },
+  "fontSelection": {
+    "basis": "design",
+    "approvedFamilies": [
+      "Arial"
+    ],
+    "performed": true,
+    "passed": true,
+    "observed_font_families": [
+      "Arial"
+    ],
+    "native_font_rendering_verified": false
+  },
+  "firstPartyImport": {
+    "performed": true,
+    "passed": true,
+    "slideCount": 8,
+    "sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4"
+  },
+  "nativeChartValidation": {
+    "detectedOwnerSlides": [
+      3,
+      6,
+      7
+    ],
+    "detectedChartCount": 4,
+    "targetApplication": "portable",
+    "sourceChartOwnersExplicitlyDeclared": true,
+    "validatorRan": true,
+    "passed": true
+  },
+  "nativeQuantitativeCharts": {
+    "passed": true,
+    "failed_slide_count": 0,
+    "expected_quantitative_chart_slides": [
+      3,
+      6,
+      7
+    ],
+    "native_application_open_verified": false
+  },
+  "nativeTableArithmetic": {
+    "performed": true,
+    "passed": true,
+    "native_table_count": 3,
+    "finding_count": 0
+  },
+  "fullPrivateReceiptSha256": "2820bf651ed7e2680e5f35fa8598082fe4ed6f1f6480e266a075e2a518ece372",
+  "claimBoundary": "Portable structural and font-policy checks plus separate individual PNG review. Native PowerPoint opening and native font rendering were not verified."
+}

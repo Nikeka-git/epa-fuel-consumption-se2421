@@ -1,0 +1,112 @@
+{
+  "audit_version": "1",
+  "audited_at_utc": "2026-10-09T02:15:54.728042+00:00",
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "mode": "final_stopped_snapshot",
+  "collection_status": "partial",
+  "full_catalogue_complete": false,
+  "captured_source_sha256": {
+    "config.json": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+    "cache_index.json": "895df81525b5932db4bec80122f85fe4d89dd495bb4c5535584e271ee76bd353",
+    "inventory.json": "61b31f32027500848808108897789d806b54874b6d5abc8d2ac97558b8047751",
+    "snapshot.json": "7f503227e24cebe6413270fa62756e2584027c96f925482af8ef23b1a9aedd2f"
+  },
+  "committed_successful_cache_entries": 8568,
+  "verified_vehicle_records": 4500,
+  "scope_eligible_before_duplicate_resolution": 3247,
+  "integrity_issue_rows": 0,
+  "inventory_fetched_ids_not_verified_in_captured_cache": [],
+  "inventory_status_counts": {
+    "fetched": 4500,
+    "discovered": 171
+  },
+  "target_validity_counts": {
+    "valid_positive_finite": 4500
+  },
+  "independent_exclusion_reason_counts": {
+    "secondary_fuel_present": 225,
+    "alternative_technology_present": 984,
+    "electric_motor_present": 809,
+    "hybrid_text_signal": 388,
+    "vehicle_class_out_of_scope": 405,
+    "primary_fuel_out_of_scope": 467,
+    "insufficient_engine_specs": 396,
+    "phev_blended": 110,
+    "nonpositive_engine_spec:displacement_l": 1,
+    "reviewed_powertrain_uncertain:audi_sq7_sq8_4l_technology_uncertain": 3,
+    "reviewed_powertrain_hybrid:audi_2021_2022_a4_a5_q5_2l_mild_hybrid": 4,
+    "reviewed_powertrain_hybrid:volvo_b_badge_mild_hybrid": 24
+  },
+  "missing_powertrain_counts": {
+    "atvType:present": 4500,
+    "evMotor:present": 4500,
+    "fuelType1:present": 4500,
+    "fuelType2:present": 4500,
+    "phevBlended:present": 4500
+  },
+  "manifest": {
+    "checked": true,
+    "sha256": "0000bb0bf6593b4c4a5e1f5b3182114a211ca35672986073aa4b60f6aff4768b",
+    "attempts": 8568,
+    "successful_responses": 8568,
+    "failed_attempts": 0,
+    "cached_request_ids_missing_from_successful_manifest": [],
+    "cached_entries_disagreeing_with_manifest": [],
+    "successful_manifest_urls_missing_from_cache": []
+  },
+  "duplicates": {
+    "candidate_formation_fields": [
+      "model_year",
+      "manufacturer",
+      "model_name",
+      "displacement_l",
+      "cylinders",
+      "transmission",
+      "drivetrain",
+      "vehicle_class",
+      "engine_description",
+      "engine_id",
+      "fuel_type_primary"
+    ],
+    "target_used_for_candidate_formation": false,
+    "candidate_groups": 0,
+    "candidate_rows": 0,
+    "raw_difference_groups": 0,
+    "target_conflict_groups": 0,
+    "complete_equivalence_duplicate_rows": 0,
+    "scope": "scope_eligible_before_duplicate_resolution"
+  },
+  "families": {
+    "fallback_rows": 0,
+    "unresolved_fallback_rows": 0,
+    "model_names_with_multiple_base_models": 18,
+    "automatic_aliases_applied": 0,
+    "prefix_alias_guessing": false
+  },
+  "cleaned": {
+    "checked": true,
+    "path": "data/processed/vehicles.parquet",
+    "sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+    "rows": 3247,
+    "unique_vehicle_ids": 3247,
+    "duplicate_id_rows": 0,
+    "issue_rows": 0,
+    "minimum_rows_met": true,
+    "desired_rows_met": true
+  },
+  "raw_field_count": 95,
+  "meaning_review_status_counts": {
+    "documented_official_api_guide": 86,
+    "undocumented_source_encoding": 4,
+    "field_name_inference_encoding_unconfirmed": 3,
+    "documented_source_structure": 1,
+    "documented_and_observed_type_review": 1
+  },
+  "human_review_hints": [
+    "Review model_family_fallbacks.csv and model_family_consistency.csv from source evidence before freeze; do not infer aliases by model-name prefixes.",
+    "No target outlier pruning or target imputation was performed. Counts describe catalogue configurations, not vehicle sales.",
+    "Unknown/non-allowed classes and alternative-technology labels are reported; this audit does not extend the allowlist."
+  ],
+  "source_data_or_aliases_modified": false,
+  "target_outlier_pruning": false
+}

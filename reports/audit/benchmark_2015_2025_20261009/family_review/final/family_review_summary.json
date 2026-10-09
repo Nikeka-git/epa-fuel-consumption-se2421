@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "generated_at_utc": "2026-10-09T02:18:35.521049+00:00",
+  "mode": "final_reviewed_alias_mapping",
+  "collection_status": "partial",
+  "identity_fields_used": [
+    "id",
+    "year",
+    "make",
+    "model",
+    "baseModel"
+  ],
+  "target_or_metric_used": false,
+  "scope_ids_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+  "n_eligible_ids": 3247,
+  "n_components": 13,
+  "n_triggering_full_names": 18,
+  "n_alias_rows": 86,
+  "n_source_evidence_rows": 293,
+  "canonical_rule": "lexicographically_first_normalized_existing_source_baseModel_in_component",
+  "raw_or_config_or_split_modified": false,
+  "review_decisions_sha256": "a9cd55b3c975683d734c8cba66e94700fb5a448f34bee2c83dbb97e582aaa911",
+  "limitations": [
+    "Literal observed source names support conservative grouping, not vehicle-generation independence.",
+    "The rule does not guess aliases from name prefixes or similar spellings. Additional related families may remain separate.",
+    "A broad source baseModel can merge distinct products. Keeping it together reduces leakage risk but changes the groups being evaluated.",
+    "Regenerate after final collection and independent audit. Checkpoint counts and candidates are provisional."
+  ]
+}

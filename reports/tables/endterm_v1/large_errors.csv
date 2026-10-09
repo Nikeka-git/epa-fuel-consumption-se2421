@@ -1,0 +1,31 @@
+vehicle_id,model,split,model_year,manufacturer,model_name,displacement_l,cylinders,transmission,drivetrain,vehicle_class,engine_size_bin,y_true,y_pred,residual,abs_error
+38135,extra_trees,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,15.439010430259904,-4.162204847517872,4.162204847517872
+47506,extra_trees,test,2023,Pagani,Huayra,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.787733038385486,-2.8134822393922896,2.8134822393922896
+43171,extra_trees,test,2020,Pagani,Huayra Roadster BC,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.8157883532526,-2.7854269245251757,2.7854269245251757
+35481,extra_trees,test,2015,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.422179001731495,-2.278732456601837,2.278732456601837
+45105,extra_trees,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.806887090263249,-2.2605897615886015,2.2605897615886015
+36379,extra_trees,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.45078798796782,-2.250123470365512,2.250123470365512
+36781,extra_trees,test,2016,Mercedes-Benz,AMG GLE63,5.5,8,Automatic 7-spd,4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(4,+inf) L",15.68097222222222,17.916550403586243,2.2355781813640228,2.2355781813640228
+39028,extra_trees,test,2018,Mercedes-Benz,AMG GLE63 S Coupe,5.5,8,Automatic 7-spd,4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(4,+inf) L",15.68097222222222,17.903734224366154,2.2227620021439343,2.2227620021439343
+42652,extra_trees,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.883233940597817,-2.1842429112540334,2.1842429112540334
+37192,extra_trees,test,2016,Buick,Cascada,1.6,4,Automatic (S6),Front-Wheel Drive,Subcompact Cars,"(0,2] L",10.226721014492753,8.080626087716395,-2.1460949267763585,2.1460949267763585
+39029,mlp,test,2018,Mercedes-Benz,GLE350 4matic,3.5,6,Automatic 7-spd,4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",12.3797149122807,15.8849658446902,3.505250932409499,3.505250932409499
+39028,mlp,test,2018,Mercedes-Benz,AMG GLE63 S Coupe,5.5,8,Automatic 7-spd,4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(4,+inf) L",15.68097222222222,18.996516701569476,3.315544479347256,3.315544479347256
+38135,mlp,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.3065307634565,-3.2946845143212755,3.2946845143212755
+43442,mlp,test,2021,Dodge,Challenger Widebody,6.4,8,Manual 6-spd,Rear-Wheel Drive,Midsize Cars,"(4,+inf) L",13.836151960784312,16.732800950025307,2.8966489892409957,2.8966489892409957
+40005,mlp,test,2019,Infiniti,Q70 AWD,5.6,8,Automatic (S7),All-Wheel Drive,Midsize Cars,"(4,+inf) L",13.06747685185185,15.718987004953616,2.651510153101766,2.651510153101766
+35709,mlp,test,2015,Lincoln,Navigator L 4WD,3.5,6,Automatic (S6),Part-time 4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",14.700911458333332,12.083113113005902,-2.6177983453274294,2.6177983453274294
+47506,mlp,test,2023,Pagani,Huayra,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.058564182908746,-2.5426510948690293,2.5426510948690293
+44512,mlp,test,2022,Porsche,718 Spyder,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",11.760729166666666,14.204640158405889,2.443910991739223,2.443910991739223
+44511,mlp,test,2022,Porsche,718 Spyder,4.0,6,Manual 6-spd,Rear-Wheel Drive,Two Seaters,"(3,4] L",12.3797149122807,14.81086050209764,2.431145589816939,2.431145589816939
+36379,mlp,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.280439233666712,-2.4204722246666197,2.4204722246666197
+38135,random_forest,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,15.046960439808277,-4.5542548379694985,4.5542548379694985
+42846,random_forest,test,2021,Rolls-Royce,Cullinan,6.7,12,Automatic (S8),All-Wheel Drive,Midsize Station Wagons,"(4,+inf) L",16.801041666666666,19.605709383573373,2.8046677169067067,2.8046677169067067
+42847,random_forest,test,2021,Rolls-Royce,Cullinan Black Badge,6.7,12,Automatic (S8),All-Wheel Drive,Midsize Station Wagons,"(4,+inf) L",16.801041666666666,19.605709383573373,2.8046677169067067,2.8046677169067067
+42948,random_forest,test,2021,Rolls-Royce,Ghost,6.7,12,Automatic (S8),All-Wheel Drive,Large Cars,"(4,+inf) L",16.801041666666666,19.605709383573373,2.8046677169067067,2.8046677169067067
+42949,random_forest,test,2021,Rolls-Royce,Ghost EWB,6.7,12,Automatic (S8),All-Wheel Drive,Large Cars,"(4,+inf) L",16.801041666666666,19.605709383573373,2.8046677169067067,2.8046677169067067
+43047,random_forest,test,2021,Hyundai,Elantra,2.0,4,Automatic (AV-S1),Front-Wheel Drive,Midsize Cars,"(0,2] L",6.3571509009009,8.891124066927658,2.5339731660267573,2.5339731660267573
+44512,random_forest,test,2022,Porsche,718 Spyder,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",11.760729166666666,14.291372822993104,2.530643656326438,2.530643656326438
+45105,random_forest,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.609566626355265,-2.457910225496585,2.457910225496585
+42652,random_forest,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.620566238548896,-2.446910613302954,2.446910613302954
+42028,random_forest,test,2020,Rolls-Royce,Cullinan,6.7,12,Automatic (S8),All-Wheel Drive,Midsize Station Wagons,"(4,+inf) L",16.801041666666666,19.212160853324896,2.4111191866582296,2.4111191866582296

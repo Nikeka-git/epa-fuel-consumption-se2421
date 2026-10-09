@@ -1,0 +1,24 @@
+{
+  "reviewer": "Codex (AI demonstration review)",
+  "all_13_components_approved": true,
+  "raw_identity_evidence_rows_reverified": 293,
+  "n_eligible_ids": 3247,
+  "n_alias_rows": 86,
+  "groups_before_alias_map": 405,
+  "groups_after_alias_map": 389,
+  "row_group_ids_changed": 112,
+  "rows_explicit_alias_applied": 293,
+  "remaining_identical_fullnames_in_multiple_groups": 0,
+  "raw_snapshot_audit_hashes_reverified": true,
+  "cleaned_hash_reverified": true,
+  "reviewed_alias_map_sha256": "9dc5e6f72b7b7349642946730a43236e921ff470b9bb78297d6afa1d24f6c559",
+  "target_or_metric_read": false,
+  "split_or_cv_generated": false,
+  "source_raw_config_or_cleaned_modified": false,
+  "limitations": [
+    "Source components are conservative catalogue taxonomy; physical families, platforms and generations are not certified.",
+    "Broad source bases (including Audi RS, BMW M, MINI John Cooper Works, Fiat 500) keep different observed products together. Canonical labels are identifiers only.",
+    "Only literal normalized full-name links in the observed sample are addressed; undetected related families may remain separate.",
+    "Collection was stopped at 4500 raw records after a target-independent row budget; this is a partial catalogue snapshot."
+  ]
+}

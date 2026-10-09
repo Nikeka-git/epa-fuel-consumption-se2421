@@ -1,0 +1,87 @@
+manufacturer,model_name,canonical_base_model,component_id,source_base_models,n_rows,decision_status,rule
+Aston Martin,V12 Vantage S,vantage,035ba8f849efcf25cab4,vantage | vantage manual,4,pending,connected_literal_source_baseModel_aliases
+Aston Martin,V8 Vantage,vantage,035ba8f849efcf25cab4,vantage | vantage manual,4,pending,connected_literal_source_baseModel_aliases
+Aston Martin,V8 Vantage S,vantage,035ba8f849efcf25cab4,vantage | vantage manual,4,pending,connected_literal_source_baseModel_aliases
+Aston Martin,Vantage,vantage,035ba8f849efcf25cab4,vantage | vantage manual,1,pending,connected_literal_source_baseModel_aliases
+Aston Martin,Vantage GT,vantage,035ba8f849efcf25cab4,vantage | vantage manual,4,pending,connected_literal_source_baseModel_aliases
+Aston Martin,Vantage Manual,vantage,035ba8f849efcf25cab4,vantage | vantage manual,2,pending,connected_literal_source_baseModel_aliases
+Aston Martin,Vantage V12,vantage,035ba8f849efcf25cab4,vantage | vantage manual,1,pending,connected_literal_source_baseModel_aliases
+Aston Martin,Vantage V8,vantage,035ba8f849efcf25cab4,vantage | vantage manual,5,pending,connected_literal_source_baseModel_aliases
+Audi,RS 3,rs,30f5f566d1e8ebc6a4bd,rs | rs 3 | rs 5,3,pending,connected_literal_source_baseModel_aliases
+Audi,RS 5,rs,30f5f566d1e8ebc6a4bd,rs | rs 3 | rs 5,2,pending,connected_literal_source_baseModel_aliases
+Audi,RS 5 Cabriolet,rs,30f5f566d1e8ebc6a4bd,rs | rs 3 | rs 5,1,pending,connected_literal_source_baseModel_aliases
+Audi,RS 5 Sportback,rs,30f5f566d1e8ebc6a4bd,rs | rs 3 | rs 5,2,pending,connected_literal_source_baseModel_aliases
+Audi,TT Coupe quattro,tt,91ee0a0ae786062e2f92,tt | tt coupe | tt roadster,2,pending,connected_literal_source_baseModel_aliases
+Audi,TT Roadster quattro,tt,91ee0a0ae786062e2f92,tt | tt coupe | tt roadster,3,pending,connected_literal_source_baseModel_aliases
+Audi,TTS Coupe,tts,03918d5fbe492112f23b,tts | tts coupe,3,pending,connected_literal_source_baseModel_aliases
+Audi,TTS Coupe quattro,tts,03918d5fbe492112f23b,tts | tts coupe,1,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT,continental,36a8f695fca5166c38f5,continental | continental gt convertible,13,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT Convertible,continental,36a8f695fca5166c38f5,continental | continental gt convertible,11,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT Convertible Speed,continental,36a8f695fca5166c38f5,continental | continental gt convertible,1,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT Speed,continental,36a8f695fca5166c38f5,continental | continental gt convertible,2,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT Speed Convertible,continental,36a8f695fca5166c38f5,continental | continental gt convertible,1,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT V8 Convertible,continental,36a8f695fca5166c38f5,continental | continental gt convertible,1,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GT3-R,continental,36a8f695fca5166c38f5,continental | continental gt convertible,1,pending,connected_literal_source_baseModel_aliases
+Bentley,Continental GTC,continental,36a8f695fca5166c38f5,continental | continental gt convertible,2,pending,connected_literal_source_baseModel_aliases
+BMW,840i Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,840i xDrive Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,840i xDrive Gran Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M2,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M2 Competition,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M2 Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M240i Convertible,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M240i xDrive Convertible,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M3,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M3 Competition Sedan,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M4 Competition Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M4 Convertible Competition,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M4 Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,6,pending,connected_literal_source_baseModel_aliases
+BMW,M4 CS,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M5 Competition,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M5 Competition Sedan,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M6 Gran Coupe,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+BMW,M8 Competition Convertible,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M8 Convertible,8 series,00fbb7f7d7e1975f7687,8 series | m,1,pending,connected_literal_source_baseModel_aliases
+BMW,M850i xDrive Convertible,8 series,00fbb7f7d7e1975f7687,8 series | m,2,pending,connected_literal_source_baseModel_aliases
+Fiat,500,500,39a3cb0beb63b84a5d3b,500 | 500 l,16,pending,connected_literal_source_baseModel_aliases
+Fiat,500 Abarth,500,39a3cb0beb63b84a5d3b,500 | 500 l,8,pending,connected_literal_source_baseModel_aliases
+Fiat,500 L,500,39a3cb0beb63b84a5d3b,500 | 500 l,9,pending,connected_literal_source_baseModel_aliases
+Fiat,500X AWD,500,39a3cb0beb63b84a5d3b,500 | 500 l,5,pending,connected_literal_source_baseModel_aliases
+Lexus,RC 300,rc,3b0202a1a7312716f1e1,rc | rc f,3,pending,connected_literal_source_baseModel_aliases
+Lexus,RC 300 AWD,rc,3b0202a1a7312716f1e1,rc | rc f,2,pending,connected_literal_source_baseModel_aliases
+Lexus,RC 350,rc,3b0202a1a7312716f1e1,rc | rc f,2,pending,connected_literal_source_baseModel_aliases
+Lexus,RC 350 AWD,rc,3b0202a1a7312716f1e1,rc | rc f,1,pending,connected_literal_source_baseModel_aliases
+Lexus,RC F,rc,3b0202a1a7312716f1e1,rc | rc f,6,pending,connected_literal_source_baseModel_aliases
+MINI,Cooper Countryman,countryman,1861828bd1ce4a05494d,countryman | john cooper works,6,pending,connected_literal_source_baseModel_aliases
+MINI,Cooper Countryman All4,countryman,1861828bd1ce4a05494d,countryman | john cooper works,6,pending,connected_literal_source_baseModel_aliases
+MINI,Cooper S Countryman,countryman,1861828bd1ce4a05494d,countryman | john cooper works,6,pending,connected_literal_source_baseModel_aliases
+MINI,Cooper S Countryman All4,countryman,1861828bd1ce4a05494d,countryman | john cooper works,5,pending,connected_literal_source_baseModel_aliases
+MINI,Countryman S All4,countryman,1861828bd1ce4a05494d,countryman | john cooper works,1,pending,connected_literal_source_baseModel_aliases
+MINI,JCW Convertible,countryman,1861828bd1ce4a05494d,countryman | john cooper works,1,pending,connected_literal_source_baseModel_aliases
+MINI,JCW Countryman All4,countryman,1861828bd1ce4a05494d,countryman | john cooper works,6,pending,connected_literal_source_baseModel_aliases
+MINI,JCW Hardtop 2 Door,countryman,1861828bd1ce4a05494d,countryman | john cooper works,1,pending,connected_literal_source_baseModel_aliases
+MINI,John Cooper Works Clubman All4,countryman,1861828bd1ce4a05494d,countryman | john cooper works,1,pending,connected_literal_source_baseModel_aliases
+MINI,John Cooper Works Convertible,countryman,1861828bd1ce4a05494d,countryman | john cooper works,5,pending,connected_literal_source_baseModel_aliases
+MINI,John Cooper Works Coupe,countryman,1861828bd1ce4a05494d,countryman | john cooper works,2,pending,connected_literal_source_baseModel_aliases
+MINI,John Cooper Works Hardtop,countryman,1861828bd1ce4a05494d,countryman | john cooper works,5,pending,connected_literal_source_baseModel_aliases
+MINI,John Cooper Works Hardtop 2 door,countryman,1861828bd1ce4a05494d,countryman | john cooper works,4,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue AWD,rogue,9dd8a253c972561d0298,rogue | rogue sport,2,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue AWD Rock Creek,rogue,9dd8a253c972561d0298,rogue | rogue sport,1,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue AWD SL/Platinum,rogue,9dd8a253c972561d0298,rogue | rogue sport,1,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue FWD,rogue,9dd8a253c972561d0298,rogue | rogue sport,2,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue FWD SL/Platinum,rogue,9dd8a253c972561d0298,rogue | rogue sport,3,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue Select FWD,rogue,9dd8a253c972561d0298,rogue | rogue sport,1,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue Sport,rogue,9dd8a253c972561d0298,rogue | rogue sport,2,pending,connected_literal_source_baseModel_aliases
+Nissan,Rogue Sport AWD,rogue,9dd8a253c972561d0298,rogue | rogue sport,2,pending,connected_literal_source_baseModel_aliases
+Roush Performance,Mustang,mustang,f840b93b8eb5fb617697,mustang | stage 3 mustang,2,pending,connected_literal_source_baseModel_aliases
+Roush Performance,Stage 3 Mustang,mustang,f840b93b8eb5fb617697,mustang | stage 3 mustang,10,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,4,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza 4-Door,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,8,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza 5-Door,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,6,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza AWD,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,4,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza Sport 4-Door,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,3,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza Sport 5-Door,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,8,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza Sport AWD,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,2,pending,connected_literal_source_baseModel_aliases
+Subaru,Impreza Wagon AWD,impreza,84a08efb295dfac65a05,impreza | impreza/outback sport,2,pending,connected_literal_source_baseModel_aliases
+Subaru,Legacy AWD,legacy,82f8c2010ed3efb57219,legacy | legacy/outback | outback,8,pending,connected_literal_source_baseModel_aliases
+Subaru,Outback AWD,legacy,82f8c2010ed3efb57219,legacy | legacy/outback | outback,14,pending,connected_literal_source_baseModel_aliases

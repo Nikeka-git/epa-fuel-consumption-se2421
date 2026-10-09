@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "frozen_at_utc": "2026-10-09T02:21:45.919888+00:00",
+  "dataset_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\processed\\vehicles.parquet",
+  "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+  "config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "artifact_sha256": {
+    "group_mapping.csv": "ea002eeb6db16b7e83cf51cb968af65a773857211fb013511ef298a7029cb5a4",
+    "group_alias_audit.csv": "a931d8abe96c1879646e823f11bad5634e82405c8609da68f831bf2b1544014b",
+    "split_manifest.csv": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+    "split_coverage.csv": "07d2fef6a01d66640d9aeec57fc1dc36aa5dd36da2e055be91e741d0ec0d6df0"
+  },
+  "alias_map_sha256": "9dc5e6f72b7b7349642946730a43236e921ff470b9bb78297d6afa1d24f6c559",
+  "group_definition": "normalized manufacturer + base_model; fallback full model_name; across years",
+  "method": "GroupShuffleSplit",
+  "test_group_fraction": 0.2,
+  "random_state": 42,
+  "cv_method": "GroupKFold",
+  "cv_n_splits": 5,
+  "cv_shuffle": false,
+  "python_version": "3.12.14",
+  "sklearn_version": "1.9.1",
+  "development_small_dataset": false,
+  "unresolved_fallback_rows": 0,
+  "alias_limitation": "Unresolved full-name fallbacks may represent related families; inspect group_alias_audit.csv before claims of family independence.",
+  "n_train": 2628,
+  "n_test": 619,
+  "n_train_groups": 311,
+  "n_test_groups": 78,
+  "test_row_fraction": 0.19063751154912226,
+  "train_test_id_overlap": 0,
+  "train_test_group_overlap": 0,
+  "cv_group_overlap": 0,
+  "fold_sizes": {
+    "0": {
+      "n_train": 2102,
+      "n_valid": 526
+    },
+    "1": {
+      "n_train": 2102,
+      "n_valid": 526
+    },
+    "2": {
+      "n_train": 2102,
+      "n_valid": 526
+    },
+    "3": {
+      "n_train": 2103,
+      "n_valid": 525
+    },
+    "4": {
+      "n_train": 2103,
+      "n_valid": 525
+    }
+  }
+}

@@ -16,11 +16,13 @@ python -m venv .venv
 
 ## Основной benchmark: ограниченная выборка всех годов и марок
 
-До первого freeze выбран бюджет 6 000 исходных записей, все 11 лет и все доступные manufacturers, seed 42. Это выборка каталога, не полный census и не набор, взвешенный по продажам. Порядок не использует величины target. Настройки основного сбора: четыре HTTP workers, общий интервал старта attempts не менее 0.25 s, общий cooldown по Retry-After, единственный writer raw/manifests/cache.
+Основной benchmark уже завершен и включен в репозиторий: 4 500 исходных записей, 3 247 очищенных строк и все три model runs. Начальный бюджет 6 000 сокращен до 4 500 по числу пригодных записей до обучения; решение сохранено в evidence/benchmark_collection_provenance.json. Это выборка каталога, не полный census и не набор, взвешенный по продажам. Порядок не использует величины target. Настройки сбора: четыре HTTP workers, общий интервал старта attempts не менее 0.25 s, общий cooldown по Retry-After, единственный writer raw/manifests/cache.
+
+Для нового live-сбора использовать новое имя snapshot. Опубликованный `benchmark_2015_2025_20261009` после freeze не возобновлять и не изменять:
 
 ```powershell
-python -m fuel_consumption.collect --config configs/project.json --snapshot benchmark_2015_2025_20261009 --seed 42 --max-vehicles 6000
-python -m fuel_consumption.collect --config configs/project.json --snapshot benchmark_2015_2025_20261009 --seed 42 --max-vehicles 6000 --resume
+python -m fuel_consumption.collect --config configs/project.json --snapshot new_2015_2025 --seed 42 --max-vehicles 4500
+python -m fuel_consumption.collect --config configs/project.json --snapshot new_2015_2025 --seed 42 --max-vehicles 4500 --resume
 ```
 
 Вторая команда используется после остановки первой. Не менять config в середине snapshot. История invocation, dates, scope и budgets сохранены. Resume проверяет уже опубликованные bytes. Повторный live-сбор не обещает побайтово одинаковую выборку: источник изменяется, resume начинает logical обход с первой пары, а история остановок может менять prefix. Для воспроизводимости моделирования использовать опубликованные immutable raw, cleaned dataset и сохраненный manifest IDs/groups/folds.
@@ -43,6 +45,12 @@ python -m fuel_consumption.collect --config configs/project.json --snapshot full
 
 ## Обработка и аудит до freeze
 
+Следующие команды показывают выполненный первоначальный workflow. Для существующего benchmark повторная очистка и новый split не нужны. Чтобы отдельно воспроизвести очистку опубликованных raw без сети, используйте другой output root:
+
+```powershell
+python -m fuel_consumption.clean --config configs/project.json --snapshot benchmark_2015_2025_20261009 --output-root work/replayed_data
+```
+
 ```powershell
 python -m fuel_consumption.clean --config configs/project.json --snapshot benchmark_2015_2025_20261009
 python scripts/build_field_dictionary.py --interim data/interim
@@ -52,7 +60,7 @@ python scripts/audit_benchmark.py --snapshot benchmark_2015_2025_20261009 --data
 Проверить audit до следующего блока. Integrity issues, неизвестные scope metadata, raw differences кандидатов и family aliases требуют явного решения. Утилита аудита ничего не удаляет и не угадывает aliases. Недокументированные дополнительные raw fields явно помечены в dictionary и исключены из predictors; семь inputs имеют проверенные определения.
 
 ```powershell
-python -m fuel_consumption.split --config configs/project.json --dataset data/processed/vehicles.parquet
+python -m fuel_consumption.split --config configs/project.json --dataset data/processed/vehicles.parquet --alias-map reports/audit/benchmark_2015_2025_20261009/family_review/final/reviewed_family_aliases.csv
 python -m fuel_consumption.train --config configs/project.json --dataset data/processed/vehicles.parquet --stage midterm --run midterm_v1
 python -m fuel_consumption.evaluate --run midterm_v1
 ```
@@ -62,6 +70,19 @@ Cleaner сохраняет audit reports даже при недостаточн�
 `split` сохраняет IDs и folds; следующий запуск на той же версии использует сохраненный manifest. Попытка переиспользовать его с измененными data/config отвергается. `train` выбирает модель по train CV до test prediction и сохраняет модели, CV selection, metrics и per-row predictions. Existing run не перезаписывается: использовать новый run ID.
 
 После freeze **не менять даже поле `status` в первоначальном config**: сверяется SHA-256 всех исходных bytes, а не только список признаков. Stage configs `configs/endterm.json` и `configs/final.json` самостоятельны и не заменяют первоначальный config. Если root config уже изменен для нового эксперимента, указать точный первоначальный файл, чей checksum записан в `split_metadata.json`. Сохраненная копия config пригодна только при совпадении этого checksum.
+
+## Повторное обучение в отдельных runs
+
+Основные runs `midterm_v1`, `endterm_v1`, `final_v1` уже completed и не перезаписываются. Для повторного обучения на сохраненных данных/folds:
+
+```powershell
+python -m fuel_consumption.train --run midterm_replay
+python -m fuel_consumption.endterm --run endterm_replay --midterm-run models/midterm_replay
+python -m fuel_consumption.final --run final_replay
+python scripts/build_project_report.py --runs midterm_replay endterm_replay final_replay --output reports/project_replay
+```
+
+Эти команды создают новые outputs. Уже раскрытый test остается сравнительным benchmark; повторение не превращает его в новую независимую проверку. Для чтения готового notebook и работы приложения повторное обучение не требуется.
 
 ## Endterm: ensembles, MLP и сегменты
 
@@ -94,7 +115,7 @@ python scripts/build_project_report.py --root . --runs midterm_v1 endterm_v1 fin
 python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 -- --run models/final_v1
 ```
 
-Открыть локальный адрес, который напечатает Streamlit. Форма читает допустимые категории и defaults только из training-derived interface schema. Выбранный по train CV Final pipeline принимает семь specifications и доступный для своего arm исходный текст; optional text можно оставить пустым. Приложение проверяет checksum до загрузки модели и не выполняет retraining. Для раннего structured-only демонстрационного прогноза можно указать `--run models/midterm_v1`; Endterm run эта версия интерфейса не поддерживает.
+Открыть локальный адрес, который напечатает Streamlit. Форма читает допустимые категории и defaults только из training-derived interface schema. Выбранный по train CV Final pipeline принимает семь specifications и доступный для своего arm исходный текст; optional engine text можно оставить пустым. Model designation также используется для проверки scope и обязателен в охваченных reviewed rules диапазонах Audi/Volvo, даже если не является prediction feature. Совместимые, но неполные engine conditions требуют уточнения. Приложение проверяет checksum до загрузки модели и не выполняет retraining. Для structured-only прогноза можно указать `--run models/midterm_v1`; Endterm run эта версия интерфейса не поддерживает.
 
 Тот же проверенный pipeline доступен из Python:
 
@@ -132,6 +153,16 @@ python scripts/prepare_slide_summary.py --dataset data/processed/vehicles.parque
 Notebook в режиме `--run-dir` читает и проверяет сохраненные результаты без retraining. Без этого аргумента notebook заново обучает четыре модели во временной папке. Report generator сохраняет Markdown, четыре scientific figures и таблицы; не перезаписывает существующий report directory. После генерации выполнить notebook сверху вниз в kernel установленного проекта, сохранить все outputs.
 
 `scripts/build_midterm_slides.mjs` создает editable PPTX из slide summary и использует bundled `@oai/artifact-tool` и finalizer Codex; это дополнительная среда для сборки слайдов, не зависимость collection/ML pipeline. Готовые слайды читаются в обычном PowerPoint. Восемь слайдов и speaker notes рассчитаны на 9 минут 20 секунд как демонстрационный сценарий; фактическая защита или репетиция не заявляются.
+
+## Проверка опубликованного пакета
+
+После установки среды из корня Git checkout:
+
+```powershell
+python scripts/verify_release.py --slides reports/slides/midterm_v1.pptx --slides-receipt reports/slides/midterm_v1.validation.json --slides-visual-review reports/slides/midterm_v1.visual_review.json --pytest-json evidence/offline_test_results.json --dry-run
+```
+
+Проверка сверяет raw response hashes, provenance, dataset/split, параметры и сохраненные результаты всех этапов, notebook, PPTX, ссылки и состав tracked files. Она не собирает данные и не обучает модели. `--pytest-json` проверяет evidence фактически выполненных 213 tests и неизменность исходников; новые tests этот скрипт не запускает. Без `--dry-run` после всех успешных проверок обновляется `evidence/PACKAGE_VERIFICATION.json`. Изменения tracked files сначала следует stage; ZIP без `.git` для этой проверки нужно распаковать в Git checkout либо проверить по его опубликованному commit.
 
 ## Технический пример
 

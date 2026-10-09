@@ -1,0 +1,41 @@
+vehicle_id,model,split,model_year,manufacturer,model_name,displacement_l,cylinders,transmission,drivetrain,vehicle_class,engine_size_bin,y_true,y_pred,residual,abs_error
+48578,structured,test,2025,Bugatti,Mistral,8.0,16,Automatic (AM-S7),All-Wheel Drive,Two Seaters,"(4,+inf) L",26.1349537037037,22.46426933904747,-3.670684364656232,3.670684364656232
+38135,structured,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.43149200914512,-3.169723268632655,3.169723268632655
+43171,structured,test,2020,Pagani,Huayra Roadster BC,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.01261206126483,-2.588603216512947,2.588603216512947
+42652,structured,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.508139163224552,-2.5593376886272985,2.5593376886272985
+35481,structured,test,2015,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.173629945749862,-2.5272815125834693,2.5272815125834693
+47506,structured,test,2023,Pagani,Huayra,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.08244249969206,-2.518772778085715,2.518772778085715
+36379,structured,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.19690675855894,-2.5040046997743914,2.5040046997743914
+45105,structured,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.577969601651784,-2.4895072502000666,2.4895072502000666
+47759,structured,test,2024,Porsche,718 Spyder RS,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",14.700911458333332,12.522332661566194,-2.1785787967671375,2.1785787967671375
+48816,structured,test,2025,Porsche,718 GT4 RS,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",14.700911458333332,12.545609474375272,-2.1553019839580596,2.1553019839580596
+48578,structured_engine,test,2025,Bugatti,Mistral,8.0,16,Automatic (AM-S7),All-Wheel Drive,Two Seaters,"(4,+inf) L",26.1349537037037,22.57576527313889,-3.5591884305648094,3.5591884305648094
+38135,structured_engine,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.48867949672599,-3.112535781051786,3.112535781051786
+43171,structured_engine,test,2020,Pagani,Huayra Roadster BC,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.04478147675191,-2.5564338010258645,2.5564338010258645
+35481,structured_engine,test,2015,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.14629354122415,-2.554617917109182,2.554617917109182
+42652,structured_engine,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.53567248170518,-2.53180437014667,2.53180437014667
+36379,structured_engine,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.178595385932717,-2.5223160724006153,2.5223160724006153
+47506,structured_engine,test,2023,Pagani,Huayra,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.141687010877618,-2.4595282669001577,2.4595282669001577
+45105,structured_engine,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.632578015830886,-2.434898836020965,2.434898836020965
+44271,structured_engine,test,2022,Subaru,BRZ,2.4,4,Manual 6-spd,Rear-Wheel Drive,Minicompact Cars,"(2,3] L",10.691571969696968,8.471911946208007,-2.219660023488961,2.219660023488961
+35101,structured_engine,test,2015,Cadillac,CTS,6.2,8,Automatic (S6),Rear-Wheel Drive,Midsize Cars,"(4,+inf) L",16.801041666666666,14.640848854460014,-2.1601928122066525,2.1601928122066525
+48578,structured_model,test,2025,Bugatti,Mistral,8.0,16,Automatic (AM-S7),All-Wheel Drive,Two Seaters,"(4,+inf) L",26.1349537037037,22.28023253807865,-3.854721165625051,3.854721165625051
+38135,structured_model,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.221385011415578,-3.379830266362198,3.379830266362198
+42652,structured_model,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.650138293543531,-2.4173385583083196,2.4173385583083196
+35481,structured_model,test,2015,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.313542103033791,-2.3873693552995405,2.3873693552995405
+47506,structured_model,test,2023,Pagani,Huayra,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.231621643069605,-2.3695936347081705,2.3695936347081705
+36379,structured_model,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.335510582979586,-2.365400875353746,2.365400875353746
+45105,structured_model,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.716043733380916,-2.3514331184709345,2.3514331184709345
+43171,structured_model,test,2020,Pagani,Huayra Roadster BC,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.372819123903113,-2.2283961538746624,2.2283961538746624
+47759,structured_model,test,2024,Porsche,718 Spyder RS,4.0,6,Automatic (AM-S7),Rear-Wheel Drive,Two Seaters,"(3,4] L",14.700911458333332,12.569762449538203,-2.131149008795129,2.131149008795129
+35101,structured_model,test,2015,Cadillac,CTS,6.2,8,Automatic (S6),Rear-Wheel Drive,Midsize Cars,"(4,+inf) L",16.801041666666666,14.702303681776757,-2.09873798488991,2.09873798488991
+48578,structured_model_engine,test,2025,Bugatti,Mistral,8.0,16,Automatic (AM-S7),All-Wheel Drive,Two Seaters,"(4,+inf) L",26.1349537037037,22.39989736017174,-3.735056343531962,3.735056343531962
+38135,structured_model_engine,test,2017,Aston Martin,V12 Vantage S,6.0,12,Manual 7-spd,Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,16.250872159449386,-3.3503431183283894,3.3503431183283894
+42652,structured_model_engine,test,2020,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.665510294831648,-2.4019665570202022,2.4019665570202022
+35481,structured_model_engine,test,2015,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.300232794150416,-2.400678664182916,2.400678664182916
+36379,structured_model_engine,test,2016,Land Rover,LR4,3.0,6,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(2,3] L",14.700911458333332,12.328125374384499,-2.3727860839488333,2.3727860839488333
+47506,structured_model_engine,test,2023,Pagani,Huayra,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.272345743366813,-2.3288695344109627,2.3288695344109627
+45105,structured_model_engine,test,2023,Land Rover,Defender 110,2.0,4,Automatic (S8),4-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(0,2] L",13.06747685185185,10.749188035533898,-2.3182888163179527,2.3182888163179527
+43171,structured_model_engine,test,2020,Pagani,Huayra Roadster BC,6.0,12,Automatic (AM7),Rear-Wheel Drive,Two Seaters,"(4,+inf) L",19.601215277777776,17.366113557812287,-2.2351017199654883,2.2351017199654883
+35101,structured_model_engine,test,2015,Cadillac,CTS,6.2,8,Automatic (S6),Rear-Wheel Drive,Midsize Cars,"(4,+inf) L",16.801041666666666,14.597668206728887,-2.2033734599377794,2.2033734599377794
+46761,structured_model_engine,test,2024,Toyota,GR Supra,3.0,6,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(2,3] L",9.046714743589742,11.205296785754754,2.158582042165012,2.158582042165012

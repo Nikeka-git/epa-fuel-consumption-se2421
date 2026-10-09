@@ -1,63 +1,76 @@
 # Predicting EPA Combined Fuel Consumption
 
-Демонстрация выполнения ML-проекта с помощью ИИ; условные роли команды описаны в [CONTRIBUTIONS](docs/CONTRIBUTIONS.md).
+Демонстрация выполнения ML-проекта с помощью ИИ. Группа **SE-2421**, участники сценария **Tsybus Nikita** и **Bakytzhan Kassymgali**; направление **8. New-car catalogues**. Условное распределение ролей и фактическая автоматизация описаны в [CONTRIBUTIONS](docs/CONTRIBUTIONS.md).
 
-Проект группы **SE-2421**, **Tsybus Nikita** и **Bakytzhan Kassymgali**. Направление: **8. New-car catalogues**. Задача: регрессия, целевая переменная — EPA combined fuel consumption в **L/100 km**.
+Вопрос: насколько точно технические характеристики позволяют предсказать EPA combined fuel consumption бензиновых автомобилей, универсалов и SUV рынка США за model years 2015–2025? Target — **L/100 km**. Источник — [FuelEconomy.gov API](https://www.fueleconomy.gov/feg/ws/index.shtml).
 
-Оцениваем, насколько точно технические характеристики позволяют предсказать паспортный расход бензиновых легковых автомобилей и SUV рынка США модельных лет 2015–2025. Данные собираются собственным Python-кодом через [FuelEconomy.gov API](https://www.fueleconomy.gov/feg/ws/index.shtml), с запросом отдельных записей автомобилей. Гибриды, включая mild hybrid, и альтернативные виды топлива исключаются.
+Публичный репозиторий: [Nikeka-git/epa-fuel-consumption-se2421](https://github.com/Nikeka-git/epa-fuel-consumption-se2421).
 
-Публичный репозиторий проекта: [Nikeka-git/epa-fuel-consumption-se2421](https://github.com/Nikeka-git/epa-fuel-consumption-se2421).
+## Выполнено
 
-## Текущее состояние
+Собственным Python-кодом получено **4500 индивидуальных API-записей**. После фильтрации сохранено **3247 различных конфигураций**, **49 производителей**, все 11 модельных лет. Raw bytes, menus, даты, manifests и SHA-256 включены. Это bounded sample, а не полный каталог или выборка продаж. Исключено 1253 записей; подтвержденных дублей и проблем целостности — 0.
 
-Реализованы API-клиент и resumable collector, очистка и audit reports, строгий выбор семи признаков, групповой split, Midterm-модели, nested grouped CV для ансамблей и MLP, PCA/KMeans, четыре Final text ablations и локальное приложение. Проверки прошли без ошибок: **184 offline теста**. Основной benchmark собирается; результаты достаточного полного набора еще не установлены. Команды доступны в [инструкции запуска](docs/RUNNING.md).
+Выполнены Midterm (Dummy, Linear, KNN, Decision Tree), Endterm (tuned Random Forest, Extra Trees, MLP; PCA/KMeans), Final (четыре Ridge/TF-IDF ablations) и локальное приложение. Для всех этапов используются одни данные, split и пять grouped folds. **2628 train / 619 test; 311 / 78 source families**. Полный offline suite: **213 passed**.
 
-В ограниченном реальном сборе получено **250 raw records**, из них принято **146**, исключено **104**. Scope и результаты описаны в [examples/smoke/README.md](examples/smoke/README.md). Raw responses, очищенные данные, отдельный split, модели и отчеты этого примера находятся в `examples/smoke/`. Он предназначен для проверки воспроизводимости; минимальный объем Midterm — **1 000 различных пригодных конфигураций** — еще предстоит получить. Цель основного benchmark — **3 000 и более** до первого freeze.
+## Результаты
 
-Полный Midterm, слайды, Endterm-модели, Final text experiments и локальное приложение еще не завершены. Ограниченный пример не подтверждает точность модели на всем каталоге 2015–2025.
+Победитель каждого этапа выбран по training CV до test prediction. Все MAE в L/100 km:
+
+| stage | model | cv_mae_mean | cv_mae_std | test_mae |
+| --- | --- | --- | --- | --- |
+| midterm | linear | 0.8134 | 0.1200 | 0.7138 |
+| endterm | random_forest | 0.7402 | 0.0802 | 0.7543 |
+| final | structured_engine | 0.7888 | 0.0850 | 0.7195 |
+
+Midterm CV использует фиксированные параметры, Endterm — nested grouped CV процедуры tuning для каждого семейства моделей, Final — selection CV для alpha и набора текста. Эти CV-оценки имеют разные роли; fold std не является доверительным интервалом. Подробные результаты всех 11 вариантов, эффект текста, ошибки, предупреждения и ограничения — [RESULTS](reports/project_v1/RESULTS.md).
+
+## Открыть результаты
+
+- [Исполненный offline notebook](notebooks/01_midterm.ipynb): 12 code cells, минимум три EDA-графика, ошибки и выводы.
+- [Midterm report](reports/midterm/midterm_v1/report.md) и [8 слайдов с заметками](reports/slides/midterm_v1.pptx).
+- [Итоговый отчет](reports/project_v1/RESULTS.md) и [полная таблица моделей](reports/project_v1/all_models.csv).
+- [Карточка данных](docs/DATA_CARD.md), [протокол](docs/EXPERIMENT_PROTOCOL.md), [план и структура](docs/PROJECT_PLAN.md), [передача следующей модели](docs/HANDOFF.md).
 
 ## Запуск
 
-Все команды выполняются из корня репозитория:
+Из корня репозитория:
 
 ```powershell
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install -r requirements.lock.txt
 .venv/Scripts/python.exe -m pip install -e . --no-deps
-.venv/Scripts/python.exe -m pytest -q
+.venv/Scripts/python.exe -m streamlit run app/streamlit_app.py
 ```
 
-На Linux/macOS использовать `.venv/bin/python`. Полный сбор, resume, обработка benchmark и offline воспроизведение smoke описаны в [docs/RUNNING.md](docs/RUNNING.md).
-
-Notebook `notebooks/01_midterm.ipynb` создается через `scripts/build_notebook.py` и выполнен на smoke dataset: все **8 code cells** завершились без ошибок. Он работает offline на заданных dataset/split и обучает модели во временной папке; сетевой сбор при Run All не запускается. Перед полноценным Midterm нужно пересоздать notebook для основного benchmark и выполнить Restart and Run All.
+На Linux/macOS использовать `.venv/bin/python`. Приложение загружает Final CV winner **structured_engine**, принимает характеристики и доступный текст и выводит L/100 km. Это выбранный вариант контролируемого Final-сравнения, не автоматически лучшая архитектура всех этапов. Оно не обучает модель при открытии. Подробные команды воспроизведения — [RUNNING](docs/RUNNING.md).
 
 ## Основные решения
 
-- `target_l100km = 235.2145833333333 / combined_mpg`, где исходный API field — `comb08`, US MPG. Target не импутируется.
-- Midterm X: `model_year`, `displacement_l`, `cylinders`, `manufacturer`, `transmission`, `drivetrain`, `vehicle_class`. Остальные поля исключены из inputs по умолчанию.
-- `model_name` и `engine_description` сохраняются для Final; `base_model` используется для группировки.
-- Семейства `manufacturer + base_model` удерживаются целиком через годы. Fallback полного model name и возможные aliases отражаются в отдельном audit.
-- `GroupShuffleSplit`: seed 42, test — 20% групп. На train — пять `GroupKFold` folds. Сохраненный manifest переиспользуется; изменение dataset/config не перезаписывает benchmark.
-- Preprocessing обучается внутри каждого training fold. Модель выбирается по train CV MAE до test prediction; затем публикуются test scores всех четырех моделей.
-- Главная метрика — MAE в L/100 km; дополнительно RMSE и R². Ошибки разбираются по vehicle class и размеру двигателя с числом наблюдений.
+- `target_l100km = 235.2145833333333 / comb08`, где `comb08` — US MPG; target не импутируется.
+- Structured X содержит только `model_year`, `displacement_l`, `cylinders`, `manufacturer`, `transmission`, `drivetrain`, `vehicle_class`.
+- Другие измерения экономичности, стоимость топлива, emissions, scores и identifiers не входят в X. Original text сохраняется, но проходит target-neutral sanitizer внутри Final pipeline.
+- Семейства группируются через годы по manufacturer/baseModel с явно reviewed aliases. Это независимость заявленных source families, не всех возможных поколений или платформ.
+- Все imputers, scalers, encoders, TF-IDF, PCA и estimators fit только на train соответствующего fold. Test не участвует в tuning.
+- EPA technology labels имеют подтвержденные пропуски; supplemental manufacturer review и uncertainty quarantine заданы до freeze. Это ограничение источника, не независимая сертификация каждой машины.
 
-## Структура и документация
+## Структура
 
 ```text
-configs/project.json             настройки сбора и эксперимента
-src/fuel_consumption/            api, collect, clean, split, features, train, evaluate
-tests/                          реальные API fixtures и синтетические проверки инвариантов
-examples/smoke/                  отдельный ограниченный реальный пример
-data/                           рабочие raw, interim, processed, splits
-models/                         полные fitted pipelines отдельных runs
-reports/                        таблицы и графики
-notebooks/01_midterm.ipynb       offline исследование выбранного dataset
-scripts/build_notebook.py        генератор воспроизводимого notebook
-references/                     предоставленные Guide, Rubric и лекции
-evidence/api_probe/              историческая техническая проверка пяти API records
-docs/                           контракт, protocol, требования, план и журнал работы
+configs/                       frozen settings and reviewed powertrain rules
+src/fuel_consumption/          collect, clean, split, train, endterm, final, predict
+data/raw/                     immutable individual API responses and menus
+data/interim/                 cleaning evidence and field dictionary
+data/processed/               CSV, Parquet and schema
+data/splits/                  fixed IDs, families, CV folds and hashes
+models/                       saved fitted pipelines for all three stages
+reports/                      audit, tables, scientific figures, slides, final report
+notebooks/01_midterm.ipynb     executed offline analysis
+app/streamlit_app.py           local prediction interface
+scripts/                      reproducible report, dictionary and slide builders
+docs/                         plan, contract, protocol, data card and handoff
+tests/                        meaningful offline invariant checks
+examples/smoke/               historical development example, separate split
+references/                   supplied course guide, rubric and lectures
 ```
 
-В больших рабочих snapshots данные хранятся локально; `.gitignore` не заменяет их сохранение для сдачи. Исторические raw responses и опубликованный example должны сохраняться с manifests и SHA-256.
-
-Прочитайте [план](docs/PROJECT_PLAN.md), [контракт данных](docs/DATA_CONTRACT.md), [протокол экспериментов](docs/EXPERIMENT_PROTOCOL.md) и [инструкцию продолжения](docs/HANDOFF.md). [Матрица требований](docs/REQUIREMENTS.md) отделяет требования курса от проектных решений; [CONTRIBUTIONS](docs/CONTRIBUTIONS.md) фиксирует фактическое использование AI и вклад участников.
+Это завершенная техническая демонстрация. Регистрация у преподавателя, человеческая защита и отправка в Moodle не выполнялись. Endterm/Final briefs и полный syllabus следующих недель не были предоставлены; выбор этих моделей является решением проекта по общим темам Guide.

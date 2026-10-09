@@ -1,0 +1,92 @@
+{
+  "schema_version": "1",
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "started_at_utc": "2026-10-09T00:55:02.056715+00:00",
+  "collection_timezone": "Asia/Qyzylorda",
+  "source_base_url": "https://www.fueleconomy.gov/ws/rest/",
+  "requested_scope": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "makes": null,
+    "seed": 42,
+    "ordering": "seeded_round_robin"
+  },
+  "full_scope_requested": true,
+  "config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-09T00:55:02.062713+00:00",
+      "resume": false,
+      "limits": {
+        "max_models_per_make": null,
+        "max_vehicles_total_in_snapshot": 6000,
+        "max_requests_this_invocation": null
+      }
+    },
+    {
+      "started_at_utc": "2026-10-09T00:57:09.199941+00:00",
+      "resume": true,
+      "limits": {
+        "max_models_per_make": null,
+        "max_vehicles_total_in_snapshot": 6000,
+        "max_requests_this_invocation": null
+      }
+    },
+    {
+      "started_at_utc": "2026-10-09T01:11:26.804732+00:00",
+      "resume": true,
+      "limits": {
+        "max_models_per_make": null,
+        "max_vehicles_total_in_snapshot": 6000,
+        "max_requests_this_invocation": null
+      }
+    },
+    {
+      "started_at_utc": "2026-10-09T01:21:18.827721+00:00",
+      "resume": true,
+      "limits": {
+        "max_models_per_make": null,
+        "max_vehicles_total_in_snapshot": 6000,
+        "max_requests_this_invocation": null
+      }
+    },
+    {
+      "started_at_utc": "2026-10-09T02:12:23.169736+00:00",
+      "resume": true,
+      "limits": {
+        "max_models_per_make": null,
+        "max_vehicles_total_in_snapshot": 4500,
+        "max_requests_this_invocation": null
+      },
+      "finished_at_utc": "2026-10-09T02:14:20.303923+00:00",
+      "new_request_attempts": 172,
+      "cache_hits": 77,
+      "stop_reason": "Reached --max-vehicles=4500 successful records total"
+    }
+  ],
+  "status": "partial",
+  "finished_at_utc": "2026-10-09T02:14:20.303923+00:00",
+  "collection_mode": "interleaved_bounded",
+  "last_updated_at_utc": "2026-10-09T02:14:20.578894+00:00",
+  "discovered_vehicle_ids": 4671,
+  "fetched_vehicle_records": 4500,
+  "failed_vehicle_records": 0,
+  "enumeration_complete": false,
+  "completed_model_menus": 3372,
+  "stop_reason": "Reached --max-vehicles=4500 successful records total",
+  "collection_complete_for_discovered_ids": false,
+  "full_catalogue_complete": false,
+  "request_attempts_total": 8568,
+  "successful_http_responses": 8568
+}

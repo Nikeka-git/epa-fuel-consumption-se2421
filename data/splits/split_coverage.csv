@@ -1,0 +1,521 @@
+split,field,value,n
+test,model_year,2015,70
+test,model_year,2016,70
+test,model_year,2017,59
+test,model_year,2018,52
+test,model_year,2019,59
+test,model_year,2020,61
+test,model_year,2021,63
+test,model_year,2022,51
+test,model_year,2023,54
+test,model_year,2024,45
+test,model_year,2025,35
+train,model_year,2015,240
+train,model_year,2016,252
+train,model_year,2017,271
+train,model_year,2018,280
+train,model_year,2019,266
+train,model_year,2020,264
+train,model_year,2021,254
+train,model_year,2022,238
+train,model_year,2023,222
+train,model_year,2024,182
+train,model_year,2025,159
+test,manufacturer,Acura,17
+test,manufacturer,Alfa Romeo,7
+test,manufacturer,Aston Martin,35
+test,manufacturer,Audi,6
+test,manufacturer,BMW,22
+test,manufacturer,Bentley,16
+test,manufacturer,Bugatti,1
+test,manufacturer,Buick,5
+test,manufacturer,Cadillac,23
+test,manufacturer,Chevrolet,12
+test,manufacturer,Dodge,38
+test,manufacturer,Ferrari,7
+test,manufacturer,Fiat,38
+test,manufacturer,Ford,7
+test,manufacturer,Hyundai,47
+test,manufacturer,Infiniti,10
+test,manufacturer,Jaguar,11
+test,manufacturer,Jeep,7
+test,manufacturer,Kia,24
+test,manufacturer,Lamborghini,1
+test,manufacturer,Land Rover,11
+test,manufacturer,Lexus,27
+test,manufacturer,Lincoln,34
+test,manufacturer,Lotus,10
+test,manufacturer,MINI,53
+test,manufacturer,Maserati,3
+test,manufacturer,McLaren Automotive,14
+test,manufacturer,Mercedes-Benz,11
+test,manufacturer,Nissan,14
+test,manufacturer,Pagani,3
+test,manufacturer,Porsche,14
+test,manufacturer,Rolls-Royce,39
+test,manufacturer,Scion,4
+test,manufacturer,Subaru,6
+test,manufacturer,Toyota,8
+test,manufacturer,Volkswagen,34
+train,manufacturer,Acura,83
+train,manufacturer,Alfa Romeo,47
+train,manufacturer,Aston Martin,31
+train,manufacturer,Audi,62
+train,manufacturer,BMW,71
+train,manufacturer,Bentley,58
+train,manufacturer,Bugatti,14
+train,manufacturer,Buick,87
+train,manufacturer,Cadillac,76
+train,manufacturer,Chevrolet,53
+train,manufacturer,Chrysler,31
+train,manufacturer,Dodge,52
+train,manufacturer,Ferrari,82
+train,manufacturer,Fiat,13
+train,manufacturer,Ford,42
+train,manufacturer,GMC,39
+train,manufacturer,Genesis,79
+train,manufacturer,Honda,86
+train,manufacturer,Hyundai,47
+train,manufacturer,INEOS Automotive,6
+train,manufacturer,Infiniti,94
+train,manufacturer,Jaguar,81
+train,manufacturer,Jeep,95
+train,manufacturer,Kia,58
+train,manufacturer,Koenigsegg,1
+train,manufacturer,Lamborghini,67
+train,manufacturer,Land Rover,62
+train,manufacturer,Lexus,47
+train,manufacturer,Lincoln,72
+train,manufacturer,Lotus,4
+train,manufacturer,MINI,65
+train,manufacturer,Maserati,93
+train,manufacturer,Mazda,107
+train,manufacturer,McLaren Automotive,27
+train,manufacturer,Mercedes-Benz,56
+train,manufacturer,Mitsubishi,105
+train,manufacturer,Nissan,76
+train,manufacturer,Pagani,1
+train,manufacturer,Porsche,90
+train,manufacturer,RUF Automobile,4
+train,manufacturer,Rolls-Royce,45
+train,manufacturer,Roush Performance,12
+train,manufacturer,STI,1
+train,manufacturer,Scion,11
+train,manufacturer,Subaru,103
+train,manufacturer,Toyota,54
+train,manufacturer,Volkswagen,62
+train,manufacturer,Volvo,68
+train,manufacturer,smart,8
+test,vehicle_class,Compact Cars,67
+test,vehicle_class,Large Cars,53
+test,vehicle_class,Midsize Cars,95
+test,vehicle_class,Midsize Station Wagons,11
+test,vehicle_class,Minicompact Cars,69
+test,vehicle_class,Small Sport Utility Vehicle 2WD,38
+test,vehicle_class,Small Sport Utility Vehicle 4WD,51
+test,vehicle_class,Small Station Wagons,15
+test,vehicle_class,Standard Sport Utility Vehicle 2WD,22
+test,vehicle_class,Standard Sport Utility Vehicle 4WD,34
+test,vehicle_class,Subcompact Cars,82
+test,vehicle_class,Two Seaters,82
+train,vehicle_class,Compact Cars,323
+train,vehicle_class,Large Cars,255
+train,vehicle_class,Midsize Cars,379
+train,vehicle_class,Midsize Station Wagons,19
+train,vehicle_class,Minicompact Cars,121
+train,vehicle_class,Small Sport Utility Vehicle 2WD,229
+train,vehicle_class,Small Sport Utility Vehicle 4WD,445
+train,vehicle_class,Small Station Wagons,93
+train,vehicle_class,Standard Sport Utility Vehicle 2WD,89
+train,vehicle_class,Standard Sport Utility Vehicle 4WD,260
+train,vehicle_class,Subcompact Cars,150
+train,vehicle_class,Two Seaters,265
+test,group_size,10:alfa romeo|4c,6
+test,group_size,10:alfa romeo|tonale,1
+test,group_size,10:land rover|defender,9
+test,group_size,10:land rover|lr4,2
+test,group_size,10:volkswagen|arteon,6
+test,group_size,10:volkswagen|cc,3
+test,group_size,10:volkswagen|jetta,15
+test,group_size,10:volkswagen|tiguan,10
+test,group_size,11:lamborghini|veneno,1
+test,group_size,11:rolls-royce|cullinan,12
+test,group_size,11:rolls-royce|ghost,27
+test,group_size,12:aston martin|dbs,5
+test,group_size,12:aston martin|rapide,5
+test,group_size,12:aston martin|vantage,25
+test,group_size,13:mercedes-benz|a-class,1
+test,group_size,13:mercedes-benz|glb-class,1
+test,group_size,13:mercedes-benz|glc-class,6
+test,group_size,13:mercedes-benz|gle-class,3
+test,group_size,18:mclaren automotive|570s spider,3
+test,group_size,18:mclaren automotive|600lt coupe,1
+test,group_size,18:mclaren automotive|650s can-am,1
+test,group_size,18:mclaren automotive|650s coupe,2
+test,group_size,18:mclaren automotive|650s spider,2
+test,group_size,18:mclaren automotive|720s spider,4
+test,group_size,18:mclaren automotive|765lt spider,1
+test,group_size,3:bmw|2 series,9
+test,group_size,3:bmw|5 series,4
+test,group_size,3:bmw|6 series,6
+test,group_size,3:bmw|z4,3
+test,group_size,3:kia|cadenza,1
+test,group_size,3:kia|k5,7
+test,group_size,3:kia|rio,7
+test,group_size,3:kia|seltos,7
+test,group_size,3:kia|soul,2
+test,group_size,4:audi|q5,2
+test,group_size,4:audi|tts,4
+test,group_size,4:fiat|500,38
+test,group_size,4:ford|fiesta,2
+test,group_size,4:ford|mustang,3
+test,group_size,4:ford|taurus,2
+test,group_size,4:jeep|compass,7
+test,group_size,4:mini|cooper,49
+test,group_size,4:mini|paceman,4
+test,group_size,5:acura|ilx,9
+test,group_size,5:acura|integra,8
+test,group_size,5:buick|cascada,3
+test,group_size,5:buick|verano,2
+test,group_size,5:dodge|challenger,38
+test,group_size,5:lexus|is,13
+test,group_size,5:lexus|rc,14
+test,group_size,5:lotus|evora,10
+test,group_size,5:scion|fr-s,4
+test,group_size,6:jaguar|xe,11
+test,group_size,6:nissan|rogue,14
+test,group_size,6:pagani|huayra,3
+test,group_size,6:subaru|brz,6
+test,group_size,6:toyota|86,2
+test,group_size,6:toyota|gr supra,6
+test,group_size,7:bentley|flying spur,16
+test,group_size,7:bugatti|mistral,1
+test,group_size,7:ferrari|daytona sp3,3
+test,group_size,7:ferrari|f12 tdf,2
+test,group_size,7:ferrari|f60 america,2
+test,group_size,7:hyundai|elantra,20
+test,group_size,7:hyundai|kona,11
+test,group_size,7:hyundai|santa fe,16
+test,group_size,7:lincoln|corsair,14
+test,group_size,7:lincoln|navigator,20
+test,group_size,7:porsche|718,6
+test,group_size,7:porsche|boxster,8
+test,group_size,8:cadillac|cts,9
+test,group_size,8:cadillac|escalade,14
+test,group_size,8:infiniti|q40,2
+test,group_size,8:infiniti|q70,8
+test,group_size,8:maserati|grancabrio,3
+test,group_size,9:chevrolet|camaro,6
+test,group_size,9:chevrolet|suburban,2
+test,group_size,9:chevrolet|traverse,4
+train,group_size,10:alfa romeo|giulia,26
+train,group_size,10:alfa romeo|stelvio,21
+train,group_size,10:koenigsegg|agera rs,1
+train,group_size,10:land rover|discovery,11
+train,group_size,10:land rover|evoque,1
+train,group_size,10:land rover|lr2,1
+train,group_size,10:land rover|range rover,49
+train,group_size,10:mitsubishi|eclipse cross,18
+train,group_size,10:mitsubishi|lancer,10
+train,group_size,10:mitsubishi|mirage,26
+train,group_size,10:mitsubishi|outlander,51
+train,group_size,10:volkswagen|atlas,22
+train,group_size,10:volkswagen|beetle,7
+train,group_size,10:volkswagen|eos,1
+train,group_size,10:volkswagen|gli,2
+train,group_size,10:volkswagen|golf/gti,24
+train,group_size,10:volkswagen|passat,1
+train,group_size,10:volkswagen|taos,4
+train,group_size,10:volkswagen|touareg,1
+train,group_size,11:lamborghini|aventador,25
+train,group_size,11:lamborghini|huracan,34
+train,group_size,11:lamborghini|urus,8
+train,group_size,11:rolls-royce|dawn,8
+train,group_size,11:rolls-royce|phantom,28
+train,group_size,11:rolls-royce|wraith,9
+train,group_size,12:aston martin|db11,13
+train,group_size,12:aston martin|db12 v8,2
+train,group_size,12:aston martin|db9,2
+train,group_size,12:aston martin|dbx 707,3
+train,group_size,12:aston martin|dbx v8,4
+train,group_size,12:aston martin|valour,1
+train,group_size,12:aston martin|vanquish,6
+train,group_size,13:mercedes-benz|amg gt,2
+train,group_size,13:mercedes-benz|c-class,5
+train,group_size,13:mercedes-benz|cla-class,3
+train,group_size,13:mercedes-benz|cls-class,2
+train,group_size,13:mercedes-benz|e-class,13
+train,group_size,13:mercedes-benz|g-class,5
+train,group_size,13:mercedes-benz|gl-class,1
+train,group_size,13:mercedes-benz|gla-class,5
+train,group_size,13:mercedes-benz|ml-class,1
+train,group_size,13:mercedes-benz|s-class,11
+train,group_size,13:mercedes-benz|sl-class,6
+train,group_size,13:mercedes-benz|slc-class,1
+train,group_size,13:mercedes-benz|slk-class,1
+train,group_size,14:ruf automobile|ruf turbo 12/ctr3,1
+train,group_size,14:ruf automobile|rufturbo12/ctr3/ctr2017,1
+train,group_size,14:ruf automobile|t12/ctr3/ctr anniversary,1
+train,group_size,14:ruf automobile|turbo12/ctr3/ctr anniversary,1
+train,group_size,16:ineos automotive|grenadier,6
+train,group_size,17:roush performance|mustang,12
+train,group_size,18:mclaren automotive|540c coupe,1
+train,group_size,18:mclaren automotive|570gt,3
+train,group_size,18:mclaren automotive|570s coupe,5
+train,group_size,18:mclaren automotive|600lt spider,1
+train,group_size,18:mclaren automotive|620r coupe,1
+train,group_size,18:mclaren automotive|675lt coupe,1
+train,group_size,18:mclaren automotive|675lt spider,1
+train,group_size,18:mclaren automotive|720s coupe,6
+train,group_size,18:mclaren automotive|765lt coupe,1
+train,group_size,18:mclaren automotive|elva,1
+train,group_size,18:mclaren automotive|gt,3
+train,group_size,18:mclaren automotive|mso hs,1
+train,group_size,18:mclaren automotive|sabre,1
+train,group_size,18:mclaren automotive|senna,1
+train,group_size,3:bmw|3 series,8
+train,group_size,3:bmw|4 series,13
+train,group_size,3:bmw|7 series,2
+train,group_size,3:bmw|8 series,33
+train,group_size,3:bmw|x1,3
+train,group_size,3:bmw|x2,1
+train,group_size,3:bmw|x3,3
+train,group_size,3:bmw|x4,4
+train,group_size,3:bmw|x5,2
+train,group_size,3:bmw|x6,1
+train,group_size,3:bmw|x7,1
+train,group_size,3:gmc|acadia,7
+train,group_size,3:gmc|terrain,9
+train,group_size,3:gmc|yukon,23
+train,group_size,3:kia|forte,15
+train,group_size,3:kia|k900,3
+train,group_size,3:kia|optima,10
+train,group_size,3:kia|sorento,11
+train,group_size,3:kia|sportage,14
+train,group_size,3:kia|stinger,2
+train,group_size,3:kia|telluride,3
+train,group_size,3:sti|s209,1
+train,group_size,4:audi|a3,4
+train,group_size,4:audi|a4,6
+train,group_size,4:audi|a5,5
+train,group_size,4:audi|a7,2
+train,group_size,4:audi|q3,6
+train,group_size,4:audi|q7,3
+train,group_size,4:audi|r8,4
+train,group_size,4:audi|rs,8
+train,group_size,4:audi|rs 7,2
+train,group_size,4:audi|s3,1
+train,group_size,4:audi|s4,2
+train,group_size,4:audi|s5,7
+train,group_size,4:audi|s6,1
+train,group_size,4:audi|s7,1
+train,group_size,4:audi|sq5,4
+train,group_size,4:audi|tt,5
+train,group_size,4:audi|tt rs,1
+train,group_size,4:fiat|124 spider,8
+train,group_size,4:fiat|500 x,5
+train,group_size,4:ford|bronco,6
+train,group_size,4:ford|edge,9
+train,group_size,4:ford|escape,3
+train,group_size,4:ford|expedition,4
+train,group_size,4:ford|explorer,11
+train,group_size,4:ford|flex,1
+train,group_size,4:ford|focus,1
+train,group_size,4:ford|fusion,7
+train,group_size,4:jeep|cherokee,19
+train,group_size,4:jeep|grand cherokee,20
+train,group_size,4:jeep|grand wagoneer,6
+train,group_size,4:jeep|patriot,8
+train,group_size,4:jeep|renegade,14
+train,group_size,4:jeep|wagoneer,3
+train,group_size,4:jeep|wrangler,25
+train,group_size,4:mini|clubman,16
+train,group_size,4:mini|countryman,49
+train,group_size,5:acura|adx,2
+train,group_size,5:acura|mdx,22
+train,group_size,5:acura|rdx,23
+train,group_size,5:acura|rlx,3
+train,group_size,5:acura|tlx,33
+train,group_size,5:buick|enclave,17
+train,group_size,5:buick|encore,35
+train,group_size,5:buick|envision,17
+train,group_size,5:buick|envista,2
+train,group_size,5:buick|lacrosse,6
+train,group_size,5:buick|regal,10
+train,group_size,5:dodge|charger,19
+train,group_size,5:dodge|durango,26
+train,group_size,5:dodge|hornet,2
+train,group_size,5:dodge|journey,4
+train,group_size,5:dodge|viper,1
+train,group_size,5:honda|accord,9
+train,group_size,5:honda|civic,29
+train,group_size,5:honda|cr-v,9
+train,group_size,5:honda|crosstour,2
+train,group_size,5:honda|fit,12
+train,group_size,5:honda|hr-v,15
+train,group_size,5:honda|passport,2
+train,group_size,5:honda|pilot,8
+train,group_size,5:lexus|es,6
+train,group_size,5:lexus|gs,9
+train,group_size,5:lexus|gx,2
+train,group_size,5:lexus|lc,3
+train,group_size,5:lexus|ls,5
+train,group_size,5:lexus|lx,2
+train,group_size,5:lexus|nx,7
+train,group_size,5:lexus|rx,10
+train,group_size,5:lexus|tx,1
+train,group_size,5:lexus|ux,2
+train,group_size,5:lotus|emira,4
+train,group_size,5:mazda|2,7
+train,group_size,5:mazda|3,48
+train,group_size,5:mazda|6,3
+train,group_size,5:mazda|cx-3,4
+train,group_size,5:mazda|cx-30,12
+train,group_size,5:mazda|cx-5,11
+train,group_size,5:mazda|cx-50,6
+train,group_size,5:mazda|cx-9,6
+train,group_size,5:mazda|mx-5,10
+train,group_size,5:scion|ia,2
+train,group_size,5:scion|im,2
+train,group_size,5:scion|iq,1
+train,group_size,5:scion|tc,4
+train,group_size,5:scion|xb,2
+train,group_size,5:smart|fortwo,8
+train,group_size,5:volvo|s60,10
+train,group_size,5:volvo|s80,1
+train,group_size,5:volvo|s90,3
+train,group_size,5:volvo|v60,17
+train,group_size,5:volvo|v90,5
+train,group_size,5:volvo|xc40,4
+train,group_size,5:volvo|xc60,16
+train,group_size,5:volvo|xc70,4
+train,group_size,5:volvo|xc90,8
+train,group_size,6:jaguar|e-pace,7
+train,group_size,6:jaguar|f-pace,10
+train,group_size,6:jaguar|f-type,33
+train,group_size,6:jaguar|xf,16
+train,group_size,6:jaguar|xj,9
+train,group_size,6:jaguar|xjl,6
+train,group_size,6:nissan|370z,7
+train,group_size,6:nissan|altima,12
+train,group_size,6:nissan|armada,8
+train,group_size,6:nissan|gt-r,3
+train,group_size,6:nissan|juke,4
+train,group_size,6:nissan|kicks,2
+train,group_size,6:nissan|maxima,3
+train,group_size,6:nissan|murano,9
+train,group_size,6:nissan|pathfinder,11
+train,group_size,6:nissan|sentra,9
+train,group_size,6:nissan|versa,3
+train,group_size,6:nissan|xterra,3
+train,group_size,6:nissan|z,2
+train,group_size,6:pagani|huayra coupe,1
+train,group_size,6:subaru|ascent,6
+train,group_size,6:subaru|crosstrek,14
+train,group_size,6:subaru|forester,8
+train,group_size,6:subaru|impreza,37
+train,group_size,6:subaru|legacy,22
+train,group_size,6:subaru|wrx,16
+train,group_size,6:toyota|4runner,8
+train,group_size,6:toyota|avalon,1
+train,group_size,6:toyota|camry,9
+train,group_size,6:toyota|corolla,10
+train,group_size,6:toyota|corolla cross,1
+train,group_size,6:toyota|gr 86,2
+train,group_size,6:toyota|highlander,9
+train,group_size,6:toyota|rav4,8
+train,group_size,6:toyota|sequoia,3
+train,group_size,6:toyota|yaris,3
+train,group_size,7:bentley|bentayga,16
+train,group_size,7:bentley|continental,32
+train,group_size,7:bentley|continental supersports,1
+train,group_size,7:bentley|continental supersports convertible,2
+train,group_size,7:bentley|mulsanne,7
+train,group_size,7:bugatti|chiron,12
+train,group_size,7:bugatti|divo,1
+train,group_size,7:bugatti|veyron,1
+train,group_size,7:ferrari|458 speciale,4
+train,group_size,7:ferrari|458 spider,2
+train,group_size,7:ferrari|488 gtb,8
+train,group_size,7:ferrari|488 pista,2
+train,group_size,7:ferrari|488 pista spider,2
+train,group_size,7:ferrari|488 spider,8
+train,group_size,7:ferrari|812 competizione,4
+train,group_size,7:ferrari|812 gts,3
+train,group_size,7:ferrari|812 superfast,4
+train,group_size,7:ferrari|california t,8
+train,group_size,7:ferrari|f12,2
+train,group_size,7:ferrari|f12 berlinetta,2
+train,group_size,7:ferrari|f167 aba,1
+train,group_size,7:ferrari|f175 aha,1
+train,group_size,7:ferrari|f8 spider,3
+train,group_size,7:ferrari|f8 tributo,3
+train,group_size,7:ferrari|ff,4
+train,group_size,7:ferrari|gtc4lusso,7
+train,group_size,7:ferrari|monza sp1,1
+train,group_size,7:ferrari|portofino,6
+train,group_size,7:ferrari|purosangue,2
+train,group_size,7:ferrari|roma,5
+train,group_size,7:genesis|g70,20
+train,group_size,7:genesis|g80,29
+train,group_size,7:genesis|g90,19
+train,group_size,7:genesis|gv70,6
+train,group_size,7:genesis|gv80,5
+train,group_size,7:hyundai|accent,4
+train,group_size,7:hyundai|azera,3
+train,group_size,7:hyundai|genesis,4
+train,group_size,7:hyundai|palisade,4
+train,group_size,7:hyundai|santa cruz,5
+train,group_size,7:hyundai|sonata,9
+train,group_size,7:hyundai|tucson,11
+train,group_size,7:hyundai|veloster,7
+train,group_size,7:lincoln|aviator,11
+train,group_size,7:lincoln|continental,12
+train,group_size,7:lincoln|mkc,6
+train,group_size,7:lincoln|mks,3
+train,group_size,7:lincoln|mkt,4
+train,group_size,7:lincoln|mkx,7
+train,group_size,7:lincoln|mkz,14
+train,group_size,7:lincoln|nautilus,15
+train,group_size,7:porsche|911,58
+train,group_size,7:porsche|cayenne,13
+train,group_size,7:porsche|cayman,4
+train,group_size,7:porsche|macan,6
+train,group_size,7:porsche|panamera,9
+train,group_size,8:cadillac|ats,14
+train,group_size,8:cadillac|ats-v,2
+train,group_size,8:cadillac|ct4,24
+train,group_size,8:cadillac|ct5,13
+train,group_size,8:cadillac|ct6,5
+train,group_size,8:cadillac|srx,2
+train,group_size,8:cadillac|xt4,1
+train,group_size,8:cadillac|xt5,7
+train,group_size,8:cadillac|xt6,2
+train,group_size,8:cadillac|xts,6
+train,group_size,8:chrysler|200,5
+train,group_size,8:chrysler|300,26
+train,group_size,8:infiniti|q50,22
+train,group_size,8:infiniti|q60,17
+train,group_size,8:infiniti|qx30,5
+train,group_size,8:infiniti|qx50,15
+train,group_size,8:infiniti|qx55,3
+train,group_size,8:infiniti|qx60,11
+train,group_size,8:infiniti|qx70,3
+train,group_size,8:infiniti|qx80,18
+train,group_size,8:maserati|ghibli,25
+train,group_size,8:maserati|granturismo,11
+train,group_size,8:maserati|grecale,1
+train,group_size,8:maserati|gt2 stradale,1
+train,group_size,8:maserati|levante,23
+train,group_size,8:maserati|mc20,7
+train,group_size,8:maserati|quattroporte,25
+train,group_size,9:chevrolet|blazer,4
+train,group_size,9:chevrolet|corvette,1
+train,group_size,9:chevrolet|cruze,6
+train,group_size,9:chevrolet|equinox,2
+train,group_size,9:chevrolet|impala,2
+train,group_size,9:chevrolet|malibu,5
+train,group_size,9:chevrolet|sonic,10
+train,group_size,9:chevrolet|spark,4
+train,group_size,9:chevrolet|tahoe,15
+train,group_size,9:chevrolet|trax,4

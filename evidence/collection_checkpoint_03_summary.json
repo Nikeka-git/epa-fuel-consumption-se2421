@@ -1,0 +1,97 @@
+{
+  "audit_version": "1",
+  "audited_at_utc": "2026-10-09T02:04:13.554972+00:00",
+  "snapshot_id": "benchmark_2015_2025_20261009",
+  "mode": "checkpoint",
+  "collection_status": "running",
+  "full_catalogue_complete": false,
+  "captured_source_sha256": {
+    "config.json": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+    "cache_index.json": "68e934a89a25c4c8023c4234686ae1f95664c59c6bc86a84aceab32a239a67b0",
+    "inventory.json": "bd3d1f8a843776ba0b0ff47bb1e625d9bd9dfbe22031ed81680705e7af3909a3",
+    "snapshot.json": "1108e29050471506c996578ebe263afa9b5b9877128408171a110eb89dec0473"
+  },
+  "committed_successful_cache_entries": 7477,
+  "verified_vehicle_records": 3920,
+  "scope_eligible_before_duplicate_resolution": 2827,
+  "integrity_issue_rows": 0,
+  "inventory_fetched_ids_not_verified_in_captured_cache": [],
+  "inventory_status_counts": {
+    "fetched": 3920,
+    "discovered": 157
+  },
+  "target_validity_counts": {
+    "valid_positive_finite": 3920
+  },
+  "independent_exclusion_reason_counts": {
+    "secondary_fuel_present": 204,
+    "alternative_technology_present": 854,
+    "electric_motor_present": 702,
+    "hybrid_text_signal": 339,
+    "vehicle_class_out_of_scope": 356,
+    "primary_fuel_out_of_scope": 402,
+    "insufficient_engine_specs": 341,
+    "phev_blended": 102,
+    "nonpositive_engine_spec:displacement_l": 1,
+    "reviewed_powertrain_uncertain:audi_sq7_sq8_4l_technology_uncertain": 2,
+    "reviewed_powertrain_hybrid:audi_2021_2022_a4_a5_q5_2l_mild_hybrid": 4,
+    "reviewed_powertrain_hybrid:volvo_b_badge_mild_hybrid": 21
+  },
+  "missing_powertrain_counts": {
+    "atvType:present": 3920,
+    "evMotor:present": 3920,
+    "fuelType1:present": 3920,
+    "fuelType2:present": 3920,
+    "phevBlended:present": 3920
+  },
+  "manifest": {
+    "checked": false,
+    "reason": "checkpoint_reads_committed_cache_only"
+  },
+  "duplicates": {
+    "candidate_formation_fields": [
+      "model_year",
+      "manufacturer",
+      "model_name",
+      "displacement_l",
+      "cylinders",
+      "transmission",
+      "drivetrain",
+      "vehicle_class",
+      "engine_description",
+      "engine_id",
+      "fuel_type_primary"
+    ],
+    "target_used_for_candidate_formation": false,
+    "candidate_groups": 0,
+    "candidate_rows": 0,
+    "raw_difference_groups": 0,
+    "target_conflict_groups": 0,
+    "complete_equivalence_duplicate_rows": 0,
+    "scope": "scope_eligible_before_duplicate_resolution"
+  },
+  "families": {
+    "fallback_rows": 0,
+    "unresolved_fallback_rows": 0,
+    "model_names_with_multiple_base_models": 15,
+    "automatic_aliases_applied": 0,
+    "prefix_alias_guessing": false
+  },
+  "cleaned": {
+    "checked": false,
+    "reason": "no_cleaned_dataset_supplied"
+  },
+  "raw_field_count": 95,
+  "meaning_review_status_counts": {
+    "not_verified_by_independent_audit": 95
+  },
+  "human_review_hints": [
+    "Checkpoint is a committed-cache view during collection; inventory/cache may be captured at different instants. Counts are provisional.",
+    "Review model_family_fallbacks.csv and model_family_consistency.csv from source evidence before freeze; do not infer aliases by model-name prefixes.",
+    "Detailed meanings remain unverified for some raw fields. Observed types/roles are not substitutes for the official source dictionary.",
+    "No target outlier pruning or target imputation was performed. Counts describe catalogue configurations, not vehicle sales.",
+    "Unknown/non-allowed classes and alternative-technology labels are reported; this audit does not extend the allowlist."
+  ],
+  "source_data_or_aliases_modified": false,
+  "target_outlier_pruning": false
+}

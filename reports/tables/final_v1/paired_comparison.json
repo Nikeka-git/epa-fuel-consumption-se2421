@@ -1,0 +1,30 @@
+{
+  "comparisons": [
+    {
+      "text_arm": "structured_model",
+      "baseline": "structured",
+      "n_test": 619,
+      "mean_abs_error_delta": -0.00808062230197922,
+      "n_text_better": 300,
+      "interpretation": "text absolute error minus structured absolute error; negative favours text"
+    },
+    {
+      "text_arm": "structured_engine",
+      "baseline": "structured",
+      "n_test": 619,
+      "mean_abs_error_delta": 0.014866316828203859,
+      "n_text_better": 289,
+      "interpretation": "text absolute error minus structured absolute error; negative favours text"
+    },
+    {
+      "text_arm": "structured_model_engine",
+      "baseline": "structured",
+      "n_test": 619,
+      "mean_abs_error_delta": -0.0039940404871127546,
+      "n_text_better": 310,
+      "interpretation": "text absolute error minus structured absolute error; negative favours text"
+    }
+  ],
+  "used_for_selection": false,
+  "inference_limit": "Descriptive paired test differences. No independent-row significance claim or confidence interval."
+}

@@ -1,0 +1,96 @@
+raw_field,observed_types_json,present_count,missing_or_empty_count,internal_field,meaning_review_status,provided_description,audit_claims_source_meaning_verified
+UCity,"{""str"":4500}",4500,0,,documented_official_api_guide,unadjusted city MPG for fuelType1; see the description of the EPA test procedures,False
+UCityA,"{""str"":4500}",4500,0,,documented_official_api_guide,unadjusted city MPG for fuelType2; see the description of the EPA test procedures,False
+UHighway,"{""str"":4500}",4500,0,,documented_official_api_guide,unadjusted highway MPG for fuelType1; see the description of the EPA test procedures,False
+UHighwayA,"{""str"":4500}",4500,0,,documented_official_api_guide,unadjusted highway MPG for fuelType2; see the description of the EPA test procedures,False
+VClass,"{""str"":4500}",4500,0,vehicle_class,documented_official_api_guide,EPA vehicle size class,False
+atvType,"{""str"":4500}",4500,3516,atv_type,documented_official_api_guide,type of alternative fuel or advanced technology vehicle,False
+barrels08,"{""str"":4500}",4500,0,,documented_official_api_guide,annual petroleum consumption in barrels for fuelType1 (1),False
+barrelsA08,"{""str"":4500}",4500,0,,documented_official_api_guide,annual petroleum consumption in barrels for fuelType2 (1),False
+baseModel,"{""str"":4500}",4500,0,base_model,documented_official_api_guide,base model name,False
+battery,"{""str"":4500}",4500,0,,undocumented_source_encoding,Battery-related source field. Its exact meaning and encoding are absent from the captured guide; retained without interpretation and excluded from inputs.,False
+c240Dscr,"{""str"":4500}",4500,4409,,documented_official_api_guide,electric vehicle charger description,False
+c240bDscr,"{""str"":4500}",4500,4413,,documented_official_api_guide,electric vehicle alternate charger description,False
+charge120,"{""str"":4500}",4500,0,,documented_official_api_guide,time to charge an electric vehicle in hours at 120 V,False
+charge240,"{""str"":4500}",4500,0,,documented_official_api_guide,time to charge an electric vehicle in hours at 240 V,False
+charge240b,"{""str"":4500}",4500,0,,documented_official_api_guide,time to charge an electric vehicle in hours at 240 V using the alternate charger,False
+city08,"{""str"":4500}",4500,0,,documented_official_api_guide,"city MPG for fuelType1 (2), (11)",False
+city08U,"{""str"":4500}",4500,0,,documented_official_api_guide,"unrounded city MPG for fuelType1 (2), (3)",False
+cityA08,"{""str"":4500}",4500,0,,documented_official_api_guide,city MPG for fuelType2 (2),False
+cityA08U,"{""str"":4500}",4500,0,,documented_official_api_guide,"unrounded city MPG for fuelType2 (2), (3)",False
+cityCD,"{""str"":4500}",4500,0,,documented_official_api_guide,city gasoline consumption (gallons/100 miles) in charge depleting mode (4),False
+cityE,"{""str"":4500}",4500,0,,documented_official_api_guide,city electricity consumption in kWh/100 miles,False
+cityMpk,"{""str"":4500}",4500,0,,documented_official_api_guide,city miles per kilogram for hydrogen,False
+cityUF,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA city utility factor (share of electricity) for PHEV,False
+cityUmpk,"{""str"":4500}",4500,0,,documented_official_api_guide,unrounded city miles per kilogram for hydrogen,False
+co2,"{""str"":4500}",4500,0,,documented_official_api_guide,tailpipe CO2 in grams/mile for fuelType1 (5),False
+co2A,"{""str"":4500}",4500,0,,documented_official_api_guide,tailpipe CO2 in grams/mile for fuelType2 (5),False
+co2TailpipeAGpm,"{""str"":4500}",4500,0,,documented_official_api_guide,tailpipe CO2 in grams/mile for fuelType2 (5),False
+co2TailpipeGpm,"{""str"":4500}",4500,0,,documented_official_api_guide,tailpipe CO2 in grams/mile for fuelType1 (5),False
+comb08,"{""str"":4500}",4500,0,combined_mpg,documented_official_api_guide,"combined MPG for fuelType1 (2), (11)",False
+comb08U,"{""str"":4500}",4500,0,combined_mpg_unrounded,documented_official_api_guide,"unrounded combined MPG for fuelType1 (2), (3)",False
+combA08,"{""str"":4500}",4500,0,,documented_official_api_guide,combined MPG for fuelType2 (2),False
+combA08U,"{""str"":4500}",4500,0,,documented_official_api_guide,"unrounded combined MPG for fuelType2 (2), (3)",False
+combE,"{""str"":4500}",4500,0,,documented_official_api_guide,combined electricity consumption in kWh/100 miles,False
+combMpk,"{""str"":4500}",4500,0,,documented_official_api_guide,combined miles per kilogram for hydrogen,False
+combUmpk,"{""str"":4500}",4500,0,,documented_official_api_guide,unrounded combined miles per kilogram for hydrogen,False
+combinedCD,"{""str"":4500}",4500,0,,documented_official_api_guide,combined gasoline consumption (gallons/100 miles) in charge depleting mode (4),False
+combinedUF,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA combined utility factor (share of electricity) for PHEV,False
+createdOn,"{""str"":4500}",4500,0,,documented_official_api_guide,date the vehicle record was created,False
+cylDeact,"{""str"":4500}",4500,396,,field_name_inference_encoding_unconfirmed,Cylinder-deactivation source code inferred from the field name; exact code mapping is not documented in the captured API guide.,False
+cylDeactYesNo,"{""str"":4500}",4500,0,,field_name_inference_encoding_unconfirmed,Human-readable cylinder-deactivation indicator inferred from the field name; not used for eligibility or prediction.,False
+cylinders,"{""str"":4500}",4500,397,cylinders,documented_official_api_guide,engine cylinders,False
+displ,"{""str"":4500}",4500,396,displacement_l,documented_official_api_guide,engine displacement in liters,False
+drive,"{""str"":4500}",4500,0,drivetrain,documented_official_api_guide,drive axle type,False
+emissionsList,"{""NoneType"":83,""dict"":4417}",4500,83,,documented_source_structure,Nested emissions records linked to this vehicle; see the emissions section of the API guide.,False
+engId,"{""str"":4500}",4500,0,engine_id,documented_official_api_guide,EPA model type index,False
+eng_dscr,"{""str"":4500}",4500,1381,engine_description,documented_official_api_guide,engine descriptor; see http://www.fueleconomy.gov/feg/findacarhelp.shtml#engine,False
+evMotor,"{""str"":4500}",4500,3691,electric_motor,documented_and_observed_type_review,"Electric-motor source description. The guide labels it as kW, but actual responses can contain free-form power, voltage and battery text; preserve it as a string.",False
+feScore,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA Fuel Economy Score (-1 = Not available),False
+fuelCost08,"{""str"":4500}",4500,0,,documented_official_api_guide,annual fuel cost for fuelType1 ($) (7),False
+fuelCostA08,"{""str"":4500}",4500,0,,documented_official_api_guide,annual fuel cost for fuelType2 ($) (7),False
+fuelType,"{""str"":4500}",4500,0,,documented_official_api_guide,fuel type with fuelType1 and fuelType2 (if applicable),False
+fuelType1,"{""str"":4500}",4500,1,fuel_type_primary,documented_official_api_guide,"fuel type 1. For single fuel vehicles, this will be the only fuel. For dual fuel vehicles, this will be the conventional fuel.",False
+fuelType2,"{""str"":4500}",4500,4275,fuel_type_secondary,documented_official_api_guide,"fuel type 2. For dual fuel vehicles, this will be the alternative fuel (e.g., E85, Electricity, CNG, LPG). For single fuel vehicles, this field is not used",False
+ghgScore,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA GHG score (-1 = Not available),False
+ghgScoreA,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA GHG score for dual fuel vehicle running on the alternative fuel (-1 = Not available),False
+guzzler,"{""str"":4500}",4500,4087,,documented_official_api_guide,"if G or T, this vehicle is subject to the gas guzzler tax",False
+highway08,"{""str"":4500}",4500,0,,documented_official_api_guide,"highway MPG for fuelType1 (2), (11)",False
+highway08U,"{""str"":4500}",4500,0,,documented_official_api_guide,"unrounded highway MPG for fuelType1 (2), (3)",False
+highwayA08,"{""str"":4500}",4500,0,,documented_official_api_guide,highway MPG for fuelType2 (2),False
+highwayA08U,"{""str"":4500}",4500,0,,documented_official_api_guide,"unrounded highway MPG for fuelType2 (2),(3)",False
+highwayCD,"{""str"":4500}",4500,0,,documented_official_api_guide,highway gasoline consumption (gallons/100 miles) in charge depleting mode (4),False
+highwayE,"{""str"":4500}",4500,0,,documented_official_api_guide,highway electricity consumption in kWh/100 miles,False
+highwayMpk,"{""str"":4500}",4500,0,,documented_official_api_guide,highway miles per kilogram for hydrogen,False
+highwayUF,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA highway utility factor (share of electricity) for PHEV,False
+highwayUmpk,"{""str"":4500}",4500,0,,documented_official_api_guide,unrounded highway miles per kilogram for hydrogen,False
+hlv,"{""str"":4500}",4500,0,,documented_official_api_guide,hatchback luggage volume (cubic feet) (8),False
+hpv,"{""str"":4500}",4500,0,,documented_official_api_guide,hatchback passenger volume (cubic feet) (8),False
+id,"{""str"":4500}",4500,0,vehicle_id,documented_official_api_guide,vehicle record id,False
+lv2,"{""str"":4500}",4500,0,,documented_official_api_guide,2-door luggage volume (cubic feet) (8),False
+lv4,"{""str"":4500}",4500,0,,documented_official_api_guide,4-door luggage volume (cubic feet) (8),False
+make,"{""str"":4500}",4500,0,manufacturer,documented_official_api_guide,manufacturer (division),False
+mfrCode,"{""str"":4500}",4500,0,,documented_official_api_guide,3-character manufacturer code,False
+model,"{""str"":4500}",4500,0,model_name,documented_official_api_guide,model name (carline),False
+modifiedOn,"{""str"":4500}",4500,0,,documented_official_api_guide,date the vehicle record was last modified,False
+mpgData,"{""str"":4500}",4500,0,,documented_official_api_guide,has My MPG data; see yourMpgVehicle and yourMpgDriverVehicle,False
+mpgRevised,"{""str"":4500}",4500,0,,field_name_inference_encoding_unconfirmed,Source flag apparently indicating revised MPG estimates; exact field encoding is absent from the captured guide. Not a predictor.,False
+phevBlended,"{""str"":4500}",4500,0,phev_blended,documented_official_api_guide,"if true, this vehicle operates on a blend of gasoline and electricity in charge depleting mode",False
+phevCity,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA composite gasoline-electricity city MPGe for plug-in hybrid vehicles,False
+phevComb,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA composite gasoline-electricity combined city-highway MPGe for plug-in hybrid vehicles,False
+phevHwy,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA composite gasoline-electricity highway MPGe for plug-in hybrid vehicles,False
+pv2,"{""str"":4500}",4500,0,,documented_official_api_guide,2-door passenger volume (cubic feet) (8),False
+pv4,"{""str"":4500}",4500,0,,documented_official_api_guide,4-door passenger volume (cubic feet) (8),False
+range,"{""str"":4500}",4500,0,,undocumented_source_encoding,Driving-range source field for the primary fuel. Exact encoding and units are not defined for this key in the captured API guide; excluded from inputs.,False
+rangeA,"{""str"":4500}",4500,4274,,documented_official_api_guide,EPA range for fuelType2,False
+rangeCity,"{""str"":4500}",4500,0,,undocumented_source_encoding,City driving-range source field for the primary fuel. Exact encoding and units are not defined for this key in the captured guide; excluded from inputs.,False
+rangeCityA,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA city range for fuelType2,False
+rangeHwy,"{""str"":4500}",4500,0,,undocumented_source_encoding,Highway driving-range source field for the primary fuel. Exact encoding and units are not defined for this key in the captured guide; excluded from inputs.,False
+rangeHwyA,"{""str"":4500}",4500,0,,documented_official_api_guide,EPA highway range for fuelType2,False
+sCharger,"{""str"":4500}",4500,4260,,documented_official_api_guide,"if S, this vehicle is supercharged",False
+startStop,"{""str"":4500}",4500,0,,documented_official_api_guide,"vehicle has stop-start technology (Y, N, or blank for older vehicles)",False
+tCharger,"{""str"":4500}",4500,2330,,documented_official_api_guide,"if T, this vehicle is turbocharged",False
+trans_dscr,"{""str"":4500}",4500,4500,,documented_official_api_guide,transmission descriptor; see http://www.fueleconomy.gov/feg/findacarhelp.shtml#trany,False
+trany,"{""str"":4500}",4500,0,transmission,documented_official_api_guide,transmission,False
+year,"{""str"":4500}",4500,0,model_year,documented_official_api_guide,model year,False
+youSaveSpend,"{""str"":4500}",4500,0,,documented_official_api_guide,"you save/spend over 5 years compared to an average car ($). Savings are positive; a greater amount spent yields a negative number. For dual fuel vehicles, this is the cost savings for gasoline",False

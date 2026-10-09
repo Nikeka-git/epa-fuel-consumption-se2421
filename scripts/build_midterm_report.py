@@ -91,8 +91,10 @@ def main() -> None:
     ax.legend()
     save(figure, '01_train_target.png')
     figure, ax = plt.subplots(figsize=(9, 5))
-    for label, group in train.groupby('vehicle_class'):
-        ax.scatter(group.displacement_l, group[target], alpha=.5, s=15, label=label)
+    class_groups = list(train.groupby('vehicle_class', sort=True))
+    class_palette = plt.get_cmap('tab20', len(class_groups))
+    for index, (label, group) in enumerate(class_groups):
+        ax.scatter(group.displacement_l, group[target], alpha=.5, s=15, label=label, color=class_palette(index))
     ax.set(xlabel='Engine displacement (L)', ylabel='EPA combined (L/100 km)', title='Training displacement and target')
     ax.legend(fontsize=7, loc='upper left', bbox_to_anchor=(1.02, 1))
     save(figure, '02_train_displacement.png')

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "run_id": "midterm_v1",
+  "stage": "midterm",
+  "status": "completed",
+  "started_at_utc": "2026-10-09T02:21:51.009356+00:00",
+  "completed_at_utc": "2026-10-09T02:21:53.273686+00:00",
+  "dataset_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\processed\\vehicles.parquet",
+  "dataset_relative_path": "data/processed/vehicles.parquet",
+  "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+  "config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "saved_config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "split_sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+  "split_metadata_sha256": "e4c14ba4b64370179504006b78a65f69a2ed08d2c5ffbe7c3396898d010b594b",
+  "group_mapping_sha256": "ea002eeb6db16b7e83cf51cb968af65a773857211fb013511ef298a7029cb5a4",
+  "reports_path": "reports/tables/midterm_v1",
+  "predictions_sha256": "d19cf5c040aa8290b8b7bcd578df8ce1ebac752c20d328830a5b0eb231f5ea7a",
+  "model_artifact_sha256": {
+    "dummy": "d78241176aeddae431a00628df3510cc6d719ff5177333395a7735b992d09882",
+    "linear": "8bbd909fe975cbb451e29dae1feb3acc6f694dbae7309ba860a26a86a18b2dc0",
+    "knn": "9db09ccf0f8cc260e8f09bc5ff76600c9a492422917c5a23b2d9da0b399cf01c",
+    "tree": "89135e66fec2af6b3063aa290901170a18073131c63e40f7049e8c7d08e2745b"
+  },
+  "code_sha256": {
+    "features.py": "b65d3d3af7fbeba95a99c0e3e45650580a0f292a7b2fe512a79ef536934e8385",
+    "split.py": "0fc5950953424cf3a08f16b0aeb0c2c9ee27169f45d0c55ffac5d387152ec5f5",
+    "train.py": "adaa1e2fb67f506f21f9e8dc73b888d6ab22ee7b695fa4439d1b5e9452c23662",
+    "evaluate.py": "2529a2a74ef0d3585620730f6a0eb12ff5df818dbd636c529a11fa175c5a9d57"
+  },
+  "selected_model": "linear",
+  "selection_source": "train_group_cv",
+  "test_used_for_selection": false,
+  "residual_definition": "prediction_minus_actual",
+  "feature_columns": [
+    "model_year",
+    "displacement_l",
+    "cylinders",
+    "manufacturer",
+    "transmission",
+    "drivetrain",
+    "vehicle_class"
+  ],
+  "n_train": 2628,
+  "n_test": 619,
+  "development_small_dataset": false,
+  "small_dataset_note": null,
+  "dense_training_memory_estimate": {
+    "n_rows": 2628,
+    "upper_bound_columns": 101,
+    "upper_bound_float64_bytes": 2123424
+  },
+  "python_version": "3.12.14",
+  "package_versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "fit_seconds_definition": "fit on full training split; CV time stored separately"
+}

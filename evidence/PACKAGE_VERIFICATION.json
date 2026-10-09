@@ -1,47 +1,275 @@
 {
   "status": "passed",
-  "verification_date": "2026-10-09",
-  "release_stage": "initial implementation and limited real example; full benchmark pending",
-  "checked": [
-    "Python syntax",
-    "JSON parsing",
-    "local Markdown links",
-    "no credential-like values in release files",
-    "Git release file size limits",
-    "429 cached response SHA-256 hashes",
-    "4 provided source hashes",
-    "processed example dataset SHA-256",
-    "executed notebook outputs"
-  ],
-  "offline_tests": {
-    "passed": 91,
-    "cleaning": 47,
-    "api_and_collector": 36,
-    "modeling": 8
+  "verified_at_utc": "2026-10-09T02:48:24.499849+00:00",
+  "release_stage": "full benchmark and completed three-stage demonstration",
+  "raw": {
+    "snapshot_id": "benchmark_2015_2025_20261009",
+    "status": "partial",
+    "full_catalogue_complete": false,
+    "verified_response_bodies": 8568,
+    "successful_cache_entries": 8568,
+    "raw_vehicle_records": 4500,
+    "durable_recorded_attempts": 8568,
+    "failed_attempts": 0,
+    "unfinished_historical_invocations": 4,
+    "collection_finished_at_utc": "2026-10-09T02:14:20.303923+00:00",
+    "snapshot_sha256": "7f503227e24cebe6413270fa62756e2584027c96f925482af8ef23b1a9aedd2f"
   },
-  "limited_example": {
-    "raw_vehicle_records": 250,
-    "cleaned_rows": 146,
-    "excluded_rows": 104,
-    "minimum_1000_met": false,
-    "full_catalogue_complete": false
+  "dataset": {
+    "cleaned_rows": 3247,
+    "minimum_3000_met": true,
+    "sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+    "unresolved_duplicate_candidate_groups": 0
+  },
+  "split": {
+    "schema_version": "1.0",
+    "frozen_at_utc": "2026-10-09T02:21:45.919888+00:00",
+    "dataset_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\processed\\vehicles.parquet",
+    "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+    "config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+    "artifact_sha256": {
+      "group_mapping.csv": "ea002eeb6db16b7e83cf51cb968af65a773857211fb013511ef298a7029cb5a4",
+      "group_alias_audit.csv": "a931d8abe96c1879646e823f11bad5634e82405c8609da68f831bf2b1544014b",
+      "split_manifest.csv": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+      "split_coverage.csv": "07d2fef6a01d66640d9aeec57fc1dc36aa5dd36da2e055be91e741d0ec0d6df0"
+    },
+    "alias_map_sha256": "9dc5e6f72b7b7349642946730a43236e921ff470b9bb78297d6afa1d24f6c559",
+    "group_definition": "normalized manufacturer + base_model; fallback full model_name; across years",
+    "method": "GroupShuffleSplit",
+    "test_group_fraction": 0.2,
+    "random_state": 42,
+    "cv_method": "GroupKFold",
+    "cv_n_splits": 5,
+    "cv_shuffle": false,
+    "python_version": "3.12.14",
+    "sklearn_version": "1.9.1",
+    "development_small_dataset": false,
+    "unresolved_fallback_rows": 0,
+    "alias_limitation": "Unresolved full-name fallbacks may represent related families; inspect group_alias_audit.csv before claims of family independence.",
+    "n_train": 2628,
+    "n_test": 619,
+    "n_train_groups": 311,
+    "n_test_groups": 78,
+    "test_row_fraction": 0.19063751154912226,
+    "train_test_id_overlap": 0,
+    "train_test_group_overlap": 0,
+    "cv_group_overlap": 0,
+    "fold_sizes": {
+      "0": {
+        "n_train": 2102,
+        "n_valid": 526
+      },
+      "1": {
+        "n_train": 2102,
+        "n_valid": 526
+      },
+      "2": {
+        "n_train": 2102,
+        "n_valid": 526
+      },
+      "3": {
+        "n_train": 2103,
+        "n_valid": 525
+      },
+      "4": {
+        "n_train": 2103,
+        "n_valid": 525
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_id": "midterm_v1",
+      "stage": "midterm",
+      "selected_model": "linear",
+      "model_count": 4,
+      "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df"
+    },
+    {
+      "run_id": "endterm_v1",
+      "stage": "endterm",
+      "selected_model": "random_forest",
+      "model_count": 3,
+      "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df"
+    },
+    {
+      "run_id": "final_v1",
+      "stage": "final",
+      "selected_model": "structured_engine",
+      "model_count": 4,
+      "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+      "split_sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df"
+    }
+  ],
+  "combined_report": {
+    "models": 11,
+    "stages": 3,
+    "summary_sha256": "9904f08e0ea7f1a4a2b526ecdeaf40c7eb856e39c28db6a18d44322dea204e5d"
   },
   "notebook": {
-    "executed_code_cells": 8,
-    "errors": 0,
-    "plots_visually_inspected": 4
+    "sha256": "f5198af7c4c577cabe79834c9d1a178f20644d62a3c51cc268fcda0eaeb12e69",
+    "executed_code_cells": 12,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "execution_errors": 0,
+    "embedded_png_outputs": 4,
+    "visual_review": "Not performed by this read-only preflight; verify separately."
   },
-  "local_markdown_links": 22,
+  "presentation": {
+    "sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+    "slide_count": 8,
+    "speaker_note_parts": 8,
+    "validation_receipt_sha256": "5b6d316e98d1faf5ce6176368c46abbd90f4aa27f897d6fdd3313170edeb96e5",
+    "package_status": "pass",
+    "font_policy_passed": true,
+    "font_families": [
+      "Arial"
+    ],
+    "native_font_rendering_verified": false,
+    "visual_review": {
+      "pptx_sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+      "reviewed_slides": 8,
+      "reviewed_at_utc": "2026-10-09T02:25:38.387671+00:00",
+      "reviewer": "Codex /root/midterm_reporting",
+      "findings": [],
+      "claim_boundary": "Each final PPTX slide was inspected individually as an original-size 1280x720 PNG. Native PowerPoint opening and native font rendering were not verified.",
+      "slides": [
+        {
+          "slide": 1,
+          "sha256": "f4aef799d849fc878fdfe9dafa8ddb0e30922390d9079502bcebb30d4ce054a3",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "Title, source, scope, question and simulated team labels fit and remain readable."
+        },
+        {
+          "slide": 2,
+          "sha256": "daca9dd550cfc432f4d59ff027b205fbb11ef351551656d9a1226cdddd5c5cb7",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "4500 raw,1253 excluded,3247 retained,49 manufacturers and bounded-sample limitation agree with saved summary."
+        },
+        {
+          "slide": 3,
+          "sha256": "f1e792356e05c9e634034400f29d22178039329582ec8f6c8423ff39d7822ddb",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "Train-only engine and class charts have visible values and counts; counts sum to2628; no causal claim."
+        },
+        {
+          "slide": 4,
+          "sha256": "64aa09c8d98a47b1b3b9cd18b32edbe9928c1501d56201b1cfe14adf13cd8430",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "Seven strict predictors and fold-fitted preprocessing are readable; leakage exclusions stated."
+        },
+        {
+          "slide": 5,
+          "sha256": "295dbd260b26baacaf7bf10c5e58618091223e305f860e5ec47d61924d34a93d",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "2628 train619test,311train78test families and five CV folds agree with frozen split; parameters fit table."
+        },
+        {
+          "slide": 6,
+          "sha256": "23d2abef732f2d6e0b4b62150f9d7bd6d602ac460a1e80a3c75cb1f89617fa5d",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "All four saved CV/test rows agree with metrics; linear wins by CV despite lower KNN test MAE; 72.5 percent baseline improvement is correctly rounded."
+        },
+        {
+          "slide": 7,
+          "sha256": "332a99feb6ffe4df65b046785f0d36d2be3a7c552cb98246a161bc0d7c2a06bc",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "Descriptive selected-linear subgroup counts, bias sign and actual large-error example agree with saved reports; n<30 limitation visible."
+        },
+        {
+          "slide": 8,
+          "sha256": "73783443833a9e8bb5b0dd5c835b8a67e0beb3de30d173d4542d93680a9d252b",
+          "review_method": "individual_full_size_png",
+          "image_size_px": [
+            1280,
+            720
+          ],
+          "findings": [],
+          "observations": "Selected linear testMAE0.714, bounded EPA/family limits, stage roadmap and AI-demo role disclosure fit without overlap."
+        }
+      ]
+    },
+    "claim_boundary": "Archive, OOXML and saved portable validation evidence only; no native PowerPoint opening or native font rendering is asserted."
+  },
+  "git_release": {
+    "tracked_files": 9272,
+    "total_bytes": 75562365,
+    "largest_file_bytes": 9382403,
+    "local_markdown_links_checked": 136,
+    "secret_scan": "No obvious credential-like patterns found; this is not a comprehensive secret audit."
+  },
+  "offline_tests": {
+    "status": "passed",
+    "evidence_format": "recorded_exec_json",
+    "evidence_sha256": "bab3c1e5543ec40943bdad60ee4b0ea53c32b6812e201f158f303e43a5ce57f2",
+    "tests": 213,
+    "duration_seconds": 59.3,
+    "command": "python -m pytest -q",
+    "stdout_summary": "213 passed in 59.30s",
+    "verified_source_files": 32,
+    "source_commit": "f6313cb4d5dd2ea939e5d58fe0610316afa65091",
+    "recorded_at_utc": "2026-10-09T02:13:57.200379+00:00",
+    "evidence_origin": "Completed local exec session 59729; recorded from its actual final output, not a synthesized JUnit report.",
+    "verification_basis": "Recorded completed execution and current source hashes; the suite was not rerun by this preflight."
+  },
   "source_review": {
-    "guide_pdf": "text and all 3 pages visually inspected",
-    "rubric_docx": "OOXML text and all 4 tables inspected; no comments or tracked changes; visual rendering unavailable because bundled LibreOffice is absent",
-    "lecture_pdfs": "text extracted and key regression pages visually inspected"
+    "guide_pdf": "Previously extracted text and all three pages visually inspected; not repeated by this preflight.",
+    "rubric_docx": "Previously inspected OOXML text and all four tables; no comments or tracked changes. Visual rendering unavailable because bundled LibreOffice is absent.",
+    "lecture_pdfs": "Previously extracted text and key regression pages visually inspected; not repeated by this preflight."
   },
-  "remaining": [
-    "full collection and subject-matter audit",
-    "main benchmark freeze",
-    "full Midterm report and slides",
-    "Endterm and Final experiments",
-    "local prediction application"
-  ]
+  "remaining_claim_limits": [
+    "Source DOCX native/visual rendering was unavailable.",
+    "Portable slide checks do not prove native PowerPoint rendering.",
+    "Human team roles, live defense, and academic submission are not verified by this script."
+  ],
+  "preflight_script_sha256": "9c6cbe69cd9411e350e58818e388b3d9737ea9088654bc56ef647b270e02b083"
 }

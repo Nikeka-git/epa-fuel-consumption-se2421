@@ -1,0 +1,3248 @@
+vehicle_id,model_group,split,cv_fold
+34652,5:mazda|cx-5,train,1
+34653,5:mazda|cx-5,train,1
+34654,5:mazda|cx-5,train,1
+34659,5:volvo|xc60,train,2
+34660,5:volvo|xc70,train,3
+34664,4:audi|tt,train,1
+34668,6:subaru|wrx,train,0
+34669,6:subaru|wrx,train,0
+34671,5:volvo|s80,train,4
+34672,5:volvo|v60,train,2
+34673,5:volvo|v60,train,2
+34679,8:cadillac|escalade,test,
+34684,3:gmc|yukon,train,3
+34700,6:jaguar|f-type,train,1
+34704,6:jaguar|f-type,train,1
+34705,6:jaguar|f-type,train,1
+34711,6:subaru|wrx,train,0
+34712,6:jaguar|xf,train,1
+34713,6:jaguar|xj,train,0
+34714,6:jaguar|xjl,train,1
+34767,7:hyundai|genesis,train,1
+34769,7:hyundai|genesis,train,1
+34777,8:chrysler|200,train,1
+34801,4:mini|cooper,test,
+34804,4:mini|countryman,train,2
+34809,7:bentley|continental,train,1
+34810,7:bentley|continental,train,1
+34813,4:mini|countryman,train,2
+34814,4:mini|countryman,train,2
+34817,4:mini|paceman,test,
+34818,4:mini|paceman,test,
+34823,4:mini|paceman,test,
+34824,4:mini|paceman,test,
+34825,10:volkswagen|golf/gti,train,0
+34826,10:volkswagen|golf/gti,train,0
+34829,7:bentley|flying spur,test,
+34830,8:chrysler|200,train,1
+34831,8:chrysler|200,train,1
+34838,5:volvo|v60,train,2
+34839,5:acura|rdx,train,4
+34841,5:volvo|xc70,train,3
+34843,5:acura|rdx,train,4
+34846,5:volvo|xc70,train,3
+34847,5:volvo|xc60,train,2
+34851,3:bmw|4 series,train,3
+34855,5:honda|fit,train,4
+34862,4:mini|cooper,test,
+34865,4:mini|countryman,train,2
+34884,6:nissan|versa,train,0
+34885,6:nissan|versa,train,0
+34886,6:nissan|versa,train,0
+34888,5:mazda|mx-5,train,0
+34889,5:mazda|mx-5,train,0
+34890,5:mazda|mx-5,train,0
+34894,7:bentley|mulsanne,train,3
+34896,3:kia|cadenza,test,
+34900,10:land rover|lr2,train,0
+34912,3:kia|optima,train,3
+34913,8:infiniti|qx50,train,4
+34917,8:infiniti|qx70,train,1
+34921,11:lamborghini|huracan,train,3
+34933,12:aston martin|vantage,test,
+34934,12:aston martin|vantage,test,
+34935,12:aston martin|vantage,test,
+34936,12:aston martin|vantage,test,
+34937,12:aston martin|vantage,test,
+34938,12:aston martin|vantage,test,
+34939,7:bugatti|veyron,train,3
+34940,5:scion|fr-s,test,
+34941,5:scion|fr-s,test,
+34944,3:kia|forte,train,2
+34945,3:kia|forte,train,2
+34946,3:kia|forte,train,2
+34947,3:kia|forte,train,2
+34949,3:kia|optima,train,3
+34958,7:lincoln|mkc,train,2
+34959,7:lincoln|mkc,train,2
+34960,7:lincoln|mkc,train,2
+34966,3:gmc|yukon,train,3
+34971,5:smart|fortwo,train,2
+34972,5:smart|fortwo,train,2
+34973,12:aston martin|db9,train,4
+34978,3:bmw|8 series,train,3
+34980,3:bmw|8 series,train,3
+34981,3:bmw|8 series,train,3
+34983,5:buick|verano,test,
+34986,9:chevrolet|sonic,train,1
+34988,10:mitsubishi|mirage,train,1
+34989,10:mitsubishi|mirage,train,1
+34990,5:scion|tc,train,0
+34991,5:scion|tc,train,0
+34992,5:acura|rlx,train,1
+34995,4:audi|rs 7,train,2
+34998,5:buick|regal,train,2
+35021,8:cadillac|xts,train,3
+35022,8:cadillac|xts,train,3
+35023,9:chevrolet|impala,train,3
+35025,9:chevrolet|impala,train,3
+35027,4:ford|taurus,test,
+35032,4:ford|taurus,test,
+35040,5:acura|mdx,train,2
+35049,5:acura|mdx,train,2
+35052,3:gmc|terrain,train,0
+35053,3:gmc|terrain,train,0
+35055,6:subaru|legacy,train,0
+35056,6:subaru|legacy,train,0
+35057,5:buick|enclave,train,4
+35058,8:cadillac|srx,train,3
+35063,3:gmc|acadia,train,0
+35065,5:buick|enclave,train,4
+35071,3:gmc|acadia,train,0
+35081,4:audi|rs,train,1
+35086,4:audi|s5,train,4
+35089,4:audi|a4,train,4
+35098,4:audi|a7,train,3
+35100,8:cadillac|cts,test,
+35101,8:cadillac|cts,test,
+35116,4:audi|q5,test,
+35118,5:volvo|xc60,train,2
+35130,7:porsche|panamera,train,0
+35149,7:porsche|cayman,train,3
+35150,7:porsche|cayman,train,3
+35154,4:fiat|500,test,
+35155,4:fiat|500,test,
+35156,4:fiat|500,test,
+35157,4:fiat|500,test,
+35158,4:fiat|500,test,
+35159,4:fiat|500,test,
+35175,7:porsche|911,train,0
+35176,7:porsche|911,train,0
+35177,7:porsche|911,train,0
+35183,8:maserati|granturismo,train,1
+35184,8:maserati|granturismo,train,1
+35185,5:acura|ilx,test,
+35186,5:acura|ilx,test,
+35195,6:jaguar|xf,train,1
+35198,8:maserati|ghibli,train,2
+35199,8:maserati|ghibli,train,2
+35200,8:maserati|quattroporte,train,0
+35201,8:maserati|quattroporte,train,0
+35202,3:kia|sportage,train,1
+35203,3:kia|sportage,train,1
+35211,9:chevrolet|sonic,train,1
+35213,9:chevrolet|sonic,train,1
+35214,9:chevrolet|sonic,train,1
+35227,6:jaguar|xj,train,0
+35228,6:jaguar|xjl,train,1
+35237,10:mitsubishi|outlander,train,1
+35240,3:bmw|x4,train,3
+35245,10:mitsubishi|outlander,train,1
+35253,11:lamborghini|aventador,train,1
+35254,11:lamborghini|aventador,train,1
+35255,11:lamborghini|veneno,test,
+35265,5:mazda|3,train,4
+35266,5:mazda|3,train,4
+35267,5:mazda|3,train,4
+35268,5:mazda|3,train,4
+35271,7:lincoln|mkz,train,3
+35275,12:aston martin|vantage,test,
+35289,8:infiniti|q60,train,1
+35292,10:volkswagen|eos,train,4
+35294,5:buick|verano,test,
+35306,4:fiat|500,test,
+35307,4:fiat|500,test,
+35308,4:fiat|500,test,
+35309,5:dodge|journey,train,3
+35313,5:dodge|journey,train,3
+35325,3:bmw|2 series,test,
+35326,10:volkswagen|beetle,train,1
+35327,10:volkswagen|beetle,train,1
+35329,5:acura|tlx,train,0
+35342,5:lexus|is,test,
+35366,8:cadillac|xts,train,3
+35389,4:jeep|cherokee,train,0
+35390,4:jeep|cherokee,train,0
+35393,4:jeep|wrangler,train,4
+35394,4:jeep|wrangler,train,4
+35399,4:jeep|cherokee,train,0
+35406,13:mercedes-benz|ml-class,train,4
+35417,4:audi|q3,train,3
+35426,3:bmw|4 series,train,3
+35427,3:bmw|4 series,train,3
+35428,10:mitsubishi|lancer,train,4
+35429,10:mitsubishi|lancer,train,4
+35430,10:mitsubishi|lancer,train,4
+35431,10:mitsubishi|lancer,train,4
+35438,5:dodge|challenger,test,
+35440,5:dodge|challenger,test,
+35448,3:bmw|7 series,train,1
+35452,5:dodge|charger,train,3
+35469,4:jeep|patriot,train,4
+35470,4:jeep|patriot,train,4
+35471,4:jeep|patriot,train,4
+35472,7:lincoln|mkx,train,0
+35473,4:jeep|compass,test,
+35474,4:jeep|compass,test,
+35479,4:jeep|cherokee,train,0
+35481,10:land rover|lr4,test,
+35484,10:volkswagen|touareg,train,2
+35487,5:acura|tlx,train,0
+35504,3:bmw|5 series,test,
+35510,4:jeep|patriot,train,4
+35527,10:alfa romeo|4c,test,
+35530,7:ferrari|458 spider,train,0
+35531,7:ferrari|458 spider,train,0
+35532,7:ferrari|458 speciale,train,1
+35533,7:ferrari|458 speciale,train,1
+35534,7:ferrari|458 speciale,train,1
+35535,7:ferrari|458 speciale,train,1
+35537,5:scion|iq,train,0
+35543,11:rolls-royce|phantom,train,0
+35544,11:rolls-royce|phantom,train,0
+35546,7:ferrari|ff,train,3
+35547,7:ferrari|ff,train,3
+35548,5:honda|accord,train,3
+35549,5:honda|accord,train,3
+35550,5:honda|accord,train,3
+35551,5:honda|accord,train,3
+35552,5:honda|accord,train,3
+35553,5:honda|accord,train,3
+35554,8:infiniti|q40,test,
+35555,8:infiniti|q40,test,
+35564,11:rolls-royce|phantom,train,0
+35565,11:rolls-royce|phantom,train,0
+35566,11:rolls-royce|ghost,test,
+35567,11:rolls-royce|ghost,test,
+35604,18:mclaren automotive|650s coupe,test,
+35605,18:mclaren automotive|650s spider,test,
+35606,12:aston martin|vanquish,train,3
+35607,7:ferrari|california t,train,2
+35608,7:ferrari|california t,train,2
+35609,12:aston martin|rapide,test,
+35613,5:acura|tlx,train,0
+35615,6:subaru|impreza,train,4
+35616,6:subaru|impreza,train,4
+35628,11:rolls-royce|wraith,train,1
+35630,6:subaru|impreza,train,4
+35631,6:subaru|impreza,train,4
+35642,5:buick|encore,train,2
+35643,6:nissan|xterra,train,4
+35644,5:buick|encore,train,2
+35646,6:nissan|xterra,train,4
+35647,6:nissan|xterra,train,4
+35648,6:toyota|sequoia,train,3
+35656,5:dodge|viper,train,2
+35666,5:lexus|is,test,
+35671,5:honda|civic,train,4
+35691,5:honda|crosstour,train,2
+35692,5:honda|crosstour,train,2
+35699,7:hyundai|santa fe,test,
+35704,7:lincoln|navigator,test,
+35705,7:lincoln|navigator,test,
+35709,7:lincoln|navigator,test,
+35710,7:hyundai|elantra,test,
+35711,7:hyundai|elantra,test,
+35717,5:lexus|es,train,4
+35722,7:hyundai|santa fe,test,
+35726,8:infiniti|qx80,train,1
+35727,8:infiniti|qx80,train,1
+35728,10:land rover|range rover,train,3
+35733,5:dodge|challenger,test,
+35754,9:chevrolet|trax,train,2
+35757,6:nissan|armada,train,0
+35767,13:mercedes-benz|slk-class,train,2
+35776,5:dodge|challenger,test,
+35781,5:dodge|charger,train,3
+35799,4:mini|cooper,test,
+35800,4:mini|cooper,test,
+35823,8:infiniti|qx60,train,2
+35824,6:nissan|pathfinder,train,0
+35826,8:cadillac|escalade,test,
+35829,3:gmc|yukon,train,3
+35833,8:cadillac|escalade,test,
+35839,13:mercedes-benz|g-class,train,0
+35846,13:mercedes-benz|e-class,train,4
+35850,13:mercedes-benz|e-class,train,4
+35852,13:mercedes-benz|e-class,train,4
+35855,10:land rover|range rover,train,3
+35866,13:mercedes-benz|e-class,train,4
+35872,8:chrysler|300,train,2
+35892,7:hyundai|sonata,train,0
+35895,7:porsche|cayenne,train,2
+35899,7:hyundai|elantra,test,
+35903,5:lexus|ls,train,4
+35908,7:lincoln|mks,train,2
+35909,5:scion|xb,train,0
+35910,5:scion|xb,train,0
+35913,5:lexus|nx,train,2
+35915,10:land rover|range rover,train,3
+35916,10:land rover|range rover,train,3
+35917,10:land rover|range rover,train,3
+35926,7:bentley|continental,train,1
+35928,7:porsche|911,train,0
+35929,7:porsche|911,train,0
+35930,7:porsche|911,train,0
+35946,6:nissan|murano,train,4
+35950,7:lincoln|mkt,train,4
+35959,7:hyundai|elantra,test,
+35969,4:ford|focus,train,3
+35973,6:nissan|sentra,train,3
+35979,5:volvo|v60,train,2
+35984,3:kia|sorento,train,3
+35988,5:mazda|cx-5,train,1
+35989,5:mazda|cx-5,train,1
+35991,3:kia|sorento,train,3
+35992,3:kia|sorento,train,3
+35993,5:mazda|cx-5,train,1
+35998,5:honda|hr-v,train,1
+35999,5:honda|hr-v,train,1
+36000,5:honda|hr-v,train,1
+36001,5:honda|hr-v,train,1
+36002,5:honda|hr-v,train,1
+36005,6:nissan|rogue,test,
+36006,10:land rover|discovery,train,0
+36010,6:jaguar|f-type,train,1
+36012,6:jaguar|f-type,train,1
+36015,7:bentley|mulsanne,train,3
+36022,7:hyundai|elantra,test,
+36027,4:ford|edge,train,4
+36028,4:ford|edge,train,4
+36029,4:ford|edge,train,4
+36034,5:acura|ilx,test,
+36036,7:hyundai|elantra,test,
+36040,6:jaguar|f-type,train,1
+36043,6:jaguar|xj,train,0
+36044,6:jaguar|xjl,train,1
+36046,5:acura|rlx,train,1
+36051,10:mitsubishi|outlander,train,1
+36066,3:kia|rio,test,
+36074,6:nissan|370z,train,4
+36075,6:nissan|370z,train,4
+36077,3:bmw|6 series,test,
+36080,3:bmw|6 series,test,
+36088,3:bmw|6 series,test,
+36109,8:infiniti|qx80,train,1
+36111,3:bmw|6 series,test,
+36121,5:acura|mdx,train,2
+36122,5:acura|mdx,train,2
+36127,5:mazda|2,train,1
+36128,5:mazda|2,train,1
+36132,4:audi|s6,train,2
+36135,5:honda|fit,train,4
+36136,5:honda|fit,train,4
+36137,5:honda|fit,train,4
+36138,5:acura|rdx,train,4
+36140,5:acura|rdx,train,4
+36146,6:subaru|forester,train,4
+36147,6:subaru|forester,train,4
+36148,6:subaru|forester,train,4
+36155,4:ford|fusion,train,3
+36156,4:ford|fusion,train,3
+36158,4:ford|fusion,train,3
+36159,4:ford|fusion,train,3
+36162,7:lincoln|mkz,train,3
+36163,7:lincoln|mkz,train,3
+36164,7:lincoln|mkz,train,3
+36165,7:lincoln|mkz,train,3
+36166,13:mercedes-benz|e-class,train,4
+36174,7:porsche|911,train,0
+36175,7:porsche|911,train,0
+36188,13:mercedes-benz|e-class,train,4
+36191,11:lamborghini|aventador,train,1
+36192,11:lamborghini|aventador,train,1
+36194,5:scion|fr-s,test,
+36195,5:scion|fr-s,test,
+36197,6:toyota|yaris,train,2
+36200,4:fiat|500 x,train,0
+36205,8:maserati|granturismo,train,1
+36206,8:maserati|granturismo,train,1
+36214,8:infiniti|qx70,train,1
+36222,5:volvo|s60,train,4
+36227,6:jaguar|xj,train,0
+36236,5:volvo|v60,train,2
+36237,5:volvo|v60,train,2
+36238,5:volvo|v60,train,2
+36240,5:volvo|xc70,train,3
+36242,4:fiat|500 x,train,0
+36243,5:volvo|xc60,train,2
+36245,5:volvo|xc60,train,2
+36249,7:porsche|boxster,test,
+36258,7:porsche|911,train,0
+36259,7:porsche|911,train,0
+36270,7:porsche|911,train,0
+36271,7:porsche|911,train,0
+36276,7:porsche|911,train,0
+36278,7:porsche|911,train,0
+36279,7:porsche|911,train,0
+36280,7:bentley|continental,train,1
+36281,7:bentley|continental,train,1
+36283,7:bentley|flying spur,test,
+36286,8:maserati|ghibli,train,2
+36287,8:maserati|ghibli,train,2
+36290,8:maserati|quattroporte,train,0
+36291,8:maserati|quattroporte,train,0
+36307,6:jaguar|f-type,train,1
+36309,6:jaguar|f-type,train,1
+36311,7:porsche|boxster,test,
+36317,7:hyundai|accent,train,2
+36318,7:hyundai|accent,train,2
+36320,8:maserati|ghibli,train,2
+36323,7:hyundai|azera,train,3
+36324,8:maserati|quattroporte,train,0
+36327,3:kia|sportage,train,1
+36329,10:mitsubishi|outlander,train,1
+36338,10:mitsubishi|outlander,train,1
+36339,5:scion|ia,train,2
+36340,5:scion|ia,train,2
+36350,5:buick|enclave,train,4
+36353,5:buick|enclave,train,4
+36363,7:bentley|flying spur,test,
+36364,9:chevrolet|cruze,train,2
+36372,7:hyundai|tucson,train,4
+36373,4:jeep|cherokee,train,0
+36379,10:land rover|lr4,test,
+36380,4:audi|tt,train,1
+36385,4:audi|a3,train,2
+36390,4:audi|a5,train,2
+36398,4:audi|a4,train,4
+36406,6:subaru|legacy,train,0
+36407,6:subaru|legacy,train,0
+36423,4:audi|sq5,train,0
+36434,6:subaru|legacy,train,0
+36435,6:subaru|legacy,train,0
+36436,8:cadillac|srx,train,3
+36442,6:pagani|huayra coupe,train,3
+36456,5:buick|regal,train,2
+36458,5:buick|lacrosse,train,0
+36465,9:chevrolet|cruze,train,2
+36467,9:chevrolet|cruze,train,2
+36468,9:chevrolet|cruze,train,2
+36481,7:hyundai|genesis,train,1
+36494,5:dodge|journey,train,3
+36499,3:gmc|terrain,train,0
+36511,10:land rover|discovery,train,0
+36512,10:land rover|range rover,train,3
+36513,7:lincoln|mkc,train,2
+36514,7:lincoln|mkc,train,2
+36529,13:mercedes-benz|cls-class,train,2
+36534,5:mazda|3,train,4
+36537,5:mazda|3,train,4
+36538,5:mazda|3,train,4
+36549,4:jeep|cherokee,train,0
+36563,8:cadillac|ats,train,3
+36566,4:mini|countryman,train,2
+36571,5:scion|tc,train,0
+36572,5:scion|tc,train,0
+36577,10:volkswagen|cc,test,
+36578,10:volkswagen|cc,test,
+36581,8:chrysler|200,train,1
+36602,3:gmc|terrain,train,0
+36603,4:jeep|cherokee,train,0
+36608,4:jeep|cherokee,train,0
+36626,3:gmc|yukon,train,3
+36628,10:land rover|range rover,train,3
+36629,10:land rover|range rover,train,3
+36630,10:land rover|range rover,train,3
+36631,10:land rover|range rover,train,3
+36632,10:land rover|range rover,train,3
+36637,7:bentley|continental,train,1
+36645,3:bmw|4 series,train,3
+36646,10:volkswagen|beetle,train,1
+36647,10:volkswagen|beetle,train,1
+36648,7:bentley|continental,train,1
+36660,4:mini|countryman,train,2
+36664,4:mini|countryman,train,2
+36665,4:mini|countryman,train,2
+36670,4:mini|countryman,train,2
+36671,4:mini|countryman,train,2
+36677,10:volkswagen|jetta,test,
+36678,10:volkswagen|jetta,test,
+36683,3:bmw|5 series,test,
+36696,7:lincoln|navigator,test,
+36697,7:lincoln|navigator,test,
+36701,3:gmc|yukon,train,3
+36720,4:mini|countryman,train,2
+36721,4:mini|countryman,train,2
+36722,10:volkswagen|beetle,train,1
+36733,8:cadillac|ats,train,3
+36734,8:cadillac|ats,train,3
+36735,8:cadillac|ats,train,3
+36739,13:mercedes-benz|c-class,train,1
+36768,5:buick|encore,train,2
+36781,13:mercedes-benz|gle-class,test,
+36783,13:mercedes-benz|gl-class,train,0
+36795,6:toyota|camry,train,2
+36798,6:toyota|camry,train,2
+36805,8:infiniti|qx50,train,4
+36806,8:infiniti|qx50,train,4
+36817,10:alfa romeo|4c,test,
+36818,8:cadillac|ats,train,3
+36819,6:subaru|impreza,train,4
+36820,6:subaru|impreza,train,4
+36822,10:volkswagen|jetta,test,
+36825,6:jaguar|xj,train,0
+36826,6:jaguar|xjl,train,1
+36829,6:subaru|impreza,train,4
+36830,6:subaru|impreza,train,4
+36831,6:subaru|crosstrek,train,4
+36832,6:subaru|crosstrek,train,4
+36835,17:roush performance|mustang,train,0
+36836,17:roush performance|mustang,train,0
+36837,4:fiat|500,test,
+36838,4:fiat|500,test,
+36839,4:fiat|500,test,
+36840,4:fiat|500,test,
+36844,3:bmw|3 series,train,2
+36853,4:fiat|500,test,
+36854,4:fiat|500,test,
+36856,6:toyota|4runner,train,3
+36864,12:aston martin|vantage,test,
+36865,12:aston martin|vantage,test,
+36866,12:aston martin|vantage,test,
+36867,12:aston martin|vantage,test,
+36868,12:aston martin|vantage,test,
+36869,12:aston martin|vantage,test,
+36870,12:aston martin|vantage,test,
+36871,18:mclaren automotive|650s coupe,test,
+36872,18:mclaren automotive|650s spider,test,
+36873,18:mclaren automotive|675lt coupe,train,4
+36874,12:aston martin|db9,train,4
+36875,12:aston martin|vanquish,train,3
+36876,12:aston martin|rapide,test,
+36886,17:roush performance|mustang,train,0
+36887,17:roush performance|mustang,train,0
+36888,3:bmw|3 series,train,2
+36889,8:cadillac|ats,train,3
+36891,5:lexus|is,test,
+36895,11:rolls-royce|phantom,train,0
+36896,11:rolls-royce|phantom,train,0
+36899,8:cadillac|cts,test,
+36900,11:rolls-royce|wraith,train,1
+36901,5:scion|im,train,1
+36902,5:scion|im,train,1
+36905,11:rolls-royce|phantom,train,0
+36906,11:rolls-royce|phantom,train,0
+36907,11:rolls-royce|ghost,test,
+36908,11:rolls-royce|ghost,test,
+36913,13:mercedes-benz|g-class,train,0
+36927,4:jeep|wrangler,train,4
+36928,4:jeep|wrangler,train,4
+36933,11:lamborghini|huracan,train,3
+36934,5:smart|fortwo,train,2
+36935,5:smart|fortwo,train,2
+36936,3:bmw|x1,train,3
+36946,7:ferrari|california t,train,2
+36947,7:ferrari|california t,train,2
+36948,5:acura|tlx,train,0
+36949,5:acura|tlx,train,0
+36950,5:acura|tlx,train,0
+36951,5:dodge|challenger,test,
+36952,5:dodge|challenger,test,
+36953,5:dodge|challenger,test,
+36954,5:dodge|challenger,test,
+36955,5:dodge|challenger,test,
+36956,5:dodge|challenger,test,
+36957,5:dodge|challenger,test,
+36958,5:dodge|challenger,test,
+36959,5:dodge|challenger,test,
+36960,7:ferrari|ff,train,3
+36961,7:ferrari|ff,train,3
+36964,8:chrysler|300,train,2
+36966,8:chrysler|300,train,2
+36967,8:chrysler|300,train,2
+36970,5:dodge|charger,train,3
+36994,5:volvo|xc90,train,1
+37002,3:kia|optima,train,3
+37024,5:honda|cr-v,train,2
+37027,7:ferrari|f12,train,2
+37028,7:ferrari|f12,train,2
+37030,13:mercedes-benz|cla-class,train,1
+37031,13:mercedes-benz|cla-class,train,1
+37032,3:kia|optima,train,3
+37035,6:nissan|juke,train,2
+37059,4:jeep|renegade,train,0
+37060,4:jeep|renegade,train,0
+37069,7:ferrari|488 gtb,train,4
+37070,7:ferrari|488 gtb,train,4
+37071,18:mclaren automotive|570s coupe,train,3
+37074,10:volkswagen|jetta,test,
+37078,5:lexus|ls,train,4
+37079,5:lexus|ls,train,4
+37084,7:hyundai|genesis,train,1
+37099,10:mitsubishi|lancer,train,4
+37100,10:mitsubishi|lancer,train,4
+37101,10:mitsubishi|lancer,train,4
+37102,10:mitsubishi|lancer,train,4
+37113,8:infiniti|q70,test,
+37114,8:infiniti|q70,test,
+37116,8:infiniti|q70,test,
+37117,8:infiniti|q70,test,
+37123,6:toyota|highlander,train,1
+37124,6:toyota|highlander,train,1
+37133,5:lexus|rc,test,
+37136,5:lexus|rc,test,
+37141,6:nissan|altima,train,2
+37144,5:lexus|gs,train,1
+37145,10:mitsubishi|lancer,train,4
+37150,5:lexus|gs,train,1
+37152,5:lexus|gs,train,1
+37154,6:nissan|pathfinder,train,0
+37160,13:mercedes-benz|glc-class,test,
+37175,7:lincoln|mks,train,2
+37176,7:lincoln|mks,train,2
+37183,5:buick|encore,train,2
+37187,4:ford|flex,train,4
+37192,5:buick|cascada,test,
+37197,5:volvo|v60,train,2
+37205,5:volvo|xc60,train,2
+37209,4:jeep|grand cherokee,train,0
+37212,4:jeep|grand cherokee,train,0
+37217,7:hyundai|santa fe,test,
+37218,7:hyundai|santa fe,test,
+37229,7:hyundai|santa fe,test,
+37230,7:hyundai|santa fe,test,
+37243,7:hyundai|santa fe,test,
+37245,4:mini|cooper,test,
+37246,4:mini|cooper,test,
+37247,4:mini|cooper,test,
+37256,10:mitsubishi|outlander,train,1
+37257,10:mitsubishi|outlander,train,1
+37258,10:mitsubishi|outlander,train,1
+37265,3:kia|sportage,train,1
+37270,8:cadillac|xt5,train,1
+37273,4:mini|cooper,test,
+37287,11:rolls-royce|dawn,train,3
+37290,10:mitsubishi|mirage,train,1
+37291,10:mitsubishi|mirage,train,1
+37294,7:ferrari|f60 america,test,
+37295,7:ferrari|f60 america,test,
+37299,4:audi|r8,train,1
+37301,4:audi|a4,train,4
+37304,6:subaru|wrx,train,0
+37305,6:subaru|wrx,train,0
+37307,5:acura|rdx,train,4
+37308,5:acura|rdx,train,4
+37310,11:lamborghini|huracan,train,3
+37316,6:jaguar|f-type,train,1
+37318,6:jaguar|f-type,train,1
+37322,6:jaguar|f-type,train,1
+37325,4:mini|countryman,train,2
+37327,3:bmw|6 series,test,
+37328,3:bmw|6 series,test,
+37346,3:bmw|x4,train,3
+37349,8:infiniti|q50,train,1
+37352,4:mini|countryman,train,2
+37376,8:maserati|granturismo,train,1
+37377,8:maserati|granturismo,train,1
+37378,5:acura|ilx,test,
+37386,7:lincoln|mkz,train,3
+37388,3:bmw|5 series,test,
+37389,7:genesis|g80,train,2
+37390,7:genesis|g80,train,2
+37394,6:jaguar|f-pace,train,3
+37405,3:gmc|acadia,train,0
+37406,3:gmc|acadia,train,0
+37417,7:porsche|cayenne,train,2
+37426,7:porsche|911,train,0
+37430,6:subaru|legacy,train,0
+37435,6:subaru|legacy,train,0
+37439,7:porsche|911,train,0
+37445,7:porsche|911,train,0
+37446,7:porsche|911,train,0
+37451,6:subaru|legacy,train,0
+37456,6:nissan|370z,train,4
+37457,6:nissan|370z,train,4
+37458,7:porsche|911,train,0
+37466,6:subaru|legacy,train,0
+37467,10:volkswagen|beetle,train,1
+37469,8:infiniti|q50,train,1
+37471,11:lamborghini|huracan,train,3
+37472,11:lamborghini|huracan,train,3
+37473,11:lamborghini|huracan,train,3
+37474,11:lamborghini|huracan,train,3
+37482,6:jaguar|xe,test,
+37485,11:rolls-royce|phantom,train,0
+37486,11:rolls-royce|phantom,train,0
+37487,5:buick|regal,train,2
+37488,5:buick|regal,train,2
+37490,6:jaguar|xf,train,1
+37493,8:cadillac|xts,train,3
+37496,7:genesis|g80,train,2
+37497,11:rolls-royce|phantom,train,0
+37498,11:rolls-royce|phantom,train,0
+37502,3:gmc|terrain,train,0
+37503,3:gmc|terrain,train,0
+37520,7:lincoln|navigator,test,
+37521,7:lincoln|navigator,test,
+37523,5:mazda|cx-9,train,2
+37524,10:land rover|range rover,train,3
+37525,5:mazda|cx-9,train,2
+37527,4:fiat|124 spider,train,0
+37528,4:fiat|124 spider,train,0
+37533,6:nissan|maxima,train,1
+37535,7:genesis|g90,train,2
+37536,7:genesis|g90,train,2
+37537,7:genesis|g90,train,2
+37538,7:genesis|g90,train,2
+37539,3:kia|k900,train,1
+37541,7:hyundai|tucson,train,4
+37542,7:hyundai|tucson,train,4
+37550,5:volvo|s60,train,4
+37551,5:volvo|s60,train,4
+37552,5:volvo|s60,train,4
+37553,5:volvo|s60,train,4
+37554,5:volvo|s60,train,4
+37558,5:volvo|s90,train,3
+37559,3:kia|k900,train,1
+37560,5:volvo|v60,train,2
+37565,5:volvo|xc60,train,2
+37566,5:volvo|xc60,train,2
+37567,11:lamborghini|aventador,train,1
+37568,11:lamborghini|aventador,train,1
+37569,7:porsche|boxster,test,
+37570,7:porsche|boxster,test,
+37586,5:volvo|s60,train,4
+37591,5:acura|mdx,train,2
+37593,5:acura|mdx,train,2
+37594,5:acura|mdx,train,2
+37599,4:ford|explorer,train,2
+37604,7:ferrari|488 gtb,train,4
+37605,7:ferrari|f12 tdf,test,
+37607,13:mercedes-benz|sl-class,train,2
+37618,8:cadillac|ats,train,3
+37627,7:lincoln|mkz,train,3
+37629,8:maserati|ghibli,train,2
+37630,8:maserati|ghibli,train,2
+37631,8:maserati|ghibli,train,2
+37634,8:maserati|quattroporte,train,0
+37635,8:maserati|quattroporte,train,0
+37636,8:maserati|quattroporte,train,0
+37637,5:honda|fit,train,4
+37638,5:honda|fit,train,4
+37639,5:honda|fit,train,4
+37673,10:land rover|discovery,train,0
+37674,10:land rover|range rover,train,3
+37675,10:land rover|range rover,train,3
+37688,8:cadillac|escalade,test,
+37694,3:gmc|yukon,train,3
+37696,3:gmc|yukon,train,3
+37699,8:maserati|levante,train,2
+37700,8:maserati|levante,train,2
+37701,7:porsche|cayenne,train,2
+37704,7:ferrari|488 gtb,train,4
+37705,7:ferrari|f12 berlinetta,train,1
+37706,7:ferrari|f12 tdf,test,
+37709,7:bentley|continental,train,1
+37710,13:mercedes-benz|e-class,train,4
+37713,13:mercedes-benz|e-class,train,4
+37715,7:bentley|continental,train,1
+37720,4:audi|rs 7,train,2
+37721,7:bentley|flying spur,test,
+37723,7:ferrari|gtc4lusso,train,2
+37729,7:hyundai|azera,train,3
+37730,7:hyundai|azera,train,3
+37731,4:jeep|patriot,train,4
+37756,5:acura|tlx,train,0
+37757,5:acura|tlx,train,0
+37758,5:acura|tlx,train,0
+37765,8:cadillac|ats,train,3
+37776,8:cadillac|ct6,train,4
+37778,4:fiat|500,test,
+37785,5:dodge|journey,train,3
+37787,4:jeep|patriot,train,4
+37789,4:audi|q5,test,
+37802,7:ferrari|f12 berlinetta,train,1
+37804,13:mercedes-benz|slc-class,train,3
+37805,7:ferrari|california t,train,2
+37806,7:ferrari|california t,train,2
+37807,4:fiat|500,test,
+37808,4:fiat|500,test,
+37809,4:fiat|500,test,
+37810,4:fiat|500,test,
+37811,4:fiat|500,test,
+37812,4:fiat|500,test,
+37819,4:mini|cooper,test,
+37820,4:mini|cooper,test,
+37823,4:audi|q3,train,3
+37838,4:jeep|cherokee,train,0
+37841,4:jeep|patriot,train,4
+37843,4:jeep|patriot,train,4
+37844,4:jeep|cherokee,train,0
+37846,8:infiniti|qx70,train,1
+37851,4:jeep|cherokee,train,0
+37854,7:porsche|macan,train,4
+37873,5:smart|fortwo,train,2
+37874,5:smart|fortwo,train,2
+37881,3:bmw|4 series,train,3
+37886,4:audi|q3,train,3
+37892,3:bmw|3 series,train,2
+37898,8:cadillac|ats,train,3
+37899,8:cadillac|ats,train,3
+37908,9:chevrolet|cruze,train,2
+37914,11:rolls-royce|dawn,train,3
+37917,10:volkswagen|jetta,test,
+37918,10:volkswagen|jetta,test,
+37921,5:buick|lacrosse,train,0
+37922,5:buick|lacrosse,train,0
+37923,5:buick|regal,train,2
+37927,8:cadillac|cts,test,
+37929,11:rolls-royce|wraith,train,1
+37933,3:bmw|7 series,train,1
+37937,11:rolls-royce|ghost,test,
+37938,11:rolls-royce|ghost,test,
+37940,9:chevrolet|sonic,train,1
+37941,9:chevrolet|sonic,train,1
+37942,9:chevrolet|sonic,train,1
+37943,9:chevrolet|sonic,train,1
+37945,5:buick|encore,train,2
+37947,5:buick|encore,train,2
+37948,9:chevrolet|trax,train,2
+37950,7:bentley|bentayga,train,0
+37955,7:ferrari|488 spider,train,3
+37956,7:ferrari|488 spider,train,3
+37957,13:mercedes-benz|amg gt,train,3
+37962,8:infiniti|q60,train,1
+37963,8:infiniti|q60,train,1
+37964,8:infiniti|q60,train,1
+37974,10:volkswagen|jetta,test,
+37975,10:volkswagen|jetta,test,
+37976,10:volkswagen|jetta,test,
+37978,10:volkswagen|golf/gti,train,0
+38003,7:ferrari|488 spider,train,3
+38004,7:ferrari|488 spider,train,3
+38014,3:bmw|3 series,train,2
+38020,3:bmw|4 series,train,3
+38023,5:mazda|2,train,1
+38024,5:mazda|2,train,1
+38027,13:mercedes-benz|cls-class,train,2
+38030,7:bentley|mulsanne,train,3
+38039,7:lincoln|continental,train,1
+38040,7:lincoln|continental,train,1
+38041,7:lincoln|continental,train,1
+38048,13:mercedes-benz|sl-class,train,2
+38050,7:bentley|continental,train,1
+38052,7:bentley|continental,train,1
+38054,8:infiniti|qx30,train,0
+38060,7:bentley|flying spur,test,
+38069,5:volvo|v60,train,2
+38079,6:nissan|armada,train,0
+38082,5:lotus|evora,test,
+38083,5:lotus|evora,test,
+38084,5:buick|cascada,test,
+38098,8:chrysler|200,train,1
+38103,8:infiniti|q50,train,1
+38105,8:infiniti|q50,train,1
+38114,3:kia|forte,train,2
+38115,3:kia|forte,train,2
+38116,3:kia|forte,train,2
+38129,5:buick|encore,train,2
+38130,5:lexus|rx,train,1
+38131,5:buick|encore,train,2
+38134,12:aston martin|vantage,test,
+38135,12:aston martin|vantage,test,
+38136,18:mclaren automotive|570s coupe,train,3
+38137,18:mclaren automotive|570gt,train,0
+38138,12:aston martin|vanquish,train,3
+38139,12:aston martin|rapide,test,
+38147,10:mitsubishi|lancer,train,4
+38148,10:volkswagen|cc,test,
+38152,6:toyota|corolla,train,2
+38153,6:toyota|corolla,train,2
+38154,6:toyota|corolla,train,2
+38158,5:honda|hr-v,train,1
+38159,5:honda|hr-v,train,1
+38160,5:honda|hr-v,train,1
+38163,6:nissan|pathfinder,train,0
+38175,5:mazda|mx-5,train,0
+38183,4:fiat|500 x,train,0
+38188,5:lexus|rc,test,
+38189,5:lexus|rc,test,
+38193,17:roush performance|mustang,train,0
+38194,17:roush performance|mustang,train,0
+38203,5:lexus|gs,train,1
+38205,5:lexus|gs,train,1
+38210,3:kia|optima,train,3
+38219,8:infiniti|qx60,train,2
+38220,4:jeep|wrangler,train,4
+38221,4:jeep|wrangler,train,4
+38224,8:infiniti|qx80,train,1
+38231,4:audi|a3,train,2
+38234,10:volkswagen|beetle,train,1
+38244,7:bentley|mulsanne,train,3
+38259,10:volkswagen|golf/gti,train,0
+38283,10:mitsubishi|outlander,train,1
+38284,4:jeep|cherokee,train,0
+38286,5:lexus|nx,train,2
+38288,10:mitsubishi|outlander,train,1
+38289,10:mitsubishi|outlander,train,1
+38290,10:mitsubishi|outlander,train,1
+38310,5:mazda|3,train,4
+38311,5:mazda|3,train,4
+38312,5:mazda|3,train,4
+38313,5:mazda|3,train,4
+38314,5:mazda|3,train,4
+38316,5:dodge|challenger,test,
+38318,5:dodge|challenger,test,
+38319,5:dodge|challenger,test,
+38320,5:dodge|challenger,test,
+38321,5:dodge|challenger,test,
+38322,5:dodge|challenger,test,
+38323,5:dodge|challenger,test,
+38329,6:subaru|impreza,train,4
+38331,8:chrysler|300,train,2
+38332,8:chrysler|300,train,2
+38333,8:chrysler|300,train,2
+38334,5:dodge|charger,train,3
+38340,6:nissan|juke,train,2
+38341,6:nissan|juke,train,2
+38343,6:nissan|juke,train,2
+38345,6:subaru|impreza,train,4
+38346,6:subaru|impreza,train,4
+38353,6:jaguar|xj,train,0
+38354,6:jaguar|xjl,train,1
+38355,6:jaguar|xj,train,0
+38358,6:jaguar|xjl,train,1
+38370,10:alfa romeo|giulia,train,3
+38372,8:infiniti|q70,test,
+38375,8:infiniti|q70,test,
+38396,7:lincoln|mkx,train,0
+38397,7:lincoln|mkx,train,0
+38407,10:alfa romeo|4c,test,
+38408,11:lamborghini|aventador,train,1
+38409,11:lamborghini|aventador,train,1
+38410,5:dodge|challenger,test,
+38411,5:dodge|challenger,test,
+38422,7:lincoln|mkt,train,4
+38440,7:porsche|911,train,0
+38441,7:porsche|911,train,0
+38450,5:honda|pilot,train,3
+38451,5:honda|pilot,train,3
+38455,10:land rover|range rover,train,3
+38456,10:land rover|range rover,train,3
+38457,10:land rover|range rover,train,3
+38458,13:mercedes-benz|g-class,train,0
+38461,5:smart|fortwo,train,2
+38462,5:smart|fortwo,train,2
+38467,4:audi|a4,train,4
+38489,5:mazda|cx-9,train,2
+38501,4:mini|countryman,train,2
+38503,10:land rover|range rover,train,3
+38504,10:land rover|range rover,train,3
+38515,10:alfa romeo|giulia,train,3
+38516,10:alfa romeo|giulia,train,3
+38521,10:volkswagen|golf/gti,train,0
+38538,6:subaru|impreza,train,4
+38540,6:subaru|impreza,train,4
+38541,6:subaru|impreza,train,4
+38547,10:mitsubishi|outlander,train,1
+38548,10:mitsubishi|outlander,train,1
+38555,4:mini|countryman,train,2
+38559,4:mini|countryman,train,2
+38560,4:mini|countryman,train,2
+38561,4:mini|countryman,train,2
+38571,4:audi|a5,train,2
+38574,6:subaru|wrx,train,0
+38575,6:subaru|wrx,train,0
+38577,7:genesis|g80,train,2
+38578,7:genesis|g80,train,2
+38580,4:audi|a5,train,2
+38585,7:genesis|g80,train,2
+38586,7:genesis|g80,train,2
+38592,7:bentley|bentayga,train,0
+38615,3:bmw|4 series,train,3
+38629,3:bmw|8 series,train,3
+38630,3:bmw|8 series,train,3
+38641,6:subaru|wrx,train,0
+38646,6:subaru|forester,train,4
+38649,6:nissan|rogue,test,
+38653,6:jaguar|f-type,train,1
+38666,7:hyundai|santa fe,test,
+38668,7:ferrari|488 gtb,train,4
+38669,7:ferrari|488 gtb,train,4
+38670,7:ferrari|488 spider,train,3
+38671,7:ferrari|488 spider,train,3
+38674,7:ferrari|gtc4lusso,train,2
+38675,7:ferrari|california t,train,2
+38676,7:ferrari|california t,train,2
+38682,7:hyundai|elantra,test,
+38683,7:genesis|g80,train,2
+38684,7:genesis|g80,train,2
+38691,3:gmc|terrain,train,0
+38692,7:hyundai|santa fe,test,
+38693,3:kia|sorento,train,3
+38694,6:subaru|crosstrek,train,4
+38695,6:subaru|crosstrek,train,4
+38700,7:ferrari|812 superfast,train,4
+38701,7:ferrari|gtc4lusso,train,2
+38702,8:infiniti|qx30,train,0
+38703,8:infiniti|qx30,train,0
+38704,8:cadillac|cts,test,
+38706,3:kia|optima,train,3
+38714,10:land rover|discovery,train,0
+38722,3:kia|sportage,train,1
+38723,10:volkswagen|atlas,train,4
+38724,10:alfa romeo|stelvio,train,1
+38726,3:kia|sorento,train,3
+38732,8:maserati|granturismo,train,1
+38733,8:maserati|granturismo,train,1
+38737,8:maserati|ghibli,train,2
+38738,8:maserati|ghibli,train,2
+38739,8:maserati|ghibli,train,2
+38741,8:maserati|quattroporte,train,0
+38742,8:maserati|quattroporte,train,0
+38744,7:hyundai|santa fe,test,
+38747,3:kia|sportage,train,1
+38751,3:kia|sorento,train,3
+38752,8:maserati|levante,train,2
+38753,8:maserati|levante,train,2
+38758,5:acura|tlx,train,0
+38761,5:volvo|s60,train,4
+38763,5:volvo|v60,train,2
+38766,5:acura|rdx,train,4
+38769,13:mercedes-benz|gla-class,train,4
+38783,5:volvo|s60,train,4
+38788,5:volvo|s90,train,3
+38794,5:volvo|v60,train,2
+38796,5:volvo|v60,train,2
+38806,5:volvo|xc60,train,2
+38808,5:volvo|xc90,train,1
+38809,4:audi|q7,train,4
+38826,7:genesis|g90,train,2
+38827,7:genesis|g90,train,2
+38828,7:genesis|g90,train,2
+38829,7:genesis|g90,train,2
+38841,11:lamborghini|aventador,train,1
+38842,11:lamborghini|aventador,train,1
+38843,11:lamborghini|aventador,train,1
+38844,11:lamborghini|aventador,train,1
+38856,6:subaru|legacy,train,0
+38857,6:subaru|legacy,train,0
+38866,5:mazda|3,train,4
+38867,5:mazda|3,train,4
+38868,5:mazda|3,train,4
+38873,5:mazda|3,train,4
+38874,5:mazda|3,train,4
+38875,5:mazda|3,train,4
+38876,6:subaru|impreza,train,4
+38877,6:subaru|impreza,train,4
+38880,6:toyota|camry,train,2
+38881,6:toyota|camry,train,2
+38890,6:subaru|impreza,train,4
+38891,6:subaru|impreza,train,4
+38894,4:jeep|compass,test,
+38895,4:jeep|compass,test,
+38899,7:bugatti|chiron,train,1
+38907,8:cadillac|ats-v,train,4
+38912,10:volkswagen|golf/gti,train,0
+38915,4:audi|a7,train,3
+38919,8:cadillac|cts,test,
+38920,8:cadillac|ats,train,3
+38921,8:cadillac|cts,test,
+38923,8:cadillac|ats,train,3
+38928,8:infiniti|q50,train,1
+38929,8:infiniti|q50,train,1
+38932,8:infiniti|q50,train,1
+38959,4:audi|q7,train,4
+38960,9:chevrolet|traverse,test,
+38966,4:audi|rs,train,1
+38967,7:bentley|continental supersports convertible,train,1
+38968,7:bentley|continental supersports,train,0
+38978,5:honda|fit,train,4
+38979,5:honda|fit,train,4
+38980,5:honda|fit,train,4
+38999,5:buick|encore,train,2
+39003,8:cadillac|escalade,test,
+39008,3:gmc|yukon,train,3
+39009,3:gmc|yukon,train,3
+39011,3:gmc|yukon,train,3
+39015,8:cadillac|escalade,test,
+39016,9:chevrolet|tahoe,train,4
+39017,9:chevrolet|tahoe,train,4
+39028,13:mercedes-benz|gle-class,test,
+39029,13:mercedes-benz|gle-class,test,
+39031,4:audi|tt,train,1
+39034,4:audi|a3,train,2
+39035,4:mini|cooper,test,
+39038,10:volkswagen|jetta,test,
+39039,10:volkswagen|jetta,test,
+39050,8:chrysler|300,train,2
+39052,8:chrysler|300,train,2
+39053,8:chrysler|300,train,2
+39055,5:dodge|charger,train,3
+39057,5:dodge|charger,train,3
+39058,5:dodge|charger,train,3
+39059,5:dodge|charger,train,3
+39060,5:dodge|charger,train,3
+39061,5:dodge|charger,train,3
+39066,4:fiat|500,test,
+39091,3:gmc|terrain,train,0
+39092,4:jeep|cherokee,train,0
+39094,4:jeep|cherokee,train,0
+39109,4:mini|cooper,test,
+39110,4:mini|cooper,test,
+39114,3:bmw|2 series,test,
+39122,3:bmw|8 series,train,3
+39123,3:bmw|8 series,train,3
+39124,4:mini|cooper,test,
+39126,4:mini|cooper,test,
+39127,4:mini|cooper,test,
+39133,3:bmw|3 series,train,2
+39149,10:mitsubishi|mirage,train,1
+39150,10:mitsubishi|mirage,train,1
+39151,10:mitsubishi|mirage,train,1
+39152,10:mitsubishi|mirage,train,1
+39167,4:mini|countryman,train,2
+39168,4:mini|countryman,train,2
+39169,4:mini|clubman,train,3
+39170,4:mini|clubman,train,3
+39171,4:mini|countryman,train,2
+39174,4:mini|clubman,train,3
+39175,4:mini|clubman,train,3
+39179,3:bmw|3 series,train,2
+39183,5:mazda|cx-9,train,2
+39186,6:nissan|armada,train,0
+39187,5:dodge|durango,train,4
+39207,7:porsche|911,train,0
+39228,10:volkswagen|jetta,test,
+39229,10:volkswagen|jetta,test,
+39271,10:alfa romeo|4c,test,
+39278,7:porsche|911,train,0
+39287,10:alfa romeo|giulia,train,3
+39288,10:alfa romeo|giulia,train,3
+39289,10:alfa romeo|giulia,train,3
+39291,5:buick|lacrosse,train,0
+39293,5:buick|lacrosse,train,0
+39302,13:mercedes-benz|s-class,train,4
+39305,7:porsche|panamera,train,0
+39330,3:kia|rio,test,
+39331,3:kia|rio,test,
+39352,7:porsche|panamera,train,0
+39370,7:porsche|macan,train,4
+39371,6:toyota|rav4,train,2
+39376,7:porsche|cayenne,train,2
+39389,8:cadillac|ats-v,train,4
+39394,4:audi|s7,train,1
+39396,7:bentley|flying spur,test,
+39400,7:lincoln|continental,train,1
+39401,7:lincoln|continental,train,1
+39414,9:chevrolet|spark,train,3
+39416,9:chevrolet|spark,train,3
+39420,6:toyota|yaris,train,2
+39421,6:toyota|yaris,train,2
+39426,11:rolls-royce|dawn,train,3
+39428,7:bentley|mulsanne,train,3
+39430,7:lincoln|mkz,train,3
+39432,7:lincoln|mkz,train,3
+39434,11:rolls-royce|wraith,train,1
+39440,13:mercedes-benz|s-class,train,4
+39441,11:rolls-royce|phantom,train,0
+39442,11:rolls-royce|phantom,train,0
+39443,11:rolls-royce|ghost,test,
+39444,11:rolls-royce|ghost,test,
+39460,5:buick|envision,train,3
+39462,9:chevrolet|trax,train,2
+39468,10:volkswagen|atlas,train,4
+39476,5:buick|enclave,train,4
+39479,3:bmw|x5,train,0
+39482,5:buick|enclave,train,4
+39484,4:fiat|124 spider,train,0
+39485,4:fiat|124 spider,train,0
+39487,7:porsche|911,train,0
+39493,12:aston martin|rapide,test,
+39497,8:infiniti|q60,train,1
+39499,8:infiniti|q60,train,1
+39500,7:hyundai|accent,train,2
+39501,7:hyundai|accent,train,2
+39503,6:nissan|altima,train,2
+39504,6:nissan|altima,train,2
+39508,5:buick|regal,train,2
+39518,5:buick|envision,train,3
+39519,6:nissan|pathfinder,train,0
+39521,3:bmw|x5,train,0
+39523,4:jeep|grand cherokee,train,0
+39527,12:aston martin|db11,train,0
+39528,4:audi|r8,train,1
+39532,11:lamborghini|huracan,train,3
+39533,11:lamborghini|huracan,train,3
+39534,11:lamborghini|huracan,train,3
+39535,11:lamborghini|huracan,train,3
+39536,7:porsche|911,train,0
+39537,12:aston martin|vanquish,train,3
+39538,4:audi|rs,train,1
+39541,5:acura|mdx,train,2
+39542,5:acura|mdx,train,2
+39546,7:lincoln|mkx,train,0
+39547,7:lincoln|mkx,train,0
+39548,5:acura|mdx,train,2
+39549,5:acura|mdx,train,2
+39550,4:ford|edge,train,4
+39551,4:ford|edge,train,4
+39552,4:ford|edge,train,4
+39553,7:lincoln|mkx,train,0
+39554,7:lincoln|mkx,train,0
+39557,5:acura|ilx,test,
+39563,5:mazda|2,train,1
+39569,5:honda|civic,train,4
+39572,5:lexus|gs,train,1
+39573,5:lexus|gs,train,1
+39576,5:honda|civic,train,4
+39577,10:volkswagen|golf/gti,train,0
+39580,5:buick|envision,train,3
+39581,8:infiniti|qx60,train,2
+39588,5:lexus|nx,train,2
+39590,7:bentley|continental,train,1
+39591,7:bentley|continental supersports convertible,train,1
+39592,7:bentley|flying spur,test,
+39612,6:nissan|maxima,train,1
+39624,5:honda|cr-v,train,2
+39625,5:honda|cr-v,train,2
+39626,6:toyota|highlander,train,1
+39628,5:honda|cr-v,train,2
+39629,5:honda|cr-v,train,2
+39630,7:hyundai|tucson,train,4
+39631,7:hyundai|tucson,train,4
+39632,10:land rover|range rover,train,3
+39633,10:land rover|range rover,train,3
+39636,7:lincoln|navigator,test,
+39639,7:lincoln|navigator,test,
+39653,5:lexus|is,test,
+39656,6:nissan|sentra,train,3
+39657,6:nissan|sentra,train,3
+39658,6:nissan|sentra,train,3
+39660,6:nissan|sentra,train,3
+39672,4:fiat|500 x,train,0
+39677,10:mitsubishi|outlander,train,1
+39678,10:mitsubishi|outlander,train,1
+39679,10:mitsubishi|outlander,train,1
+39684,4:fiat|500 x,train,0
+39685,4:jeep|wrangler,train,4
+39697,4:ford|explorer,train,2
+39698,4:ford|explorer,train,2
+39699,4:ford|explorer,train,2
+39708,6:jaguar|xe,test,
+39709,5:lexus|gs,train,1
+39710,5:lexus|is,test,
+39720,6:jaguar|xj,train,0
+39722,6:jaguar|xj,train,0
+39730,6:toyota|highlander,train,1
+39732,7:hyundai|tucson,train,4
+39736,7:lincoln|navigator,test,
+39737,7:porsche|cayenne,train,2
+39745,6:jaguar|xe,test,
+39748,6:jaguar|e-pace,train,0
+39754,5:honda|accord,train,3
+39772,6:jaguar|xf,train,1
+39774,6:nissan|murano,train,4
+39776,4:jeep|renegade,train,0
+39777,5:mazda|cx-5,train,1
+39778,6:jaguar|e-pace,train,0
+39779,4:jeep|renegade,train,0
+39780,4:jeep|renegade,train,0
+39797,8:infiniti|qx80,train,1
+39798,8:infiniti|qx80,train,1
+39804,4:jeep|renegade,train,0
+39807,10:land rover|range rover,train,3
+39809,10:land rover|discovery,train,0
+39811,10:koenigsegg|agera rs,train,2
+39812,6:pagani|huayra,test,
+39815,5:lexus|rc,test,
+39822,3:kia|optima,train,3
+39825,5:lexus|rx,train,1
+39828,5:lexus|rx,train,1
+39844,6:jaguar|xf,train,1
+39848,5:lexus|rx,train,1
+39849,10:land rover|range rover,train,3
+39851,10:land rover|discovery,train,0
+39862,4:jeep|cherokee,train,0
+39883,8:infiniti|qx50,train,4
+39903,10:land rover|range rover,train,3
+39904,10:land rover|range rover,train,3
+39905,10:land rover|range rover,train,3
+39906,10:land rover|range rover,train,3
+39908,10:land rover|range rover,train,3
+39909,7:genesis|g70,train,3
+39911,7:genesis|g70,train,3
+39914,5:buick|envision,train,3
+39922,10:mitsubishi|eclipse cross,train,4
+39931,5:volvo|xc40,train,4
+39933,10:volkswagen|golf/gti,train,0
+39935,10:alfa romeo|stelvio,train,1
+39936,7:hyundai|veloster,train,1
+39942,5:buick|envision,train,3
+39943,5:buick|envision,train,3
+39950,5:acura|tlx,train,0
+39951,5:acura|tlx,train,0
+39954,4:fiat|500,test,
+39955,4:fiat|500,test,
+39956,4:fiat|500,test,
+39957,4:fiat|500,test,
+39963,4:mini|cooper,test,
+39964,4:mini|cooper,test,
+39969,3:bmw|4 series,train,3
+39979,4:mini|cooper,test,
+39980,4:mini|cooper,test,
+39983,5:acura|tlx,train,0
+39984,5:acura|tlx,train,0
+40005,8:infiniti|q70,test,
+40007,8:infiniti|q70,test,
+40008,4:mini|clubman,train,3
+40009,4:mini|clubman,train,3
+40010,4:mini|countryman,train,2
+40011,4:mini|countryman,train,2
+40012,4:mini|clubman,train,3
+40013,4:mini|clubman,train,3
+40025,4:mini|countryman,train,2
+40032,7:genesis|g90,train,2
+40034,7:genesis|g90,train,2
+40040,13:mercedes-benz|glc-class,test,
+40048,6:jaguar|xe,test,
+40051,6:jaguar|f-pace,train,3
+40058,4:mini|countryman,train,2
+40059,7:genesis|g80,train,2
+40060,7:genesis|g80,train,2
+40061,7:genesis|g80,train,2
+40062,7:genesis|g80,train,2
+40063,7:genesis|g80,train,2
+40067,7:ferrari|488 gtb,train,4
+40068,7:ferrari|488 spider,train,3
+40069,7:ferrari|812 superfast,train,4
+40070,7:ferrari|gtc4lusso,train,2
+40071,7:ferrari|gtc4lusso,train,2
+40072,7:ferrari|portofino,train,4
+40073,5:mazda|cx-3,train,1
+40074,5:mazda|cx-3,train,1
+40076,5:honda|fit,train,4
+40077,5:honda|fit,train,4
+40081,7:ferrari|488 gtb,train,4
+40082,7:ferrari|488 spider,train,3
+40083,7:ferrari|488 pista spider,train,3
+40088,6:toyota|avalon,train,2
+40106,7:genesis|g80,train,2
+40110,7:lincoln|mkc,train,2
+40117,7:ferrari|488 pista,train,4
+40118,7:porsche|boxster,test,
+40119,7:porsche|boxster,test,
+40120,7:porsche|boxster,test,
+40127,7:porsche|911,train,0
+40132,7:porsche|911,train,0
+40133,7:porsche|911,train,0
+40151,6:subaru|crosstrek,train,4
+40153,7:lincoln|mkt,train,4
+40156,7:lincoln|mkt,train,4
+40158,12:aston martin|vantage,test,
+40161,6:nissan|370z,train,4
+40164,7:porsche|boxster,test,
+40171,12:aston martin|db11,train,0
+40172,12:aston martin|db11,train,0
+40175,7:porsche|911,train,0
+40184,5:lexus|rc,test,
+40186,6:jaguar|xe,test,
+40191,6:subaru|impreza,train,4
+40192,6:subaru|impreza,train,4
+40195,8:cadillac|xts,train,3
+40196,8:cadillac|xts,train,3
+40207,6:subaru|impreza,train,4
+40208,6:subaru|impreza,train,4
+40209,6:jaguar|xf,train,1
+40214,6:jaguar|f-pace,train,3
+40216,6:subaru|crosstrek,train,4
+40217,12:aston martin|db11,train,0
+40218,12:aston martin|db11,train,0
+40227,4:fiat|124 spider,train,0
+40228,4:fiat|124 spider,train,0
+40229,5:buick|cascada,test,
+40230,9:chevrolet|spark,train,3
+40231,9:chevrolet|spark,train,3
+40235,5:volvo|s60,train,4
+40253,5:volvo|v60,train,2
+40254,5:volvo|v60,train,2
+40255,5:volvo|v90,train,3
+40262,5:acura|rdx,train,4
+40272,5:lexus|nx,train,2
+40273,5:volvo|xc60,train,2
+40274,5:volvo|xc40,train,4
+40275,5:acura|rdx,train,4
+40277,5:buick|encore,train,2
+40290,5:volvo|xc60,train,2
+40303,5:buick|enclave,train,4
+40318,3:gmc|acadia,train,0
+40333,6:toyota|corolla,train,2
+40334,6:toyota|corolla,train,2
+40336,3:kia|optima,train,3
+40337,3:kia|optima,train,3
+40338,3:kia|optima,train,3
+40341,5:volvo|xc60,train,2
+40343,3:gmc|acadia,train,0
+40349,5:acura|rlx,train,1
+40358,3:bmw|x4,train,3
+40359,10:mitsubishi|eclipse cross,train,4
+40360,10:mitsubishi|eclipse cross,train,4
+40370,7:hyundai|elantra,test,
+40371,7:hyundai|elantra,test,
+40372,7:hyundai|elantra,test,
+40373,6:subaru|legacy,train,0
+40374,6:subaru|legacy,train,0
+40382,6:subaru|legacy,train,0
+40383,6:subaru|legacy,train,0
+40409,8:cadillac|ats,train,3
+40411,8:cadillac|ats,train,3
+40412,5:buick|lacrosse,train,0
+40416,8:cadillac|cts,test,
+40418,8:cadillac|cts,test,
+40419,4:fiat|500,test,
+40422,5:honda|hr-v,train,1
+40423,5:honda|hr-v,train,1
+40433,8:infiniti|qx80,train,1
+40435,7:bugatti|chiron,train,1
+40438,3:bmw|2 series,test,
+40450,3:bmw|8 series,train,3
+40451,3:bmw|8 series,train,3
+40454,3:bmw|8 series,train,3
+40455,3:bmw|8 series,train,3
+40465,3:bmw|8 series,train,3
+40466,3:bmw|8 series,train,3
+40474,11:rolls-royce|dawn,train,3
+40482,9:chevrolet|cruze,train,2
+40490,3:kia|forte,train,2
+40491,3:kia|forte,train,2
+40493,11:rolls-royce|wraith,train,1
+40498,8:maserati|quattroporte,train,0
+40499,11:rolls-royce|ghost,test,
+40500,11:rolls-royce|ghost,test,
+40511,5:acura|mdx,train,2
+40512,5:acura|mdx,train,2
+40516,10:mitsubishi|outlander,train,1
+40517,10:mitsubishi|outlander,train,1
+40523,11:lamborghini|aventador,train,1
+40524,11:lamborghini|aventador,train,1
+40529,8:maserati|ghibli,train,2
+40530,8:maserati|ghibli,train,2
+40537,8:maserati|quattroporte,train,0
+40538,8:maserati|quattroporte,train,0
+40549,4:jeep|compass,test,
+40550,4:jeep|compass,test,
+40559,6:subaru|brz,test,
+40560,6:subaru|brz,test,
+40563,9:chevrolet|malibu,train,4
+40569,5:buick|regal,train,2
+40570,13:mercedes-benz|glc-class,test,
+40572,10:land rover|range rover,train,3
+40575,13:mercedes-benz|gla-class,train,4
+40581,10:land rover|discovery,train,0
+40583,8:maserati|levante,train,2
+40584,8:maserati|levante,train,2
+40587,8:cadillac|escalade,test,
+40595,6:jaguar|xe,test,
+40610,8:chrysler|300,train,2
+40612,8:chrysler|300,train,2
+40613,8:chrysler|300,train,2
+40615,5:dodge|charger,train,3
+40617,5:dodge|charger,train,3
+40618,5:dodge|charger,train,3
+40625,6:toyota|4runner,train,3
+40636,10:alfa romeo|giulia,train,3
+40637,10:alfa romeo|giulia,train,3
+40638,10:alfa romeo|giulia,train,3
+40660,10:alfa romeo|stelvio,train,1
+40661,10:alfa romeo|stelvio,train,1
+40662,10:alfa romeo|stelvio,train,1
+40664,6:jaguar|e-pace,train,0
+40665,10:land rover|range rover,train,3
+40667,10:land rover|discovery,train,0
+40668,5:dodge|durango,train,4
+40669,5:dodge|durango,train,4
+40671,5:dodge|durango,train,4
+40672,5:dodge|durango,train,4
+40673,4:jeep|grand cherokee,train,0
+40674,4:jeep|grand cherokee,train,0
+40676,10:land rover|range rover,train,3
+40680,5:lexus|gx,train,0
+40683,10:alfa romeo|4c,test,
+40684,13:mercedes-benz|sl-class,train,2
+40691,9:chevrolet|sonic,train,1
+40692,9:chevrolet|sonic,train,1
+40694,3:kia|rio,test,
+40695,3:kia|rio,test,
+40699,4:ford|fusion,train,3
+40700,4:ford|fusion,train,3
+40705,4:ford|fusion,train,3
+40706,7:hyundai|elantra,test,
+40709,8:infiniti|q50,train,1
+40714,7:lincoln|mkz,train,3
+40719,13:mercedes-benz|e-class,train,4
+40724,11:rolls-royce|phantom,train,0
+40725,11:rolls-royce|phantom,train,0
+40728,13:mercedes-benz|e-class,train,4
+40729,11:rolls-royce|cullinan,test,
+40742,10:mitsubishi|outlander,train,1
+40743,10:mitsubishi|outlander,train,1
+40744,10:mitsubishi|outlander,train,1
+40748,5:buick|encore,train,2
+40749,9:chevrolet|trax,train,2
+40750,10:land rover|discovery,train,0
+40753,10:mitsubishi|outlander,train,1
+40754,10:mitsubishi|outlander,train,1
+40755,6:nissan|armada,train,0
+40757,7:bentley|bentayga,train,0
+40758,11:lamborghini|urus,train,4
+40759,10:land rover|range rover,train,3
+40776,9:chevrolet|malibu,train,4
+40778,8:cadillac|ct6,train,4
+40779,8:cadillac|ct6,train,4
+40780,8:cadillac|ct6,train,4
+40799,6:jaguar|f-pace,train,3
+40813,4:ford|fiesta,test,
+40814,4:ford|fiesta,test,
+40815,13:mercedes-benz|s-class,train,4
+40816,13:mercedes-benz|s-class,train,4
+40833,5:lexus|lc,train,0
+40835,5:acura|ilx,test,
+40849,3:kia|k900,train,1
+40856,10:volkswagen|atlas,train,4
+40857,5:honda|cr-v,train,2
+40858,5:honda|cr-v,train,2
+40865,12:aston martin|dbs,test,
+40866,4:audi|a5,train,2
+40869,5:lexus|is,test,
+40882,5:lexus|ls,train,4
+40883,5:lexus|gs,train,1
+40897,7:lincoln|continental,train,1
+40898,7:lincoln|continental,train,1
+40899,7:lincoln|continental,train,1
+40900,7:lincoln|continental,train,1
+40901,7:lincoln|continental,train,1
+40914,10:volkswagen|atlas,train,4
+40921,4:jeep|grand cherokee,train,0
+40922,8:maserati|levante,train,2
+40923,8:maserati|levante,train,2
+40930,8:maserati|granturismo,train,1
+40938,10:mitsubishi|mirage,train,1
+40939,10:mitsubishi|mirage,train,1
+40940,7:bentley|mulsanne,train,3
+40974,7:lincoln|navigator,test,
+40987,11:lamborghini|huracan,train,3
+40988,11:lamborghini|huracan,train,3
+40989,11:lamborghini|huracan,train,3
+40990,11:lamborghini|huracan,train,3
+40994,4:audi|s3,train,3
+40998,8:infiniti|q60,train,1
+40999,8:infiniti|q60,train,1
+41000,8:infiniti|q60,train,1
+41002,17:roush performance|mustang,train,0
+41007,4:audi|s5,train,4
+41041,5:mazda|cx-5,train,1
+41042,5:mazda|cx-5,train,1
+41047,7:hyundai|elantra,test,
+41048,7:hyundai|elantra,test,
+41057,18:mclaren automotive|570s coupe,train,3
+41075,17:roush performance|mustang,train,0
+41076,8:infiniti|qx30,train,0
+41077,8:infiniti|qx30,train,0
+41080,13:mercedes-benz|s-class,train,4
+41085,10:volkswagen|golf/gti,train,0
+41089,5:lexus|ux,train,3
+41092,3:bmw|x1,train,3
+41094,5:honda|civic,train,4
+41095,5:honda|civic,train,4
+41096,5:honda|civic,train,4
+41097,5:honda|civic,train,4
+41126,6:toyota|rav4,train,2
+41127,6:toyota|rav4,train,2
+41135,6:nissan|gt-r,train,2
+41136,4:audi|a4,train,4
+41142,7:lincoln|navigator,test,
+41146,3:bmw|z4,test,
+41147,12:aston martin|vanquish,train,3
+41148,4:fiat|500,test,
+41149,4:fiat|500,test,
+41150,4:fiat|500,test,
+41151,4:fiat|500,test,
+41152,12:aston martin|rapide,test,
+41154,4:audi|a3,train,2
+41156,13:mercedes-benz|a-class,test,
+41158,3:bmw|3 series,train,2
+41164,6:nissan|murano,train,4
+41165,6:nissan|murano,train,4
+41176,4:jeep|renegade,train,0
+41181,4:jeep|renegade,train,0
+41182,10:land rover|range rover,train,3
+41201,4:audi|tts,test,
+41204,10:volkswagen|golf/gti,train,0
+41205,10:volkswagen|golf/gti,train,0
+41206,10:volkswagen|golf/gti,train,0
+41207,10:volkswagen|golf/gti,train,0
+41221,3:kia|soul,test,
+41229,3:kia|telluride,train,0
+41232,3:kia|telluride,train,0
+41237,6:jaguar|f-type,train,1
+41239,6:jaguar|xe,test,
+41241,6:jaguar|xe,test,
+41242,6:jaguar|xf,train,1
+41245,6:jaguar|xf,train,1
+41247,6:jaguar|e-pace,train,0
+41250,6:jaguar|f-pace,train,3
+41251,10:land rover|range rover,train,3
+41256,14:ruf automobile|ruf turbo 12/ctr3,train,1
+41257,5:lotus|evora,test,
+41258,5:lotus|evora,test,
+41259,5:mazda|3,train,4
+41260,5:mazda|3,train,4
+41263,5:mazda|6,train,4
+41264,5:mazda|6,train,4
+41265,5:mazda|6,train,4
+41269,7:porsche|panamera,train,0
+41271,10:volkswagen|arteon,test,
+41272,10:volkswagen|arteon,test,
+41279,6:jaguar|f-type,train,1
+41280,6:jaguar|f-type,train,1
+41303,4:jeep|renegade,train,0
+41304,4:fiat|500,test,
+41305,4:jeep|renegade,train,0
+41320,3:bmw|8 series,train,3
+41321,3:bmw|8 series,train,3
+41322,3:bmw|8 series,train,3
+41334,5:acura|tlx,train,0
+41336,5:acura|tlx,train,0
+41338,5:acura|tlx,train,0
+41342,3:bmw|4 series,train,3
+41343,3:bmw|4 series,train,3
+41355,3:bmw|8 series,train,3
+41366,5:mazda|3,train,4
+41375,6:nissan|370z,train,4
+41376,6:nissan|370z,train,4
+41379,7:genesis|g70,train,3
+41380,7:genesis|g70,train,3
+41381,7:hyundai|veloster,train,1
+41382,7:hyundai|veloster,train,1
+41383,7:hyundai|veloster,train,1
+41384,7:hyundai|veloster,train,1
+41394,12:aston martin|vantage,test,
+41396,11:lamborghini|huracan,train,3
+41397,11:lamborghini|huracan,train,3
+41400,12:aston martin|db11,train,0
+41401,12:aston martin|db11,train,0
+41403,7:genesis|g70,train,3
+41409,5:acura|rdx,train,4
+41410,5:acura|rdx,train,4
+41420,7:hyundai|kona,test,
+41421,7:hyundai|kona,test,
+41423,4:audi|rs,train,1
+41424,4:audi|tt rs,train,0
+41427,7:genesis|g80,train,2
+41429,8:cadillac|xt6,train,0
+41431,6:subaru|ascent,train,0
+41438,5:buick|envision,train,3
+41439,7:hyundai|tucson,train,4
+41440,7:hyundai|tucson,train,4
+41441,5:buick|envision,train,3
+41442,5:buick|envision,train,3
+41453,5:lexus|rc,test,
+41457,3:kia|forte,train,2
+41461,7:genesis|g80,train,2
+41462,7:genesis|g80,train,2
+41463,7:genesis|g80,train,2
+41478,10:mitsubishi|outlander,train,1
+41479,7:hyundai|santa fe,test,
+41480,7:hyundai|santa fe,test,
+41483,5:lexus|nx,train,2
+41486,7:lincoln|aviator,train,3
+41488,7:lincoln|aviator,train,3
+41493,5:volvo|s90,train,3
+41494,5:volvo|v60,train,2
+41496,5:volvo|v90,train,3
+41498,5:volvo|v90,train,3
+41502,5:volvo|xc60,train,2
+41503,5:volvo|xc40,train,4
+41508,5:volvo|xc60,train,2
+41518,5:buick|encore,train,2
+41520,5:buick|encore,train,2
+41528,5:volvo|xc90,train,1
+41530,10:alfa romeo|4c,test,
+41534,6:nissan|altima,train,2
+41542,8:infiniti|qx60,train,2
+41543,6:subaru|brz,test,
+41544,6:subaru|brz,test,
+41546,9:chevrolet|camaro,test,
+41547,9:chevrolet|camaro,test,
+41548,9:chevrolet|camaro,test,
+41549,9:chevrolet|camaro,test,
+41550,9:chevrolet|camaro,test,
+41553,3:kia|rio,test,
+41556,6:subaru|wrx,train,0
+41558,5:buick|regal,train,2
+41564,5:buick|regal,train,2
+41565,10:mitsubishi|eclipse cross,train,4
+41566,10:mitsubishi|eclipse cross,train,4
+41571,8:cadillac|escalade,test,
+41574,9:chevrolet|tahoe,train,4
+41576,9:chevrolet|tahoe,train,4
+41580,3:gmc|yukon,train,3
+41583,8:cadillac|escalade,test,
+41595,4:audi|r8,train,1
+41596,13:mercedes-benz|amg gt,train,3
+41598,3:kia|stinger,train,4
+41600,3:kia|stinger,train,4
+41608,4:fiat|124 spider,train,0
+41609,4:fiat|124 spider,train,0
+41611,7:genesis|g90,train,2
+41613,7:genesis|g90,train,2
+41636,10:land rover|range rover,train,3
+41639,10:land rover|range rover,train,3
+41641,10:land rover|range rover,train,3
+41645,9:chevrolet|camaro,test,
+41647,5:buick|regal,train,2
+41650,4:fiat|500,test,
+41662,6:nissan|rogue,test,
+41663,5:acura|mdx,train,2
+41667,3:bmw|x3,train,2
+41670,4:jeep|cherokee,train,0
+41671,4:jeep|cherokee,train,0
+41672,4:jeep|cherokee,train,0
+41679,4:jeep|wrangler,train,4
+41683,7:porsche|macan,train,4
+41685,7:porsche|cayenne,train,2
+41686,7:porsche|911,train,0
+41688,7:ferrari|488 pista,train,4
+41689,7:ferrari|488 pista spider,train,3
+41690,7:ferrari|812 superfast,train,4
+41691,7:ferrari|gtc4lusso,train,2
+41692,7:ferrari|gtc4lusso,train,2
+41693,7:ferrari|portofino,train,4
+41694,4:mini|cooper,test,
+41695,4:mini|cooper,test,
+41696,4:mini|countryman,train,2
+41706,4:mini|cooper,test,
+41709,4:mini|countryman,train,2
+41729,8:maserati|ghibli,train,2
+41730,8:maserati|ghibli,train,2
+41731,8:maserati|ghibli,train,2
+41732,5:mazda|3,train,4
+41733,5:mazda|3,train,4
+41737,4:mini|countryman,train,2
+41738,4:mini|clubman,train,3
+41747,5:honda|civic,train,4
+41748,5:honda|civic,train,4
+41750,8:maserati|quattroporte,train,0
+41751,8:maserati|quattroporte,train,0
+41752,8:maserati|quattroporte,train,0
+41754,5:honda|pilot,train,3
+41755,5:honda|pilot,train,3
+41756,10:mitsubishi|outlander,train,1
+41763,4:jeep|wrangler,train,4
+41764,4:jeep|wrangler,train,4
+41766,4:jeep|wrangler,train,4
+41767,4:jeep|wrangler,train,4
+41768,10:mitsubishi|outlander,train,1
+41769,10:mitsubishi|eclipse cross,train,4
+41770,5:dodge|durango,train,4
+41778,5:dodge|durango,train,4
+41779,5:dodge|durango,train,4
+41784,8:maserati|levante,train,2
+41785,8:maserati|levante,train,2
+41786,8:maserati|levante,train,2
+41787,8:maserati|levante,train,2
+41804,7:lincoln|mkz,train,3
+41805,7:lincoln|mkz,train,3
+41806,7:lincoln|mkz,train,3
+41807,7:lincoln|mkz,train,3
+41815,13:mercedes-benz|s-class,train,4
+41868,8:cadillac|xt5,train,1
+41874,8:cadillac|xt5,train,1
+41880,6:toyota|sequoia,train,3
+41883,7:ferrari|f8 tributo,train,4
+41890,4:mini|clubman,train,3
+41897,5:volvo|xc90,train,1
+41902,12:aston martin|dbs,test,
+41903,5:lotus|evora,test,
+41904,5:lotus|evora,test,
+41905,5:lotus|evora,test,
+41906,5:lotus|evora,test,
+41909,13:mercedes-benz|c-class,train,1
+41911,5:lexus|es,train,4
+41914,6:nissan|maxima,train,1
+41923,7:porsche|panamera,train,0
+41925,7:porsche|panamera,train,0
+41940,6:toyota|4runner,train,3
+41949,6:toyota|86,test,
+41950,6:toyota|86,test,
+41966,5:lexus|rx,train,1
+41967,9:chevrolet|blazer,train,2
+41968,10:land rover|discovery,train,0
+41971,5:dodge|durango,train,4
+41976,5:lexus|lx,train,4
+41980,7:bentley|continental,train,1
+41982,7:porsche|911,train,0
+41988,4:audi|tts,test,
+41989,7:bentley|continental,train,1
+41998,11:rolls-royce|dawn,train,3
+42003,3:bmw|8 series,train,3
+42006,11:rolls-royce|wraith,train,1
+42007,6:subaru|impreza,train,4
+42008,6:subaru|impreza,train,4
+42012,6:toyota|camry,train,2
+42019,3:bmw|x1,train,3
+42020,11:rolls-royce|phantom,train,0
+42021,11:rolls-royce|phantom,train,0
+42022,11:rolls-royce|ghost,test,
+42023,11:rolls-royce|ghost,test,
+42024,6:subaru|impreza,train,4
+42025,6:subaru|impreza,train,4
+42028,11:rolls-royce|cullinan,test,
+42040,10:mitsubishi|outlander,train,1
+42048,10:mitsubishi|outlander,train,1
+42052,7:bentley|bentayga,train,0
+42058,11:lamborghini|urus,train,4
+42064,5:honda|accord,train,3
+42066,8:infiniti|q50,train,1
+42067,8:infiniti|q50,train,1
+42068,8:infiniti|q50,train,1
+42076,7:lincoln|corsair,test,
+42081,7:lincoln|nautilus,train,0
+42082,7:lincoln|nautilus,train,0
+42097,6:nissan|murano,train,4
+42099,8:infiniti|qx50,train,4
+42101,10:volkswagen|tiguan,test,
+42104,10:volkswagen|tiguan,test,
+42107,8:cadillac|ct6,train,4
+42117,5:lexus|is,test,
+42121,5:lexus|is,test,
+42124,10:volkswagen|golf/gti,train,0
+42127,3:bmw|5 series,test,
+42136,10:alfa romeo|stelvio,train,1
+42138,3:sti|s209,train,4
+42146,10:alfa romeo|giulia,train,3
+42147,10:alfa romeo|giulia,train,3
+42148,10:alfa romeo|giulia,train,3
+42157,10:alfa romeo|stelvio,train,1
+42158,10:alfa romeo|stelvio,train,1
+42159,10:volkswagen|atlas,train,4
+42160,11:lamborghini|aventador,train,1
+42161,11:lamborghini|aventador,train,1
+42163,8:infiniti|q60,train,1
+42165,8:infiniti|q60,train,1
+42166,5:acura|ilx,test,
+42181,6:toyota|rav4,train,2
+42182,6:toyota|rav4,train,2
+42183,10:volkswagen|atlas,train,4
+42190,13:mercedes-benz|g-class,train,0
+42194,13:mercedes-benz|s-class,train,4
+42200,13:mercedes-benz|s-class,train,4
+42205,4:fiat|500,test,
+42210,7:bugatti|chiron,train,1
+42212,4:audi|s5,train,4
+42216,13:mercedes-benz|c-class,train,1
+42219,13:mercedes-benz|c-class,train,1
+42227,10:mitsubishi|mirage,train,1
+42228,10:mitsubishi|mirage,train,1
+42229,10:mitsubishi|mirage,train,1
+42230,10:mitsubishi|mirage,train,1
+42231,10:volkswagen|golf/gti,train,0
+42248,7:lincoln|continental,train,1
+42251,7:lincoln|continental,train,1
+42256,4:ford|escape,train,3
+42257,4:ford|escape,train,3
+42262,7:lincoln|corsair,test,
+42263,13:mercedes-benz|glc-class,test,
+42265,4:ford|expedition,train,4
+42270,4:ford|expedition,train,4
+42293,14:ruf automobile|rufturbo12/ctr3/ctr2017,train,0
+42300,8:infiniti|qx80,train,1
+42301,8:infiniti|qx80,train,1
+42312,11:lamborghini|huracan,train,3
+42313,11:lamborghini|huracan,train,3
+42318,17:roush performance|mustang,train,0
+42319,5:dodge|challenger,test,
+42320,5:dodge|challenger,test,
+42326,5:dodge|challenger,test,
+42327,5:dodge|challenger,test,
+42328,5:dodge|challenger,test,
+42329,8:chrysler|300,train,2
+42330,8:chrysler|300,train,2
+42336,6:nissan|rogue,test,
+42337,6:nissan|rogue,test,
+42346,9:chevrolet|blazer,train,2
+42359,4:audi|a5,train,2
+42362,5:mazda|cx-3,train,1
+42364,4:audi|a4,train,4
+42365,8:cadillac|xt5,train,1
+42366,5:mazda|cx-30,train,3
+42367,5:mazda|cx-30,train,3
+42368,8:cadillac|xt5,train,1
+42382,7:bentley|bentayga,train,0
+42386,17:roush performance|mustang,train,0
+42390,8:chrysler|300,train,2
+42392,13:mercedes-benz|s-class,train,4
+42403,5:buick|encore,train,2
+42404,5:buick|encore,train,2
+42407,7:bentley|continental,train,1
+42409,7:porsche|911,train,0
+42416,7:bentley|continental,train,1
+42418,7:bentley|flying spur,test,
+42425,5:mazda|cx-30,train,3
+42433,10:volkswagen|golf/gti,train,0
+42434,10:volkswagen|golf/gti,train,0
+42438,5:mazda|mx-5,train,0
+42439,5:mazda|mx-5,train,0
+42441,5:buick|encore,train,2
+42449,5:mazda|2,train,1
+42450,5:mazda|2,train,1
+42454,10:volkswagen|atlas,train,4
+42457,10:volkswagen|atlas,train,4
+42464,8:cadillac|ct4,train,3
+42465,8:cadillac|ct4,train,3
+42466,8:cadillac|ct4,train,3
+42469,8:cadillac|ct5,train,2
+42471,8:cadillac|ct5,train,2
+42473,6:nissan|sentra,train,3
+42481,8:cadillac|ct4,train,3
+42482,6:jaguar|f-type,train,1
+42485,6:jaguar|f-type,train,1
+42487,6:jaguar|f-type,train,1
+42493,7:genesis|g70,train,3
+42494,7:genesis|g70,train,3
+42495,7:genesis|g70,train,3
+42501,5:honda|civic,train,4
+42515,7:genesis|g70,train,3
+42516,7:genesis|g70,train,3
+42521,5:buick|encore,train,2
+42530,4:mini|cooper,test,
+42533,4:mini|cooper,test,
+42534,4:mini|countryman,train,2
+42535,4:mini|countryman,train,2
+42566,4:mini|cooper,test,
+42575,5:honda|pilot,train,3
+42579,7:bentley|mulsanne,train,3
+42603,3:kia|sportage,train,1
+42604,3:kia|sportage,train,1
+42605,6:subaru|crosstrek,train,4
+42606,6:subaru|crosstrek,train,4
+42607,6:subaru|crosstrek,train,4
+42608,10:volkswagen|atlas,train,4
+42610,7:hyundai|palisade,train,0
+42611,7:bugatti|divo,train,4
+42616,8:cadillac|escalade,test,
+42619,9:chevrolet|tahoe,train,4
+42621,3:gmc|yukon,train,3
+42622,3:gmc|yukon,train,3
+42623,3:gmc|yukon,train,3
+42624,3:gmc|yukon,train,3
+42625,8:cadillac|escalade,test,
+42626,9:chevrolet|tahoe,train,4
+42628,9:chevrolet|tahoe,train,4
+42635,3:kia|k5,test,
+42636,3:kia|k5,test,
+42637,5:buick|encore,train,2
+42639,5:buick|encore,train,2
+42643,10:land rover|range rover,train,3
+42646,10:land rover|range rover,train,3
+42648,18:mclaren automotive|720s coupe,train,0
+42649,18:mclaren automotive|720s spider,test,
+42650,18:mclaren automotive|gt,train,4
+42652,10:land rover|defender,test,
+42669,18:mclaren automotive|570s coupe,train,3
+42670,18:mclaren automotive|570s spider,test,
+42671,18:mclaren automotive|600lt spider,train,1
+42672,18:mclaren automotive|620r coupe,train,0
+42678,5:volvo|v60,train,2
+42680,5:volvo|v90,train,3
+42682,5:volvo|v90,train,3
+42686,5:buick|encore,train,2
+42687,5:volvo|xc60,train,2
+42688,5:volvo|xc60,train,2
+42690,5:volvo|xc90,train,1
+42695,5:volvo|xc90,train,1
+42696,5:volvo|xc90,train,1
+42698,18:mclaren automotive|650s can-am,test,
+42702,18:mclaren automotive|675lt spider,train,3
+42703,18:mclaren automotive|mso hs,train,0
+42706,18:mclaren automotive|540c coupe,train,2
+42707,18:mclaren automotive|570gt,train,0
+42709,18:mclaren automotive|570s spider,test,
+42710,18:mclaren automotive|720s coupe,train,0
+42711,18:mclaren automotive|570gt,train,0
+42712,18:mclaren automotive|570s coupe,train,3
+42713,18:mclaren automotive|570s spider,test,
+42714,18:mclaren automotive|600lt coupe,test,
+42715,18:mclaren automotive|720s coupe,train,0
+42716,18:mclaren automotive|720s spider,test,
+42717,18:mclaren automotive|senna,train,3
+42719,4:mini|cooper,test,
+42737,7:porsche|cayman,train,3
+42738,7:porsche|cayman,train,3
+42753,8:infiniti|qx80,train,1
+42754,8:infiniti|qx80,train,1
+42761,7:ferrari|812 superfast,train,4
+42762,7:ferrari|f8 tributo,train,4
+42763,7:ferrari|f8 spider,train,0
+42764,7:ferrari|812 gts,train,1
+42765,11:lamborghini|huracan,train,3
+42766,11:lamborghini|huracan,train,3
+42767,11:lamborghini|huracan,train,3
+42768,11:lamborghini|huracan,train,3
+42769,7:bentley|continental,train,1
+42770,7:ferrari|portofino,train,4
+42771,7:ferrari|portofino,train,4
+42772,4:audi|rs,train,1
+42773,7:ferrari|roma,train,2
+42776,4:audi|rs,train,1
+42783,3:kia|forte,train,2
+42792,6:subaru|forester,train,4
+42798,5:acura|rdx,train,4
+42799,5:acura|rdx,train,4
+42800,8:infiniti|qx50,train,4
+42801,5:acura|rdx,train,4
+42802,5:acura|rdx,train,4
+42803,8:infiniti|qx50,train,4
+42813,10:volkswagen|atlas,train,4
+42815,12:aston martin|vantage,test,
+42820,11:rolls-royce|dawn,train,3
+42821,11:rolls-royce|dawn,train,3
+42822,9:chevrolet|malibu,train,4
+42825,4:mini|clubman,train,3
+42827,4:mini|countryman,train,2
+42828,4:mini|clubman,train,3
+42831,11:rolls-royce|wraith,train,1
+42832,11:rolls-royce|wraith,train,1
+42834,7:genesis|g90,train,2
+42839,7:genesis|g80,train,2
+42841,7:genesis|g80,train,2
+42842,11:rolls-royce|phantom,train,0
+42843,11:rolls-royce|phantom,train,0
+42846,11:rolls-royce|cullinan,test,
+42847,11:rolls-royce|cullinan,test,
+42857,5:mazda|cx-30,train,3
+42858,6:subaru|legacy,train,0
+42859,6:subaru|legacy,train,0
+42874,3:bmw|2 series,test,
+42892,4:mini|clubman,train,3
+42909,4:jeep|wrangler,train,4
+42911,4:jeep|wrangler,train,4
+42917,3:bmw|z4,test,
+42924,6:nissan|gt-r,train,2
+42927,7:hyundai|veloster,train,1
+42928,7:hyundai|veloster,train,1
+42929,13:mercedes-benz|cla-class,train,1
+42938,3:bmw|8 series,train,3
+42941,9:chevrolet|malibu,train,4
+42948,11:rolls-royce|ghost,test,
+42949,11:rolls-royce|ghost,test,
+42958,5:lexus|rx,train,1
+42968,6:toyota|rav4,train,2
+42969,6:toyota|rav4,train,2
+42975,7:bentley|bentayga,train,0
+42987,12:aston martin|vantage,test,
+42990,12:aston martin|dbs,test,
+42991,12:aston martin|db11,train,0
+42992,12:aston martin|db11,train,0
+42993,4:audi|s5,train,4
+42995,3:bmw|2 series,test,
+42997,4:audi|s4,train,1
+43020,4:audi|q3,train,3
+43023,10:volkswagen|tiguan,test,
+43030,11:lamborghini|urus,train,4
+43041,5:mazda|cx-3,train,1
+43042,5:mazda|3,train,4
+43043,5:mazda|3,train,4
+43046,7:hyundai|elantra,test,
+43047,7:hyundai|elantra,test,
+43048,8:infiniti|q50,train,1
+43049,8:infiniti|q50,train,1
+43050,8:infiniti|q50,train,1
+43051,8:infiniti|q50,train,1
+43052,5:mazda|3,train,4
+43053,5:mazda|3,train,4
+43055,5:honda|civic,train,4
+43056,5:honda|civic,train,4
+43057,5:honda|civic,train,4
+43061,7:genesis|gv80,train,1
+43071,10:land rover|range rover,train,3
+43077,5:lexus|es,train,4
+43127,5:mazda|cx-9,train,2
+43132,5:lexus|rx,train,1
+43133,5:mazda|cx-5,train,1
+43134,5:mazda|cx-5,train,1
+43137,6:toyota|highlander,train,1
+43147,3:bmw|8 series,train,3
+43149,8:cadillac|ct4,train,3
+43151,8:cadillac|ct4,train,3
+43153,5:mazda|3,train,4
+43158,5:honda|passport,train,1
+43162,4:jeep|renegade,train,0
+43163,5:mazda|cx-30,train,3
+43164,5:dodge|durango,train,4
+43166,5:dodge|durango,train,4
+43167,4:jeep|grand cherokee,train,0
+43168,4:jeep|grand cherokee,train,0
+43171,6:pagani|huayra,test,
+43172,7:bentley|continental,train,1
+43173,7:bentley|continental,train,1
+43176,7:bentley|flying spur,test,
+43177,8:maserati|ghibli,train,2
+43178,8:maserati|ghibli,train,2
+43179,8:maserati|ghibli,train,2
+43180,8:maserati|ghibli,train,2
+43182,8:maserati|quattroporte,train,0
+43183,8:maserati|quattroporte,train,0
+43184,8:maserati|quattroporte,train,0
+43200,9:chevrolet|equinox,train,4
+43201,5:buick|envision,train,3
+43202,5:buick|enclave,train,4
+43203,9:chevrolet|traverse,test,
+43205,5:buick|enclave,train,4
+43208,8:maserati|levante,train,2
+43209,8:maserati|levante,train,2
+43210,8:maserati|levante,train,2
+43212,6:toyota|sequoia,train,3
+43215,12:aston martin|vantage,test,
+43224,7:porsche|718,test,
+43225,7:porsche|718,test,
+43231,5:lexus|rc,test,
+43233,5:lexus|rc,test,
+43235,5:acura|tlx,train,0
+43237,5:acura|tlx,train,0
+43240,8:cadillac|ct4,train,3
+43241,8:cadillac|ct4,train,3
+43248,10:volkswagen|jetta,test,
+43250,10:volkswagen|golf/gti,train,0
+43251,10:volkswagen|golf/gti,train,0
+43253,8:cadillac|ct5,train,2
+43257,8:cadillac|ct5,train,2
+43260,10:volkswagen|arteon,test,
+43272,3:kia|sorento,train,3
+43273,3:kia|sorento,train,3
+43275,10:volkswagen|atlas,train,4
+43281,13:mercedes-benz|glc-class,test,
+43282,10:volkswagen|atlas,train,4
+43286,7:lincoln|aviator,train,3
+43287,12:aston martin|dbx v8,train,4
+43293,7:lincoln|aviator,train,3
+43297,5:acura|ilx,test,
+43298,6:toyota|corolla,train,2
+43299,6:toyota|corolla,train,2
+43304,6:toyota|camry,train,2
+43306,6:toyota|camry,train,2
+43316,7:lincoln|corsair,test,
+43317,7:lincoln|corsair,test,
+43318,7:lincoln|corsair,test,
+43319,5:dodge|durango,train,4
+43326,4:audi|tt,train,1
+43328,8:infiniti|q60,train,1
+43330,8:infiniti|q60,train,1
+43352,10:alfa romeo|giulia,train,3
+43353,10:alfa romeo|giulia,train,3
+43367,10:alfa romeo|stelvio,train,1
+43368,5:buick|envision,train,3
+43372,10:alfa romeo|stelvio,train,1
+43373,4:fiat|500,test,
+43375,6:nissan|rogue,test,
+43379,7:porsche|cayenne,train,2
+43386,7:porsche|cayenne,train,2
+43389,5:lexus|ux,train,3
+43390,6:nissan|altima,train,2
+43394,6:nissan|altima,train,2
+43399,5:dodge|durango,train,4
+43409,11:lamborghini|aventador,train,1
+43410,11:lamborghini|aventador,train,1
+43411,14:ruf automobile|turbo12/ctr3/ctr anniversary,train,3
+43414,7:bentley|continental,train,1
+43426,5:lotus|evora,test,
+43427,5:lotus|evora,test,
+43431,7:porsche|911,train,0
+43441,5:dodge|challenger,test,
+43442,5:dodge|challenger,test,
+43443,5:dodge|challenger,test,
+43446,7:hyundai|elantra,test,
+43447,7:hyundai|elantra,test,
+43448,8:chrysler|300,train,2
+43449,8:chrysler|300,train,2
+43450,8:chrysler|300,train,2
+43453,5:dodge|charger,train,3
+43454,5:dodge|charger,train,3
+43473,10:mitsubishi|outlander,train,1
+43474,10:mitsubishi|outlander,train,1
+43477,10:mitsubishi|outlander,train,1
+43478,10:mitsubishi|outlander,train,1
+43479,7:porsche|macan,train,4
+43483,7:bugatti|chiron,train,1
+43484,7:bugatti|chiron,train,1
+43485,11:lamborghini|aventador,train,1
+43486,11:lamborghini|aventador,train,1
+43487,4:audi|tts,test,
+43491,3:kia|k5,test,
+43501,7:porsche|911,train,0
+43530,13:mercedes-benz|s-class,train,4
+43541,13:mercedes-benz|e-class,train,4
+43545,10:land rover|evoque,train,1
+43547,13:mercedes-benz|glc-class,test,
+43566,10:mitsubishi|mirage,train,1
+43567,10:mitsubishi|mirage,train,1
+43568,10:mitsubishi|mirage,train,1
+43569,10:mitsubishi|mirage,train,1
+43572,13:mercedes-benz|gla-class,train,4
+43573,13:mercedes-benz|glb-class,test,
+43574,5:buick|encore,train,2
+43576,5:buick|encore,train,2
+43578,5:mazda|cx-30,train,3
+43590,4:ford|expedition,train,4
+43591,7:lincoln|navigator,test,
+43592,7:lincoln|navigator,test,
+43597,4:ford|expedition,train,4
+43601,7:lincoln|navigator,test,
+43611,10:alfa romeo|giulia,train,3
+43622,10:alfa romeo|stelvio,train,1
+43628,6:subaru|wrx,train,0
+43629,6:subaru|wrx,train,0
+43630,6:subaru|wrx,train,0
+43639,10:land rover|defender,test,
+43642,7:bentley|flying spur,test,
+43643,5:honda|civic,train,4
+43654,6:jaguar|f-pace,train,3
+43659,7:bentley|bentayga,train,0
+43660,5:dodge|durango,train,4
+43661,4:jeep|grand cherokee,train,0
+43668,4:ford|mustang,test,
+43670,4:ford|mustang,test,
+43682,4:jeep|wrangler,train,4
+43695,6:nissan|armada,train,0
+43696,6:nissan|armada,train,0
+43703,5:acura|mdx,train,2
+43706,10:mitsubishi|eclipse cross,train,4
+43707,5:acura|mdx,train,2
+43709,10:mitsubishi|eclipse cross,train,4
+43717,7:lincoln|nautilus,train,0
+43718,7:lincoln|nautilus,train,0
+43719,7:lincoln|nautilus,train,0
+43735,7:porsche|panamera,train,0
+43737,6:nissan|rogue,test,
+43748,7:genesis|g70,train,3
+43749,3:kia|sportage,train,1
+43750,3:kia|sportage,train,1
+43751,10:mitsubishi|outlander,train,1
+43757,11:lamborghini|aventador,train,1
+43758,11:lamborghini|aventador,train,1
+43759,3:bmw|8 series,train,3
+43760,6:jaguar|e-pace,train,0
+43763,7:hyundai|kona,test,
+43764,7:hyundai|kona,test,
+43767,7:porsche|panamera,train,0
+43772,6:nissan|rogue,test,
+43773,6:nissan|rogue,test,
+43781,4:mini|cooper,test,
+43784,4:mini|cooper,test,
+43785,4:mini|cooper,test,
+43790,4:mini|countryman,train,2
+43791,7:genesis|g70,train,3
+43798,4:mini|clubman,train,3
+43805,3:bmw|8 series,train,3
+43810,5:buick|encore,train,2
+43812,5:buick|encore,train,2
+43822,4:mini|cooper,test,
+43830,4:mini|countryman,train,2
+43833,3:bmw|x2,train,2
+43837,4:mini|countryman,train,2
+43838,4:mini|countryman,train,2
+43839,4:mini|clubman,train,3
+43844,7:genesis|g90,train,2
+43845,7:genesis|g90,train,2
+43846,7:genesis|g90,train,2
+43847,7:genesis|g90,train,2
+43854,5:buick|encore,train,2
+43855,5:buick|encore,train,2
+43859,5:buick|encore,train,2
+43863,3:kia|seltos,test,
+43864,3:kia|seltos,test,
+43890,18:mclaren automotive|sabre,train,4
+43891,11:rolls-royce|dawn,train,3
+43892,11:rolls-royce|wraith,train,1
+43893,11:rolls-royce|ghost,test,
+43897,3:kia|k5,test,
+43898,3:kia|k5,test,
+43900,3:kia|k5,test,
+43901,10:volkswagen|taos,train,0
+43902,10:volkswagen|taos,train,0
+43903,10:land rover|range rover,train,3
+43904,10:land rover|range rover,train,3
+43926,7:genesis|g70,train,3
+43927,7:genesis|g70,train,3
+43950,6:nissan|pathfinder,train,0
+43958,5:buick|envision,train,3
+43961,5:buick|envision,train,3
+43962,8:cadillac|xt4,train,4
+43963,7:hyundai|palisade,train,0
+43966,5:acura|tlx,train,0
+43967,5:acura|tlx,train,0
+43973,7:genesis|g80,train,2
+43975,7:hyundai|sonata,train,0
+43976,7:hyundai|sonata,train,0
+43977,7:hyundai|sonata,train,0
+43978,7:hyundai|sonata,train,0
+43983,7:hyundai|santa cruz,train,0
+43984,7:hyundai|santa cruz,train,0
+44006,8:cadillac|ct4,train,3
+44007,8:cadillac|ct4,train,3
+44033,8:cadillac|escalade,test,
+44034,9:chevrolet|tahoe,train,4
+44038,3:gmc|yukon,train,3
+44039,3:gmc|yukon,train,3
+44040,3:gmc|yukon,train,3
+44041,3:gmc|yukon,train,3
+44042,8:cadillac|escalade,test,
+44043,9:chevrolet|tahoe,train,4
+44045,9:chevrolet|tahoe,train,4
+44053,6:jaguar|f-type,train,1
+44064,6:subaru|impreza,train,4
+44065,6:subaru|impreza,train,4
+44067,4:jeep|grand wagoneer,train,1
+44068,4:jeep|grand wagoneer,train,1
+44085,5:buick|enclave,train,4
+44087,5:buick|enclave,train,4
+44089,17:roush performance|mustang,train,0
+44092,4:jeep|wrangler,train,4
+44097,4:audi|tt,train,1
+44098,11:lamborghini|huracan,train,3
+44099,11:lamborghini|huracan,train,3
+44100,11:lamborghini|huracan,train,3
+44101,11:lamborghini|huracan,train,3
+44102,7:bentley|continental,train,1
+44109,7:bentley|continental,train,1
+44126,7:bentley|flying spur,test,
+44127,8:cadillac|ct5,train,2
+44129,8:cadillac|ct5,train,2
+44131,5:honda|civic,train,4
+44132,5:honda|civic,train,4
+44133,5:honda|civic,train,4
+44134,5:honda|civic,train,4
+44136,10:volkswagen|passat,train,3
+44142,10:volkswagen|tiguan,test,
+44147,4:audi|q3,train,3
+44149,10:volkswagen|tiguan,test,
+44156,7:bentley|bentayga,train,0
+44157,11:lamborghini|urus,train,4
+44161,17:roush performance|mustang,train,0
+44167,6:jaguar|f-type,train,1
+44168,6:jaguar|f-type,train,1
+44171,3:bmw|4 series,train,3
+44178,5:acura|ilx,test,
+44184,3:bmw|8 series,train,3
+44200,10:volkswagen|atlas,train,4
+44203,10:volkswagen|atlas,train,4
+44204,5:volvo|xc40,train,4
+44209,5:volvo|xc90,train,1
+44215,8:cadillac|ct5,train,2
+44216,8:cadillac|ct5,train,2
+44226,6:jaguar|f-type,train,1
+44227,6:jaguar|f-type,train,1
+44236,8:cadillac|ct4,train,3
+44237,6:toyota|corolla,train,2
+44238,6:toyota|corolla,train,2
+44243,10:alfa romeo|giulia,train,3
+44247,3:bmw|8 series,train,3
+44248,11:rolls-royce|phantom,train,0
+44249,11:rolls-royce|phantom,train,0
+44250,5:honda|hr-v,train,1
+44251,5:honda|hr-v,train,1
+44254,11:rolls-royce|cullinan,test,
+44255,11:rolls-royce|cullinan,test,
+44259,10:alfa romeo|stelvio,train,1
+44260,6:jaguar|e-pace,train,0
+44264,6:subaru|ascent,train,0
+44265,6:subaru|ascent,train,0
+44270,8:maserati|mc20,train,0
+44271,6:subaru|brz,test,
+44272,6:subaru|brz,test,
+44273,4:audi|tts,test,
+44275,3:bmw|2 series,test,
+44277,3:bmw|4 series,train,3
+44290,10:mitsubishi|mirage,train,1
+44291,10:mitsubishi|mirage,train,1
+44295,8:maserati|ghibli,train,2
+44296,8:maserati|ghibli,train,2
+44298,7:genesis|g80,train,2
+44300,8:maserati|quattroporte,train,0
+44301,8:maserati|quattroporte,train,0
+44302,8:maserati|quattroporte,train,0
+44303,11:rolls-royce|ghost,test,
+44304,11:rolls-royce|ghost,test,
+44305,11:rolls-royce|ghost,test,
+44307,7:genesis|gv80,train,1
+44309,10:mitsubishi|outlander,train,1
+44310,10:mitsubishi|outlander,train,1
+44317,3:bmw|x4,train,3
+44320,10:mitsubishi|outlander,train,1
+44321,10:mitsubishi|outlander,train,1
+44330,3:bmw|x6,train,1
+44334,3:bmw|x7,train,0
+44336,7:genesis|gv80,train,1
+44338,8:maserati|levante,train,2
+44339,8:maserati|levante,train,2
+44340,8:maserati|levante,train,2
+44341,8:maserati|levante,train,2
+44345,6:toyota|camry,train,2
+44408,10:land rover|range rover,train,3
+44413,7:ferrari|f8 spider,train,0
+44414,7:ferrari|812 gts,train,1
+44417,7:porsche|911,train,0
+44418,7:porsche|911,train,0
+44428,7:porsche|911,train,0
+44429,7:porsche|911,train,0
+44430,7:ferrari|roma,train,2
+44440,6:toyota|4runner,train,3
+44441,6:toyota|4runner,train,3
+44452,7:ferrari|f8 tributo,train,4
+44453,7:ferrari|812 competizione,train,0
+44454,5:lexus|es,train,4
+44463,7:ferrari|portofino,train,4
+44484,6:subaru|forester,train,4
+44485,6:subaru|forester,train,4
+44486,8:infiniti|qx80,train,1
+44487,7:lincoln|aviator,train,3
+44490,7:lincoln|aviator,train,3
+44498,7:bugatti|chiron,train,1
+44499,7:bugatti|chiron,train,1
+44500,7:bugatti|chiron,train,1
+44511,7:porsche|718,test,
+44512,7:porsche|718,test,
+44523,7:bentley|continental,train,1
+44524,7:bentley|continental,train,1
+44525,8:infiniti|q60,train,1
+44526,8:infiniti|q60,train,1
+44527,8:infiniti|q60,train,1
+44528,8:infiniti|q60,train,1
+44533,5:lexus|rc,test,
+44534,5:lexus|is,test,
+44535,5:lexus|is,test,
+44540,7:bentley|flying spur,test,
+44544,8:infiniti|q50,train,1
+44555,8:infiniti|qx60,train,2
+44556,7:bentley|bentayga,train,0
+44557,8:infiniti|qx60,train,2
+44559,3:kia|rio,test,
+44560,3:kia|forte,train,2
+44561,3:kia|forte,train,2
+44563,3:kia|forte,train,2
+44570,7:porsche|panamera,train,0
+44589,4:jeep|compass,test,
+44593,6:toyota|corolla cross,train,1
+44610,18:mclaren automotive|720s coupe,train,0
+44611,18:mclaren automotive|720s spider,test,
+44620,5:acura|tlx,train,0
+44621,5:acura|tlx,train,0
+44622,5:acura|tlx,train,0
+44648,5:lexus|nx,train,2
+44655,13:mercedes-benz|gla-class,train,4
+44656,6:toyota|highlander,train,1
+44677,7:porsche|cayenne,train,2
+44686,18:mclaren automotive|gt,train,4
+44687,18:mclaren automotive|720s coupe,train,0
+44688,18:mclaren automotive|720s spider,test,
+44689,18:mclaren automotive|720s coupe,train,0
+44690,18:mclaren automotive|elva,train,1
+44692,5:lexus|lc,train,0
+44699,6:jaguar|xf,train,1
+44700,6:jaguar|xf,train,1
+44701,13:mercedes-benz|e-class,train,4
+44708,4:fiat|500,test,
+44714,10:land rover|range rover,train,3
+44715,7:lincoln|nautilus,train,0
+44716,7:lincoln|nautilus,train,0
+44717,7:lincoln|nautilus,train,0
+44756,10:volkswagen|jetta,test,
+44766,5:acura|rdx,train,4
+44768,5:acura|rdx,train,4
+44773,4:jeep|grand cherokee,train,0
+44774,4:jeep|grand cherokee,train,0
+44775,4:jeep|grand cherokee,train,0
+44803,6:nissan|altima,train,2
+44805,6:nissan|altima,train,2
+44807,6:nissan|altima,train,2
+44810,4:ford|escape,train,3
+44812,7:lincoln|corsair,test,
+44818,4:jeep|renegade,train,0
+44819,7:lincoln|corsair,test,
+44820,7:lincoln|corsair,test,
+44823,4:ford|explorer,train,2
+44826,4:ford|explorer,train,2
+44835,6:jaguar|f-type,train,1
+44836,6:jaguar|f-type,train,1
+44837,6:jaguar|xe,test,
+44838,6:jaguar|xe,test,
+44839,6:jaguar|xe,test,
+44840,6:jaguar|xf,train,1
+44843,10:land rover|range rover,train,3
+44845,13:mercedes-benz|c-class,train,1
+44846,5:honda|civic,train,4
+44850,6:nissan|murano,train,4
+44853,4:jeep|renegade,train,0
+44854,4:jeep|renegade,train,0
+44885,18:mclaren automotive|765lt coupe,train,2
+44886,12:aston martin|db11,train,0
+44891,6:nissan|sentra,train,3
+44935,12:aston martin|vantage,test,
+44936,12:aston martin|dbs,test,
+44937,12:aston martin|db11,train,0
+44938,10:alfa romeo|giulia,train,3
+44939,10:alfa romeo|giulia,train,3
+44941,8:infiniti|qx50,train,4
+44942,6:nissan|rogue,test,
+44943,6:nissan|rogue,test,
+44944,10:alfa romeo|stelvio,train,1
+44946,8:infiniti|qx50,train,4
+44949,12:aston martin|dbx v8,train,4
+44950,11:lamborghini|aventador,train,1
+44974,4:ford|explorer,train,2
+44977,4:ford|explorer,train,2
+45024,11:lamborghini|aventador,train,1
+45025,11:lamborghini|aventador,train,1
+45026,5:mazda|mx-5,train,0
+45027,5:mazda|mx-5,train,0
+45028,5:mazda|3,train,4
+45029,5:mazda|3,train,4
+45030,5:mazda|3,train,4
+45031,5:mazda|3,train,4
+45032,5:mazda|3,train,4
+45033,5:mazda|3,train,4
+45034,5:mazda|3,train,4
+45035,5:mazda|3,train,4
+45036,6:nissan|kicks,train,4
+45037,10:alfa romeo|stelvio,train,1
+45038,5:dodge|durango,train,4
+45040,5:acura|mdx,train,2
+45059,6:subaru|wrx,train,0
+45060,6:subaru|wrx,train,0
+45065,5:dodge|challenger,test,
+45066,5:dodge|challenger,test,
+45067,5:dodge|challenger,test,
+45068,5:dodge|challenger,test,
+45070,5:dodge|challenger,test,
+45071,5:dodge|challenger,test,
+45077,8:chrysler|300,train,2
+45078,8:chrysler|300,train,2
+45079,8:chrysler|300,train,2
+45083,5:dodge|charger,train,3
+45084,5:dodge|charger,train,3
+45086,13:mercedes-benz|gla-class,train,4
+45096,4:jeep|cherokee,train,0
+45097,5:dodge|durango,train,4
+45105,10:land rover|defender,test,
+45109,10:land rover|defender,test,
+45114,5:mazda|cx-30,train,3
+45115,5:mazda|cx-30,train,3
+45123,7:porsche|911,train,0
+45124,7:porsche|911,train,0
+45127,10:volkswagen|arteon,test,
+45128,10:volkswagen|arteon,test,
+45158,10:land rover|discovery,train,0
+45182,6:jaguar|f-type,train,1
+45183,6:jaguar|f-type,train,1
+45184,6:jaguar|f-type,train,1
+45185,6:jaguar|f-type,train,1
+45186,7:genesis|g70,train,3
+45193,18:mclaren automotive|765lt spider,test,
+45194,18:mclaren automotive|gt,train,4
+45202,7:genesis|g70,train,3
+45204,7:genesis|gv70,train,3
+45205,7:genesis|gv70,train,3
+45206,7:genesis|gv70,train,3
+45221,4:mini|cooper,test,
+45222,4:mini|cooper,test,
+45227,4:mini|cooper,test,
+45228,4:mini|cooper,test,
+45241,4:mini|countryman,train,2
+45243,7:genesis|g90,train,2
+45245,10:mitsubishi|eclipse cross,train,4
+45246,10:mitsubishi|eclipse cross,train,4
+45250,5:mazda|cx-50,train,3
+45251,5:mazda|cx-50,train,3
+45252,10:mitsubishi|eclipse cross,train,4
+45253,10:mitsubishi|eclipse cross,train,4
+45255,10:land rover|range rover,train,3
+45256,10:land rover|range rover,train,3
+45262,4:mini|countryman,train,2
+45264,3:bmw|8 series,train,3
+45271,4:mini|countryman,train,2
+45272,4:mini|countryman,train,2
+45277,3:bmw|8 series,train,3
+45280,4:mini|countryman,train,2
+45281,4:mini|countryman,train,2
+45291,4:jeep|grand wagoneer,train,1
+45292,4:jeep|grand wagoneer,train,1
+45294,7:hyundai|elantra,test,
+45295,7:hyundai|elantra,test,
+45296,7:hyundai|elantra,test,
+45299,7:genesis|g80,train,2
+45301,7:genesis|g80,train,2
+45305,5:buick|encore,train,2
+45306,5:buick|encore,train,2
+45310,5:buick|encore,train,2
+45319,12:aston martin|vantage,test,
+45320,12:aston martin|db11,train,0
+45321,12:aston martin|dbx v8,train,4
+45333,11:lamborghini|huracan,train,3
+45334,11:lamborghini|huracan,train,3
+45335,11:lamborghini|huracan,train,3
+45336,11:lamborghini|huracan,train,3
+45337,5:acura|integra,test,
+45338,5:acura|integra,test,
+45339,5:acura|integra,test,
+45341,6:subaru|crosstrek,train,4
+45342,6:subaru|crosstrek,train,4
+45351,3:kia|forte,train,2
+45354,8:maserati|ghibli,train,2
+45357,3:kia|k5,test,
+45359,8:maserati|quattroporte,train,0
+45368,5:buick|envision,train,3
+45376,5:buick|envision,train,3
+45383,5:buick|enclave,train,4
+45386,12:aston martin|dbx 707,train,2
+45387,5:buick|enclave,train,4
+45392,8:maserati|levante,train,2
+45394,8:maserati|levante,train,2
+45396,13:mercedes-benz|sl-class,train,2
+45397,13:mercedes-benz|sl-class,train,2
+45399,6:nissan|z,train,3
+45400,6:nissan|z,train,3
+45414,10:volkswagen|golf/gti,train,0
+45421,8:maserati|quattroporte,train,0
+45423,12:aston martin|vantage,test,
+45424,12:aston martin|dbs,test,
+45425,12:aston martin|db11,train,0
+45429,10:volkswagen|golf/gti,train,0
+45430,10:alfa romeo|giulia,train,3
+45431,10:alfa romeo|giulia,train,3
+45432,10:alfa romeo|giulia,train,3
+45433,6:jaguar|xf,train,1
+45434,6:jaguar|xf,train,1
+45435,6:jaguar|xf,train,1
+45436,6:subaru|impreza,train,4
+45437,6:subaru|impreza,train,4
+45438,6:subaru|impreza,train,4
+45442,6:subaru|impreza,train,4
+45443,6:subaru|impreza,train,4
+45445,10:alfa romeo|stelvio,train,1
+45446,5:acura|mdx,train,2
+45447,10:alfa romeo|stelvio,train,1
+45448,10:alfa romeo|stelvio,train,1
+45449,8:infiniti|qx55,train,1
+45450,6:jaguar|f-pace,train,3
+45453,10:land rover|range rover,train,3
+45465,7:ferrari|f8 spider,train,0
+45466,7:ferrari|812 gts,train,1
+45468,7:ferrari|812 competizione,train,0
+45469,7:ferrari|portofino,train,4
+45471,4:audi|s5,train,4
+45477,3:bmw|2 series,test,
+45478,3:bmw|2 series,test,
+45485,3:bmw|8 series,train,3
+45499,8:cadillac|ct4,train,3
+45500,8:cadillac|ct4,train,3
+45501,8:cadillac|ct4,train,3
+45502,8:cadillac|ct4,train,3
+45503,8:cadillac|ct4,train,3
+45505,8:cadillac|ct4,train,3
+45506,8:cadillac|ct4,train,3
+45507,10:mitsubishi|mirage,train,1
+45508,10:mitsubishi|mirage,train,1
+45509,10:mitsubishi|mirage,train,1
+45510,10:mitsubishi|mirage,train,1
+45517,4:audi|rs,train,1
+45536,7:hyundai|kona,test,
+45537,7:hyundai|santa cruz,train,0
+45542,4:audi|sq5,train,0
+45544,3:bmw|x3,train,2
+45556,8:maserati|grecale,train,3
+45566,5:dodge|durango,train,4
+45586,4:jeep|grand cherokee,train,0
+45600,6:toyota|gr supra,test,
+45609,8:infiniti|q50,train,1
+45610,8:infiniti|q50,train,1
+45611,8:infiniti|q50,train,1
+45618,7:hyundai|santa fe,test,
+45619,7:hyundai|santa fe,test,
+45621,9:chevrolet|tahoe,train,4
+45622,9:chevrolet|suburban,test,
+45623,9:chevrolet|tahoe,train,4
+45624,9:chevrolet|suburban,test,
+45633,8:cadillac|escalade,test,
+45634,9:chevrolet|tahoe,train,4
+45645,4:audi|r8,train,1
+45653,10:volkswagen|gli,train,1
+45654,10:volkswagen|gli,train,1
+45665,11:rolls-royce|phantom,train,0
+45666,11:rolls-royce|phantom,train,0
+45667,11:rolls-royce|ghost,test,
+45668,11:rolls-royce|ghost,test,
+45669,11:rolls-royce|ghost,test,
+45676,11:rolls-royce|cullinan,test,
+45677,11:rolls-royce|cullinan,test,
+45694,4:jeep|wrangler,train,4
+45696,4:jeep|wrangler,train,4
+45697,4:jeep|wrangler,train,4
+45703,10:volkswagen|tiguan,test,
+45711,7:porsche|cayenne,train,2
+45721,6:toyota|camry,train,2
+45746,9:chevrolet|tahoe,train,4
+45747,9:chevrolet|tahoe,train,4
+45762,8:maserati|mc20,train,0
+45763,8:maserati|mc20,train,0
+45764,3:bmw|2 series,test,
+45766,6:nissan|kicks,train,4
+45767,11:lamborghini|urus,train,4
+45768,6:nissan|murano,train,4
+45826,6:nissan|rogue,test,
+45843,8:infiniti|qx60,train,2
+45852,5:lexus|gx,train,0
+45855,6:subaru|ascent,train,0
+45856,6:toyota|4runner,train,3
+45857,6:toyota|4runner,train,3
+45859,7:bentley|continental,train,1
+45860,7:bentley|continental,train,1
+45880,8:infiniti|qx50,train,4
+45881,10:mitsubishi|outlander,train,1
+45882,6:nissan|pathfinder,train,0
+45883,10:volkswagen|tiguan,test,
+45884,10:volkswagen|tiguan,test,
+45885,8:infiniti|qx50,train,4
+45889,5:dodge|durango,train,4
+45890,5:dodge|durango,train,4
+45891,5:dodge|durango,train,4
+45895,7:bugatti|chiron,train,1
+45896,7:bugatti|chiron,train,1
+45897,7:bentley|continental,train,1
+45898,7:bentley|continental,train,1
+45901,7:bentley|flying spur,test,
+45902,7:bentley|flying spur,test,
+45905,7:bentley|bentayga,train,0
+45906,7:bentley|bentayga,train,0
+45907,7:bentley|bentayga,train,0
+45924,5:lexus|is,test,
+45928,5:lexus|is,test,
+45936,5:lexus|es,train,4
+45939,5:mazda|3,train,4
+45940,5:mazda|3,train,4
+45941,13:mercedes-benz|e-class,train,4
+45947,6:nissan|altima,train,2
+45954,4:jeep|wrangler,train,4
+45956,5:mazda|cx-9,train,2
+45960,8:infiniti|qx80,train,1
+45961,8:infiniti|qx80,train,1
+45962,7:bugatti|chiron,train,1
+45963,7:ferrari|monza sp1,train,0
+45965,7:ferrari|daytona sp3,test,
+45980,11:lamborghini|urus,train,4
+46039,5:lexus|lc,train,0
+46053,5:honda|civic,train,4
+46054,5:honda|civic,train,4
+46062,5:acura|rdx,train,4
+46063,5:acura|rdx,train,4
+46065,3:kia|sorento,train,3
+46066,3:kia|sorento,train,3
+46072,3:kia|sorento,train,3
+46081,3:bmw|z4,test,
+46083,7:porsche|911,train,0
+46084,7:porsche|911,train,0
+46088,6:toyota|gr supra,test,
+46089,6:toyota|gr supra,test,
+46091,7:porsche|911,train,0
+46101,7:porsche|911,train,0
+46102,7:porsche|911,train,0
+46103,7:porsche|911,train,0
+46113,7:porsche|911,train,0
+46114,7:porsche|911,train,0
+46124,5:acura|tlx,train,0
+46125,5:acura|tlx,train,0
+46128,5:acura|tlx,train,0
+46129,5:acura|tlx,train,0
+46130,3:bmw|3 series,train,2
+46136,5:lexus|ls,train,4
+46137,5:honda|civic,train,4
+46138,5:honda|civic,train,4
+46139,5:honda|civic,train,4
+46140,5:honda|civic,train,4
+46141,5:honda|civic,train,4
+46142,5:honda|civic,train,4
+46144,10:mitsubishi|outlander,train,1
+46146,6:toyota|highlander,train,1
+46147,6:toyota|highlander,train,1
+46154,10:mitsubishi|outlander,train,1
+46155,6:toyota|highlander,train,1
+46201,7:lincoln|aviator,train,3
+46230,5:lexus|rx,train,1
+46234,5:mazda|cx-30,train,3
+46235,5:mazda|cx-30,train,3
+46242,4:jeep|wagoneer,train,2
+46273,5:dodge|challenger,test,
+46276,8:chrysler|300,train,2
+46277,8:chrysler|300,train,2
+46278,8:chrysler|300,train,2
+46279,8:chrysler|300,train,2
+46283,5:dodge|charger,train,3
+46285,5:dodge|charger,train,3
+46326,4:fiat|500,test,
+46343,4:ford|mustang,test,
+46350,5:lexus|rc,test,
+46351,6:nissan|gt-r,train,2
+46352,5:mazda|3,train,4
+46353,5:mazda|3,train,4
+46354,5:mazda|3,train,4
+46355,5:mazda|3,train,4
+46375,7:hyundai|tucson,train,4
+46376,7:lincoln|nautilus,train,0
+46377,7:lincoln|nautilus,train,0
+46378,7:lincoln|corsair,test,
+46381,5:dodge|hornet,train,3
+46382,4:ford|edge,train,4
+46383,4:ford|edge,train,4
+46384,4:ford|edge,train,4
+46393,7:lincoln|nautilus,train,0
+46394,7:lincoln|nautilus,train,0
+46395,7:lincoln|nautilus,train,0
+46396,7:lincoln|corsair,test,
+46407,7:lincoln|navigator,test,
+46408,7:lincoln|navigator,test,
+46426,7:lincoln|navigator,test,
+46434,6:nissan|sentra,train,3
+46444,6:jaguar|f-type,train,1
+46445,6:jaguar|f-type,train,1
+46447,6:jaguar|f-type,train,1
+46448,6:jaguar|f-type,train,1
+46451,6:jaguar|e-pace,train,0
+46454,3:kia|seltos,test,
+46455,3:kia|seltos,test,
+46456,3:kia|seltos,test,
+46458,13:mercedes-benz|s-class,train,4
+46463,4:mini|cooper,test,
+46464,4:mini|cooper,test,
+46465,4:mini|countryman,train,2
+46471,3:bmw|8 series,train,3
+46474,3:bmw|8 series,train,3
+46482,4:mini|cooper,test,
+46483,4:mini|cooper,test,
+46486,4:mini|cooper,test,
+46487,4:mini|cooper,test,
+46488,4:mini|cooper,test,
+46489,4:mini|cooper,test,
+46493,3:bmw|4 series,train,3
+46500,4:mini|countryman,train,2
+46502,4:mini|countryman,train,2
+46506,5:honda|civic,train,4
+46509,5:honda|civic,train,4
+46510,4:jeep|grand cherokee,train,0
+46511,4:jeep|grand cherokee,train,0
+46528,6:subaru|legacy,train,0
+46529,6:subaru|legacy,train,0
+46530,6:subaru|impreza,train,4
+46531,6:subaru|impreza,train,4
+46532,5:buick|encore,train,2
+46534,5:buick|encore,train,2
+46536,5:lexus|nx,train,2
+46541,6:subaru|legacy,train,0
+46542,6:subaru|legacy,train,0
+46558,5:dodge|challenger,test,
+46574,4:mini|clubman,train,3
+46577,5:acura|integra,test,
+46581,5:buick|encore,train,2
+46585,10:alfa romeo|giulia,train,3
+46586,10:alfa romeo|giulia,train,3
+46587,5:honda|hr-v,train,1
+46588,5:honda|hr-v,train,1
+46590,10:alfa romeo|stelvio,train,1
+46592,3:gmc|terrain,train,0
+46593,10:volkswagen|atlas,train,4
+46594,10:volkswagen|atlas,train,4
+46595,5:acura|mdx,train,2
+46596,10:alfa romeo|stelvio,train,1
+46602,10:volkswagen|atlas,train,4
+46604,10:volkswagen|atlas,train,4
+46612,8:maserati|granturismo,train,1
+46633,11:lamborghini|huracan,train,3
+46634,11:lamborghini|huracan,train,3
+46635,11:lamborghini|huracan,train,3
+46636,6:toyota|gr supra,test,
+46638,4:audi|rs,train,1
+46665,6:jaguar|xf,train,1
+46668,8:maserati|ghibli,train,2
+46671,7:genesis|g80,train,2
+46672,7:genesis|g80,train,2
+46676,8:maserati|quattroporte,train,0
+46679,5:buick|envista,train,4
+46680,11:lamborghini|urus,train,4
+46687,3:bmw|x3,train,2
+46696,7:hyundai|kona,test,
+46700,10:mitsubishi|eclipse cross,train,4
+46706,8:cadillac|xt5,train,1
+46708,8:cadillac|xt5,train,1
+46709,8:cadillac|xt6,train,0
+46712,7:genesis|gv70,train,3
+46713,7:genesis|gv70,train,3
+46714,7:genesis|gv70,train,3
+46715,5:honda|cr-v,train,2
+46717,7:hyundai|palisade,train,0
+46718,7:hyundai|kona,test,
+46724,6:jaguar|f-pace,train,3
+46735,10:mitsubishi|eclipse cross,train,4
+46736,10:mitsubishi|eclipse cross,train,4
+46740,5:buick|enclave,train,4
+46745,5:buick|enclave,train,4
+46746,11:lamborghini|urus,train,4
+46747,8:maserati|levante,train,2
+46748,8:maserati|levante,train,2
+46760,9:chevrolet|corvette,train,2
+46761,6:toyota|gr supra,test,
+46762,6:toyota|gr supra,test,
+46778,10:mitsubishi|mirage,train,1
+46779,10:mitsubishi|mirage,train,1
+46780,10:volkswagen|golf/gti,train,0
+46781,10:volkswagen|golf/gti,train,0
+46783,10:alfa romeo|giulia,train,3
+46787,8:cadillac|ct5,train,2
+46788,8:cadillac|ct5,train,2
+46791,8:cadillac|ct5,train,2
+46793,5:lexus|es,train,4
+46796,5:mazda|3,train,4
+46797,5:mazda|3,train,4
+46798,5:mazda|3,train,4
+46799,5:mazda|3,train,4
+46802,11:rolls-royce|phantom,train,0
+46803,11:rolls-royce|phantom,train,0
+46804,11:rolls-royce|ghost,test,
+46805,11:rolls-royce|ghost,test,
+46806,11:rolls-royce|ghost,test,
+46809,11:rolls-royce|cullinan,test,
+46810,11:rolls-royce|cullinan,test,
+46861,9:chevrolet|blazer,train,2
+46862,9:chevrolet|blazer,train,2
+46863,7:hyundai|kona,test,
+46865,7:hyundai|kona,test,
+46866,3:kia|sportage,train,1
+46869,10:mitsubishi|outlander,train,1
+46870,10:alfa romeo|stelvio,train,1
+46883,7:hyundai|kona,test,
+46884,7:hyundai|kona,test,
+46888,4:jeep|wrangler,train,4
+46889,3:kia|sportage,train,1
+46892,5:mazda|cx-50,train,3
+46893,5:mazda|cx-50,train,3
+46894,10:mitsubishi|outlander,train,1
+46896,8:infiniti|qx80,train,1
+46897,8:infiniti|qx80,train,1
+46904,7:porsche|cayenne,train,2
+47006,7:bugatti|chiron,train,1
+47008,7:ferrari|812 competizione,train,0
+47009,7:ferrari|812 competizione,train,0
+47010,7:ferrari|daytona sp3,test,
+47041,4:audi|s5,train,4
+47048,7:ferrari|roma,train,2
+47050,4:audi|s4,train,1
+47076,6:jaguar|xf,train,1
+47083,6:nissan|altima,train,2
+47084,6:nissan|altima,train,2
+47108,6:nissan|murano,train,4
+47109,6:nissan|murano,train,4
+47138,10:mitsubishi|outlander,train,1
+47139,6:nissan|pathfinder,train,0
+47141,10:volkswagen|tiguan,test,
+47146,4:audi|q3,train,3
+47154,10:mitsubishi|outlander,train,1
+47155,10:mitsubishi|outlander,train,1
+47157,6:nissan|pathfinder,train,0
+47162,6:subaru|crosstrek,train,4
+47166,10:volkswagen|taos,train,0
+47168,8:infiniti|qx60,train,2
+47171,4:jeep|grand cherokee,train,0
+47177,4:audi|q7,train,4
+47184,5:honda|pilot,train,3
+47185,8:infiniti|qx60,train,2
+47186,4:jeep|wagoneer,train,2
+47189,4:jeep|grand wagoneer,train,1
+47190,4:jeep|grand cherokee,train,0
+47198,10:land rover|defender,test,
+47203,10:land rover|defender,test,
+47207,7:lincoln|navigator,test,
+47211,6:subaru|ascent,train,0
+47232,7:bentley|continental,train,1
+47233,7:ferrari|roma,train,2
+47238,7:bentley|flying spur,test,
+47239,8:maserati|ghibli,train,2
+47242,6:nissan|sentra,train,3
+47255,8:infiniti|qx50,train,4
+47257,5:acura|rdx,train,4
+47258,5:acura|rdx,train,4
+47259,8:infiniti|qx50,train,4
+47260,8:infiniti|qx55,train,1
+47263,5:lexus|tx,train,1
+47264,7:ferrari|purosangue,train,0
+47286,8:maserati|mc20,train,0
+47287,8:maserati|mc20,train,0
+47288,12:aston martin|db12 v8,train,0
+47289,7:bentley|continental,train,1
+47292,7:porsche|911,train,0
+47293,7:porsche|911,train,0
+47294,7:porsche|911,train,0
+47295,7:porsche|911,train,0
+47300,7:porsche|911,train,0
+47315,7:porsche|911,train,0
+47316,7:bentley|continental,train,1
+47317,7:bentley|continental,train,1
+47320,5:lexus|rc,test,
+47321,5:lexus|rc,test,
+47322,5:lexus|rc,test,
+47323,7:genesis|g70,train,3
+47324,7:genesis|g70,train,3
+47331,5:mazda|3,train,4
+47332,5:mazda|3,train,4
+47347,7:bentley|flying spur,test,
+47356,7:hyundai|sonata,train,0
+47359,10:volkswagen|arteon,test,
+47377,5:honda|passport,train,1
+47412,12:aston martin|dbx v8,train,4
+47413,12:aston martin|dbx 707,train,2
+47424,5:dodge|durango,train,4
+47425,5:dodge|durango,train,4
+47426,5:dodge|durango,train,4
+47427,5:dodge|durango,train,4
+47428,3:gmc|yukon,train,3
+47430,3:gmc|yukon,train,3
+47434,4:jeep|grand cherokee,train,0
+47435,5:lexus|lx,train,4
+47506,6:pagani|huayra,test,
+47508,14:ruf automobile|t12/ctr3/ctr anniversary,train,4
+47511,7:ferrari|f175 aha,train,1
+47517,10:mitsubishi|outlander,train,1
+47520,16:ineos automotive|grenadier,train,1
+47521,16:ineos automotive|grenadier,train,1
+47549,12:aston martin|valour,train,1
+47550,5:lotus|emira,train,2
+47560,8:maserati|grancabrio,test,
+47566,5:acura|tlx,train,0
+47567,5:acura|tlx,train,0
+47568,5:acura|tlx,train,0
+47573,8:infiniti|q50,train,1
+47574,8:infiniti|q50,train,1
+47575,8:infiniti|q50,train,1
+47632,7:lincoln|corsair,test,
+47634,6:nissan|rogue,test,
+47644,4:ford|bronco,train,2
+47645,4:ford|bronco,train,2
+47651,4:ford|bronco,train,2
+47656,7:hyundai|santa fe,test,
+47657,7:hyundai|santa fe,test,
+47660,7:lincoln|corsair,test,
+47661,7:lincoln|nautilus,train,0
+47674,7:lincoln|aviator,train,3
+47675,7:bentley|bentayga,train,0
+47676,7:bentley|bentayga,train,0
+47684,16:ineos automotive|grenadier,train,1
+47685,16:ineos automotive|grenadier,train,1
+47687,7:lincoln|aviator,train,3
+47689,13:mercedes-benz|g-class,train,0
+47703,3:bmw|8 series,train,3
+47705,7:genesis|g70,train,3
+47707,7:genesis|g70,train,3
+47728,5:honda|pilot,train,3
+47733,6:jaguar|f-pace,train,3
+47734,6:jaguar|f-pace,train,3
+47737,10:land rover|range rover,train,3
+47741,6:subaru|forester,train,4
+47751,7:genesis|gv80,train,1
+47752,7:genesis|gv80,train,1
+47753,5:honda|pilot,train,3
+47759,7:porsche|718,test,
+47773,3:bmw|8 series,train,3
+47777,4:mini|cooper,test,
+47780,5:buick|envista,train,4
+47782,5:honda|hr-v,train,1
+47785,5:buick|encore,train,2
+47789,7:hyundai|tucson,train,4
+47791,5:buick|encore,train,2
+47793,7:hyundai|tucson,train,4
+47799,4:mini|countryman,train,2
+47800,4:mini|countryman,train,2
+47925,12:aston martin|vantage,test,
+47926,12:aston martin|db12 v8,train,0
+47933,8:cadillac|ct5,train,2
+47935,8:cadillac|ct5,train,2
+47938,5:acura|integra,test,
+47939,5:acura|integra,test,
+47940,5:acura|integra,test,
+47943,3:kia|soul,test,
+47955,5:dodge|hornet,train,3
+47956,5:honda|cr-v,train,2
+47958,7:hyundai|palisade,train,0
+47961,3:kia|seltos,test,
+47962,3:kia|seltos,test,
+47965,12:aston martin|dbx 707,train,2
+47970,3:bmw|8 series,train,3
+47972,4:mini|cooper,test,
+47980,8:cadillac|ct4,train,3
+47982,8:cadillac|ct4,train,3
+47983,8:cadillac|ct4,train,3
+47984,8:cadillac|ct4,train,3
+47985,8:cadillac|ct4,train,3
+47986,8:cadillac|ct4,train,3
+47995,4:mini|cooper,test,
+48003,10:alfa romeo|giulia,train,3
+48004,10:alfa romeo|giulia,train,3
+48038,7:genesis|g80,train,2
+48039,7:genesis|g80,train,2
+48040,7:genesis|g90,train,2
+48044,7:hyundai|sonata,train,0
+48045,7:hyundai|sonata,train,0
+48046,7:hyundai|sonata,train,0
+48055,5:acura|mdx,train,2
+48061,9:chevrolet|equinox,train,4
+48065,3:kia|sportage,train,1
+48070,5:acura|mdx,train,2
+48071,10:alfa romeo|stelvio,train,1
+48073,4:audi|sq5,train,0
+48083,5:buick|envision,train,3
+48094,8:infiniti|qx55,train,1
+48102,3:kia|sportage,train,1
+48109,5:buick|enclave,train,4
+48111,3:gmc|acadia,train,0
+48112,7:lincoln|aviator,train,3
+48113,5:acura|mdx,train,2
+48116,5:buick|enclave,train,4
+48117,9:chevrolet|traverse,test,
+48118,4:ford|explorer,train,2
+48119,4:ford|explorer,train,2
+48120,4:ford|explorer,train,2
+48131,10:land rover|defender,test,
+48132,7:lincoln|aviator,train,3
+48148,8:maserati|mc20,train,0
+48149,8:maserati|mc20,train,0
+48155,3:bmw|8 series,train,3
+48160,5:acura|tlx,train,0
+48162,5:acura|tlx,train,0
+48189,5:acura|integra,test,
+48266,7:hyundai|santa cruz,train,0
+48267,7:hyundai|santa cruz,train,0
+48273,5:mazda|cx-50,train,3
+48274,5:mazda|cx-50,train,3
+48278,10:volkswagen|atlas,train,4
+48284,8:infiniti|qx60,train,2
+48285,8:infiniti|qx80,train,1
+48287,5:dodge|durango,train,4
+48288,5:dodge|durango,train,4
+48290,8:infiniti|qx60,train,2
+48291,8:infiniti|qx80,train,1
+48294,11:rolls-royce|cullinan,test,
+48295,11:rolls-royce|cullinan,test,
+48453,5:lotus|emira,train,2
+48456,9:chevrolet|malibu,train,4
+48463,5:buick|envision,train,3
+48465,9:chevrolet|traverse,test,
+48483,13:mercedes-benz|sl-class,train,2
+48496,6:toyota|corolla,train,2
+48504,5:honda|accord,train,3
+48507,6:subaru|impreza,train,4
+48508,6:subaru|impreza,train,4
+48520,8:infiniti|qx50,train,4
+48521,3:kia|telluride,train,0
+48524,10:volkswagen|atlas,train,4
+48526,5:acura|rdx,train,4
+48527,5:acura|rdx,train,4
+48529,8:infiniti|qx50,train,4
+48532,4:jeep|wrangler,train,4
+48533,4:jeep|wrangler,train,4
+48536,7:lincoln|nautilus,train,0
+48542,6:nissan|rogue,test,
+48543,6:subaru|crosstrek,train,4
+48544,6:subaru|crosstrek,train,4
+48547,10:volkswagen|atlas,train,4
+48548,10:volkswagen|atlas,train,4
+48552,4:jeep|grand cherokee,train,0
+48554,7:bentley|bentayga,train,0
+48555,7:bentley|bentayga,train,0
+48557,16:ineos automotive|grenadier,train,1
+48558,16:ineos automotive|grenadier,train,1
+48560,4:jeep|grand wagoneer,train,1
+48562,4:jeep|wagoneer,train,2
+48563,4:jeep|grand cherokee,train,0
+48565,10:land rover|defender,test,
+48567,10:land rover|defender,test,
+48572,7:porsche|cayenne,train,2
+48573,6:subaru|ascent,train,0
+48578,7:bugatti|mistral,test,
+48579,7:ferrari|f167 aba,train,2
+48580,7:ferrari|daytona sp3,test,
+48588,7:ferrari|roma,train,2
+48605,7:lincoln|corsair,test,
+48606,6:nissan|pathfinder,train,0
+48611,7:lincoln|corsair,test,
+48612,5:mazda|cx-30,train,3
+48613,5:mazda|cx-30,train,3
+48615,6:nissan|pathfinder,train,0
+48617,7:porsche|macan,train,4
+48618,7:porsche|macan,train,4
+48625,3:gmc|yukon,train,3
+48627,3:gmc|yukon,train,3
+48634,7:ferrari|purosangue,train,0
+48648,6:nissan|pathfinder,train,0
+48650,7:porsche|cayenne,train,2
+48801,12:aston martin|vanquish,train,3
+48802,5:mazda|mx-5,train,0
+48803,5:mazda|mx-5,train,0
+48816,7:porsche|718,test,
+48818,4:mini|cooper,test,
+48819,4:mini|cooper,test,
+48820,4:mini|countryman,train,2
+48821,6:toyota|gr 86,train,2
+48822,6:toyota|gr 86,train,2
+48837,8:maserati|granturismo,train,1
+48838,8:maserati|grancabrio,test,
+48839,8:maserati|grancabrio,test,
+48840,4:mini|countryman,train,2
+48845,5:lexus|is,test,
+48849,4:mini|cooper,test,
+48851,10:volkswagen|golf/gti,train,0
+48856,6:subaru|wrx,train,0
+48857,6:subaru|wrx,train,0
+48862,11:rolls-royce|phantom,train,0
+48863,11:rolls-royce|phantom,train,0
+48864,11:rolls-royce|ghost,test,
+48865,11:rolls-royce|ghost,test,
+48866,11:rolls-royce|ghost,test,
+48906,5:lexus|rx,train,1
+48907,10:mitsubishi|outlander,train,1
+48908,10:mitsubishi|eclipse cross,train,4
+48910,6:toyota|rav4,train,2
+48914,10:volkswagen|taos,train,0
+48915,10:alfa romeo|tonale,test,
+48918,4:jeep|wrangler,train,4
+48919,4:jeep|wrangler,train,4
+48921,5:lexus|rx,train,1
+48925,10:mitsubishi|outlander,train,1
+48926,10:mitsubishi|outlander,train,1
+48927,10:mitsubishi|outlander,train,1
+48928,10:mitsubishi|eclipse cross,train,4
+48929,10:mitsubishi|eclipse cross,train,4
+48947,6:nissan|armada,train,0
+48958,4:ford|bronco,train,2
+48967,7:lincoln|navigator,test,
+48968,6:nissan|armada,train,0
+48982,6:toyota|4runner,train,3
+49037,7:porsche|911,train,0
+49039,7:porsche|911,train,0
+49041,4:audi|s5,train,4
+49044,5:acura|adx,train,0
+49045,5:acura|adx,train,0
+49047,10:volkswagen|tiguan,test,
+49050,4:audi|sq5,train,0
+49130,5:lotus|emira,train,2
+49131,5:lotus|emira,train,2
+49132,8:maserati|gt2 stradale,train,2
+49134,7:porsche|911,train,0
+49146,4:ford|bronco,train,2
+49147,4:ford|bronco,train,2

@@ -1,0 +1,1063 @@
+scope,field,value,raw_value_json,count
+cleaned_rows,manufacturer,Acura,"""Acura""",100
+cleaned_rows,manufacturer,Alfa Romeo,"""Alfa Romeo""",54
+cleaned_rows,manufacturer,Aston Martin,"""Aston Martin""",66
+cleaned_rows,manufacturer,Audi,"""Audi""",68
+cleaned_rows,manufacturer,BMW,"""BMW""",93
+cleaned_rows,manufacturer,Bentley,"""Bentley""",74
+cleaned_rows,manufacturer,Bugatti,"""Bugatti""",15
+cleaned_rows,manufacturer,Buick,"""Buick""",92
+cleaned_rows,manufacturer,Cadillac,"""Cadillac""",99
+cleaned_rows,manufacturer,Chevrolet,"""Chevrolet""",65
+cleaned_rows,manufacturer,Chrysler,"""Chrysler""",31
+cleaned_rows,manufacturer,Dodge,"""Dodge""",90
+cleaned_rows,manufacturer,Ferrari,"""Ferrari""",89
+cleaned_rows,manufacturer,Fiat,"""Fiat""",51
+cleaned_rows,manufacturer,Ford,"""Ford""",49
+cleaned_rows,manufacturer,GMC,"""GMC""",39
+cleaned_rows,manufacturer,Genesis,"""Genesis""",79
+cleaned_rows,manufacturer,Honda,"""Honda""",86
+cleaned_rows,manufacturer,Hyundai,"""Hyundai""",94
+cleaned_rows,manufacturer,INEOS Automotive,"""INEOS Automotive""",6
+cleaned_rows,manufacturer,Infiniti,"""Infiniti""",104
+cleaned_rows,manufacturer,Jaguar,"""Jaguar""",92
+cleaned_rows,manufacturer,Jeep,"""Jeep""",102
+cleaned_rows,manufacturer,Kia,"""Kia""",82
+cleaned_rows,manufacturer,Koenigsegg,"""Koenigsegg""",1
+cleaned_rows,manufacturer,Lamborghini,"""Lamborghini""",68
+cleaned_rows,manufacturer,Land Rover,"""Land Rover""",73
+cleaned_rows,manufacturer,Lexus,"""Lexus""",74
+cleaned_rows,manufacturer,Lincoln,"""Lincoln""",106
+cleaned_rows,manufacturer,Lotus,"""Lotus""",14
+cleaned_rows,manufacturer,MINI,"""MINI""",118
+cleaned_rows,manufacturer,Maserati,"""Maserati""",96
+cleaned_rows,manufacturer,Mazda,"""Mazda""",107
+cleaned_rows,manufacturer,McLaren Automotive,"""McLaren Automotive""",41
+cleaned_rows,manufacturer,Mercedes-Benz,"""Mercedes-Benz""",67
+cleaned_rows,manufacturer,Mitsubishi,"""Mitsubishi""",105
+cleaned_rows,manufacturer,Nissan,"""Nissan""",90
+cleaned_rows,manufacturer,Pagani,"""Pagani""",4
+cleaned_rows,manufacturer,Porsche,"""Porsche""",104
+cleaned_rows,manufacturer,RUF Automobile,"""RUF Automobile""",4
+cleaned_rows,manufacturer,Rolls-Royce,"""Rolls-Royce""",84
+cleaned_rows,manufacturer,Roush Performance,"""Roush Performance""",12
+cleaned_rows,manufacturer,STI,"""STI""",1
+cleaned_rows,manufacturer,Scion,"""Scion""",15
+cleaned_rows,manufacturer,Subaru,"""Subaru""",109
+cleaned_rows,manufacturer,Toyota,"""Toyota""",62
+cleaned_rows,manufacturer,Volkswagen,"""Volkswagen""",96
+cleaned_rows,manufacturer,Volvo,"""Volvo""",68
+cleaned_rows,manufacturer,smart,"""smart""",8
+cleaned_rows,model_year,2015,2015,310
+cleaned_rows,model_year,2016,2016,322
+cleaned_rows,model_year,2017,2017,330
+cleaned_rows,model_year,2018,2018,332
+cleaned_rows,model_year,2019,2019,325
+cleaned_rows,model_year,2020,2020,325
+cleaned_rows,model_year,2021,2021,317
+cleaned_rows,model_year,2022,2022,289
+cleaned_rows,model_year,2023,2023,276
+cleaned_rows,model_year,2024,2024,227
+cleaned_rows,model_year,2025,2025,194
+cleaned_rows,vehicle_class,Compact Cars,"""Compact Cars""",390
+cleaned_rows,vehicle_class,Large Cars,"""Large Cars""",308
+cleaned_rows,vehicle_class,Midsize Cars,"""Midsize Cars""",474
+cleaned_rows,vehicle_class,Midsize Station Wagons,"""Midsize Station Wagons""",30
+cleaned_rows,vehicle_class,Minicompact Cars,"""Minicompact Cars""",190
+cleaned_rows,vehicle_class,Small Sport Utility Vehicle 2WD,"""Small Sport Utility Vehicle 2WD""",267
+cleaned_rows,vehicle_class,Small Sport Utility Vehicle 4WD,"""Small Sport Utility Vehicle 4WD""",496
+cleaned_rows,vehicle_class,Small Station Wagons,"""Small Station Wagons""",108
+cleaned_rows,vehicle_class,Standard Sport Utility Vehicle 2WD,"""Standard Sport Utility Vehicle 2WD""",111
+cleaned_rows,vehicle_class,Standard Sport Utility Vehicle 4WD,"""Standard Sport Utility Vehicle 4WD""",294
+cleaned_rows,vehicle_class,Subcompact Cars,"""Subcompact Cars""",232
+cleaned_rows,vehicle_class,Two Seaters,"""Two Seaters""",347
+verified_committed_raw,VClass,Compact Cars,"""Compact Cars""",446
+verified_committed_raw,VClass,Large Cars,"""Large Cars""",433
+verified_committed_raw,VClass,Midsize Cars,"""Midsize Cars""",631
+verified_committed_raw,VClass,Midsize Station Wagons,"""Midsize Station Wagons""",32
+verified_committed_raw,VClass,Minicompact Cars,"""Minicompact Cars""",202
+verified_committed_raw,VClass,Minivan - 2WD,"""Minivan - 2WD""",40
+verified_committed_raw,VClass,Minivan - 4WD,"""Minivan - 4WD""",8
+verified_committed_raw,VClass,Small Pickup Trucks 2WD,"""Small Pickup Trucks 2WD""",29
+verified_committed_raw,VClass,Small Pickup Trucks 4WD,"""Small Pickup Trucks 4WD""",19
+verified_committed_raw,VClass,Small Sport Utility Vehicle 2WD,"""Small Sport Utility Vehicle 2WD""",325
+verified_committed_raw,VClass,Small Sport Utility Vehicle 4WD,"""Small Sport Utility Vehicle 4WD""",629
+verified_committed_raw,VClass,Small Station Wagons,"""Small Station Wagons""",138
+verified_committed_raw,VClass,Special Purpose Vehicle 2WD,"""Special Purpose Vehicle 2WD""",39
+verified_committed_raw,VClass,Special Purpose Vehicle 4WD,"""Special Purpose Vehicle 4WD""",14
+verified_committed_raw,VClass,Standard Pickup Trucks 2WD,"""Standard Pickup Trucks 2WD""",99
+verified_committed_raw,VClass,Standard Pickup Trucks 4WD,"""Standard Pickup Trucks 4WD""",151
+verified_committed_raw,VClass,Standard Sport Utility Vehicle 2WD,"""Standard Sport Utility Vehicle 2WD""",132
+verified_committed_raw,VClass,Standard Sport Utility Vehicle 4WD,"""Standard Sport Utility Vehicle 4WD""",471
+verified_committed_raw,VClass,Subcompact Cars,"""Subcompact Cars""",267
+verified_committed_raw,VClass,Two Seaters,"""Two Seaters""",389
+verified_committed_raw,VClass,"Vans, Passenger Type","""Vans, Passenger Type""",6
+verified_committed_raw,atvType,<EMPTY>,"""""",3516
+verified_committed_raw,atvType,Bifuel (CNG),"""Bifuel (CNG)""",1
+verified_committed_raw,atvType,Diesel,"""Diesel""",70
+verified_committed_raw,atvType,EV,"""EV""",388
+verified_committed_raw,atvType,FCV,"""FCV""",8
+verified_committed_raw,atvType,FFV,"""FFV""",103
+verified_committed_raw,atvType,Hybrid,"""Hybrid""",292
+verified_committed_raw,atvType,Plug-in Hybrid,"""Plug-in Hybrid""",121
+verified_committed_raw,atvType,eFCV,"""eFCV""",1
+verified_committed_raw,atvtype,<KEY_ABSENT>,null,4500
+verified_committed_raw,baseModel,1,"""1""",2
+verified_committed_raw,baseModel,124 Spider,"""124 Spider""",8
+verified_committed_raw,baseModel,1500,"""1500""",105
+verified_committed_raw,baseModel,2,"""2""",23
+verified_committed_raw,baseModel,2 Series,"""2 Series""",9
+verified_committed_raw,baseModel,200,"""200""",14
+verified_committed_raw,baseModel,296 GTB,"""296 GTB""",2
+verified_committed_raw,baseModel,296 GTS,"""296 GTS""",1
+verified_committed_raw,baseModel,3,"""3""",52
+verified_committed_raw,baseModel,3 Series,"""3 Series""",10
+verified_committed_raw,baseModel,300,"""300""",35
+verified_committed_raw,baseModel,370Z,"""370Z""",7
+verified_committed_raw,baseModel,4,"""4""",1
+verified_committed_raw,baseModel,4 Series,"""4 Series""",15
+verified_committed_raw,baseModel,458 Speciale,"""458 Speciale""",4
+verified_committed_raw,baseModel,458 Spider,"""458 Spider""",2
+verified_committed_raw,baseModel,488 GTB,"""488 GTB""",8
+verified_committed_raw,baseModel,488 Pista,"""488 Pista""",2
+verified_committed_raw,baseModel,488 Pista Spider,"""488 Pista Spider""",2
+verified_committed_raw,baseModel,488 Spider,"""488 Spider""",8
+verified_committed_raw,baseModel,4C,"""4C""",6
+verified_committed_raw,baseModel,4Runner,"""4Runner""",10
+verified_committed_raw,baseModel,5 Series,"""5 Series""",6
+verified_committed_raw,baseModel,500,"""500""",31
+verified_committed_raw,baseModel,500 L,"""500 L""",7
+verified_committed_raw,baseModel,500 X,"""500 X""",5
+verified_committed_raw,baseModel,500e,"""500e""",8
+verified_committed_raw,baseModel,540C Coupe,"""540C Coupe""",1
+verified_committed_raw,baseModel,570GT,"""570GT""",3
+verified_committed_raw,baseModel,570S Coupe,"""570S Coupe""",5
+verified_committed_raw,baseModel,570S Spider,"""570S Spider""",3
+verified_committed_raw,baseModel,6,"""6""",3
+verified_committed_raw,baseModel,6 Series,"""6 Series""",6
+verified_committed_raw,baseModel,600LT Coupe,"""600LT Coupe""",1
+verified_committed_raw,baseModel,600LT Spider,"""600LT Spider""",1
+verified_committed_raw,baseModel,620R Coupe,"""620R Coupe""",1
+verified_committed_raw,baseModel,650S Can-Am,"""650S Can-Am""",1
+verified_committed_raw,baseModel,650S Coupe,"""650S Coupe""",2
+verified_committed_raw,baseModel,650S Spider,"""650S Spider""",2
+verified_committed_raw,baseModel,675LT Coupe,"""675LT Coupe""",1
+verified_committed_raw,baseModel,675LT Spider,"""675LT Spider""",1
+verified_committed_raw,baseModel,7 Series,"""7 Series""",4
+verified_committed_raw,baseModel,718,"""718""",6
+verified_committed_raw,baseModel,720S Coupe,"""720S Coupe""",6
+verified_committed_raw,baseModel,720S Spider,"""720S Spider""",4
+verified_committed_raw,baseModel,765LT Coupe,"""765LT Coupe""",1
+verified_committed_raw,baseModel,765LT Spider,"""765LT Spider""",1
+verified_committed_raw,baseModel,8 Series,"""8 Series""",5
+verified_committed_raw,baseModel,812 Competizione,"""812 Competizione""",4
+verified_committed_raw,baseModel,812 GTS,"""812 GTS""",3
+verified_committed_raw,baseModel,812 Superfast,"""812 Superfast""",4
+verified_committed_raw,baseModel,86,"""86""",2
+verified_committed_raw,baseModel,911,"""911""",58
+verified_committed_raw,baseModel,A-Class,"""A-Class""",1
+verified_committed_raw,baseModel,A3,"""A3""",6
+verified_committed_raw,baseModel,A4,"""A4""",11
+verified_committed_raw,baseModel,A5,"""A5""",11
+verified_committed_raw,baseModel,A6,"""A6""",4
+verified_committed_raw,baseModel,A7,"""A7""",4
+verified_committed_raw,baseModel,ADX,"""ADX""",2
+verified_committed_raw,baseModel,AMG GT,"""AMG GT""",4
+verified_committed_raw,baseModel,ARIYA,"""ARIYA""",6
+verified_committed_raw,baseModel,ATS,"""ATS""",14
+verified_committed_raw,baseModel,ATS-V,"""ATS-V""",2
+verified_committed_raw,baseModel,Acadia,"""Acadia""",7
+verified_committed_raw,baseModel,Accent,"""Accent""",4
+verified_committed_raw,baseModel,Accord,"""Accord""",12
+verified_committed_raw,baseModel,Agera RS,"""Agera RS""",1
+verified_committed_raw,baseModel,Air,"""Air""",31
+verified_committed_raw,baseModel,Altima,"""Altima""",12
+verified_committed_raw,baseModel,Armada,"""Armada""",9
+verified_committed_raw,baseModel,Arteon,"""Arteon""",6
+verified_committed_raw,baseModel,Artura,"""Artura""",1
+verified_committed_raw,baseModel,Ascent,"""Ascent""",6
+verified_committed_raw,baseModel,Atlas,"""Atlas""",22
+verified_committed_raw,baseModel,Avalon,"""Avalon""",2
+verified_committed_raw,baseModel,Aventador,"""Aventador""",25
+verified_committed_raw,baseModel,Aviator,"""Aviator""",13
+verified_committed_raw,baseModel,Azera,"""Azera""",3
+verified_committed_raw,baseModel,B-Class Electric Drive,"""B-Class Electric Drive""",1
+verified_committed_raw,baseModel,BRZ,"""BRZ""",6
+verified_committed_raw,baseModel,Beetle,"""Beetle""",7
+verified_committed_raw,baseModel,Bentayga,"""Bentayga""",20
+verified_committed_raw,baseModel,Blazer,"""Blazer""",4
+verified_committed_raw,baseModel,Boxster,"""Boxster""",8
+verified_committed_raw,baseModel,Bronco,"""Bronco""",6
+verified_committed_raw,baseModel,C-Class,"""C-Class""",8
+verified_committed_raw,baseModel,C-MAX,"""C-MAX""",1
+verified_committed_raw,baseModel,C/V,"""C/V""",2
+verified_committed_raw,baseModel,C40,"""C40""",3
+verified_committed_raw,baseModel,CC,"""CC""",3
+verified_committed_raw,baseModel,CELESTIQ,"""CELESTIQ""",1
+verified_committed_raw,baseModel,CLA-Class,"""CLA-Class""",4
+verified_committed_raw,baseModel,CLE-Class,"""CLE-Class""",4
+verified_committed_raw,baseModel,CLS-Class,"""CLS-Class""",4
+verified_committed_raw,baseModel,CR-V,"""CR-V""",14
+verified_committed_raw,baseModel,CT,"""CT""",2
+verified_committed_raw,baseModel,CT4,"""CT4""",24
+verified_committed_raw,baseModel,CT5,"""CT5""",13
+verified_committed_raw,baseModel,CT6,"""CT6""",7
+verified_committed_raw,baseModel,CTS,"""CTS""",9
+verified_committed_raw,baseModel,CX-3,"""CX-3""",4
+verified_committed_raw,baseModel,CX-30,"""CX-30""",12
+verified_committed_raw,baseModel,CX-5,"""CX-5""",13
+verified_committed_raw,baseModel,CX-50,"""CX-50""",7
+verified_committed_raw,baseModel,CX-70,"""CX-70""",3
+verified_committed_raw,baseModel,CX-9,"""CX-9""",6
+verified_committed_raw,baseModel,CX-90,"""CX-90""",3
+verified_committed_raw,baseModel,Cadenza,"""Cadenza""",1
+verified_committed_raw,baseModel,California T,"""California T""",8
+verified_committed_raw,baseModel,Camaro,"""Camaro""",6
+verified_committed_raw,baseModel,Camry,"""Camry""",12
+verified_committed_raw,baseModel,Canyon,"""Canyon""",16
+verified_committed_raw,baseModel,Carnival,"""Carnival""",1
+verified_committed_raw,baseModel,Cascada,"""Cascada""",3
+verified_committed_raw,baseModel,Cayenne,"""Cayenne""",16
+verified_committed_raw,baseModel,Cayman,"""Cayman""",4
+verified_committed_raw,baseModel,Challenger,"""Challenger""",38
+verified_committed_raw,baseModel,Charger,"""Charger""",33
+verified_committed_raw,baseModel,Cherokee,"""Cherokee""",22
+verified_committed_raw,baseModel,Chiron,"""Chiron""",12
+verified_committed_raw,baseModel,Civic,"""Civic""",29
+verified_committed_raw,baseModel,Clarity,"""Clarity""",1
+verified_committed_raw,baseModel,Clubman,"""Clubman""",16
+verified_committed_raw,baseModel,Colorado,"""Colorado""",13
+verified_committed_raw,baseModel,Compass,"""Compass""",7
+verified_committed_raw,baseModel,Continental,"""Continental""",42
+verified_committed_raw,baseModel,Continental GT Convertible,"""Continental GT Convertible""",8
+verified_committed_raw,baseModel,Continental Supersports,"""Continental Supersports""",1
+verified_committed_raw,baseModel,Continental Supersports Convertible,"""Continental Supersports Convertible""",2
+verified_committed_raw,baseModel,Cooper,"""Cooper""",51
+verified_committed_raw,baseModel,Corolla,"""Corolla""",11
+verified_committed_raw,baseModel,Corolla Cross,"""Corolla Cross""",1
+verified_committed_raw,baseModel,Corsair,"""Corsair""",18
+verified_committed_raw,baseModel,Corvette,"""Corvette""",2
+verified_committed_raw,baseModel,Countryman,"""Countryman""",30
+verified_committed_raw,baseModel,Crosstour,"""Crosstour""",2
+verified_committed_raw,baseModel,Crosstrek,"""Crosstrek""",17
+verified_committed_raw,baseModel,Cruze,"""Cruze""",7
+verified_committed_raw,baseModel,Cullinan,"""Cullinan""",12
+verified_committed_raw,baseModel,Cybertruck,"""Cybertruck""",1
+verified_committed_raw,baseModel,DB11,"""DB11""",13
+verified_committed_raw,baseModel,DB12 V8,"""DB12 V8""",2
+verified_committed_raw,baseModel,DB9,"""DB9""",2
+verified_committed_raw,baseModel,DBS,"""DBS""",5
+verified_committed_raw,baseModel,DBX 707,"""DBX 707""",3
+verified_committed_raw,baseModel,DBX V8,"""DBX V8""",4
+verified_committed_raw,baseModel,Dawn,"""Dawn""",8
+verified_committed_raw,baseModel,Daytona SP3,"""Daytona SP3""",3
+verified_committed_raw,baseModel,Defender,"""Defender""",15
+verified_committed_raw,baseModel,Discovery,"""Discovery""",15
+verified_committed_raw,baseModel,Divo,"""Divo""",1
+verified_committed_raw,baseModel,Durango,"""Durango""",26
+verified_committed_raw,baseModel,E-Class,"""E-Class""",20
+verified_committed_raw,baseModel,E-Pace,"""E-Pace""",8
+verified_committed_raw,baseModel,EC40,"""EC40""",1
+verified_committed_raw,baseModel,EQE,"""EQE""",3
+verified_committed_raw,baseModel,EQS,"""EQS""",1
+verified_committed_raw,baseModel,ES,"""ES""",10
+verified_committed_raw,baseModel,EV6,"""EV6""",2
+verified_committed_raw,baseModel,EV9,"""EV9""",1
+verified_committed_raw,baseModel,EX30,"""EX30""",1
+verified_committed_raw,baseModel,EX40,"""EX40""",1
+verified_committed_raw,baseModel,EX90,"""EX90""",1
+verified_committed_raw,baseModel,Eclipse Cross,"""Eclipse Cross""",18
+verified_committed_raw,baseModel,Edge,"""Edge""",9
+verified_committed_raw,baseModel,Elantra,"""Elantra""",20
+verified_committed_raw,baseModel,Elva,"""Elva""",1
+verified_committed_raw,baseModel,Emira,"""Emira""",4
+verified_committed_raw,baseModel,Enclave,"""Enclave""",17
+verified_committed_raw,baseModel,Encore,"""Encore""",36
+verified_committed_raw,baseModel,Endurance,"""Endurance""",1
+verified_committed_raw,baseModel,Envision,"""Envision""",17
+verified_committed_raw,baseModel,Envista,"""Envista""",3
+verified_committed_raw,baseModel,Eos,"""Eos""",1
+verified_committed_raw,baseModel,Equinox,"""Equinox""",3
+verified_committed_raw,baseModel,Escalade,"""Escalade""",17
+verified_committed_raw,baseModel,Escape,"""Escape""",8
+verified_committed_raw,baseModel,Evoque,"""Evoque""",1
+verified_committed_raw,baseModel,Evora,"""Evora""",10
+verified_committed_raw,baseModel,Expedition,"""Expedition""",4
+verified_committed_raw,baseModel,Explorer,"""Explorer""",14
+verified_committed_raw,baseModel,Express Passenger,"""Express Passenger""",3
+verified_committed_raw,baseModel,F-150 Lightning,"""F-150 Lightning""",1
+verified_committed_raw,baseModel,F-Pace,"""F-Pace""",15
+verified_committed_raw,baseModel,F-Type,"""F-Type""",33
+verified_committed_raw,baseModel,F12,"""F12""",2
+verified_committed_raw,baseModel,F12 Berlinetta,"""F12 Berlinetta""",2
+verified_committed_raw,baseModel,F12 tdf,"""F12 tdf""",2
+verified_committed_raw,baseModel,F150,"""F150""",38
+verified_committed_raw,baseModel,F167 ABA,"""F167 ABA""",1
+verified_committed_raw,baseModel,F175 AHA,"""F175 AHA""",1
+verified_committed_raw,baseModel,F60 America,"""F60 America""",2
+verified_committed_raw,baseModel,F8 Spider,"""F8 Spider""",3
+verified_committed_raw,baseModel,F8 Tributo,"""F8 Tributo""",3
+verified_committed_raw,baseModel,FF,"""FF""",4
+verified_committed_raw,baseModel,FR-S,"""FR-S""",4
+verified_committed_raw,baseModel,Fiesta,"""Fiesta""",2
+verified_committed_raw,baseModel,Fit,"""Fit""",12
+verified_committed_raw,baseModel,Flex,"""Flex""",1
+verified_committed_raw,baseModel,Flying Spur,"""Flying Spur""",22
+verified_committed_raw,baseModel,Focus,"""Focus""",1
+verified_committed_raw,baseModel,Forester,"""Forester""",8
+verified_committed_raw,baseModel,Forte,"""Forte""",15
+verified_committed_raw,baseModel,Frontier,"""Frontier""",13
+verified_committed_raw,baseModel,Fusion,"""Fusion""",10
+verified_committed_raw,baseModel,G-Class,"""G-Class""",6
+verified_committed_raw,baseModel,G70,"""G70""",20
+verified_committed_raw,baseModel,G80,"""G80""",31
+verified_committed_raw,baseModel,G90,"""G90""",21
+verified_committed_raw,baseModel,GL-Class,"""GL-Class""",1
+verified_committed_raw,baseModel,GLA-Class,"""GLA-Class""",10
+verified_committed_raw,baseModel,GLB-Class,"""GLB-Class""",1
+verified_committed_raw,baseModel,GLC-Class,"""GLC-Class""",8
+verified_committed_raw,baseModel,GLE-Class,"""GLE-Class""",9
+verified_committed_raw,baseModel,GLI,"""GLI""",2
+verified_committed_raw,baseModel,GLS-Class,"""GLS-Class""",2
+verified_committed_raw,baseModel,GR 86,"""GR 86""",2
+verified_committed_raw,baseModel,GR Supra,"""GR Supra""",6
+verified_committed_raw,baseModel,GS,"""GS""",9
+verified_committed_raw,baseModel,GS-6,"""GS-6""",2
+verified_committed_raw,baseModel,GT,"""GT""",3
+verified_committed_raw,baseModel,GT-R,"""GT-R""",3
+verified_committed_raw,baseModel,GT2 Stradale,"""GT2 Stradale""",1
+verified_committed_raw,baseModel,GTC4Lusso,"""GTC4Lusso""",7
+verified_committed_raw,baseModel,GV60,"""GV60""",5
+verified_committed_raw,baseModel,GV70,"""GV70""",7
+verified_committed_raw,baseModel,GV80,"""GV80""",6
+verified_committed_raw,baseModel,GX,"""GX""",2
+verified_committed_raw,baseModel,Genesis,"""Genesis""",4
+verified_committed_raw,baseModel,Ghibli,"""Ghibli""",25
+verified_committed_raw,baseModel,Ghost,"""Ghost""",27
+verified_committed_raw,baseModel,Giulia,"""Giulia""",26
+verified_committed_raw,baseModel,Gladiator,"""Gladiator""",4
+verified_committed_raw,baseModel,Golf/GTI,"""Golf/GTI""",26
+verified_committed_raw,baseModel,GranTurismo,"""GranTurismo""",10
+verified_committed_raw,baseModel,Grancabrio,"""Grancabrio""",5
+verified_committed_raw,baseModel,Grand Caravan,"""Grand Caravan""",3
+verified_committed_raw,baseModel,Grand Cherokee,"""Grand Cherokee""",23
+verified_committed_raw,baseModel,Grand Highlander,"""Grand Highlander""",1
+verified_committed_raw,baseModel,Grand Wagoneer,"""Grand Wagoneer""",6
+verified_committed_raw,baseModel,Granturismo,"""Granturismo""",2
+verified_committed_raw,baseModel,Gravity,"""Gravity""",5
+verified_committed_raw,baseModel,Grecale,"""Grecale""",4
+verified_committed_raw,baseModel,Grenadier,"""Grenadier""",6
+verified_committed_raw,baseModel,HR-V,"""HR-V""",15
+verified_committed_raw,baseModel,Highlander,"""Highlander""",12
+verified_committed_raw,baseModel,Hornet,"""Hornet""",3
+verified_committed_raw,baseModel,Huayra,"""Huayra""",3
+verified_committed_raw,baseModel,Huayra Coupe,"""Huayra Coupe""",1
+verified_committed_raw,baseModel,Hummer EV,"""Hummer EV""",2
+verified_committed_raw,baseModel,Huracan,"""Huracan""",34
+verified_committed_raw,baseModel,I-Pace,"""I-Pace""",4
+verified_committed_raw,baseModel,ID.4,"""ID.4""",11
+verified_committed_raw,baseModel,ILX,"""ILX""",9
+verified_committed_raw,baseModel,IS,"""IS""",13
+verified_committed_raw,baseModel,Impala,"""Impala""",4
+verified_committed_raw,baseModel,Impreza,"""Impreza""",23
+verified_committed_raw,baseModel,Impreza/Outback Sport,"""Impreza/Outback Sport""",14
+verified_committed_raw,baseModel,Insight,"""Insight""",2
+verified_committed_raw,baseModel,Integra,"""Integra""",8
+verified_committed_raw,baseModel,Ioniq,"""Ioniq""",6
+verified_committed_raw,baseModel,Ioniq 5,"""Ioniq 5""",1
+verified_committed_raw,baseModel,Ioniq 6,"""Ioniq 6""",3
+verified_committed_raw,baseModel,Jetta,"""Jetta""",16
+verified_committed_raw,baseModel,John Cooper Works,"""John Cooper Works""",23
+verified_committed_raw,baseModel,Journey,"""Journey""",7
+verified_committed_raw,baseModel,Juke,"""Juke""",4
+verified_committed_raw,baseModel,K27,"""K27""",1
+verified_committed_raw,baseModel,K5,"""K5""",7
+verified_committed_raw,baseModel,K900,"""K900""",3
+verified_committed_raw,baseModel,Kicks,"""Kicks""",2
+verified_committed_raw,baseModel,Kona,"""Kona""",13
+verified_committed_raw,baseModel,LC,"""LC""",5
+verified_committed_raw,baseModel,LEAF,"""LEAF""",1
+verified_committed_raw,baseModel,LR2,"""LR2""",1
+verified_committed_raw,baseModel,LR4,"""LR4""",2
+verified_committed_raw,baseModel,LS,"""LS""",10
+verified_committed_raw,baseModel,LX,"""LX""",3
+verified_committed_raw,baseModel,LYRIQ,"""LYRIQ""",1
+verified_committed_raw,baseModel,LaCrosse,"""LaCrosse""",12
+verified_committed_raw,baseModel,LaFerrari,"""LaFerrari""",1
+verified_committed_raw,baseModel,Lancer,"""Lancer""",10
+verified_committed_raw,baseModel,Leaf,"""Leaf""",8
+verified_committed_raw,baseModel,Legacy,"""Legacy""",4
+verified_committed_raw,baseModel,Legacy/Outback,"""Legacy/Outback""",10
+verified_committed_raw,baseModel,Levante,"""Levante""",23
+verified_committed_raw,baseModel,M,"""M""",29
+verified_committed_raw,baseModel,MC20,"""MC20""",7
+verified_committed_raw,baseModel,MDX,"""MDX""",24
+verified_committed_raw,baseModel,MKC,"""MKC""",6
+verified_committed_raw,baseModel,MKS,"""MKS""",3
+verified_committed_raw,baseModel,MKT,"""MKT""",8
+verified_committed_raw,baseModel,MKX,"""MKX""",7
+verified_committed_raw,baseModel,MKZ,"""MKZ""",18
+verified_committed_raw,baseModel,ML-Class,"""ML-Class""",1
+verified_committed_raw,baseModel,MSO HS,"""MSO HS""",1
+verified_committed_raw,baseModel,MV-1,"""MV-1""",2
+verified_committed_raw,baseModel,MX-30,"""MX-30""",1
+verified_committed_raw,baseModel,MX-5,"""MX-5""",10
+verified_committed_raw,baseModel,Macan,"""Macan""",6
+verified_committed_raw,baseModel,Malibu,"""Malibu""",5
+verified_committed_raw,baseModel,Maverick,"""Maverick""",6
+verified_committed_raw,baseModel,Maxima,"""Maxima""",3
+verified_committed_raw,baseModel,Metris Cargo,"""Metris Cargo""",2
+verified_committed_raw,baseModel,Metris Passenger,"""Metris Passenger""",1
+verified_committed_raw,baseModel,Mirage,"""Mirage""",26
+verified_committed_raw,baseModel,Mirai,"""Mirai""",3
+verified_committed_raw,baseModel,Mistral,"""Mistral""",1
+verified_committed_raw,baseModel,Model 3,"""Model 3""",28
+verified_committed_raw,baseModel,Model S,"""Model S""",41
+verified_committed_raw,baseModel,Model X,"""Model X""",24
+verified_committed_raw,baseModel,Model Y,"""Model Y""",17
+verified_committed_raw,baseModel,Monza SP1,"""Monza SP1""",1
+verified_committed_raw,baseModel,Mulsanne,"""Mulsanne""",7
+verified_committed_raw,baseModel,Murano,"""Murano""",9
+verified_committed_raw,baseModel,Mustang,"""Mustang""",13
+verified_committed_raw,baseModel,Mustang Mach-E,"""Mustang Mach-E""",4
+verified_committed_raw,baseModel,NSX,"""NSX""",5
+verified_committed_raw,baseModel,NV200 Cargo Van,"""NV200 Cargo Van""",1
+verified_committed_raw,baseModel,NV200 NYC Taxi,"""NV200 NYC Taxi""",2
+verified_committed_raw,baseModel,NX,"""NX""",12
+verified_committed_raw,baseModel,Nautilus,"""Nautilus""",17
+verified_committed_raw,baseModel,Navigator,"""Navigator""",20
+verified_committed_raw,baseModel,Nevera,"""Nevera""",3
+verified_committed_raw,baseModel,Nexo,"""Nexo""",4
+verified_committed_raw,baseModel,Niro,"""Niro""",16
+verified_committed_raw,baseModel,Ocean,"""Ocean""",3
+verified_committed_raw,baseModel,Optima,"""Optima""",12
+verified_committed_raw,baseModel,Outback,"""Outback""",8
+verified_committed_raw,baseModel,Outlander,"""Outlander""",57
+verified_committed_raw,baseModel,P1,"""P1""",1
+verified_committed_raw,baseModel,Paceman,"""Paceman""",4
+verified_committed_raw,baseModel,Pacifica,"""Pacifica""",25
+verified_committed_raw,baseModel,Palisade,"""Palisade""",4
+verified_committed_raw,baseModel,Panamera,"""Panamera""",14
+verified_committed_raw,baseModel,Passat,"""Passat""",1
+verified_committed_raw,baseModel,Passport,"""Passport""",2
+verified_committed_raw,baseModel,Pathfinder,"""Pathfinder""",11
+verified_committed_raw,baseModel,Patriot,"""Patriot""",8
+verified_committed_raw,baseModel,Phantom,"""Phantom""",28
+verified_committed_raw,baseModel,Pilot,"""Pilot""",8
+verified_committed_raw,baseModel,Portofino,"""Portofino""",6
+verified_committed_raw,baseModel,Prius,"""Prius""",7
+verified_committed_raw,baseModel,Prius Prime,"""Prius Prime""",2
+verified_committed_raw,baseModel,Prius c,"""Prius c""",1
+verified_committed_raw,baseModel,Prologue,"""Prologue""",2
+verified_committed_raw,baseModel,Promaster City,"""Promaster City""",4
+verified_committed_raw,baseModel,Purosangue,"""Purosangue""",2
+verified_committed_raw,baseModel,Q3,"""Q3""",6
+verified_committed_raw,baseModel,Q4 e-tron,"""Q4 e-tron""",3
+verified_committed_raw,baseModel,Q40,"""Q40""",2
+verified_committed_raw,baseModel,Q5,"""Q5""",9
+verified_committed_raw,baseModel,Q50,"""Q50""",24
+verified_committed_raw,baseModel,Q60,"""Q60""",17
+verified_committed_raw,baseModel,Q7,"""Q7""",4
+verified_committed_raw,baseModel,Q70,"""Q70""",9
+verified_committed_raw,baseModel,Q8,"""Q8""",3
+verified_committed_raw,baseModel,Q8 e-tron,"""Q8 e-tron""",1
+verified_committed_raw,baseModel,QX30,"""QX30""",5
+verified_committed_raw,baseModel,QX50,"""QX50""",15
+verified_committed_raw,baseModel,QX55,"""QX55""",3
+verified_committed_raw,baseModel,QX60,"""QX60""",12
+verified_committed_raw,baseModel,QX70,"""QX70""",3
+verified_committed_raw,baseModel,QX80,"""QX80""",18
+verified_committed_raw,baseModel,Quattroporte,"""Quattroporte""",25
+verified_committed_raw,baseModel,R1S,"""R1S""",19
+verified_committed_raw,baseModel,R1T,"""R1T""",17
+verified_committed_raw,baseModel,R8,"""R8""",4
+verified_committed_raw,baseModel,RAV4,"""RAV4""",8
+verified_committed_raw,baseModel,RAV4 Prime,"""RAV4 Prime""",1
+verified_committed_raw,baseModel,RC,"""RC""",13
+verified_committed_raw,baseModel,RC F,"""RC F""",1
+verified_committed_raw,baseModel,RDX,"""RDX""",23
+verified_committed_raw,baseModel,RLX,"""RLX""",5
+verified_committed_raw,baseModel,RS,"""RS""",6
+verified_committed_raw,baseModel,RS 3,"""RS 3""",1
+verified_committed_raw,baseModel,RS 5,"""RS 5""",2
+verified_committed_raw,baseModel,RS 7,"""RS 7""",2
+verified_committed_raw,baseModel,RUF TURBO 12/CTR3,"""RUF TURBO 12/CTR3""",1
+verified_committed_raw,baseModel,RUFTURBO12/CTR3/CTR2017,"""RUFTURBO12/CTR3/CTR2017""",1
+verified_committed_raw,baseModel,RX,"""RX""",13
+verified_committed_raw,baseModel,RZ,"""RZ""",3
+verified_committed_raw,baseModel,Range Rover,"""Range Rover""",82
+verified_committed_raw,baseModel,Ranger,"""Ranger""",1
+verified_committed_raw,baseModel,Rapide,"""Rapide""",5
+verified_committed_raw,baseModel,Regal,"""Regal""",11
+verified_committed_raw,baseModel,Regera,"""Regera""",2
+verified_committed_raw,baseModel,Renegade,"""Renegade""",15
+verified_committed_raw,baseModel,Revero,"""Revero""",3
+verified_committed_raw,baseModel,Revuelto,"""Revuelto""",2
+verified_committed_raw,baseModel,Ridgeline,"""Ridgeline""",7
+verified_committed_raw,baseModel,Rio,"""Rio""",7
+verified_committed_raw,baseModel,Rogue,"""Rogue""",12
+verified_committed_raw,baseModel,Rogue Sport,"""Rogue Sport""",3
+verified_committed_raw,baseModel,Roma,"""Roma""",5
+verified_committed_raw,baseModel,S-Class,"""S-Class""",17
+verified_committed_raw,baseModel,S209,"""S209""",1
+verified_committed_raw,baseModel,S3,"""S3""",1
+verified_committed_raw,baseModel,S4,"""S4""",2
+verified_committed_raw,baseModel,S5,"""S5""",7
+verified_committed_raw,baseModel,S6,"""S6""",3
+verified_committed_raw,baseModel,S60,"""S60""",16
+verified_committed_raw,baseModel,S7,"""S7""",2
+verified_committed_raw,baseModel,S8,"""S8""",1
+verified_committed_raw,baseModel,S80,"""S80""",1
+verified_committed_raw,baseModel,S90,"""S90""",8
+verified_committed_raw,baseModel,SF90,"""SF90""",3
+verified_committed_raw,baseModel,SF90 Spider,"""SF90 Spider""",3
+verified_committed_raw,baseModel,SF90 Stradale,"""SF90 Stradale""",3
+verified_committed_raw,baseModel,SF90 Stradale Coupe,"""SF90 Stradale Coupe""",1
+verified_committed_raw,baseModel,SL-Class,"""SL-Class""",8
+verified_committed_raw,baseModel,SLC-Class,"""SLC-Class""",1
+verified_committed_raw,baseModel,SLK-Class,"""SLK-Class""",1
+verified_committed_raw,baseModel,SQ5,"""SQ5""",4
+verified_committed_raw,baseModel,SQ7,"""SQ7""",1
+verified_committed_raw,baseModel,SQ8,"""SQ8""",2
+verified_committed_raw,baseModel,SRX,"""SRX""",2
+verified_committed_raw,baseModel,Sabre,"""Sabre""",1
+verified_committed_raw,baseModel,Santa Cruz,"""Santa Cruz""",5
+verified_committed_raw,baseModel,Santa Fe,"""Santa Fe""",17
+verified_committed_raw,baseModel,Savana Passenger,"""Savana Passenger""",2
+verified_committed_raw,baseModel,Sedona,"""Sedona""",5
+verified_committed_raw,baseModel,Seltos,"""Seltos""",7
+verified_committed_raw,baseModel,Senna,"""Senna""",1
+verified_committed_raw,baseModel,Sentra,"""Sentra""",9
+verified_committed_raw,baseModel,Sequoia,"""Sequoia""",6
+verified_committed_raw,baseModel,Sienna,"""Sienna""",4
+verified_committed_raw,baseModel,Sierra,"""Sierra""",40
+verified_committed_raw,baseModel,Silverado,"""Silverado""",23
+verified_committed_raw,baseModel,Solterra,"""Solterra""",4
+verified_committed_raw,baseModel,Sonata,"""Sonata""",13
+verified_committed_raw,baseModel,Sonic,"""Sonic""",10
+verified_committed_raw,baseModel,Sorento,"""Sorento""",15
+verified_committed_raw,baseModel,Soul,"""Soul""",3
+verified_committed_raw,baseModel,Spark,"""Spark""",5
+verified_committed_raw,baseModel,Spectre,"""Spectre""",8
+verified_committed_raw,baseModel,Speedtail,"""Speedtail""",1
+verified_committed_raw,baseModel,Sportage,"""Sportage""",17
+verified_committed_raw,baseModel,Stage 3 Mustang,"""Stage 3 Mustang""",2
+verified_committed_raw,baseModel,Stelvio,"""Stelvio""",21
+verified_committed_raw,baseModel,Stinger,"""Stinger""",2
+verified_committed_raw,baseModel,Suburban,"""Suburban""",3
+verified_committed_raw,baseModel,T12/CTR3/CTR Anniversary,"""T12/CTR3/CTR Anniversary""",1
+verified_committed_raw,baseModel,TLX,"""TLX""",33
+verified_committed_raw,baseModel,TT,"""TT""",2
+verified_committed_raw,baseModel,TT Coupe,"""TT Coupe""",1
+verified_committed_raw,baseModel,TT RS,"""TT RS""",1
+verified_committed_raw,baseModel,TT Roadster,"""TT Roadster""",2
+verified_committed_raw,baseModel,TTS,"""TTS""",2
+verified_committed_raw,baseModel,TTS Coupe,"""TTS Coupe""",2
+verified_committed_raw,baseModel,TURBO12/CTR3/CTR ANNIVERSARY,"""TURBO12/CTR3/CTR ANNIVERSARY""",1
+verified_committed_raw,baseModel,TX,"""TX""",1
+verified_committed_raw,baseModel,Tacoma,"""Tacoma""",11
+verified_committed_raw,baseModel,Tahoe,"""Tahoe""",21
+verified_committed_raw,baseModel,Taos,"""Taos""",4
+verified_committed_raw,baseModel,Taurus,"""Taurus""",4
+verified_committed_raw,baseModel,Taycan,"""Taycan""",4
+verified_committed_raw,baseModel,Telluride,"""Telluride""",3
+verified_committed_raw,baseModel,Terrain,"""Terrain""",12
+verified_committed_raw,baseModel,Tiguan,"""Tiguan""",10
+verified_committed_raw,baseModel,Titan,"""Titan""",3
+verified_committed_raw,baseModel,Tonale,"""Tonale""",1
+verified_committed_raw,baseModel,Tonale eAWD,"""Tonale eAWD""",2
+verified_committed_raw,baseModel,Touareg,"""Touareg""",2
+verified_committed_raw,baseModel,Town and Country,"""Town and Country""",2
+verified_committed_raw,baseModel,Transit Connect,"""Transit Connect""",7
+verified_committed_raw,baseModel,Transit T150 Wagon,"""Transit T150 Wagon""",1
+verified_committed_raw,baseModel,Traverse,"""Traverse""",4
+verified_committed_raw,baseModel,Trax,"""Trax""",4
+verified_committed_raw,baseModel,Tucson,"""Tucson""",12
+verified_committed_raw,baseModel,Tundra,"""Tundra""",8
+verified_committed_raw,baseModel,UX,"""UX""",9
+verified_committed_raw,baseModel,Urus,"""Urus""",9
+verified_committed_raw,baseModel,V60,"""V60""",23
+verified_committed_raw,baseModel,V90,"""V90""",6
+verified_committed_raw,baseModel,VF 6,"""VF 6""",1
+verified_committed_raw,baseModel,VF 7,"""VF 7""",1
+verified_committed_raw,baseModel,VF 8,"""VF 8""",4
+verified_committed_raw,baseModel,VF 9,"""VF 9""",3
+verified_committed_raw,baseModel,Valour,"""Valour""",1
+verified_committed_raw,baseModel,Vanquish,"""Vanquish""",6
+verified_committed_raw,baseModel,Vantage,"""Vantage""",24
+verified_committed_raw,baseModel,Vantage Manual,"""Vantage Manual""",1
+verified_committed_raw,baseModel,Veloster,"""Veloster""",7
+verified_committed_raw,baseModel,Veneno,"""Veneno""",1
+verified_committed_raw,baseModel,Verano,"""Verano""",2
+verified_committed_raw,baseModel,Versa,"""Versa""",3
+verified_committed_raw,baseModel,Veyron,"""Veyron""",1
+verified_committed_raw,baseModel,Viper,"""Viper""",1
+verified_committed_raw,baseModel,Voyager,"""Voyager""",6
+verified_committed_raw,baseModel,WRX,"""WRX""",16
+verified_committed_raw,baseModel,Wagoneer,"""Wagoneer""",5
+verified_committed_raw,baseModel,Wraith,"""Wraith""",9
+verified_committed_raw,baseModel,Wrangler,"""Wrangler""",33
+verified_committed_raw,baseModel,X1,"""X1""",3
+verified_committed_raw,baseModel,X2,"""X2""",1
+verified_committed_raw,baseModel,X3,"""X3""",4
+verified_committed_raw,baseModel,X4,"""X4""",4
+verified_committed_raw,baseModel,X5,"""X5""",4
+verified_committed_raw,baseModel,X6,"""X6""",2
+verified_committed_raw,baseModel,X7,"""X7""",2
+verified_committed_raw,baseModel,XC40,"""XC40""",11
+verified_committed_raw,baseModel,XC60,"""XC60""",28
+verified_committed_raw,baseModel,XC70,"""XC70""",4
+verified_committed_raw,baseModel,XC90,"""XC90""",14
+verified_committed_raw,baseModel,XE,"""XE""",13
+verified_committed_raw,baseModel,XF,"""XF""",18
+verified_committed_raw,baseModel,XJ,"""XJ""",9
+verified_committed_raw,baseModel,XJL,"""XJL""",6
+verified_committed_raw,baseModel,XT4,"""XT4""",1
+verified_committed_raw,baseModel,XT5,"""XT5""",12
+verified_committed_raw,baseModel,XT6,"""XT6""",2
+verified_committed_raw,baseModel,XTS,"""XTS""",6
+verified_committed_raw,baseModel,XTS Hearse,"""XTS Hearse""",1
+verified_committed_raw,baseModel,XTS Limo,"""XTS Limo""",3
+verified_committed_raw,baseModel,Xterra,"""Xterra""",3
+verified_committed_raw,baseModel,Yaris,"""Yaris""",3
+verified_committed_raw,baseModel,Yukon,"""Yukon""",32
+verified_committed_raw,baseModel,Z,"""Z""",2
+verified_committed_raw,baseModel,Z4,"""Z4""",3
+verified_committed_raw,baseModel,ZDX,"""ZDX""",2
+verified_committed_raw,baseModel,e-tron,"""e-tron""",2
+verified_committed_raw,baseModel,e-tron GT,"""e-tron GT""",1
+verified_committed_raw,baseModel,e-tron S,"""e-tron S""",2
+verified_committed_raw,baseModel,e6,"""e6""",4
+verified_committed_raw,baseModel,fortwo,"""fortwo""",18
+verified_committed_raw,baseModel,i-MiEV,"""i-MiEV""",2
+verified_committed_raw,baseModel,i3,"""i3""",1
+verified_committed_raw,baseModel,i4,"""i4""",3
+verified_committed_raw,baseModel,i7,"""i7""",2
+verified_committed_raw,baseModel,iA,"""iA""",2
+verified_committed_raw,baseModel,iM,"""iM""",2
+verified_committed_raw,baseModel,iQ,"""iQ""",1
+verified_committed_raw,baseModel,iX,"""iX""",1
+verified_committed_raw,baseModel,tC,"""tC""",4
+verified_committed_raw,baseModel,xB,"""xB""",2
+verified_committed_raw,basemodel,<KEY_ABSENT>,null,4500
+verified_committed_raw,drive,4-Wheel Drive,"""4-Wheel Drive""",495
+verified_committed_raw,drive,All-Wheel Drive,"""All-Wheel Drive""",1645
+verified_committed_raw,drive,Front-Wheel Drive,"""Front-Wheel Drive""",1102
+verified_committed_raw,drive,Part-time 4-Wheel Drive,"""Part-time 4-Wheel Drive""",114
+verified_committed_raw,drive,Rear-Wheel Drive,"""Rear-Wheel Drive""",1144
+verified_committed_raw,evMotor,100 kW AC Induction,"""100 kW AC Induction""",5
+verified_committed_raw,evMotor,100 kW AC PMSM,"""100 kW AC PMSM""",2
+verified_committed_raw,evMotor,100kW AC Induction,"""100kW AC Induction""",1
+verified_committed_raw,evMotor,101V Ni-MH,"""101V Ni-MH""",1
+verified_committed_raw,evMotor,103 kW AC Induction,"""103 kW AC Induction""",4
+verified_committed_raw,evMotor,104 kW ACPM,"""104 kW ACPM""",1
+verified_committed_raw,evMotor,105 kW AC Induction,"""105 kW AC Induction""",1
+verified_committed_raw,evMotor,105 kW DCPM,"""105 kW DCPM""",3
+verified_committed_raw,evMotor,105 kW PMSM,"""105 kW PMSM""",3
+verified_committed_raw,evMotor,"108, 108 and 108 kW ACPM 3-Phase","""108, 108 and 108 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,110 kW AC Induction,"""110 kW AC Induction""",3
+verified_committed_raw,evMotor,110 kW AC PMSM,"""110 kW AC PMSM""",1
+verified_committed_raw,evMotor,110 kW DCPM,"""110 kW DCPM""",4
+verified_committed_raw,evMotor,111 kW PMSM,"""111 kW PMSM""",1
+verified_committed_raw,evMotor,113 kW AC Induction,"""113 kW AC Induction""",1
+verified_committed_raw,evMotor,113 kW AC Synchronous,"""113 kW AC Synchronous""",1
+verified_committed_raw,evMotor,115 and 185 kW PMSM,"""115 and 185 kW PMSM""",1
+verified_committed_raw,evMotor,115V Li-Ion,"""115V Li-Ion""",3
+verified_committed_raw,evMotor,120 kW AC Induction,"""120 kW AC Induction""",1
+verified_committed_raw,evMotor,120 kW AC Synchronous,"""120 kW AC Synchronous""",1
+verified_committed_raw,evMotor,120 kW IPMSM,"""120 kW IPMSM""",4
+verified_committed_raw,evMotor,125 kW AC Induction,"""125 kW AC Induction""",1
+verified_committed_raw,evMotor,126V Li-Ion,"""126V Li-Ion""",1
+verified_committed_raw,evMotor,127 and 180 kW PMSM,"""127 and 180 kW PMSM""",2
+verified_committed_raw,evMotor,12V Li-Ion,"""12V Li-Ion""",1
+verified_committed_raw,evMotor,130 and 130 kW ACPM 3-Phase,"""130 and 130 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,130 kW AC PMSM,"""130 kW AC PMSM""",1
+verified_committed_raw,evMotor,130 kW DC Brushless,"""130 kW DC Brushless""",1
+verified_committed_raw,evMotor,131 and 190 kW AC 3-Phase,"""131 and 190 kW AC 3-Phase""",3
+verified_committed_raw,evMotor,132 kW AC Induction,"""132 kW AC Induction""",1
+verified_committed_raw,evMotor,132 kW AC Synchronous,"""132 kW AC Synchronous""",1
+verified_committed_raw,evMotor,133 and 179 kW AC 3-Phase,"""133 and 179 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,135 and 200 kW ACPM 3-Phase,"""135 and 200 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,135 and 215 kW PMSM,"""135 and 215 kW PMSM""",1
+verified_committed_raw,evMotor,135 and 243 kW AC Induction,"""135 and 243 kW AC Induction""",1
+verified_committed_raw,evMotor,135 kW AC Induction,"""135 kW AC Induction""",3
+verified_committed_raw,evMotor,135 kW DCPM,"""135 kW DCPM""",2
+verified_committed_raw,evMotor,135kW AC PMSM,"""135kW AC PMSM""",1
+verified_committed_raw,evMotor,136 and 136 kW PMSM,"""136 and 136 kW PMSM""",1
+verified_committed_raw,evMotor,137 kW PMSM,"""137 kW PMSM""",3
+verified_committed_raw,evMotor,138 kW Asynchron 3-Phase,"""138 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,140 (front) 140 (rear) (70 kW-hr battery pack),"""140 (front) 140 (rear) (70 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,140 (front) 140 (rear) (85 kW-hr battery pack),"""140 (front) 140 (rear) (85 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,140 (front) 140 (rear) (90 kW-hr battery pack),"""140 (front) 140 (rear) (90 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,140 and 140 kW EESM,"""140 and 140 kW EESM""",2
+verified_committed_raw,evMotor,140 kW DCPM,"""140 kW DCPM""",6
+verified_committed_raw,evMotor,141 and 141 kW PMSM,"""141 and 141 kW PMSM""",1
+verified_committed_raw,evMotor,141 and 172 kW Asynchron 3-Phase,"""141 and 172 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,141 kW AC 3-Phase,"""141 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,141 kW Asynchron 3-Phase,"""141 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,144V Li-Ion,"""144V Li-Ion""",1
+verified_committed_raw,evMotor,144V Ni-MH,"""144V Ni-MH""",1
+verified_committed_raw,evMotor,147 and 147 kW AC 3-Phase,"""147 and 147 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,147 and 188 kW AC 3-Phase,"""147 and 188 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,147 and 202 kW AC 3-Phase,"""147 and 202 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,147 and 211 kW AC 3-Phase,"""147 and 211 kW AC 3-Phase""",3
+verified_committed_raw,evMotor,147 kW PMSM,"""147 kW PMSM""",1
+verified_committed_raw,evMotor,149 and 276 kW AC 3-Phase,"""149 and 276 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,14V Li-Ion,"""14V Li-Ion""",11
+verified_committed_raw,evMotor,150 and 150 kW AC PMSM,"""150 and 150 kW AC PMSM""",1
+verified_committed_raw,evMotor,150 and 150 kW ACPM 3-Phase,"""150 and 150 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,150 and 150 kW ACPMSM,"""150 and 150 kW ACPMSM""",3
+verified_committed_raw,evMotor,150 and 150 kw DCPM,"""150 and 150 kw DCPM""",2
+verified_committed_raw,evMotor,150 and 150kW AC PMSM,"""150 and 150kW AC PMSM""",1
+verified_committed_raw,evMotor,150 and 354 kW ACPM,"""150 and 354 kW ACPM""",1
+verified_committed_raw,evMotor,150 kW AC 3-Phase,"""150 kW AC 3-Phase""",3
+verified_committed_raw,evMotor,150 kW AC PMSM,"""150 kW AC PMSM""",1
+verified_committed_raw,evMotor,150 kW AC Synchronous,"""150 kW AC Synchronous""",1
+verified_committed_raw,evMotor,150 kW ACPM,"""150 kW ACPM""",2
+verified_committed_raw,evMotor,150 kW ACPM 3-Phase,"""150 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,150 kW IPMSM,"""150 kW IPMSM""",2
+verified_committed_raw,evMotor,150 kW PMSM,"""150 kW PMSM""",1
+verified_committed_raw,evMotor,150 kW PMSM (IPM),"""150 kW PMSM (IPM)""",1
+verified_committed_raw,evMotor,151 and 273 kW AC 3-Phase,"""151 and 273 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,155 and 200 kW ACPM,"""155 and 200 kW ACPM""",1
+verified_committed_raw,evMotor,155 and 220 kW ACPM,"""155 and 220 kW ACPM""",1
+verified_committed_raw,evMotor,157 kW Asynchron 3-Phase,"""157 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,158 and 203 kW AC 3-Phase,"""158 and 203 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,158 and 219 kW AC 3-Phase,"""158 and 219 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,160 and 160 AC 3-phase,"""160 and 160 AC 3-phase""",1
+verified_committed_raw,evMotor,160 and 160 kW AC 3-phase,"""160 and 160 kW AC 3-phase""",4
+verified_committed_raw,evMotor,160 and 160 kW PMSM,"""160 and 160 kW PMSM""",1
+verified_committed_raw,evMotor,160 kW DCPM,"""160 kW DCPM""",5
+verified_committed_raw,evMotor,160 kW PMSM,"""160 kW PMSM""",3
+verified_committed_raw,evMotor,"162, 162, 162 and 162 kW AC 3-Phase","""162, 162, 162 and 162 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,"162, 162, 163 and 135 kW ACPM 3-Phase","""162, 162, 163 and 135 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,"162, 162, 163, 163 kW AC 3-Phase","""162, 162, 163, 163 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,"162, 162, 163, 163kW AC 3-Phase","""162, 162, 163, 163kW AC 3-Phase""",6
+verified_committed_raw,evMotor,164 (front) 350 (rear) (85 kW-hr battery pack),"""164 (front) 350 (rear) (85 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,164 (front) 350 (rear) (90 kW-hr battery pack),"""164 (front) 350 (rear) (90 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,165 and 165 kW ACPM 3-Phase,"""165 and 165 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,165 kW PMSM 3-Phase,"""165 kW PMSM 3-Phase""",1
+verified_committed_raw,evMotor,168 kW PMSM,"""168 kW PMSM""",2
+verified_committed_raw,evMotor,170 and 448 kW ACPM,"""170 and 448 kW ACPM""",5
+verified_committed_raw,evMotor,170 kW AC PMSM,"""170 kW AC PMSM""",1
+verified_committed_raw,evMotor,170 kW ACPMSM,"""170 kW ACPMSM""",1
+verified_committed_raw,evMotor,173 and 180 kW PMSM,"""173 and 180 kW PMSM""",1
+verified_committed_raw,evMotor,173 and 200 kW PMSM,"""173 and 200 kW PMSM""",1
+verified_committed_raw,evMotor,174 and 310 kW ACPM 6-Phase,"""174 and 310 kW ACPM 6-Phase""",1
+verified_committed_raw,evMotor,175 and 175 kW ACPMSM,"""175 and 175 kW ACPMSM""",2
+verified_committed_raw,evMotor,175 and 175 kw DCPM,"""175 and 175 kw DCPM""",3
+verified_committed_raw,evMotor,175 kW Asynchron 3-Phase,"""175 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,178 and 433 kW ACPM,"""178 and 433 kW ACPM""",10
+verified_committed_raw,evMotor,178 and 433kW ACPM,"""178 and 433kW ACPM""",2
+verified_committed_raw,evMotor,179 and 186 kW AC 3-Phase,"""179 and 186 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,180 kW ACPM,"""180 kW ACPM""",1
+verified_committed_raw,evMotor,185 and 220 kW PMSM,"""185 and 220 kW PMSM""",2
+verified_committed_raw,evMotor,189 and 189 kW ACPM,"""189 and 189 kW ACPM""",1
+verified_committed_raw,evMotor,190 and 215 kW PMSM,"""190 and 215 kW PMSM""",2
+verified_committed_raw,evMotor,190 and 230 kW EESM,"""190 and 230 kW EESM""",1
+verified_committed_raw,evMotor,190 and 360 kW EESM,"""190 and 360 kW EESM""",8
+verified_committed_raw,evMotor,190 kW EESM,"""190 kW EESM""",3
+verified_committed_raw,evMotor,191 kW ACPM 3-Phase,"""191 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,192 kW AC 3-Phase,"""192 kW AC 3-Phase""",3
+verified_committed_raw,evMotor,192 kW ACPM 3-Phase,"""192 kW ACPM 3-Phase""",2
+verified_committed_raw,evMotor,193 (front) 193 (rear) (100 kW-hr battery pack),"""193 (front) 193 (rear) (100 kW-hr battery pack)""",4
+verified_committed_raw,evMotor,193 (front) 193 (rear) (60 kW-hr battery pack),"""193 (front) 193 (rear) (60 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,193 (front) 193 (rear) (70 kW-hr battery pack),"""193 (front) 193 (rear) (70 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,193 (front) 193 (rear) (75 kW-hr battery pack),"""193 (front) 193 (rear) (75 kW-hr battery pack)""",5
+verified_committed_raw,evMotor,193 (front) 193 (rear) (85 kW-hr battery pack),"""193 (front) 193 (rear) (85 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,193 (front) 193 (rear) (90 kW-hr battery pack),"""193 (front) 193 (rear) (90 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,193 (front) 375 (rear) (100 kW-hr battery pack),"""193 (front) 375 (rear) (100 kW-hr battery pack)""",7
+verified_committed_raw,evMotor,193 (front) 375 (rear) (85 kW-hr battery pack),"""193 (front) 375 (rear) (85 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,193 (front) 375 (rear) (90 kW-hr battery pack),"""193 (front) 375 (rear) (90 kW-hr battery pack)""",4
+verified_committed_raw,evMotor,193 and 205 kW AC 3-Phase,"""193 and 205 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,193 and 375 kW AC 3-Phase,"""193 and 375 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,198 and 498kW ACPM,"""198 and 498kW ACPM""",2
+verified_committed_raw,evMotor,198 kW AC 3-Phase,"""198 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,20 kW AC Induction,"""20 kW AC Induction""",1
+verified_committed_raw,evMotor,200 and 215 kW PMSM,"""200 and 215 kW PMSM""",1
+verified_committed_raw,evMotor,200 kW ACPM,"""200 kW ACPM""",1
+verified_committed_raw,evMotor,200 kW PMSM,"""200 kW PMSM""",1
+verified_committed_raw,evMotor,201 kW AC PMSM,"""201 kW AC PMSM""",1
+verified_committed_raw,evMotor,"201, 201 and 233 kW ACPM","""201, 201 and 233 kW ACPM""",1
+verified_committed_raw,evMotor,202 kW AC 3-Phase,"""202 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,202V Li-Ion,"""202V Li-Ion""",1
+verified_committed_raw,evMotor,202V Ni-MH,"""202V Ni-MH""",4
+verified_committed_raw,evMotor,205 and 205 kW DCPM,"""205 and 205 kW DCPM""",1
+verified_committed_raw,evMotor,205 and 375 kW AC 3-Phase,"""205 and 375 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,207 and 207  kW AC Induction,"""207 and 207  kW AC Induction""",1
+verified_committed_raw,evMotor,207 kW AC PMSM,"""207 kW AC PMSM""",2
+verified_committed_raw,evMotor,207V Li-Ion,"""207V Li-Ion""",3
+verified_committed_raw,evMotor,208 and 208 kW ACPM,"""208 and 208 kW ACPM""",12
+verified_committed_raw,evMotor,208 kW ACPM,"""208 kW ACPM""",2
+verified_committed_raw,evMotor,209 kW AC 3-Phase,"""209 kW AC 3-Phase""",3
+verified_committed_raw,evMotor,210 and 210 kW AC PMSM,"""210 and 210 kW AC PMSM""",1
+verified_committed_raw,evMotor,210 kW AC 3-Phase,"""210 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,210 kW ACPM,"""210 kW ACPM""",1
+verified_committed_raw,evMotor,210 kW ACPM 3-Phase,"""210 kW ACPM 3-Phase""",2
+verified_committed_raw,evMotor,210 kW PMSM 3-Phase,"""210 kW PMSM 3-Phase""",1
+verified_committed_raw,evMotor,211 kW AC 3-Phase,"""211 kW AC 3-Phase""",6
+verified_committed_raw,evMotor,214 and 214 kW ACPM,"""214 and 214 kW ACPM""",1
+verified_committed_raw,evMotor,214 kW PMSM,"""214 kW PMSM""",1
+verified_committed_raw,evMotor,215 kW ACPM 6-Phase,"""215 kW ACPM 6-Phase""",1
+verified_committed_raw,evMotor,216 kW AC PMSM,"""216 kW AC PMSM""",1
+verified_committed_raw,evMotor,216V Li-Ion,"""216V Li-Ion""",5
+verified_committed_raw,evMotor,216V Ni-MH,"""216V Ni-MH""",4
+verified_committed_raw,evMotor,216V NiMH,"""216V NiMH""",1
+verified_committed_raw,evMotor,22 and 53 kW AC Induction,"""22 and 53 kW AC Induction""",1
+verified_committed_raw,evMotor,220 kW ACPM,"""220 kW ACPM""",1
+verified_committed_raw,evMotor,220 kW PMSM,"""220 kW PMSM""",1
+verified_committed_raw,evMotor,220V Li-Ion,"""220V Li-Ion""",1
+verified_committed_raw,evMotor,221 kW ACPM 3-Phase,"""221 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,221V Li-Ion,"""221V Li-Ion""",2
+verified_committed_raw,evMotor,222V Li-Ion,"""222V Li-Ion""",6
+verified_committed_raw,evMotor,224 and 239 kW AC Induction,"""224 and 239 kW AC Induction""",1
+verified_committed_raw,evMotor,225 kW AC Induction (60 kW-hr battery pack),"""225 kW AC Induction (60 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,226 and 500 kW AC Induction,"""226 and 500 kW AC Induction""",1
+verified_committed_raw,evMotor,226 kW AC Induction,"""226 kW AC Induction""",1
+verified_committed_raw,evMotor,"226, 226, 450 and 450 kW AC Induction","""226, 226, 450 and 450 kW AC Induction""",1
+verified_committed_raw,evMotor,"230, 230 and 230 kW AC 3-Phase","""230, 230 and 230 kW AC 3-Phase""",4
+verified_committed_raw,evMotor,"230, 230 and 230 kW ACPM 3-Phase","""230, 230 and 230 kW ACPM 3-Phase""",3
+verified_committed_raw,evMotor,234V Li-Ion,"""234V Li-Ion""",1
+verified_committed_raw,evMotor,235 kW ACPM,"""235 kW ACPM""",1
+verified_committed_raw,evMotor,240V Li-Ion,"""240V Li-Ion""",14
+verified_committed_raw,evMotor,243 and 248 kW AC 3-Phase,"""243 and 248 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,243 and 248 kW ACPM,"""243 and 248 kW ACPM""",1
+verified_committed_raw,evMotor,243 and 248 kW ACPM 3-Phase,"""243 and 248 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,245V Ni-MH,"""245V Ni-MH""",8
+verified_committed_raw,evMotor,247 and 247 kW AC 3-Phase,"""247 and 247 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,247 and 247 kW ACPM 3-Phase,"""247 and 247 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,250 and 250 kW AC 3-Phase,"""250 and 250 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,250 and 250 kW DCPM,"""250 and 250 kW DCPM""",10
+verified_committed_raw,evMotor,250 kW DCPM,"""250 kW DCPM""",2
+verified_committed_raw,evMotor,250 kW EESM,"""250 kW EESM""",2
+verified_committed_raw,evMotor,"250, 250 and 250 kW AC 3-Phase","""250, 250 and 250 kW AC 3-Phase""",2
+verified_committed_raw,evMotor,"250, 250 and 250 kW ACPM 3-Phase","""250, 250 and 250 kW ACPM 3-Phase""",2
+verified_committed_raw,evMotor,255 kW ACPM,"""255 kW ACPM""",2
+verified_committed_raw,evMotor,258 and 258 kW AC PMSM,"""258 and 258 kW AC PMSM""",1
+verified_committed_raw,evMotor,259V Li-Ion,"""259V Li-Ion""",15
+verified_committed_raw,evMotor,260 and 300 kW ACPM 3-Phase,"""260 and 300 kW ACPM 3-Phase""",3
+verified_committed_raw,evMotor,260 kW ACPM 3-Phase,"""260 kW ACPM 3-Phase""",2
+verified_committed_raw,evMotor,260V Li-Ion,"""260V Li-Ion""",3
+verified_committed_raw,evMotor,263V Li-Ion,"""263V Li-Ion""",2
+verified_committed_raw,evMotor,264 and 264 kW ACPM,"""264 and 264 kW ACPM""",7
+verified_committed_raw,evMotor,266V Li-Ion,"""266V Li-Ion""",2
+verified_committed_raw,evMotor,270 kW AC Induction (75 kW-hr battery pack),"""270 kW AC Induction (75 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,270 kW AC Induction (85 kW-hr battery pack),"""270 kW AC Induction (85 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,270V Li-Ion,"""270V Li-Ion""",10
+verified_committed_raw,evMotor,"275, 275 and 275 kW DCPM","""275, 275 and 275 kW DCPM""",3
+verified_committed_raw,evMotor,280 kW ACPM,"""280 kW ACPM""",2
+verified_committed_raw,evMotor,280V Li-Ion,"""280V Li-Ion""",8
+verified_committed_raw,evMotor,281V Li-Ion,"""281V Li-Ion""",1
+verified_committed_raw,evMotor,285 kW AC Induction (60 kW-hr battery pack),"""285 kW AC Induction (60 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,285 kW AC Induction (75 kW-hr battery pack),"""285 kW AC Induction (75 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,285 kW AC Induction (85 kW-hr battery pack),"""285 kW AC Induction (85 kW-hr battery pack)""",1
+verified_committed_raw,evMotor,285 kW AC Induction (90 kW-hr battery pack),"""285 kW AC Induction (90 kW-hr battery pack)""",2
+verified_committed_raw,evMotor,288V Li-Ion,"""288V Li-Ion""",1
+verified_committed_raw,evMotor,288V Ni-MH,"""288V Ni-MH""",11
+verified_committed_raw,evMotor,295V Li-Ion,"""295V Li-Ion""",1
+verified_committed_raw,evMotor,300 kW ACPM 3-Phase,"""300 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,300V Li-Ion,"""300V Li-Ion""",1
+verified_committed_raw,evMotor,"310, 310 and 310 kW ACPM","""310, 310 and 310 kW ACPM""",1
+verified_committed_raw,evMotor,"310, 310 and 330 kW ACPM","""310, 310 and 330 kW ACPM""",1
+verified_committed_raw,evMotor,311V Li-Ion,"""311V Li-Ion""",5
+verified_committed_raw,evMotor,32kW IPMSM,"""32kW IPMSM""",1
+verified_committed_raw,evMotor,330 kW ACPM,"""330 kW ACPM""",4
+verified_committed_raw,evMotor,34 and 107 kW 3-phase Sync.,"""34 and 107 kW 3-phase Sync.""",5
+verified_committed_raw,evMotor,34 and 65 kW 3-phase Sync.,"""34 and 65 kW 3-phase Sync.""",9
+verified_committed_raw,evMotor,34 kW 3-phase Sync.,"""34 kW 3-phase Sync.""",1
+verified_committed_raw,evMotor,346V Li-Ion,"""346V Li-Ion""",3
+verified_committed_raw,evMotor,358 and 358 kW AC PMSM,"""358 and 358 kW AC PMSM""",1
+verified_committed_raw,evMotor,36 and 50 kW DCPM,"""36 and 50 kW DCPM""",1
+verified_committed_raw,evMotor,370 and 370kW ACPM,"""370 and 370kW ACPM""",1
+verified_committed_raw,evMotor,370 and 459kW ACPM,"""370 and 459kW ACPM""",3
+verified_committed_raw,evMotor,397V Li-Ion,"""397V Li-Ion""",1
+verified_committed_raw,evMotor,40 and 134 kW AC Induction,"""40 and 134 kW AC Induction""",2
+verified_committed_raw,evMotor,40V Li-Ion,"""40V Li-Ion""",1
+verified_committed_raw,evMotor,418 kW ACPM,"""418 kW ACPM""",2
+verified_committed_raw,evMotor,44V Li-Ion,"""44V Li-Ion""",20
+verified_committed_raw,evMotor,45V Li-Ion,"""45V Li-Ion""",3
+verified_committed_raw,evMotor,45kW IPMSM,"""45kW IPMSM""",1
+verified_committed_raw,evMotor,46V Li-Ion,"""46V Li-Ion""",16
+verified_committed_raw,evMotor,48V Li-Ion,"""48V Li-Ion""",111
+verified_committed_raw,evMotor,49 kW DCPM,"""49 kW DCPM""",2
+verified_committed_raw,evMotor,496 kW ACPM,"""496 kW ACPM""",3
+verified_committed_raw,evMotor,50 and 96 kW DCPM,"""50 and 96 kW DCPM""",3
+verified_committed_raw,evMotor,50kW IPMSM,"""50kW IPMSM""",1
+verified_committed_raw,evMotor,"52, 85, 86kW 3-phase Sync.","""52, 85, 86kW 3-phase Sync.""",2
+verified_committed_raw,evMotor,55 kW DCPM,"""55 kW DCPM""",4
+verified_committed_raw,evMotor,56 kW AC Induction,"""56 kW AC Induction""",1
+verified_committed_raw,evMotor,59 and 61 kW 3-Phase AC,"""59 and 61 kW 3-Phase AC""",1
+verified_committed_raw,evMotor,59 and 61kW 3-Phase AC,"""59 and 61kW 3-Phase AC""",1
+verified_committed_raw,evMotor,60 KW AC Synchronous,"""60 KW AC Synchronous""",6
+verified_committed_raw,evMotor,60 and 70 kW DCPM,"""60 and 70 kW DCPM""",2
+verified_committed_raw,evMotor,60 kW DCPM,"""60 kW DCPM""",3
+verified_committed_raw,evMotor,62 kW AC PMSM,"""62 kW AC PMSM""",1
+verified_committed_raw,evMotor,62 kW DCPM,"""62 kW DCPM""",1
+verified_committed_raw,evMotor,65 kW AC Induction,"""65 kW AC Induction""",2
+verified_committed_raw,evMotor,67 and 180 kW ACPM,"""67 and 180 kW ACPM""",2
+verified_committed_raw,evMotor,67 kW AC PMSM,"""67 kW AC PMSM""",2
+verified_committed_raw,evMotor,67 kW PMSM,"""67 kW PMSM""",1
+verified_committed_raw,evMotor,68 kW DCPM,"""68 kW DCPM""",2
+verified_committed_raw,evMotor,686V Li-Ion,"""686V Li-Ion""",1
+verified_committed_raw,evMotor,69 and 201 kW AC 3-Phase,"""69 and 201 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,70 kW DC Brushless,"""70 kW DC Brushless""",6
+verified_committed_raw,evMotor,700V Li-Ion,"""700V Li-Ion""",2
+verified_committed_raw,evMotor,71 kW DCPM,"""71 kW DCPM""",1
+verified_committed_raw,evMotor,74 and 160 kW PMSM,"""74 and 160 kW PMSM""",3
+verified_committed_raw,evMotor,74 and 165 kW PMSM,"""74 and 165 kW PMSM""",2
+verified_committed_raw,evMotor,74 kW PMSM,"""74 kW PMSM""",2
+verified_committed_raw,evMotor,75 kW DCPM,"""75 kW DCPM""",4
+verified_committed_raw,evMotor,80 and 150 kW AC 3-Phase,"""80 and 150 kW AC 3-Phase""",1
+verified_committed_raw,evMotor,80 and 150 kW AC Synchronous,"""80 and 150 kW AC Synchronous""",2
+verified_committed_raw,evMotor,80 and 150 kW Asynchron 3-Phase,"""80 and 150 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,80 and 210 kW ACPM 3-Phase,"""80 and 210 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,80 and 80 kW AC Synchronous,"""80 and 80 kW AC Synchronous""",3
+verified_committed_raw,evMotor,80 kW Asynchron 3-Phase,"""80 kW Asynchron 3-Phase""",1
+verified_committed_raw,evMotor,80 kW DCPM,"""80 kW DCPM""",2
+verified_committed_raw,evMotor,81 kW AC PMSM,"""81 kW AC PMSM""",1
+verified_committed_raw,evMotor,82 kW AC Induction,"""82 kW AC Induction""",4
+verified_committed_raw,evMotor,83 kW AC Induction,"""83 kW AC Induction""",1
+verified_committed_raw,evMotor,85 and 100 kW DCPM,"""85 and 100 kW DCPM""",2
+verified_committed_raw,evMotor,85 and 191 kW ACPM 3-Phase,"""85 and 191 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,85 and 192 kW ACPM 3-Phase,"""85 and 192 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,85 and 88 kW ACPM 3-Phase,"""85 and 88 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,85 kW AC PMSM,"""85 kW AC PMSM""",1
+verified_committed_raw,evMotor,86V Li-Ion,"""86V Li-Ion""",3
+verified_committed_raw,evMotor,87 kW DCPM,"""87 kW DCPM""",4
+verified_committed_raw,evMotor,88 kW AC Induction,"""88 kW AC Induction""",2
+verified_committed_raw,evMotor,88 kW AC PMSM,"""88 kW AC PMSM""",1
+verified_committed_raw,evMotor,89 kW AC Induction,"""89 kW AC Induction""",12
+verified_committed_raw,evMotor,90 kW DCPM,"""90 kW DCPM""",1
+verified_committed_raw,evMotor,91 and 183 kW ACPM 3-Phase,"""91 and 183 kW ACPM 3-Phase""",1
+verified_committed_raw,evMotor,91 and 200 kW AC 3-Phase,"""91 and 200 kW AC 3-Phase""",4
+verified_committed_raw,evMotor,91 and 200 kW AC Induction,"""91 and 200 kW AC Induction""",1
+verified_committed_raw,evMotor,"96, 96, 96 and 96 kW AC PMSM","""96, 96, 96 and 96 kW AC PMSM""",1
+verified_committed_raw,evMotor,98 and 195 kW AC 3-Phase,"""98 and 195 kW AC 3-Phase""",3
+verified_committed_raw,evMotor,99 and 150 kW PMSM,"""99 and 150 kW PMSM""",3
+verified_committed_raw,evMotor,99 kW DC Brushless,"""99 kW DC Brushless""",1
+verified_committed_raw,evMotor,"99, 99 and 150 kW PMSM","""99, 99 and 150 kW PMSM""",4
+verified_committed_raw,evMotor,"99, 99, 150kW 3-phase Sync.","""99, 99, 150kW 3-phase Sync.""",3
+verified_committed_raw,evMotor,<EMPTY>,"""""",3691
+verified_committed_raw,evMotor,TBD,"""TBD""",13
+verified_committed_raw,evMotor,Two 444V Li-Ion,"""Two 444V Li-Ion""",1
+verified_committed_raw,fuelType1,<EMPTY>,"""""",1
+verified_committed_raw,fuelType1,Diesel,"""Diesel""",70
+verified_committed_raw,fuelType1,Electricity,"""Electricity""",388
+verified_committed_raw,fuelType1,Hydrogen,"""Hydrogen""",8
+verified_committed_raw,fuelType1,Midgrade Gasoline,"""Midgrade Gasoline""",71
+verified_committed_raw,fuelType1,Premium Gasoline,"""Premium Gasoline""",2225
+verified_committed_raw,fuelType1,Regular Gasoline,"""Regular Gasoline""",1737
+verified_committed_raw,fuelType2,<EMPTY>,"""""",4275
+verified_committed_raw,fuelType2,E85,"""E85""",103
+verified_committed_raw,fuelType2,Electricity,"""Electricity""",121
+verified_committed_raw,fuelType2,Natural Gas,"""Natural Gas""",1
+verified_committed_raw,make,Acura,"""Acura""",111
+verified_committed_raw,make,Alfa Romeo,"""Alfa Romeo""",56
+verified_committed_raw,make,Aston Martin,"""Aston Martin""",66
+verified_committed_raw,make,Audi,"""Audi""",115
+verified_committed_raw,make,BMW,"""BMW""",114
+verified_committed_raw,make,BYD,"""BYD""",4
+verified_committed_raw,make,Bentley,"""Bentley""",90
+verified_committed_raw,make,Bugatti,"""Bugatti""",15
+verified_committed_raw,make,Bugatti Rimac,"""Bugatti Rimac""",3
+verified_committed_raw,make,Buick,"""Buick""",101
+verified_committed_raw,make,Cadillac,"""Cadillac""",115
+verified_committed_raw,make,Chevrolet,"""Chevrolet""",117
+verified_committed_raw,make,Chrysler,"""Chrysler""",82
+verified_committed_raw,make,Dodge,"""Dodge""",111
+verified_committed_raw,make,Ferrari,"""Ferrari""",103
+verified_committed_raw,make,Fiat,"""Fiat""",59
+verified_committed_raw,make,Fisker,"""Fisker""",3
+verified_committed_raw,make,Ford,"""Ford""",111
+verified_committed_raw,make,GMC,"""GMC""",111
+verified_committed_raw,make,Genesis,"""Genesis""",90
+verified_committed_raw,make,Honda,"""Honda""",106
+verified_committed_raw,make,Hyundai,"""Hyundai""",116
+verified_committed_raw,make,INEOS Automotive,"""INEOS Automotive""",6
+verified_committed_raw,make,Infiniti,"""Infiniti""",108
+verified_committed_raw,make,Jaguar,"""Jaguar""",106
+verified_committed_raw,make,Jeep,"""Jeep""",123
+verified_committed_raw,make,Kandi,"""Kandi""",1
+verified_committed_raw,make,Karma,"""Karma""",5
+verified_committed_raw,make,Kia,"""Kia""",117
+verified_committed_raw,make,Koenigsegg,"""Koenigsegg""",3
+verified_committed_raw,make,Lamborghini,"""Lamborghini""",71
+verified_committed_raw,make,Land Rover,"""Land Rover""",116
+verified_committed_raw,make,Lexus,"""Lexus""",106
+verified_committed_raw,make,Lincoln,"""Lincoln""",122
+verified_committed_raw,make,Lordstown,"""Lordstown""",1
+verified_committed_raw,make,Lotus,"""Lotus""",14
+verified_committed_raw,make,Lucid,"""Lucid""",36
+verified_committed_raw,make,MINI,"""MINI""",124
+verified_committed_raw,make,Maserati,"""Maserati""",102
+verified_committed_raw,make,Mazda,"""Mazda""",117
+verified_committed_raw,make,McLaren Automotive,"""McLaren Automotive""",44
+verified_committed_raw,make,Mercedes-Benz,"""Mercedes-Benz""",118
+verified_committed_raw,make,Mitsubishi,"""Mitsubishi""",113
+verified_committed_raw,make,Mobility Ventures LLC,"""Mobility Ventures LLC""",2
+verified_committed_raw,make,Nissan,"""Nissan""",126
+verified_committed_raw,make,Pagani,"""Pagani""",4
+verified_committed_raw,make,Polestar,"""Polestar""",23
+verified_committed_raw,make,Porsche,"""Porsche""",116
+verified_committed_raw,make,RUF Automobile,"""RUF Automobile""",4
+verified_committed_raw,make,Ram,"""Ram""",111
+verified_committed_raw,make,Rivian,"""Rivian""",36
+verified_committed_raw,make,Rolls-Royce,"""Rolls-Royce""",92
+verified_committed_raw,make,Roush Performance,"""Roush Performance""",22
+verified_committed_raw,make,STI,"""STI""",1
+verified_committed_raw,make,Scion,"""Scion""",15
+verified_committed_raw,make,Subaru,"""Subaru""",116
+verified_committed_raw,make,Tesla,"""Tesla""",111
+verified_committed_raw,make,Toyota,"""Toyota""",113
+verified_committed_raw,make,Vinfast,"""Vinfast""",9
+verified_committed_raw,make,Volkswagen,"""Volkswagen""",111
+verified_committed_raw,make,Volvo,"""Volvo""",118
+verified_committed_raw,make,smart,"""smart""",18
+verified_committed_raw,phevBlended,false,"""false""",4390
+verified_committed_raw,phevBlended,true,"""true""",110
+verified_committed_raw,startStop,N,"""N""",2540
+verified_committed_raw,startStop,Y,"""Y""",1960
+verified_committed_raw,trany,Automatic (A1),"""Automatic (A1)""",400
+verified_committed_raw,trany,Automatic (A2),"""Automatic (A2)""",8
+verified_committed_raw,trany,Automatic (AM-S6),"""Automatic (AM-S6)""",39
+verified_committed_raw,trany,Automatic (AM-S7),"""Automatic (AM-S7)""",228
+verified_committed_raw,trany,Automatic (AM-S8),"""Automatic (AM-S8)""",99
+verified_committed_raw,trany,Automatic (AM-S9),"""Automatic (AM-S9)""",5
+verified_committed_raw,trany,Automatic (AM5),"""Automatic (AM5)""",2
+verified_committed_raw,trany,Automatic (AM6),"""Automatic (AM6)""",24
+verified_committed_raw,trany,Automatic (AM7),"""Automatic (AM7)""",118
+verified_committed_raw,trany,Automatic (AM8),"""Automatic (AM8)""",32
+verified_committed_raw,trany,Automatic (AV-S1),"""Automatic (AV-S1)""",10
+verified_committed_raw,trany,Automatic (AV-S10),"""Automatic (AV-S10)""",11
+verified_committed_raw,trany,Automatic (AV-S6),"""Automatic (AV-S6)""",90
+verified_committed_raw,trany,Automatic (AV-S7),"""Automatic (AV-S7)""",68
+verified_committed_raw,trany,Automatic (AV-S8),"""Automatic (AV-S8)""",90
+verified_committed_raw,trany,Automatic (S10),"""Automatic (S10)""",155
+verified_committed_raw,trany,Automatic (S4),"""Automatic (S4)""",1
+verified_committed_raw,trany,Automatic (S5),"""Automatic (S5)""",8
+verified_committed_raw,trany,Automatic (S6),"""Automatic (S6)""",442
+verified_committed_raw,trany,Automatic (S7),"""Automatic (S7)""",84
+verified_committed_raw,trany,Automatic (S8),"""Automatic (S8)""",956
+verified_committed_raw,trany,Automatic (S9),"""Automatic (S9)""",116
+verified_committed_raw,trany,Automatic (variable gear ratios),"""Automatic (variable gear ratios)""",167
+verified_committed_raw,trany,Automatic 10-spd,"""Automatic 10-spd""",85
+verified_committed_raw,trany,Automatic 4-spd,"""Automatic 4-spd""",5
+verified_committed_raw,trany,Automatic 5-spd,"""Automatic 5-spd""",14
+verified_committed_raw,trany,Automatic 6-spd,"""Automatic 6-spd""",151
+verified_committed_raw,trany,Automatic 7-spd,"""Automatic 7-spd""",57
+verified_committed_raw,trany,Automatic 8-spd,"""Automatic 8-spd""",457
+verified_committed_raw,trany,Automatic 9-spd,"""Automatic 9-spd""",190
+verified_committed_raw,trany,Manual 5-spd,"""Manual 5-spd""",70
+verified_committed_raw,trany,Manual 6-spd,"""Manual 6-spd""",288
+verified_committed_raw,trany,Manual 7-spd,"""Manual 7-spd""",30
+verified_committed_raw,year,2015,"""2015""",393
+verified_committed_raw,year,2016,"""2016""",413
+verified_committed_raw,year,2017,"""2017""",416
+verified_committed_raw,year,2018,"""2018""",406
+verified_committed_raw,year,2019,"""2019""",408
+verified_committed_raw,year,2020,"""2020""",418
+verified_committed_raw,year,2021,"""2021""",407
+verified_committed_raw,year,2022,"""2022""",410
+verified_committed_raw,year,2023,"""2023""",422
+verified_committed_raw,year,2024,"""2024""",405
+verified_committed_raw,year,2025,"""2025""",402

@@ -1,0 +1,46 @@
+split,cluster,vehicle_class,n
+test,0,Compact Cars,65
+test,0,Large Cars,24
+test,0,Midsize Cars,38
+test,0,Midsize Station Wagons,1
+test,0,Minicompact Cars,64
+test,0,Small Sport Utility Vehicle 2WD,38
+test,0,Small Sport Utility Vehicle 4WD,50
+test,0,Small Station Wagons,15
+test,0,Standard Sport Utility Vehicle 2WD,13
+test,0,Standard Sport Utility Vehicle 4WD,19
+test,0,Subcompact Cars,67
+test,0,Two Seaters,31
+test,1,Compact Cars,2
+test,1,Large Cars,29
+test,1,Midsize Cars,57
+test,1,Midsize Station Wagons,10
+test,1,Minicompact Cars,5
+test,1,Small Sport Utility Vehicle 4WD,1
+test,1,Standard Sport Utility Vehicle 2WD,9
+test,1,Standard Sport Utility Vehicle 4WD,15
+test,1,Subcompact Cars,15
+test,1,Two Seaters,51
+train,0,Compact Cars,296
+train,0,Large Cars,168
+train,0,Midsize Cars,344
+train,0,Midsize Station Wagons,17
+train,0,Minicompact Cars,62
+train,0,Small Sport Utility Vehicle 2WD,229
+train,0,Small Sport Utility Vehicle 4WD,438
+train,0,Small Station Wagons,91
+train,0,Standard Sport Utility Vehicle 2WD,49
+train,0,Standard Sport Utility Vehicle 4WD,130
+train,0,Subcompact Cars,98
+train,0,Two Seaters,85
+train,1,Compact Cars,27
+train,1,Large Cars,87
+train,1,Midsize Cars,35
+train,1,Midsize Station Wagons,2
+train,1,Minicompact Cars,59
+train,1,Small Sport Utility Vehicle 4WD,7
+train,1,Small Station Wagons,2
+train,1,Standard Sport Utility Vehicle 2WD,40
+train,1,Standard Sport Utility Vehicle 4WD,130
+train,1,Subcompact Cars,52
+train,1,Two Seaters,180

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "run_id": "final_v1",
+  "stage": "final",
+  "status": "completed",
+  "started_at_utc": "2026-10-09T02:22:17.959476+00:00",
+  "completed_at_utc": "2026-10-09T02:22:34.067426+00:00",
+  "dataset_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\processed\\vehicles.parquet",
+  "dataset_relative_path": "data/processed/vehicles.parquet",
+  "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+  "config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "saved_config_sha256": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
+  "stage_config_sha256": "5ecbb456be4598c7caa68126c2ce1781d10c059e7ad48e73e693af5bc4ff1513",
+  "saved_stage_config_sha256": "7a3cf57baf235ddb46fcb3a9339e6cbe5b0195c3654e9400a4313f3298d705b5",
+  "split_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\data\\splits",
+  "split_sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+  "split_metadata_sha256": "e4c14ba4b64370179504006b78a65f69a2ed08d2c5ffbe7c3396898d010b594b",
+  "reports_path": "reports/tables/final_v1",
+  "predictions_sha256": "da061d450c6a4f5ea930d9e7db1ad667e8b5b6956b95ed3d83d06a1d40a8b1ed",
+  "model_artifact_sha256": {
+    "structured": "7a5731357ee2e7dc11d8e401bc67dc5e4c3bd5637e89fcad319a88c605620c0f",
+    "structured_model": "3e34f75035042d5deb05ac3af888b226b9ca66675f29ca77c5179b923865baf1",
+    "structured_engine": "e5d8cb731d358fe93fdc4d357ad37c4abff9a70d9a8379aa3523b24b7ba46fe8",
+    "structured_model_engine": "37373cea8e5206ed493db2fae1a0e1e8e9c9412f8f2dd293ef2b54acd188ecdb"
+  },
+  "selected_model": "structured_engine",
+  "selected_text_fields": [
+    "engine_description"
+  ],
+  "selection_source": "train_group_cv",
+  "test_used_for_selection": false,
+  "cv_role": "selection CV for alpha and feature set, not an unbiased estimate of the tuning procedure",
+  "sanitizer_version": "1.0",
+  "interface_schema_sha256": "b31648a127f4f482eb1334d74220972b6b505fb5ed69a1bffcf97151fe3af988",
+  "interface_categories_basis": "training rows only",
+  "n_train": 2628,
+  "n_test": 619,
+  "development_small_dataset": false,
+  "residual_definition": "prediction_minus_actual",
+  "python_version": "3.12.14",
+  "package_versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "code_sha256": {
+    "text.py": "1a8a83e71d85b905cf7ada48deb8b6dc808ccd335687c46b48604b15692178be",
+    "final.py": "171a7f63eaa9d4483bc760e05e56baadff559ac5fd5f0c39a120988f46148282",
+    "predict.py": "495765267513ba599c070593e8f4977352637677425d6d2a566df9b23771eec3",
+    "split.py": "0fc5950953424cf3a08f16b0aeb0c2c9ee27169f45d0c55ffac5d387152ec5f5"
+  },
+  "cv_selection_sha256": "a2a3051d8bda55665dc36fe38b0cf49b27a92555bbad2ce16ca6f7d1e760b0d4",
+  "reports_sha256": {
+    "metrics.csv": "e9c6f05fbe2a93acc24bd4d0e38845e4a7cc3698b59304c6bc6668c28a4f65d1",
+    "fold_metrics.csv": "32b7b26b652d65493ac527645cb4b6dd3d41b50682841b49bdf4621506eaee82",
+    "cv_grid_metrics.csv": "afd8f10c30698bf437a4e5afbddd70b684cbeccf35deaaf9728dd4d32652d9b5",
+    "all_grid_fold_metrics.csv": "9026e205b0d50813e0b1cadd0d04c4254e208d991cb942c319b18d66029f669f",
+    "predictions.csv": "da061d450c6a4f5ea930d9e7db1ad667e8b5b6956b95ed3d83d06a1d40a8b1ed",
+    "subgroup_errors.csv": "97b61141b23aa81ea5bf88f2fb4f585bdadb47267ed6aa6ea8c7d2e8751077dc",
+    "large_errors.csv": "2b50c19bffe68557038437108b1c2d0384adb5fabb543b279e380a36d3f0adb1",
+    "paired_test_errors.csv": "a5b130982a511df2588305f242a7aa8a532ee18897b7b96c47a71f8124af4bd9",
+    "paired_comparison.json": "7564a8ad96e6a8311bc40c66c73447e671c65d17c0db2da9eefd307ac1085033"
+  }
+}

@@ -1,0 +1,19 @@
+component_id,normalized_manufacturer,normalized_model_name,base_models,vehicle_ids,years,edge_rule
+035ba8f849efcf25cab4,aston martin,vantage manual,vantage | vantage manual,42815 | 43215,2020 | 2021,literal_normalized_full_model_name_under_multiple_source_baseModels
+30f5f566d1e8ebc6a4bd,audi,rs 3,rs | rs 3,38966 | 41423 | 46638,2017 | 2019 | 2024,literal_normalized_full_model_name_under_multiple_source_baseModels
+30f5f566d1e8ebc6a4bd,audi,rs 5,rs | rs 5,39538 | 42772,2018 | 2021,literal_normalized_full_model_name_under_multiple_source_baseModels
+91ee0a0ae786062e2f92,audi,tt coupe quattro,tt | tt coupe,34664 | 43326,2015 | 2021,literal_normalized_full_model_name_under_multiple_source_baseModels
+91ee0a0ae786062e2f92,audi,tt roadster quattro,tt | tt roadster,36380 | 39031 | 44097,2016 | 2018 | 2022,literal_normalized_full_model_name_under_multiple_source_baseModels
+03918d5fbe492112f23b,audi,tts coupe,tts | tts coupe,41201 | 41988 | 43487,2019 | 2020 | 2021,literal_normalized_full_model_name_under_multiple_source_baseModels
+36a8f695fca5166c38f5,bentley,continental gt convertible,continental | continental gt convertible,34809 | 36280 | 36637 | 37709 | 38050 | 39590 | 41980 | 42407 | 42769 | 43172 | 45859,2015 | 2016 | 2017 | 2018 | 2020 | 2021 | 2023,literal_normalized_full_model_name_under_multiple_source_baseModels
+00fbb7f7d7e1975f7687,bmw,m850i xdrive convertible,8 series | m,43147 | 43805,2021 | 2022,literal_normalized_full_model_name_under_multiple_source_baseModels
+39a3cb0beb63b84a5d3b,fiat,500 l,500 | 500 l,35306 | 35307 | 35308 | 36853 | 36854 | 37778 | 39066 | 40419 | 41650,2015 | 2016 | 2017 | 2018 | 2019 | 2020,literal_normalized_full_model_name_under_multiple_source_baseModels
+3b0202a1a7312716f1e1,lexus,rc f,rc | rc f,37136 | 39815 | 40184 | 41453 | 46350 | 47322,2016 | 2018 | 2019 | 2020 | 2023 | 2024,literal_normalized_full_model_name_under_multiple_source_baseModels
+1861828bd1ce4a05494d,mini,jcw countryman all4,countryman | john cooper works,36670 | 36671 | 40025 | 40058 | 46502 | 47800,2016 | 2019 | 2024 | 2025,literal_normalized_full_model_name_under_multiple_source_baseModels
+9dd8a253c972561d0298,nissan,rogue sport awd,rogue | rogue sport,38649 | 42337,2017 | 2020,literal_normalized_full_model_name_under_multiple_source_baseModels
+f840b93b8eb5fb617697,roush performance,stage 3 mustang,mustang | stage 3 mustang,36835 | 36836 | 36886 | 36887 | 38193 | 38194 | 41002 | 41075 | 42318 | 42386,2015 | 2016 | 2017 | 2019 | 2020,literal_normalized_full_model_name_under_multiple_source_baseModels
+84a08efb295dfac65a05,subaru,impreza 4-door,impreza | impreza/outback sport,38329 | 38538 | 38876 | 38877 | 42007 | 42008 | 45436 | 45437,2017 | 2018 | 2020 | 2023,literal_normalized_full_model_name_under_multiple_source_baseModels
+84a08efb295dfac65a05,subaru,impreza 5-door,impreza | impreza/outback sport,38345 | 38540 | 38890 | 38891 | 42024 | 42025,2017 | 2018 | 2020,literal_normalized_full_model_name_under_multiple_source_baseModels
+84a08efb295dfac65a05,subaru,impreza sport 5-door,impreza | impreza/outback sport,38346 | 38541 | 40207 | 40208 | 44064 | 44065 | 45442 | 45443,2017 | 2019 | 2022 | 2023,literal_normalized_full_model_name_under_multiple_source_baseModels
+82f8c2010ed3efb57219,subaru,legacy awd,legacy | legacy/outback,36406 | 36407 | 37430 | 37451 | 40373 | 40374 | 46528 | 46529,2016 | 2017 | 2019 | 2024,literal_normalized_full_model_name_under_multiple_source_baseModels
+82f8c2010ed3efb57219,subaru,outback awd,legacy/outback | outback,35055 | 35056 | 36434 | 36435 | 37435 | 37466 | 38856 | 38857 | 40382 | 40383 | 42858 | 42859 | 46541 | 46542,2015 | 2016 | 2017 | 2018 | 2019 | 2021 | 2024,literal_normalized_full_model_name_under_multiple_source_baseModels

@@ -1,117 +1,79 @@
-# План проекта прогнозирования расхода топлива
+# План и структура завершенного проекта
 
-Цель Midterm — получить воспроизводимый ответ на вопрос о точности прогноза EPA combined fuel consumption по техническим характеристикам. Главный ближайший результат — собственный зафиксированный датасет и честное сравнение baseline с тремя подходящими моделями курса. Усложнение моделей, текст и приложение добавляются после этого.
+Группа **SE-2421**. Участники демонстрационного сценария: **Tsybus Nikita** и **Bakytzhan Kassymgali**. Название: **Predicting EPA Combined Fuel Consumption from Vehicle Specifications**. Направление — 8. New-car catalogues; задача — регрессия.
 
-Группа SE-2421. Команда: Tsybus Nikita, Bakytzhan Kassymgali. Рабочее английское название: **Predicting EPA Combined Fuel Consumption from Vehicle Specifications**.
+На 9 октября 2026 года завершены собственный API-сбор, очистка и независимый аудит, фиксированный grouped benchmark, Midterm, Endterm, Final text experiments и локальное приложение. Это демонстрация выполнения задания с помощью Codex: роли участников условные, исходные ответы API и результаты экспериментов реальные. Регистрация, выступление, pre-defense и Moodle submission не выполнялись; для демонстрации они N/A.
 
-## Состояние реализации, 9 октября 2026 года
+## Вопрос и границы данных
 
-Первая runnable version реализована: API и resumable collector, cleaner и audit reports, группировка/split/folds, семь safe structured features, четыре Midterm pipeline, CV/test evaluation и сохранение artifacts. Итоговый offline suite прошел без ошибок: 91 тест (47 cleaner, 36 API/collector, 8 modeling). Smoke notebook выполнен: 8 code cells без ошибок. Инструкции установки и работающие команды находятся в [RUNNING.md](RUNNING.md).
+Исследуем, насколько точно можно предсказать EPA-estimated combined fuel consumption в **L/100 km** по объему двигателя, числу цилиндров, коробке передач, приводу, классу, производителю и модельному году. Результат помогает сравнивать паспортные оценки расхода; он не обещает фактический расход при конкретной погоде, маршруте или стиле вождения.
 
-Ограниченный реальный example и его фактические scope/counts/results описаны в [examples/smoke/README.md](../examples/smoke/README.md). Основной benchmark минимум из 1 000 distinct valid rows, окончательный audit, полный Midterm и слайды еще не завершены. Smoke metrics относятся только к этому примеру. Endterm, Final text features и приложение остаются roadmap. Пользователь разрешил публикацию в публичный `Nikeka-git/epa-fuel-consumption-se2421`.
+Источник — индивидуальные записи [FuelEconomy.gov API](https://www.fueleconomy.gov/feg/ws/index.shtml), рынок США, модельные годы **2015–2025**. Scope включает бензиновые легковые автомобили, универсалы и SUV. Дизельные, альтернативные и двухтопливные версии, гибриды, включая mild hybrids, и неподходящие классы исключаются по [контракту](DATA_CONTRACT.md). Название направления относится к каталогу исходных конфигураций, а не к утверждению, что модели 2015 года сейчас продаются новыми.
 
-## Область исследования
+Собрано **4 500 raw vehicle records**; после **1 253 исключений** сохранено **3 247 различных пригодных конфигураций**, **49 производителей**, **12 классов**, все 11 лет. Удаленных подтвержденных дублей и нерешенных duplicate candidates нет. Минимум курса/пользователя 1 000 и желательная цель пользователя 3 000 достигнуты.
 
-Собираем каталог конфигураций рынка США за model years 2015–2025 включительно. Легковые автомобили включают универсалы; SUV включены. Пикапы, фургоны, минивэны и special-purpose vehicles исключены. Не включаем HEV, PHEV, mild hybrid, EV, diesel, FFV и другие альтернативные или двухтопливные варианты. Точные правила определены в DATA_CONTRACT.
+Сбор ограничен бюджетом и выполнялся seeded round-robin по всем запрошенным годам и доступным производителям. Первоначальный бюджет 6 000 уменьшен до 4 500 до split и основных fits; основание и фактические invocations сохранены в [collection provenance](../evidence/benchmark_collection_provenance.json). Snapshot имеет статус `partial`: это выборка с неодинаковыми вероятностями включения, не полный census и не распределение продаж. Семантически сомнительные SQ7/SQ8 явно quarantined, а пустые EPA technology labels не объявляются независимым доказательством отсутствия hybrid. Полный [предметный review](../reports/audit/benchmark_2015_2025_20261009/INDEPENDENT_REVIEW.md) сохраняет эти ограничения.
 
-Минимум пользователя и курса — 1 000 пригодных различных конфигураций. Рабочая цель — 3 000 и более, предпочтительно весь доступный объем, соответствующий правилам. Это план объема, а не подтвержденное количество. Не прекращать обход на первых 3 000 API ID: получится перекос по годам и маркам.
+## Завершенные этапы
 
-Пользователь результата — покупатель, сравнивающий паспортные оценки расхода автомобилей. Модель не обещает фактический расход на дорогах Казахстана, при определенном стиле вождения или в конкретную погоду. Название направления new-car catalogues относится к каталогам исходных конфигураций, а не к утверждению, что все модели 2015 года сейчас продаются новыми.
+| Этап | Выполненная работа | Проверяемый результат |
+| --- | --- | --- |
+| Требования | Guide, Midterm Rubric и лекции Weeks 3–4; различение требований курса, пользователя и решений проекта | [REQUIREMENTS.md](REQUIREMENTS.md); подтверждены Linear, KNN и Regression Tree |
+| Сбор | Собственный Python collector; individual requests, raw bytes, даты, hashes, retry/resume | [raw snapshot](../data/raw/benchmark_2015_2025_20261009/snapshot.json); 4 500 records, ноль failed attempts |
+| Очистка и аудит | Scope, типы, target, категории, powertrain review и target-free duplicate audit | [cleaned summary](../data/interim/cleaned_summary.json); 3 247 rows; [95-field dictionary](../data/interim/raw_field_dictionary.json) |
+| Freeze | Проверены 13 connected source-alias components; сохранены семейства, train/test и пять train folds | [split metadata](../data/splits/split_metadata.json); 389 groups, нулевые ID/group overlaps |
+| Midterm | Train EDA, Dummy/Linear/KNN/Tree, grouped CV, test и error analysis | [исполненный notebook](../notebooks/01_midterm.ipynb), [report](../reports/midterm/midterm_v1/report.md), четыре PNG и восемь слайдов |
+| Endterm | Nested grouped ensemble tuning, MLP, train-fitted PCA/KMeans | [metrics](../reports/tables/endterm_v1/metrics.csv); сохраненные модели и segments |
+| Final | Четыре контролируемых Ridge/TF-IDF arms, paired test comparison, приложение | [metrics](../reports/tables/final_v1/metrics.csv); [Streamlit app](../app/streamlit_app.py) |
+| Итоговая передача | Общий отчет, данные, pipelines, evidence, инструкции и условные роли | [общий отчет](../reports/project_v1/RESULTS.md), [HANDOFF.md](HANDOFF.md), [CONTRIBUTIONS.md](CONTRIBUTIONS.md) |
 
-## Проверяемые гипотезы
+Отдельные Endterm/Final briefs и полный syllabus Weeks 5–8 не предоставлены. Эти этапы реализуют программу Guide и предложение пользователя; соответствие неизвестной отдельной рубрике не утверждается. В реальном курсе Midterm приходится на Week 5, Endterm на Week 9, обязательный неоцениваемый pre-defense на Week 10, Final — после Week 10. Конкретная календарная дата защиты неизвестна.
 
-1. Характеристики двигателя, коробки и привода дают более полезный прогноз, чем константа DummyRegressor.
-2. Нелинейные зависимости могут объясняться лучше деревьями и ансамблями, чем линейной моделью.
-3. Ошибки могут отличаться между классами и объемами двигателя из-за покрытия данных и отсутствующих характеристик.
-4. На Final исходные model names и доступный engine text могут добавить информацию, которой нет в семи базовых признаках.
+## Зафиксированный протокол
 
-Гипотезы проверяются результатами. Улучшение MAE, конкретный порог MAE или превосходство нейросети заранее не обещаются.
+Target: `235.2145833333333 / comb08`, без imputation или построчной подмены на `comb08U`. Structured X содержит ровно семь указанных технических признаков; fuel economy, fuel costs, emissions, efficiency scores, ID, даты и grouping fields не входят в X.
 
-## Этапы и результаты
+Одна неизменная выборка и один split используются во всех трех этапах. Group definition — нормализованные manufacturer/baseModel с проверенным source alias map, через годы. После alias review **389 групп**: **2 628 train rows / 311 groups**, **619 test rows / 78 groups**. GroupShuffleSplit: seed 42, 20% групп; на train — пять GroupKFold folds. Препроцессинг и подбор обучаются только внутри соответствующих training folds. Полный [протокол](EXPERIMENT_PROTOCOL.md) и manifests задают порядок проверки.
 
-| Этап | Работа | Проверяемый результат |
-|---|---|---|
-| Подготовка | Сверить syllabus, собрать evidence источника, проверить API | Контракт и parser tests по реальным fixtures |
-| Сбор | Menu traversal и individual vehicle requests, cache, resume | Raw snapshot, manifest, код и реальные даты |
-| Подготовка данных | Фильтры, типы, duplicate audit, data card | Не менее 1 000 строк; желательно не менее 3 000 |
-| Freeze | Зафиксировать schema, dataset hash, семейства, train/test и CV folds | Манифест ID и проверка отсутствия пересечений |
-| Midterm, Week 5 | EDA, dummy и 3 модели Weeks 3–4, group CV, test reporting | Исполненный notebook, метрики, ошибки, выводы и слайды |
-| Endterm, Week 9 | Tuning ансамблей, clustering/PCA, neural network | Сравнение на тех же строках и test split |
-| Pre-defense, Week 10 | Черновик отчета, окончательные результаты, демонстрация | Список замечаний и исправлений; этап обязателен по Guide |
-| Final, после Week 10 | Text ablations, локальное приложение, итоговый отчет | Честная оценка вклада текста и воспроизводимая демонстрация |
+Модели выбираются по training CV до test prediction. Midterm CV оценивает фиксированные модели; Endterm outer CV — inner-search procedure каждого семейства, но последующий выбор семейства добавляет optimism. Final CV выбирает alpha и text arm и является selection CV. Разные роли CV не выдаются за одинаковые независимые оценки. Test повторно используется для сравнений этапов, а не для изменения параметров, seed, aliases или scope.
 
-Точная дата защиты неизвестна. По Guide оба участника сдают одинаковые файлы до 23:59 дня перед защитой. Endterm и Final briefs пока не предоставлены: уточнить детали, когда они появятся.
+## Фактические результаты
 
-## Архитектура реализации
+| Этап | Выбрано по CV | CV MAE | Test MAE, L/100 km | Вывод |
+| --- | --- | ---: | ---: | --- |
+| Midterm | Linear Regression | 0.8134 | 0.7138 | Dummy test MAE 2.5970; прогноз полезнее константы |
+| Endterm | Random Forest | 0.7402 | 0.7543 | Выбранный ансамбль не улучшил test MAE выбранной Midterm модели |
+| Final | Structured + engine text, Ridge | 0.7888 | 0.7195 | Выбранный text arm хуже paired structured Ridge: 0.7046 |
 
-Поток данных: **API → неизменяемые raw ответы → нормализованная таблица → фильтрация и аудит → фиксированные данные и split → train CV → test report → сохраненный pipeline → приложение**.
+Extra Trees имеет test MAE **0.6900**, но не был CV winner; MLP — **0.7581**, 164 iterations, ноль зарегистрированных training/convergence warnings. Эти test числа не использованы для замены выбранного алгоритма. На Final model-name arm дает описательный test MAE **0.6966** и оба текста **0.7006**; это также не основание выбрать их после просмотра test. Улучшение всех ансамблей или всех текстовых вариантов не заявляется.
 
-Ноутбук вызывает функции модулей; не дублирует внутри все правила очистки. Обучение работает offline из snapshot. Сетевой сбор не запускается при Restart and Run All.
+PCA обучена на train structured representation с масштабированными числами и one-hot категориями: **49 components** для заданного порога retained variance. KMeans выбрал **k=2**, training silhouette **0.2544**, без target в fit/selection. Кластеры — описательный анализ структуры, не доказательство качества регрессии или причинных сегментов.
 
-| Модуль | Ответственность | Выход |
-|---|---|---|
-| `src/fuel_consumption/api.py` | HTTP, URL encoding, parse menu, atomic cache, retry | Raw bytes и request metadata |
-| `collect.py` | Обход 11 лет и очереди уникальных IDs, resume | Snapshot manifest и inventory |
-| `clean.py` | Alias mapping, типы, inclusion, reason codes, target | vehicles.parquet и отчеты исключений |
-| `split.py` | Group labels, фиксированные train/test и folds | split manifest и hashes |
-| `features.py` | Strict structured allowlist и ColumnTransformer; text sanitizer предстоит на Final | Train-fitted preprocessing pipeline |
-| `train.py` | Dummy и разрешенные модели, CV, fit, save | Pipelines и train OOF predictions |
-| `evaluate.py` | MAE, RMSE, R², группы, реальные примеры | metrics и predictions tables |
-| `text.py` | Final text assembly и TF-IDF внутри pipeline | Сопоставимые ablations |
-| `app/streamlit_app.py` | Проверка входов и вызов сохраненного pipeline | Локальное предсказание в L/100 km |
+## Архитектура и структура файлов
 
-Модули `api`, `collect`, `clean`, `split`, `features`, `train` и `evaluate` реализованы. `text.py` и приложение относятся к будущему Final. Генератор `scripts/build_notebook.py` создает offline notebook для заданных dataset/split; обучение в notebook выполняется во временной папке. Подробные команды и paths находятся в RUNNING.
+Поток: **API → immutable raw и provenance → scope/cleaning/audit → frozen dataset/split → train CV → test tables → saved pipeline → local app**. Offline notebook читает сохраненные main результаты; при его выполнении сетевой сбор и повторный fit не запускаются.
 
-## Midterm
+| Компонент | Ответственность | Выход |
+| --- | --- | --- |
+| `api.py`, `collect.py` | Bounded HTTP workers, глобальный rate interval, retry/Retry-After, single writer, atomic cache и resume | `data/raw/<snapshot>/` |
+| `clean.py`, `powertrain.py` | Типы, фильтры, target, supplementary rules, полный audit | `data/interim/`, `data/processed/` |
+| `split.py` | Проверенные aliases, group mapping, train/test, folds и hashes | `data/splits/` |
+| `features.py`, `train.py`, `evaluate.py` | Strict structured allowlist, fold-local pipelines, Midterm и error tables | `models/midterm_v1/`, `reports/tables/midterm_v1/` |
+| `endterm.py`, `segments.py` | Nested grouped tuning, MLP, PCA и KMeans | `models/endterm_v1/`, Endterm tables |
+| `text.py`, `final.py` | Target-neutral sanitizer, fixed word 1–2 TF-IDF budget, Ridge ablations | `models/final_v1/`, Final tables |
+| `predict.py`, `app/streamlit_app.py` | Hash-checked fitted model, input validation и согласованный powertrain scope | Local prediction в L/100 km |
+| `scripts/`, `notebooks/`, `reports/` | Проверяемые отчеты и презентация из сохраненных artifacts | Notebook, CSV/JSON, PNG, PPTX и Markdown |
 
-Проверка источника, pilot schema и реализация collection уже выполнены. Далее довести собственный collection до достаточного объема, выполнить category/duplicate/family audit, зафиксировать правила и основной split. Для полноценного исследования построить на train не менее трех содержательных EDA-графиков, где интерпретация ведет к решению. Ограниченный example помогает проверить выполнение этих шагов, но не заменяет основной benchmark.
+## Проверки и ограничения передачи
 
-Набор Midterm: DummyRegressor с медианой, LinearRegression, KNeighborsRegressor и DecisionTreeRegressor. Три алгоритма подтверждены предоставленными лекциями Weeks 3–4; ссылки и страницы указаны в EXPERIMENT_PROTOCOL. Для каждого объяснить роль, preprocessing и основные параметры. Основной критерий — MAE в L/100 km; RMSE и R² дополняют оценку.
+Полный offline suite: **213 passed за 59.30 s**, [запись реального выполнения и source hashes](../evidence/offline_test_results.json). Main notebook выполнен: **12 code cells, ноль errors**; report содержит четыре PNG. Слайды имеют восемь страниц, speaker notes, portable package/layout/font-policy evidence и [индивидуальный PNG review](../reports/slides/midterm_v1.visual_review.json). Native PowerPoint opening и native font rendering не проверялись. Timing в notes — план, не замеренная репетиция.
 
-Сравнение включает одинаковые CV folds, одинаковый test, таблицу CV mean/std и test scores. Ошибки изучаются по классам, объемам двигателя и на реальных трудных примерах. Подробный протокол находится в EXPERIMENT_PROTOCOL.
+Main app функционально проверено [Streamlit AppTest](../evidence/app_functional_qa.json); отдельный [browser review](../evidence/app_browser_visual_qa.json) проверил читаемость/scrolling при viewport 525×530. Приложение загружает CV-selected `structured_engine`, принимает семь specifications и доступный текст, проверяет scope и возвращает L/100 km. Оно не переобучает модель при запуске и не заявляется глобально лучшей архитектурой.
 
-## Endterm
+Из 95 raw fields семь encoding meanings остаются честно unconfirmed и исключены из predictors. Все семь X заполнены; engine description отсутствует у **777** строк, которые сохраняются в text comparison. Rounded source MPG, неполные powertrain labels, неравное покрытие и редкие группы ограничивают выводы. Роли людей условны; фактическую автоматизацию и проверки выполнил Codex. Исходный DOCX изучен по OOXML text/tables, но visual rendering не выполнен из-за отсутствия bundled LibreOffice. Сохранены source-policy responses; автоматическая загрузка robots.txt не удалась, предшествующая проверка заявлена пользователем.
 
-Это предварительная программа на основе Guide и Rubric, которую нужно согласовать с новым brief и привязать к фактическим ошибкам Midterm.
+## Продолжение работы
 
-- **Ансамбли и tuning.** RandomForestRegressor и один подходящий boosting model из syllabus. Начальный ограниченный поиск параметров на grouped train CV. Если обычное дерево переобучается, проверить усреднение деревьев; если систематически пропускает нелинейности — boosting. Это условные мотивировки до появления результатов.
-- **Clustering.** KMeans на небольшом интерпретируемом наборе масштабированных технических характеристик. Кластеры описать через состав, размер и особенности. Target не входит в fit; после fit можно использовать train target для описания, явно как post-hoc анализ.
-- **PCA.** Показать explained variance и проекции числовых характеристик; масштабирование и PCA fit только на train. Это анализ структуры, а не гарантированный способ улучшить прогноз. PCA по трем числовым признакам допустима, но ее ограниченность нужно объяснить. Дополнительные технические признаки вводятся отдельным вариантом после проверки доступности и утечек.
-- **Нейросеть.** Небольшой MLPRegressor, несколько заранее заданных архитектур и регуляризация. Validation/early stopping учитывают группы. Сравнить MAE, стабильность и стоимость обучения; не считать neural network автоматически лучшей моделью.
+Следующая модель может воспроизвести pipeline offline по [RUNNING.md](RUNNING.md), проверить [общий отчет](../reports/project_v1/RESULTS.md) и изучить subgroup errors. Для нового эксперимента нужна отдельная версия/run с заранее заданным train-only protocol; нельзя перезаписывать frozen benchmark или подбирать решения по уже опубликованному test. Новый доступный course brief следует сопоставить с [матрицей требований](REQUIREMENTS.md).
 
-Для tuning использовать nested grouped CV, если нужен честный CV score tuned procedure. Более дешевый selection-CV score маркировать соответствующим образом и не выдавать за независимую оценку. Test не участвует в подборе.
-
-## Final
-
-Сохраняем ту же выборку и ID test. Сравниваем structured-only, structured + model text, structured + engine text, structured + оба текста. Пустые engine descriptions остаются пустыми строками, а не поводом удалить наблюдения. Не генерируем описания с помощью LLM вместо исходного текста.
-
-Начальный текстовый метод — word/character TF-IDF плюс Ridge в sklearn Pipeline. Провести контролируемое сравнение одного семейства моделей с текстом и без; отдельно сопоставить с лучшей structured моделью Endterm. Так можно различить эффект текста и эффект смены алгоритма. Engine text сначала проходит аудит утечек, включая GUZZLER и явные значения расхода.
-
-Приложение Streamlit работает локально и принимает только признаки inference: model year, displacement, cylinders, transmission, drivetrain, class, manufacturer и доступный текст. Загружает весь fitted pipeline, не обучается при запуске. Показывает L/100 km и область применимости EPA. Если текст не введен, принимает пустую строку или использует заранее оцененный structured fallback. Не рисовать доверительный интервал без отдельной калибровки.
-
-## Организация команды
-
-Предлагаемое распределение, еще не запись выполненного вклада:
-
-| Участник | Основная зона | Взаимная проверка |
-|---|---|---|
-| Tsybus Nikita | Collector, raw evidence, schema, reproducibility | Разобраться в CV, метриках и моделях |
-| Bakytzhan Kassymgali | EDA, pipeline, модели, таблицы ошибок | Проверить source, фильтры и target |
-| Оба | Выводы, слайды, защита, решения после ошибок | Каждый объясняет весь проект |
-
-Фактические действия и AI assistance записывать по мере выполнения в CONTRIBUTIONS. Веса rubric и индивидуальная часть защиты приведены в REQUIREMENTS.
-
-## Риски и реакции
-
-| Риск | Действие |
-|---|---|
-| После фильтрации менее 1 000 строк | Проверить полноту обхода и ошибки; не добавлять запрещенные powertrains ради объема |
-| Долгий API сбор или 429/5xx | Один worker, пауза, retry policy, resume; объем времени оценивать после pilot |
-| Гибриды проходят fuel filter | Проверять atvType, evMotor, fuelType2, phevBlended и текстовые сигналы |
-| Похожие комплектации в train и test | Group split по make и семейству, duplicate audit до freeze |
-| Малое количество длинного engine text | Сохранить model names, показать покрытие; не обещать большой text gain |
-| Test уже просмотрен на Midterm | Выбор новых решений по train OOF/CV; честно назвать test повторно используемым benchmark |
-| Расширение данных между этапами | Основную benchmark-версию оставить неизменной; расширенную оценивать отдельно |
-| Несовпадение курса и предложенных моделей | Список Midterm подтвержден лекциями; следующие темы сверить с Weeks 5–8 |
-
-Следующее практическое задание — использовать готовый collector для полного snapshot 2015–2025, получить минимум 1 000 пригодных distinct rows, желательно 3 000 и более, выполнить аудит и отдельно зафиксировать основной benchmark. После этого провести полноценный Midterm и подготовить материалы сдачи. Полный порядок и текущее состояние P0–P6 находятся в HANDOFF.
+В демонстрационном распределении Nikita завершает data/collection часть, Bakytzhan — modeling, analysis, presentation и app. Это назначение ролей, а не утверждение личного авторства AI-generated code. Реальная регистрация, live defense, индивидуальные ответы и Moodle upload остаются N/A для этого сценария.

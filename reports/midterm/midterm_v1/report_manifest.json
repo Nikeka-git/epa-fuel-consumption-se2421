@@ -1,0 +1,18 @@
+{
+  "run_id": "midterm_v1",
+  "dataset_sha256": "f9152b6d24577b2abeb5c149fd5a247a49d9c098c7d0dd50202ed8d1ad652739",
+  "split_sha256": "8ad5db3c3f606ef862fdbf8c72c215da93a8ec786ac208351370f8180352b9df",
+  "selected_model": "linear",
+  "retrained": false,
+  "development_small_dataset": false,
+  "artifacts_sha256": {
+    "metrics.csv": "d79d810c36f6db6c8c0863109e2be386468656334d35178d88098782e2f89f5b",
+    "report.md": "fb7ea613afd57c7123cd7e22758247614bda2557f0daf59ef098cfd71de9fe7a",
+    "selected_large_errors.csv": "86f1ce395dc9c3bb92c1013c8bd4327e99ffd3f7ac1e2536b83908699b4fdb4c",
+    "subgroup_errors.csv": "b12810cbe9a8c4b76000e55e6409225b3d6f42170bd059ea51099ffb537b45a2",
+    "figures/01_train_target.png": "0b20adf4e8ae915d244c98e2bb93c82ab769293564fd459341bc7b1d53460059",
+    "figures/02_train_displacement.png": "50fb73465a560060b3f107de7bd98787dd861b75e5a471e7a03fcb44f43a5a6e",
+    "figures/03_train_classes.png": "8a4c5dc5170e85a9f55328499ae6fc0c0feb56085bf2e3a1d8b1ad4756a9b89d",
+    "figures/04_residuals.png": "832fb1cfae6787898efe20a152cc3ebe19a7ba25f8f0ff96a564d9d446437740"
+  }
+}

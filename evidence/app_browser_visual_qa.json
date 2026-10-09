@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-09",
+  "reviewer": "Codex (AI visual review)",
+  "url": "http://127.0.0.1:8501/",
+  "run": "final_v1",
+  "selected_model": "structured_engine",
+  "method": "Codex in-app browser through cua_repl; accessibility state, screenshots and browser error logs",
+  "observed_viewport_pixels": [525, 530],
+  "inspected_views": ["heading and first fields", "engine, transmission, drivetrain and class fields", "model designation, optional engine description, scope checkbox and submit button"],
+  "findings": "Labels and controls readable, responsive fields stack without overlap, all fields reachable by scrolling.",
+  "browser_error_log_entries": [],
+  "prediction_testing": "Separate actual AppTest receipt: evidence/app_functional_qa.json",
+  "limitations": ["Screenshots were visually inspected in tool output; no screenshot file archive is claimed.", "This visual review covered the observed narrow panel, not every desktop or mobile size."],
+  "tab_left_open_as_deliverable": true
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "midterm_v1",
+  "selected_model": "linear",
+  "selected_at_utc": "2026-10-09T02:21:52.705913+00:00",
+  "selection_source": "train_group_cv",
+  "protocol": "minimum five-fold mean MAE; exact ties use std then fixed model order",
+  "test_evaluation_started": false,
+  "cv_results": [
+    {
+      "model": "dummy",
+      "cv_mae_mean": 2.2087597050946988,
+      "cv_mae_std": 0.30470545001199906,
+      "cv_fit_seconds": 0.25995100000000093
+    },
+    {
+      "model": "linear",
+      "cv_mae_mean": 0.8134062944141384,
+      "cv_mae_std": 0.11998511413101624,
+      "cv_fit_seconds": 0.328633400000399
+    },
+    {
+      "model": "knn",
+      "cv_mae_mean": 0.9142856998508346,
+      "cv_mae_std": 0.06974507219079182,
+      "cv_fit_seconds": 0.22537320000083128
+    },
+    {
+      "model": "tree",
+      "cv_mae_mean": 0.8924253889934386,
+      "cv_mae_std": 0.06139366869563639,
+      "cv_fit_seconds": 0.23891270000240183
+    }
+  ]
+}

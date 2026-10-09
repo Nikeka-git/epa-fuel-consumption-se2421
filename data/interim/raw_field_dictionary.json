@@ -1,0 +1,1428 @@
+{
+  "UCity": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unadjusted city MPG for fuelType1; see the description of the EPA test procedures",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "UCity"
+  },
+  "UCityA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unadjusted city MPG for fuelType2; see the description of the EPA test procedures",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "UCityA"
+  },
+  "UHighway": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unadjusted highway MPG for fuelType1; see the description of the EPA test procedures",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "UHighway"
+  },
+  "UHighwayA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unadjusted highway MPG for fuelType2; see the description of the EPA test procedures",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "UHighwayA"
+  },
+  "VClass": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA vehicle size class",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "vehicle_class",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "VClass"
+  },
+  "atvType": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 3516,
+    "description": "type of alternative fuel or advanced technology vehicle",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "atv_type",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "atvtype"
+  },
+  "barrels08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "annual petroleum consumption in barrels for fuelType1 (1)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "barrels08"
+  },
+  "barrelsA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "annual petroleum consumption in barrels for fuelType2 (1)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "barrelsA08"
+  },
+  "baseModel": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "base model name",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "base_model",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "basemodel"
+  },
+  "battery": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "Battery-related source field. Its exact meaning and encoding are absent from the captured guide; retained without interpretation and excluded from inputs.",
+    "meaning_review_status": "undocumented_source_encoding",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "battery"
+  },
+  "c240Dscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4409,
+    "description": "electric vehicle charger description",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "c240Dscr"
+  },
+  "c240bDscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4413,
+    "description": "electric vehicle alternate charger description",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "c240bDscr"
+  },
+  "charge120": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "time to charge an electric vehicle in hours at 120 V",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "charge120"
+  },
+  "charge240": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "time to charge an electric vehicle in hours at 240 V",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "charge240"
+  },
+  "charge240b": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "time to charge an electric vehicle in hours at 240 V using the alternate charger",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "charge240b"
+  },
+  "city08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "city MPG for fuelType1 (2), (11)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "city08"
+  },
+  "city08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded city MPG for fuelType1 (2), (3)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "city08U"
+  },
+  "cityA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "city MPG for fuelType2 (2)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityA08"
+  },
+  "cityA08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded city MPG for fuelType2 (2), (3)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityA08U"
+  },
+  "cityCD": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "city gasoline consumption (gallons/100 miles) in charge depleting mode (4)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityCD"
+  },
+  "cityE": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "city electricity consumption in kWh/100 miles",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityE"
+  },
+  "cityMpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "city miles per kilogram for hydrogen",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityMpk"
+  },
+  "cityUF": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA city utility factor (share of electricity) for PHEV",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityUF"
+  },
+  "cityUmpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded city miles per kilogram for hydrogen",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cityUmpk"
+  },
+  "co2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "tailpipe CO2 in grams/mile for fuelType1 (5)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "co2"
+  },
+  "co2A": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "tailpipe CO2 in grams/mile for fuelType2 (5)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "co2A"
+  },
+  "co2TailpipeAGpm": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "tailpipe CO2 in grams/mile for fuelType2 (5)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "co2TailpipeAGpm"
+  },
+  "co2TailpipeGpm": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "tailpipe CO2 in grams/mile for fuelType1 (5)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "co2TailpipeGpm"
+  },
+  "comb08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "combined MPG for fuelType1 (2), (11)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "combined_mpg",
+    "disposition": "target_or_target_audit_only",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "comb08"
+  },
+  "comb08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded combined MPG for fuelType1 (2), (3)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "combined_mpg_unrounded",
+    "disposition": "target_or_target_audit_only",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "comb08U"
+  },
+  "combA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "combined MPG for fuelType2 (2)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combA08"
+  },
+  "combA08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded combined MPG for fuelType2 (2), (3)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combA08U"
+  },
+  "combE": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "combined electricity consumption in kWh/100 miles",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combE"
+  },
+  "combMpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "combined miles per kilogram for hydrogen",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combMpk"
+  },
+  "combUmpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded combined miles per kilogram for hydrogen",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combUmpk"
+  },
+  "combinedCD": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "combined gasoline consumption (gallons/100 miles) in charge depleting mode (4)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combinedCD"
+  },
+  "combinedUF": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA combined utility factor (share of electricity) for PHEV",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "combinedUF"
+  },
+  "createdOn": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "date the vehicle record was created",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "createdOn"
+  },
+  "cylDeact": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 396,
+    "description": "Cylinder-deactivation source code inferred from the field name; exact code mapping is not documented in the captured API guide.",
+    "meaning_review_status": "field_name_inference_encoding_unconfirmed",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cylDeact"
+  },
+  "cylDeactYesNo": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "Human-readable cylinder-deactivation indicator inferred from the field name; not used for eligibility or prediction.",
+    "meaning_review_status": "field_name_inference_encoding_unconfirmed",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cylDeactYesNo"
+  },
+  "cylinders": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 397,
+    "description": "engine cylinders",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "cylinders",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "cylinders"
+  },
+  "displ": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 396,
+    "description": "engine displacement in liters",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "displacement_l",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "displ"
+  },
+  "drive": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "drive axle type",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "drivetrain",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "drive"
+  },
+  "emissionsList": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "dict": 4417,
+      "NoneType": 83
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 83,
+    "description": "Nested emissions records linked to this vehicle; see the emissions section of the API guide.",
+    "meaning_review_status": "documented_source_structure",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "emissionsList"
+  },
+  "engId": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA model type index",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "engine_id",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "engId"
+  },
+  "eng_dscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 1381,
+    "description": "engine descriptor; see http://www.fueleconomy.gov/feg/findacarhelp.shtml#engine",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "engine_description",
+    "disposition": "preserve_original_text_for_final_sanitization",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "eng_dscr"
+  },
+  "evMotor": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 3691,
+    "description": "Electric-motor source description. The guide labels it as kW, but actual responses can contain free-form power, voltage and battery text; preserve it as a string.",
+    "meaning_review_status": "documented_and_observed_type_review",
+    "internal_field": "electric_motor",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "evMotor"
+  },
+  "feScore": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA Fuel Economy Score (-1 = Not available)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "feScore"
+  },
+  "fuelCost08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "annual fuel cost for fuelType1 ($) (7)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "fuelCost08"
+  },
+  "fuelCostA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "annual fuel cost for fuelType2 ($) (7)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "fuelCostA08"
+  },
+  "fuelType": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "fuel type with fuelType1 and fuelType2 (if applicable)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "fuelType"
+  },
+  "fuelType1": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 1,
+    "description": "fuel type 1. For single fuel vehicles, this will be the only fuel. For dual fuel vehicles, this will be the conventional fuel.",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "fuel_type_primary",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "fuelType1"
+  },
+  "fuelType2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4275,
+    "description": "fuel type 2. For dual fuel vehicles, this will be the alternative fuel (e.g., E85, Electricity, CNG, LPG). For single fuel vehicles, this field is not used",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "fuel_type_secondary",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "fuelType2"
+  },
+  "ghgScore": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA GHG score (-1 = Not available)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "ghgScore"
+  },
+  "ghgScoreA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA GHG score for dual fuel vehicle running on the alternative fuel (-1 = Not available)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "ghgScoreA"
+  },
+  "guzzler": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4087,
+    "description": "if G or T, this vehicle is subject to the gas guzzler tax",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "guzzler"
+  },
+  "highway08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "highway MPG for fuelType1 (2), (11)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highway08"
+  },
+  "highway08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded highway MPG for fuelType1 (2), (3)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highway08U"
+  },
+  "highwayA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "highway MPG for fuelType2 (2)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayA08"
+  },
+  "highwayA08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded highway MPG for fuelType2 (2),(3)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayA08U"
+  },
+  "highwayCD": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "highway gasoline consumption (gallons/100 miles) in charge depleting mode (4)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayCD"
+  },
+  "highwayE": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "highway electricity consumption in kWh/100 miles",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayE"
+  },
+  "highwayMpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "highway miles per kilogram for hydrogen",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayMpk"
+  },
+  "highwayUF": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA highway utility factor (share of electricity) for PHEV",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayUF"
+  },
+  "highwayUmpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "unrounded highway miles per kilogram for hydrogen",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "highwayUmpk"
+  },
+  "hlv": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "hatchback luggage volume (cubic feet) (8)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "hlv"
+  },
+  "hpv": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "hatchback passenger volume (cubic feet) (8)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "hpv"
+  },
+  "id": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "vehicle record id",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "vehicle_id",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "id"
+  },
+  "lv2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "2-door luggage volume (cubic feet) (8)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "lv2"
+  },
+  "lv4": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "4-door luggage volume (cubic feet) (8)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "lv4"
+  },
+  "make": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "manufacturer (division)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "manufacturer",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "make"
+  },
+  "mfrCode": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "3-character manufacturer code",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "mfrCode"
+  },
+  "model": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "model name (carline)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "model_name",
+    "disposition": "preserve_original_text_for_final_sanitization",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "model"
+  },
+  "modifiedOn": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "date the vehicle record was last modified",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "modifiedOn"
+  },
+  "mpgData": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "has My MPG data; see yourMpgVehicle and yourMpgDriverVehicle",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "mpgData"
+  },
+  "mpgRevised": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "Source flag apparently indicating revised MPG estimates; exact field encoding is absent from the captured guide. Not a predictor.",
+    "meaning_review_status": "field_name_inference_encoding_unconfirmed",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "mpgRevised"
+  },
+  "phevBlended": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "if true, this vehicle operates on a blend of gasoline and electricity in charge depleting mode",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "phev_blended",
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "phevBlended"
+  },
+  "phevCity": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA composite gasoline-electricity city MPGe for plug-in hybrid vehicles",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "phevCity"
+  },
+  "phevComb": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA composite gasoline-electricity combined city-highway MPGe for plug-in hybrid vehicles",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "phevComb"
+  },
+  "phevHwy": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA composite gasoline-electricity highway MPGe for plug-in hybrid vehicles",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "phevHwy"
+  },
+  "pv2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "2-door passenger volume (cubic feet) (8)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "pv2"
+  },
+  "pv4": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "4-door passenger volume (cubic feet) (8)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "pv4"
+  },
+  "range": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "Driving-range source field for the primary fuel. Exact encoding and units are not defined for this key in the captured API guide; excluded from inputs.",
+    "meaning_review_status": "undocumented_source_encoding",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "range"
+  },
+  "rangeA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4274,
+    "description": "EPA range for fuelType2",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "rangeA"
+  },
+  "rangeCity": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "City driving-range source field for the primary fuel. Exact encoding and units are not defined for this key in the captured guide; excluded from inputs.",
+    "meaning_review_status": "undocumented_source_encoding",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "rangeCity"
+  },
+  "rangeCityA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA city range for fuelType2",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "rangeCityA"
+  },
+  "rangeHwy": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "Highway driving-range source field for the primary fuel. Exact encoding and units are not defined for this key in the captured guide; excluded from inputs.",
+    "meaning_review_status": "undocumented_source_encoding",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "rangeHwy"
+  },
+  "rangeHwyA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "EPA highway range for fuelType2",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "rangeHwyA"
+  },
+  "sCharger": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4260,
+    "description": "if S, this vehicle is supercharged",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "sCharger"
+  },
+  "startStop": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "vehicle has stop-start technology (Y, N, or blank for older vehicles)",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "startStop"
+  },
+  "tCharger": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 2330,
+    "description": "if T, this vehicle is turbocharged",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "tCharger"
+  },
+  "trans_dscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 4500,
+    "description": "transmission descriptor; see http://www.fueleconomy.gov/feg/findacarhelp.shtml#trany",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "trans_dscr"
+  },
+  "trany": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "transmission",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "transmission",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "trany"
+  },
+  "year": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "model year",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": "model_year",
+    "disposition": "structured_predictor",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "year"
+  },
+  "youSaveSpend": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 4500
+    },
+    "present_count": 4500,
+    "missing_or_empty_count": 0,
+    "description": "you save/spend over 5 years compared to an average car ($). Savings are positive; a greater amount spent yields a negative number. For dual fuel vehicles, this is the cost savings for gasoline",
+    "meaning_review_status": "documented_official_api_guide",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output",
+    "description_source": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "description_source_sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d",
+    "documented_key": "youSaveSpend"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "fields": 95,
+  "review_status_counts": {
+    "documented_official_api_guide": 86,
+    "undocumented_source_encoding": 4,
+    "field_name_inference_encoding_unconfirmed": 3,
+    "documented_source_structure": 1,
+    "documented_and_observed_type_review": 1
+  },
+  "unconfirmed_keys": [
+    "battery",
+    "cylDeact",
+    "cylDeactYesNo",
+    "mpgRevised",
+    "range",
+    "rangeCity",
+    "rangeHwy"
+  ],
+  "unconfirmed_inputs": []
+}
