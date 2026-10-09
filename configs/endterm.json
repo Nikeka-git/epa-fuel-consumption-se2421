@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "stage": "endterm",
+  "context": "Demonstration of the proposed later ML stages; separate Endterm course brief was not supplied.",
+  "evaluation": {
+    "method": "nested_group_cv",
+    "outer_folds": "reuse_frozen_train_cv_folds",
+    "inner_n_splits": 5,
+    "max_candidates_per_model": 12,
+    "family_selection": "minimum_outer_cv_mae_mean_then_std_then_model_order",
+    "parameter_selection": "minimum_inner_cv_mae_mean_then_std_then_candidate_order",
+    "test_used_for_selection": false
+  },
+  "models": {
+    "random_forest": {
+      "class": "RandomForestRegressor",
+      "params": {"n_estimators": 120, "criterion": "squared_error", "max_features": 0.8, "random_state": 42, "n_jobs": 1},
+      "candidates": [
+        {"max_depth": 12, "min_samples_leaf": 1},
+        {"max_depth": 12, "min_samples_leaf": 3},
+        {"max_depth": null, "min_samples_leaf": 1},
+        {"max_depth": null, "min_samples_leaf": 3}
+      ]
+    },
+    "extra_trees": {
+      "class": "ExtraTreesRegressor",
+      "params": {"n_estimators": 120, "criterion": "squared_error", "max_features": 1.0, "bootstrap": false, "random_state": 42, "n_jobs": 1},
+      "candidates": [
+        {"max_depth": 12, "min_samples_leaf": 1},
+        {"max_depth": 12, "min_samples_leaf": 3},
+        {"max_depth": null, "min_samples_leaf": 1},
+        {"max_depth": null, "min_samples_leaf": 3}
+      ]
+    },
+    "mlp": {
+      "class": "MLPRegressor",
+      "target_transform": "train_fold_standard_scaler",
+      "params": {"activation": "relu", "solver": "adam", "batch_size": 128, "learning_rate_init": 0.005, "max_iter": 300, "n_iter_no_change": 25, "tol": 0.0001, "early_stopping": false, "random_state": 42},
+      "candidates": [
+        {"hidden_layer_sizes": [64], "alpha": 0.001},
+        {"hidden_layer_sizes": [64, 32], "alpha": 0.01}
+      ]
+    }
+  },
+  "segments": {
+    "pca_retained_variance": 0.95,
+    "min_k": 2,
+    "max_k": 6,
+    "silhouette_sample_size": 1000,
+    "n_init": 10,
+    "random_state": 42,
+    "selection_source": "training_silhouette_without_target",
+    "space": "train_fitted_pca_of_structured_features"
+  },
+  "documentation": {
+    "nested_cv_note": "Per-family outer CV estimates its train-only tuning procedure. Choosing a family from outer CV adds selection optimism; the winning score is not unbiased for complete family selection. Full-train winning search CV is labelled selection CV.",
+    "mlp_note": "No random row validation split: early_stopping=false; all target scaling fits inside its training fold. Convergence warnings are retained.",
+    "segments_note": "PCA and KMeans fit only training X. Target and vehicle-class summaries are descriptive after k selection and do not establish causal or market segments."
+  },
+  "primary_references": [
+    "https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.compose.TransformedTargetRegressor.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"
+  ]
+}
