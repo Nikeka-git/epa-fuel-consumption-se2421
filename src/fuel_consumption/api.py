@@ -333,10 +333,10 @@ class RawAPIClient:
             # Sleeping outside the lock lets an in-flight 429 response install
             # its global cooldown immediately. Recheck after every wake-up.
             self.sleep(wait)
-        entry = {"request_id": uuid.uuid4().hex, "url": url, "params": {},
+        entry = {"request_id": uuid.uuid4().hex, "url": url, "params": dict(request.get("params") or {}),
                  "requested_at_utc": requested_at, "requested_accept": "application/json",
                  "attempt": attempt, "status": None, "valid": False, "file": None,
-                 "sha256": None, "kind": "vehicle", "expected": dict(request.get("expected") or {})}
+                 "sha256": None, "kind": request["kind"], "expected": dict(request.get("expected") or {})}
         response, payload, error = None, None, None
         try:
             response = self.transport(url, {"Accept": "application/json", "User-Agent": "SE-2421-fuel-consumption-research/0.1"}, self.timeout)
@@ -344,7 +344,7 @@ class RawAPIClient:
                 raise APIError(f"HTTP {response.status} for {url}", status=response.status,
                                retryable=response.status in (408, 429) or 500 <= response.status <= 599)
             try:
-                payload = self._validate(response.body, "vehicle", request.get("expected"))
+                payload = self._validate(response.body, request["kind"], request.get("expected"))
             except SchemaError as exc:
                 raise APIError(str(exc), status=200, category="schema") from exc
             entry["valid"] = True
@@ -355,7 +355,7 @@ class RawAPIClient:
         entry["received_at_utc"] = self.now()
         if error is not None:
             entry.update(error=str(error), error_category=error.category, retryable=error.retryable)
-        # Retry-After applies to every later request, not only this vehicle's retry.
+        # Retry-After applies to every later request, including another resource kind.
         if response is not None and response.status != 200:
             retry_after = self._retry_after(response.headers)
             if retry_after is not None:
@@ -389,23 +389,47 @@ class RawAPIClient:
         worker threads only perform bounded HTTP attempts. Retries form waves,
         with a shared cooldown. Failed records remain separate from valid cache.
         """
+        return self._fetch_batch(requests, kind="vehicle")
+
+    def fetch_menus(self, requests: list[Mapping[str, Any]]) -> list[tuple[Any, APIError | RequestLimitReached | None]]:
+        """Fetch documented menus in input order, sharing rate, retries and writer.
+
+        Each request has endpoint, params and file. The endpoint supplies the
+        expected menu name; an explicitly conflicting name is rejected before
+        any network attempt. JSON null remains a valid cached empty menu.
+        """
+        return self._fetch_batch(requests, kind="menu")
+
+    def _fetch_batch(self, requests: list[Mapping[str, Any]], *, kind: str) -> list[tuple[Any, APIError | RequestLimitReached | None]]:
         if not requests or len(requests) > self.workers:
-            raise ValueError("A vehicle batch must contain between one and workers requests")
+            raise ValueError(f"A {kind} batch must contain between one and workers requests")
         prepared = []
         urls, filenames = set(), set()
         results: list[tuple[Any, APIError | RequestLimitReached | None] | None] = [None] * len(requests)
         for position, item in enumerate(requests):
             endpoint = item["endpoint"]
-            if not endpoint.startswith("vehicle/") or not endpoint.removeprefix("vehicle/").isdigit():
-                raise ValueError("Batches support individual vehicle endpoints only")
-            request = {"url": self._url(endpoint, None), "file": _safe_relative(item["file"]),
-                       "expected": dict(item.get("expected") or {}), "position": position}
+            expected = dict(item.get("expected") or {})
+            if kind == "vehicle":
+                if not endpoint.startswith("vehicle/") or not endpoint.removeprefix("vehicle/").isdigit():
+                    raise ValueError("Batches support individual vehicle endpoints only")
+                params = None  # Preserve the individual-record wrapper's original contract.
+            else:
+                menu_name = endpoint.removeprefix("vehicle/menu/")
+                if not endpoint.startswith("vehicle/menu/") or menu_name not in ("year", "make", "model", "options"):
+                    raise ValueError("Menu batches support documented year, make, model and options endpoints only")
+                if expected.get("menu", menu_name) != menu_name:
+                    raise ValueError("Expected menu name disagrees with its endpoint")
+                expected["menu"] = menu_name
+                params = dict(item.get("params") or {})
+            request = {"url": self._url(endpoint, params), "file": _safe_relative(item["file"]),
+                       "kind": kind, "params": dict(params or {}),
+                       "expected": expected, "position": position}
             if request["url"] in urls or request["file"] in filenames:
                 raise ValueError("A batch must contain distinct URLs and raw filenames")
             urls.add(request["url"])
             filenames.add(request["file"])
             if request["url"] in self.entries:
-                results[position] = (self.cached_payload(request["url"], kind="vehicle", expected=request["expected"]), None)
+                results[position] = (self.cached_payload(request["url"], kind=kind, expected=request["expected"]), None)
                 self.cache_hits += 1
             elif (self.root / request["file"]).exists():
                 raise CorruptCacheError(f"Unindexed raw evidence already exists: {request['file']}")

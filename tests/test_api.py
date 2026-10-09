@@ -349,3 +349,126 @@ def test_batch_guards_reject_duplicates_oversized_and_menu_requests(tmp_path, re
     with pytest.raises(ValueError):
         api.fetch_vehicles(requests)
     assert api.request_count == 0
+
+
+def menu_batch_requests(years=(2015, 2016, 2017, 2018)):
+    return [{"endpoint": "vehicle/menu/model", "params": {"year": year, "make": "Honda"},
+             "file": f"menus/models_{year}.json", "expected": {"menu": "model"}} for year in years]
+
+
+def test_menu_batch_overlaps_at_global_rate_and_keeps_exact_bytes_single_writer(tmp_path):
+    import threading
+    import time
+    from urllib.parse import parse_qs, urlparse
+    lock = threading.Lock()
+    active, peak = 0, 0
+    starts = []
+    bodies = {"2015": b'{ "menuItem": { "text": "Civic", "value": "Civic" } }\n',
+              "2016": b'null\n', "2017": b'{"menuItem": []}\n',
+              "2018": b'{"menuItem":[{"text":"Fit","value":"Fit"}]}\n'}
+    def transport(url, headers, timeout):
+        nonlocal active, peak
+        assert headers["Accept"] == "application/json"
+        year = parse_qs(urlparse(url).query)["year"][0]
+        with lock:
+            starts.append(time.monotonic())
+            active += 1
+            peak = max(peak, active)
+        time.sleep(.8)
+        with lock:
+            active -= 1
+        return response(bodies[year])
+    api = batch_client(tmp_path, transport)
+    append = api._append_manifest
+    writers = []
+    def observed_append(entry):
+        writers.append(threading.get_ident())
+        append(entry)
+    api._append_manifest = observed_append
+    results = api.fetch_menus(menu_batch_requests())
+    assert 2 <= peak <= 4
+    assert all(b - a >= .23 for a, b in zip(starts, starts[1:]))
+    assert all(error is None for _, error in results)
+    assert results[1] == (None, None)  # JSON null is a successful empty cache entry.
+    assert writers == [threading.get_ident()] * 4
+    entries = [json.loads(line) for line in api.manifest_path.read_text().splitlines()]
+    for request, entry in zip(menu_batch_requests(), entries, strict=True):
+        body = bodies[str(request["params"]["year"])]
+        assert entry["kind"] == "menu" and entry["expected"] == {"menu": "model"}
+        assert entry["params"] == request["params"]
+        assert (tmp_path / entry["file"]).read_bytes() == body
+        assert entry["sha256"] == hashlib.sha256(body).hexdigest()
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("All menu shapes must resume from cache"))
+    assert resumed.fetch_menus(menu_batch_requests()) == results
+    assert resumed.request_count == 0 and resumed.cache_hits == 4
+
+
+def test_menu_batch_retry_after_is_shared_with_later_vehicle_batch(tmp_path):
+    clock = FakeClock()
+    attempts, starts = [], []
+    def transport(url, *args):
+        starts.append(clock.seconds)
+        attempts.append(url)
+        if "/menu/" in url:
+            if len(attempts) == 1:
+                return response(b"busy", 429, {"Retry-After": "7"})
+            return response({"menuItem": None})
+        return batch_response(url.rsplit("/", 1)[-1])
+    api = batch_client(tmp_path, transport, clock)
+    assert api.fetch_menus(menu_batch_requests((2015,)))[0][1] is None
+    assert all(error is None for _, error in api.fetch_vehicles(batch_requests()))
+    assert starts[0] == 0 and starts[1] >= 7
+    assert all(start >= 7.25 for start in starts[2:])
+    lines = [json.loads(line) for line in api.manifest_path.read_text().splitlines()]
+    assert [entry["attempt"] for entry in lines if entry["kind"] == "menu"] == [1, 2]
+    assert lines[0]["retryable"] and (tmp_path / lines[0]["file"]).read_bytes() == b"busy"
+
+
+def test_menu_batch_budget_preserves_successful_siblings_for_offline_resume(tmp_path):
+    api = batch_client(tmp_path, lambda *args: response({"menuItem": None}), FakeClock(), max_requests=2)
+    results = api.fetch_menus(menu_batch_requests())
+    assert api.request_count == len(api.entries) == 2
+    assert sum(error is None for _, error in results) == 2
+    assert sum(isinstance(error, RequestLimitReached) for _, error in results) == 2
+    completed = [request for request, (_, error) in zip(menu_batch_requests(), results, strict=True) if error is None]
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("Successful siblings must be durable"), FakeClock())
+    assert all(error is None for _, error in resumed.fetch_menus(completed))
+    assert resumed.request_count == 0
+
+
+@pytest.mark.parametrize("bad_body", [b'<html>not JSON</html>', b'{"menuItem":{"text":"bad","value":"not-id"}}'])
+def test_menu_batch_schema_failure_commits_valid_siblings_without_replacing_failed_menu(tmp_path, bad_body):
+    from urllib.parse import parse_qs, urlparse
+    requests = [{**item, "endpoint": "vehicle/menu/options", "expected": {"menu": "options"}}
+                for item in menu_batch_requests()]
+    def transport(url, *args):
+        year = parse_qs(urlparse(url).query)["year"][0]
+        return response(bad_body if year == "2016" else {"menuItem": {"text": "Automatic", "value": "123"}})
+    api = batch_client(tmp_path, transport, FakeClock())
+    results = api.fetch_menus(requests)
+    assert isinstance(results[1][1], APIError) and results[1][1].category == "schema"
+    assert api.request_count == 4 and len(api.entries) == 3
+    assert not (tmp_path / requests[1]["file"]).exists()
+    failed = next(json.loads(line) for line in api.manifest_path.read_text().splitlines() if not json.loads(line)["valid"])
+    assert failed["kind"] == "menu" and (tmp_path / failed["file"]).read_bytes() == bad_body
+
+
+@pytest.mark.parametrize("requests", [menu_batch_requests((2015, 2015)), menu_batch_requests((2015, 2016, 2017, 2018, 2019)),
+    [{"endpoint": "vehicle/123", "file": "menus/wrong.json"}],
+    [{"endpoint": "vehicle/menu/not-documented", "file": "menus/wrong.json"}],
+    [{"endpoint": "vehicle/menu/model", "file": "menus/wrong.json", "expected": {"menu": "options"}}]])
+def test_menu_batch_endpoint_identity_and_distinctness_guards(tmp_path, requests):
+    api = batch_client(tmp_path, lambda *args: pytest.fail("Invalid menu batch must not request"), FakeClock())
+    with pytest.raises(ValueError):
+        api.fetch_menus(requests)
+    assert api.request_count == 0
+
+
+def test_menu_batch_corrupt_cache_is_rejected_without_network(tmp_path):
+    api = batch_client(tmp_path, lambda *args: response({"menuItem": None}), FakeClock())
+    request = menu_batch_requests((2015,))[0]
+    api.fetch_menus([request])
+    raw = tmp_path / request["file"]
+    raw.write_bytes(raw.read_bytes() + b" ")
+    with pytest.raises(CorruptCacheError, match="Checksum"):
+        batch_client(tmp_path, lambda *args: pytest.fail("Corrupt evidence must not be replaced"), FakeClock())

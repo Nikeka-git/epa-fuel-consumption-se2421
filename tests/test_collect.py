@@ -5,7 +5,7 @@ from urllib.parse import parse_qs, urlparse
 
 import pytest
 
-from fuel_consumption.api import CorruptCacheError, RawAPIClient
+from fuel_consumption.api import APIError, CorruptCacheError, RawAPIClient
 from fuel_consumption.collect import Collector, SnapshotLock
 from test_api import FakeClock, response, source_config
 
@@ -307,3 +307,101 @@ def test_batch_unbounded_collection_schema_failure_and_resumed_record(tmp_path):
     resumed = make_collector(tmp_path, catalogue, resume=True, workers=4)
     metadata = resumed.run()
     assert metadata["status"] == "complete" and metadata["fetched_vehicle_records"] == 16
+
+
+def successful_vehicle_order(snapshot):
+    return [json.loads(line)["expected"]["vehicle_id"]
+            for line in (snapshot / "requests.jsonl").read_text().splitlines()
+            if json.loads(line)["kind"] == "vehicle" and json.loads(line)["valid"]]
+
+
+@pytest.mark.parametrize("cap", [1, 3, 4, 5, 8, 11, 15])
+def test_menu_prefetch_preserves_exact_uninterrupted_seeded_vehicle_prefix(tmp_path, cap):
+    sequential = make_collector(tmp_path / 'sequential', FakeCatalogue(), max_vehicles=cap, seed=42, workers=1)
+    parallel = make_collector(tmp_path / 'parallel', FakeCatalogue(), max_vehicles=cap, seed=42, workers=4)
+    sequential.run()
+    parallel.run()
+    assert successful_vehicle_order(parallel.path) == successful_vehicle_order(sequential.path)
+    assert len(successful_vehicle_order(parallel.path)) == cap
+
+
+def test_prefetched_models_stay_out_of_logical_state_until_traversal_and_resume_from_cache(tmp_path):
+    catalogue = FakeCatalogue()
+    first = make_collector(tmp_path, catalogue, max_requests=7, max_vehicles=8, seed=42, workers=4)
+    first.run()
+    assert first.client.request_count == 7  # year, two makes, four prefetched model menus.
+    assert first.state['models_by_pair'] == {} and first.state['completed_models'] == []
+    assert first.inventory == {}
+    model_urls = [url for url in catalogue.calls if urlparse(url).path.endswith('/model')]
+    assert len(model_urls) == 4
+    resumed = make_collector(tmp_path, catalogue, resume=True, max_requests=100, max_vehicles=8, seed=42, workers=4)
+    result = resumed.run()
+    assert result['fetched_vehicle_records'] == 8
+    assert all(catalogue.calls.count(url) == 1 for url in model_urls)
+    bodies = {path.as_posix(): path.read_bytes() for path in (first.path / 'menus').glob('*.json')}
+    calls = len(catalogue.calls)
+    done = make_collector(tmp_path, catalogue, resume=True, max_vehicles=8, seed=42, workers=4)
+    done.run()
+    assert done.client.request_count == 0 and len(catalogue.calls) == calls
+    assert {path.as_posix(): path.read_bytes() for path in (first.path / 'menus').glob('*.json')} == bodies
+
+
+def test_resume_validates_unused_prefetched_model_evidence_without_network(tmp_path):
+    catalogue = FakeCatalogue()
+    first = make_collector(tmp_path, catalogue, max_requests=7, max_vehicles=8, seed=42, workers=4)
+    first.run()
+    path = next((first.path / 'menus').glob('model_*.json'))
+    body = path.read_bytes()
+    path.write_bytes(body + b' ')
+    calls = len(catalogue.calls)
+    with pytest.raises(CorruptCacheError, match='Checksum'):
+        make_collector(tmp_path, catalogue, resume=True, max_vehicles=8, seed=42, workers=4).run()
+    assert len(catalogue.calls) == calls and path.read_bytes() == body + b' '
+
+
+@pytest.mark.parametrize('menu_name,status,expected_attempts', [('model', 404, 1), ('options', 503, 5)])
+def test_menu_prefetch_fatal_failure_commits_siblings_and_never_retries_through_traversal(tmp_path, menu_name, status, expected_attempts):
+    catalogue = FakeCatalogue()
+    failed_urls = []
+    def transport(url, *args):
+        parsed = urlparse(url)
+        params = {key: values[0] for key, values in parse_qs(parsed.query).items()}
+        if parsed.path.endswith('/' + menu_name) and params.get('year') == '2015' and params.get('make') == 'Honda':
+            failed_urls.append(url)
+            return response(b'unavailable', status=status)
+        return catalogue(url, *args)
+    first = make_collector(tmp_path, transport, max_vehicles=8, seed=42, workers=4)
+    with pytest.raises(APIError):
+        first.run()
+    assert len(failed_urls) == expected_attempts
+    assert first.metadata['status'] == 'interrupted' and first._fetched_count() == 0
+    assert first.inventory == {} and first.state['completed_models'] == []
+    sibling_entries = [entry for entry in first.client.entries.values()
+                       if entry['kind'] == 'menu' and entry['expected']['menu'] == menu_name]
+    assert len(sibling_entries) == 3
+    for entry in sibling_entries:
+        assert (first.path / entry['file']).exists()
+    resumed = make_collector(tmp_path, catalogue, resume=True, max_vehicles=8, seed=42, workers=4)
+    assert resumed.run()['fetched_vehicle_records'] == 8
+    assert all(catalogue.calls.count(entry['url']) == 1 for entry in sibling_entries)
+
+
+def test_menu_prefetch_cached_null_menu_remains_empty_on_resume(tmp_path):
+    catalogue = FakeCatalogue()
+    def transport(url, *args):
+        parsed = urlparse(url)
+        params = {key: values[0] for key, values in parse_qs(parsed.query).items()}
+        if parsed.path.endswith('/model') and params.get('year') == '2015' and params.get('make') == 'Honda':
+            catalogue.calls.append(url)
+            return response(None)
+        return catalogue(url, *args)
+    first = make_collector(tmp_path, transport, max_vehicles=5, seed=42, workers=4)
+    first.run()
+    null_url = next(url for url in catalogue.calls if urlparse(url).path.endswith('/model')
+                    and parse_qs(urlparse(url).query)['year'] == ['2015']
+                    and parse_qs(urlparse(url).query)['make'] == ['Honda'])
+    resumed = make_collector(tmp_path, transport, resume=True, max_vehicles=9, seed=42, workers=4)
+    assert resumed.run()['fetched_vehicle_records'] == 9
+    assert catalogue.calls.count(null_url) == 1
+    assert all(row['provenance'][0]['manufacturer'] != 'Honda' or row['provenance'][0]['model_year'] != 2015
+               for row in resumed.inventory.values())

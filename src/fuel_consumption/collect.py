@@ -198,10 +198,48 @@ class Collector:
                              completed_model_menus=len(self.state.get("completed_models", [])))
         write_json(self.path / "snapshot.json", self.metadata)
 
-    def _menu(self, name: str, params: dict[str, Any] | None = None) -> list[dict[str, str]]:
+    @staticmethod
+    def _menu_request(name: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
         query_hash = hashlib.sha256(json.dumps(params or {}, sort_keys=True).encode()).hexdigest()[:16]
         filename = "menus/year.json" if name == "year" else f"menus/{name}_{query_hash}.json"
-        return parse_menu(self.client.fetch_json(f"vehicle/menu/{name}", params=params, file=filename, kind="menu", expected={"menu": name}))
+        return {"endpoint": f"vehicle/menu/{name}", "params": params or {},
+                "file": filename, "expected": {"menu": name}}
+
+    def _menu(self, name: str, params: dict[str, Any] | None = None) -> list[dict[str, str]]:
+        request = self._menu_request(name, params)
+        return parse_menu(self.client.fetch_json(request["endpoint"], params=request["params"],
+                          file=request["file"], kind="menu", expected=request["expected"]))
+
+    def _prefetch_menus(self, menus: list[tuple[str, dict[str, Any]]]) -> None:
+        """Cache missing menus without discovering/reordering any vehicle IDs.
+
+        Successful siblings are committed by the client before a fatal menu
+        error is raised. The caller must not follow such an error with _menu,
+        which would silently spend another five attempts in this invocation.
+        """
+        missing = []
+        urls = set()
+        for name, params in menus:
+            request = self._menu_request(name, params)
+            url = self.client._url(request["endpoint"], request["params"])
+            if url in urls:
+                continue
+            urls.add(url)
+            if url in self.client.entries:
+                # Preserve cache evidence and verify it even if traversal state
+                # would otherwise make the corresponding menu unnecessary.
+                self.client.cached_payload(url, kind="menu", expected=request["expected"])
+            else:
+                missing.append(request)
+        for offset in range(0, len(missing), self.client.workers):
+            requests = missing[offset:offset + self.client.workers]
+            results = self.client.fetch_menus(requests)
+            errors = [error for _, error in results if error is not None]
+            if errors:
+                # A real menu failure is fatal even if another sibling merely
+                # exhausted the invocation budget. Every response is durable.
+                raise next((error for error in errors if isinstance(error, APIError)), errors[0])
+            self._report()
 
     def _ordered(self, values: Iterable[str], context: str) -> list[str]:
         values = sorted(set(values))
@@ -240,6 +278,20 @@ class Collector:
             self.state["models_by_pair"][key] = self._ordered((item["value"] for item in models), f"models:{year}:{make}")
             self._save()
         models = self.state["models_by_pair"][key]
+        return models[:self.max_models] if self.max_models is not None else models
+
+    def _peek_models(self, year: int, make: str) -> list[str]:
+        """Read prefetched models without advancing logical traversal state."""
+        key = json.dumps([year, make], ensure_ascii=False)
+        if key in self.state["models_by_pair"]:
+            models = self.state["models_by_pair"][key]
+        else:
+            request = self._menu_request("model", {"year": year, "make": make})
+            url = self.client._url(request["endpoint"], request["params"])
+            if url not in self.client.entries:
+                raise CorruptCacheError(f"Expected model prefetch cache is missing: {url}")
+            payload = self.client.cached_payload(url, kind="menu", expected=request["expected"])
+            models = self._ordered((item["value"] for item in parse_menu(payload)), f"models:{year}:{make}")
         return models[:self.max_models] if self.max_models is not None else models
 
     @staticmethod
@@ -385,7 +437,25 @@ class Collector:
     def _interleave(self, pairs: list[tuple[int, str]]) -> None:
         active = set(pairs)
         attempted_models = set()
+        if self.client.workers > 1:
+            self._prefetch_menus([
+                ("model", {"year": year, "make": make}) for year, make in pairs
+                if json.dumps([year, make], ensure_ascii=False) not in self.state["models_by_pair"]
+            ])
         while active:
+            if self.client.workers > 1:
+                if self.max_vehicles is not None and self._fetched_count() >= self.max_vehicles:
+                    raise RequestLimitReached(f"Reached --max-vehicles={self.max_vehicles} successful records total")
+                options_menus = []
+                for year, make in pairs:
+                    if (year, make) not in active or self._pending(year, make):
+                        continue
+                    remaining = [model for model in self._peek_models(year, make)
+                                 if self._model_key(year, make, model) not in self.state["completed_models"]
+                                 and self._model_key(year, make, model) not in attempted_models]
+                    if remaining:
+                        options_menus.append(("options", {"year": year, "make": make, "model": remaining[0]}))
+                self._prefetch_menus(options_menus)
             batch = []
             for year, make in pairs:
                 if (year, make) not in active:
