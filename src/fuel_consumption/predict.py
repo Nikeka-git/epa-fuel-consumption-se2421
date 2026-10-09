@@ -67,6 +67,12 @@ def load_verified_model(run_dir: str | Path, dataset_path=None, split_dir=None) 
     model = metadata.get("selected_model", "")
     if not re.fullmatch(r"[A-Za-z0-9_]+", model):
         raise ValueError("Invalid selected model name")
+    selection_path = directory / "cv_selection.json"
+    if metadata.get("cv_selection_sha256"):
+        _checked_file(selection_path, metadata["cv_selection_sha256"], "CV selection")
+    selection = load_config(selection_path)
+    if selection.get("selected_model") != model or selection.get("selection_source") != "train_group_cv" or metadata.get("test_used_for_selection") is not False:
+        raise ValueError("Selected model must follow the saved training-CV choice")
     config_path = directory / "config.json"
     _checked_file(config_path, metadata.get("saved_config_sha256"), "Configuration")
     config = load_config(config_path)
