@@ -1,6 +1,17 @@
 {
   "snapshot_id": "benchmark_2015_2025_20261009",
   "resumed_collection_code_commit": "ceb12bf123ef72edd757b98b1d87e40c76dbe97a",
+  "latest_collection_code_commit": "4fbf4292ac6e4597fef110061edc2dd85d357a3f",
+  "latest_module_sha256": {
+    "api.py": "86035bfc25595507592e5bf0b7726886216a0ee1a7a9409d8e7dece04f7dd13a",
+    "collect.py": "a60c1c5267f58167a5910c754a6da8e30c2ccc1bac6350e3ac9719bacac855d2"
+  },
+  "additional_controlled_restart": {
+    "reason": "Apply tested batch menu prefetch with identical logical record order within each invocation; no target-dependent selection.",
+    "last_durable_fetched_count_before_stop": 452,
+    "last_snapshot_update_utc_before_stop": "2026-10-09T01:11:23.366732+00:00",
+    "limitation": "The inherited resume traversal starts again at the first pair; it does not guarantee the same sampled prefix as an uninterrupted live run. Published raw bytes, IDs and split are the reproducibility artifacts. Interrupted invocation metadata remains unfinished rather than being assigned an invented completion time."
+  },
   "module_sha256_at_resume": {
     "api.py": "3f69894beb386b749967e0f2bc3ee22cc7fbf154e21f5cecbb8b25523511f085",
     "collect.py": "5e3f0148b1fe60d24206521dd6f0e1c338652653a02c14ed3d444637059c4fb6",
@@ -33,5 +44,12 @@
     "initial_successful_raw_record_budget": 6000,
     "target_values_used_for_sampling_order": false,
     "claim_full_catalogue_census": false
+  },
+  "previous_collection_code_commit": "eafbb3ff663512e5e9a61fa10fa2ed108b5dd9ff",
+  "cache_performance_controlled_restart": {
+    "reason": "Apply tested compact atomic cache-index write once per successful batch-wave; per-response raw/journal/manifest evidence retained.",
+    "last_durable_fetched_count_before_stop": 946,
+    "last_snapshot_update_utc_before_stop": "2026-10-09T01:19:30.140617+00:00",
+    "recorded_attempts_note": "Snapshot attempts count durable recorded attempts; interrupted in-flight HTTP requests may not have produced retained responses."
   }
 }

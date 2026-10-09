@@ -11,4 +11,5 @@ nbconvert
 ipykernel
 joblib
 pytest
-# Final stage optional dependency is declared as the app extra in pyproject.toml.
+streamlit
+# The app dependency is also declared as the app extra in pyproject.toml.
