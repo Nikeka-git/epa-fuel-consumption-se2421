@@ -26,5 +26,7 @@
     "The rule does not guess aliases from name prefixes or similar spellings. Additional related families may remain separate.",
     "A broad source baseModel can merge distinct products. Keeping it together reduces leakage risk but changes the groups being evaluated.",
     "Regenerate after final collection and independent audit. Checkpoint counts and candidates are provisional."
-  ]
+  ],
+  "published_review_decisions_sha256": "0422a7129f6b57c3b4d242e89be96d343a3cd8ccb37cfa14de2638bfdcd784d6",
+  "editorial_revision_evidence": "evidence/editorial_revision.json"
 }

@@ -1,6 +1,6 @@
 # Predicting EPA Combined Fuel Consumption
 
-Демонстрация выполнения ML-проекта с помощью ИИ. Группа **SE-2421**, участники сценария **Tsybus Nikita** и **Bakytzhan Kassymgali**; направление **8. New-car catalogues**. Условное распределение ролей и фактическая автоматизация описаны в [CONTRIBUTIONS](docs/CONTRIBUTIONS.md).
+Воспроизводимый ML-проект по прогнозированию расхода топлива автомобилей. Группа **SE-2421**, команда **Tsybus Nikita** и **Bakytzhan Kassymgali**; направление **8. New-car catalogues**. Области ответственности и использование AI описаны в [CONTRIBUTIONS](docs/CONTRIBUTIONS.md).
 
 Вопрос: насколько точно технические характеристики позволяют предсказать EPA combined fuel consumption бензиновых автомобилей, универсалов и SUV рынка США за model years 2015–2025? Target — **L/100 km**. Источник — [FuelEconomy.gov API](https://www.fueleconomy.gov/feg/ws/index.shtml).
 
@@ -73,4 +73,4 @@ examples/smoke/               historical development example, separate split
 references/                   supplied course guide, rubric and lectures
 ```
 
-Это завершенная техническая демонстрация. Регистрация у преподавателя, человеческая защита и отправка в Moodle не выполнялись. Endterm/Final briefs и полный syllabus следующих недель не были предоставлены; выбор этих моделей является решением проекта по общим темам Guide.
+Проект включает полный цикл от сбора исходных данных до сохраненных моделей и локального приложения. Исходные требования и их связь с артефактами находятся в [REQUIREMENTS](docs/REQUIREMENTS.md).

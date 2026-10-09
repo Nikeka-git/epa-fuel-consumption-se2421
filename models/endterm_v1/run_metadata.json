@@ -1335,5 +1335,11 @@
     "scikit-learn": "1.9.1",
     "joblib": "1.6.0",
     "threadpoolctl": "3.7.0"
+  },
+  "stage_config_annotation_revision": {
+    "evidence_relative_path": "evidence/editorial_revision.json",
+    "original_commit": "f474dd8bd406885579005a4fa3dad83ff868024b",
+    "published_stage_config_sha256": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5",
+    "published_saved_stage_config_sha256": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5"
   }
 }

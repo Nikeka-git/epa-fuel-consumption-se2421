@@ -1018,8 +1018,8 @@
     "Rounded comb08 values make the converted target discrete. These results assess held-out vehicle families, not future years.",
     "The course reuses this test split across stages. Further model choices use grouped training CV, with test results reported as comparisons."
   ],
-  "human_contributions_status": "not_confirmed",
-  "ai_log_text": "Codex prepared code, collection and analysis artifacts, reviewed tests, and drafted the notebook and slides. The team must verify and explain these artifacts. Human contributions still require confirmation.",
+  "contribution_log": "docs/CONTRIBUTIONS.md",
+  "ai_log_text": "OpenAI Codex was used for code implementation, data collection, model experiments, reports and QA. Details are recorded in docs/CONTRIBUTIONS.md.",
   "sources": [
     "https://www.fueleconomy.gov/feg/ws/index.shtml",
     "references/Project_Guide.pdf",

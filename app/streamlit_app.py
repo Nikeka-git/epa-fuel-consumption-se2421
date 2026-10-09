@@ -35,7 +35,7 @@ except (ValueError, OSError, KeyError):
     st.stop()
 
 if bundle.metadata.get("development_small_dataset", False):
-    st.caption("Development example with fewer than 1,000 configurations. Its estimates are for demonstration.")
+    st.caption("Development sample with fewer than 1,000 configurations. Estimates have limited dataset support.")
 else:
     st.caption("Gasoline cars, station wagons and SUVs, model years 2015–2025.")
 

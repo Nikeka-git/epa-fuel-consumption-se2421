@@ -3,16 +3,16 @@
   "status": "passed",
   "exit_code": 0,
   "tests": 213,
-  "duration_seconds": 59.3,
+  "duration_seconds": 51.19,
   "command": "python -m pytest -q",
   "working_directory": ".",
-  "stdout_summary": "213 passed in 59.30s",
-  "evidence_origin": "Completed local exec session 59729; recorded from its actual final output, not a synthesized JUnit report.",
-  "recorded_at_utc": "2026-10-09T02:13:57.200379+00:00",
-  "source_commit": "f6313cb4d5dd2ea939e5d58fe0610316afa65091",
+  "stdout_summary": "213 passed in 51.19s",
+  "evidence_origin": "Completed local exec session 28132; recorded from its actual final output.",
+  "recorded_at_utc": "2026-10-09T03:07:59.742199+00:00",
+  "source_commit": "f474dd8bd406885579005a4fa3dad83ff868024b",
   "source_sha256": {
-    "app/streamlit_app.py": "1cd8c32f7199f620b2a065c8b2cf8362bc604da06ba115c5766dc3aad1ea58bd",
-    "configs/endterm.json": "dae5b12488052d8cce0c5c8551577019adfd63027372d4e6aa5be54559066d40",
+    "app/streamlit_app.py": "93f4993b16215ec5d74b0bafaf870a6b8b6028dfeed426c3c64a5926f6dc5623",
+    "configs/endterm.json": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5",
     "configs/final.json": "5ecbb456be4598c7caa68126c2ce1781d10c059e7ad48e73e693af5bc4ff1513",
     "configs/powertrain_exclusions.json": "513e080d53dddcc9f4bdd94ba53082c2029c7b18c4ee41d8617c9db8dd563584",
     "configs/project.json": "3101b33715afa7d1ffe7ddb3d224a266ef35a98ee40a0c3dc918f8bfcd336df8",
@@ -43,5 +43,7 @@
     "tests/test_modeling.py": "c81d76a7adcf888175ae02c787038e3d8e97f305f6d28d71e1a85e436912da96",
     "tests/test_powertrain.py": "153671e226864384f00440391211d17ba712029f8e38d099b17b00e128f25847",
     "tests/test_segments.py": "78304a6949a507c20cf388940be49c553816acb307e2b2d27c82954ec1bb83e9"
-  }
+  },
+  "source_commit_role": "Base commit of the tested edited working tree; source_sha256 identifies the tested bytes.",
+  "working_tree_changes": true
 }

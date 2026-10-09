@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "verified_at_utc": "2026-10-09T02:48:24.499849+00:00",
-  "release_stage": "full benchmark and completed three-stage demonstration",
+  "verified_at_utc": "2026-10-09T03:11:24.385503+00:00",
+  "release_stage": "full benchmark and completed three-stage ML project",
   "raw": {
     "snapshot_id": "benchmark_2015_2025_20261009",
     "status": "partial",
@@ -106,7 +106,7 @@
   "combined_report": {
     "models": 11,
     "stages": 3,
-    "summary_sha256": "9904f08e0ea7f1a4a2b526ecdeaf40c7eb856e39c28db6a18d44322dea204e5d"
+    "summary_sha256": "68960e9672fc5503b630e97801d0ed09b3bf29015974db6a9e8a67aff9069abd"
   },
   "notebook": {
     "sha256": "f5198af7c4c577cabe79834c9d1a178f20644d62a3c51cc268fcda0eaeb12e69",
@@ -130,10 +130,10 @@
     "visual_review": "Not performed by this read-only preflight; verify separately."
   },
   "presentation": {
-    "sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+    "sha256": "d3cfa26deab749811e1d54fbcb83dac380aeb6bf4e4e33afae67f73924e6bd70",
     "slide_count": 8,
     "speaker_note_parts": 8,
-    "validation_receipt_sha256": "5b6d316e98d1faf5ce6176368c46abbd90f4aa27f897d6fdd3313170edeb96e5",
+    "validation_receipt_sha256": "4a593fea383b148aa80f7ef94064a2619f6f006817c4c6b20096110f38b074fd",
     "package_status": "pass",
     "font_policy_passed": true,
     "font_families": [
@@ -141,12 +141,28 @@
     ],
     "native_font_rendering_verified": false,
     "visual_review": {
-      "pptx_sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+      "pptx_sha256": "d3cfa26deab749811e1d54fbcb83dac380aeb6bf4e4e33afae67f73924e6bd70",
       "reviewed_slides": 8,
-      "reviewed_at_utc": "2026-10-09T02:25:38.387671+00:00",
+      "reviewed_at_utc": "2026-10-09T03:08:58.877747+00:00",
       "reviewer": "Codex /root/midterm_reporting",
+      "independent_review_agent": "/root/midterm_reporting/batch_prefetch_review",
       "findings": [],
-      "claim_boundary": "Each final PPTX slide was inspected individually as an original-size 1280x720 PNG. Native PowerPoint opening and native font rendering were not verified.",
+      "claim_boundary": "Individual full-size 1280x720 final-slide PNG review and source comparison. Native PowerPoint opening and native font rendering were not verified.",
+      "source_comparison": {
+        "source_pptx_sha256": "845fe82dd103688dbe4cd3afffee4988cbda12b6d3b81b17c5a85be5d1c762f4",
+        "slides_1_to_7_png_bytes_identical": true,
+        "changed_slide_text": [
+          8
+        ],
+        "changed_notes": [
+          8
+        ],
+        "chart_values_categories_unchanged": true,
+        "literal_workbook_cell_values_unchanged": true,
+        "table_cells_unchanged": true,
+        "geometry_unchanged": true,
+        "notes_timing_and_sources_unchanged": true
+      },
       "slides": [
         {
           "slide": 1,
@@ -157,7 +173,7 @@
             720
           ],
           "findings": [],
-          "observations": "Title, source, scope, question and simulated team labels fit and remain readable."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 2,
@@ -168,7 +184,7 @@
             720
           ],
           "findings": [],
-          "observations": "4500 raw,1253 excluded,3247 retained,49 manufacturers and bounded-sample limitation agree with saved summary."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 3,
@@ -179,7 +195,7 @@
             720
           ],
           "findings": [],
-          "observations": "Train-only engine and class charts have visible values and counts; counts sum to2628; no causal claim."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 4,
@@ -190,7 +206,7 @@
             720
           ],
           "findings": [],
-          "observations": "Seven strict predictors and fold-fitted preprocessing are readable; leakage exclusions stated."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 5,
@@ -201,7 +217,7 @@
             720
           ],
           "findings": [],
-          "observations": "2628 train619test,311train78test families and five CV folds agree with frozen split; parameters fit table."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 6,
@@ -212,7 +228,7 @@
             720
           ],
           "findings": [],
-          "observations": "All four saved CV/test rows agree with metrics; linear wins by CV despite lower KNN test MAE; 72.5 percent baseline improvement is correctly rounded."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 7,
@@ -223,42 +239,42 @@
             720
           ],
           "findings": [],
-          "observations": "Descriptive selected-linear subgroup counts, bias sign and actual large-error example agree with saved reports; n<30 limitation visible."
+          "observations": "Text, tables and charts remain readable. No clipping or unintended overlap observed. Source figures and metrics retained."
         },
         {
           "slide": 8,
-          "sha256": "73783443833a9e8bb5b0dd5c835b8a67e0beb3de30d173d4542d93680a9d252b",
+          "sha256": "0876b8578f20f9e4904683279da82f605202e232ad4232478d438c9a8c480a2b",
           "review_method": "individual_full_size_png",
           "image_size_px": [
             1280,
             720
           ],
           "findings": [],
-          "observations": "Selected linear testMAE0.714, bounded EPA/family limits, stage roadmap and AI-demo role disclosure fit without overlap."
+          "observations": "Neutral project areas and OpenAI Codex assistance attribution fit the original text box. Scientific conclusion, limits and roadmap remain unchanged."
         }
       ]
     },
     "claim_boundary": "Archive, OOXML and saved portable validation evidence only; no native PowerPoint opening or native font rendering is asserted."
   },
   "git_release": {
-    "tracked_files": 9272,
-    "total_bytes": 75562365,
+    "tracked_files": 9273,
+    "total_bytes": 75579175,
     "largest_file_bytes": 9382403,
-    "local_markdown_links_checked": 136,
+    "local_markdown_links_checked": 144,
     "secret_scan": "No obvious credential-like patterns found; this is not a comprehensive secret audit."
   },
   "offline_tests": {
     "status": "passed",
     "evidence_format": "recorded_exec_json",
-    "evidence_sha256": "bab3c1e5543ec40943bdad60ee4b0ea53c32b6812e201f158f303e43a5ce57f2",
+    "evidence_sha256": "6afaf15f6d8415de44a8479da0e3d3cc382f8e8fc071cfb8955fc2721dc8ba72",
     "tests": 213,
-    "duration_seconds": 59.3,
+    "duration_seconds": 51.19,
     "command": "python -m pytest -q",
-    "stdout_summary": "213 passed in 59.30s",
+    "stdout_summary": "213 passed in 51.19s",
     "verified_source_files": 32,
-    "source_commit": "f6313cb4d5dd2ea939e5d58fe0610316afa65091",
-    "recorded_at_utc": "2026-10-09T02:13:57.200379+00:00",
-    "evidence_origin": "Completed local exec session 59729; recorded from its actual final output, not a synthesized JUnit report.",
+    "source_commit": "f474dd8bd406885579005a4fa3dad83ff868024b",
+    "recorded_at_utc": "2026-10-09T03:07:59.742199+00:00",
+    "evidence_origin": "Completed local exec session 28132; recorded from its actual final output.",
     "verification_basis": "Recorded completed execution and current source hashes; the suite was not rerun by this preflight."
   },
   "source_review": {
@@ -269,7 +285,7 @@
   "remaining_claim_limits": [
     "Source DOCX native/visual rendering was unavailable.",
     "Portable slide checks do not prove native PowerPoint rendering.",
-    "Human team roles, live defense, and academic submission are not verified by this script."
+    "Verification covers saved technical artifacts and the recorded source hashes."
   ],
-  "preflight_script_sha256": "9c6cbe69cd9411e350e58818e388b3d9737ea9088654bc56ef647b270e02b083"
+  "preflight_script_sha256": "6720a81a7804956cf6c436c9ce298b75773122e6e5231568c09f954bd468c581"
 }

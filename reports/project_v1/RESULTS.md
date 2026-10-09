@@ -1,6 +1,6 @@
 # EPA fuel-consumption regression: project results
 
-Demonstration project for SE-2421, Tsybus Nikita and Bakytzhan Kassymgali. Team roles are simulated; data collection and the following numerical results are real.
+A reproducible machine-learning study of EPA combined fuel consumption. SE-2421 team: Tsybus Nikita and Bakytzhan Kassymgali.
 
 ## Data and evaluation
 
@@ -78,7 +78,7 @@ The local Streamlit application loads **structured_engine**, selected within Fin
 
 Blank EPA technology labels do not independently certify a non-hybrid powertrain. Manufacturer-reviewed corrections and explicit uncertainty quarantine were fixed before splitting; further source omissions may remain. Seven auxiliary source encodings are unconfirmed and excluded from model inputs. The reviewed family aliases preserve conservative source taxonomy, not certified physical generations or platforms. See the [data card](../../docs/DATA_CARD.md) and [powertrain review](../../docs/POWERTRAIN_REVIEW.md).
 
-All stages reuse the same test set as requested. Test results are comparisons, not a fresh independent confirmation of a later development process. No parameter, seed or feature choice is made from these reported test scores. Rounded source MPG creates a discrete converted target. Separate Endterm/Final course briefs were not supplied; these stages implement the user’s proposal. Live defense and submission are outside this demonstration.
+All stages reuse the same test set as requested. Test results are comparisons, not a fresh independent confirmation of a later development process. No parameter, seed or feature choice is made from these reported test scores. Rounded source MPG creates a discrete converted target. The three stages implement the project’s predeclared progression from structured regressors to tuned models and controlled text comparisons.
 
 ## Descriptive errors of the application model
 

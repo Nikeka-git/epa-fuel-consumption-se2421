@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "revised_at_utc": "2026-10-09T03:00:29.198542+00:00",
+  "source_commit": "f474dd8bd406885579005a4fa3dad83ff868024b",
+  "purpose": "Editorial revision of project descriptions and non-computational annotations.",
+  "stage_config_annotation_revision": [
+    {
+      "path": "configs/endterm.json",
+      "recorded_training_sha256": "dae5b12488052d8cce0c5c8551577019adfd63027372d4e6aa5be54559066d40",
+      "published_sha256": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5",
+      "changed_json_fields": [
+        "context"
+      ]
+    },
+    {
+      "path": "models/endterm_v1/stage_config.json",
+      "recorded_training_sha256": "e943deb2dfb6a26ebaf36cd4806d81bf509456d2c284c3dd7dffe4694b3b1e09",
+      "published_sha256": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5",
+      "changed_json_fields": [
+        "context"
+      ]
+    }
+  ],
+  "recorded_training_hashes_preserved": true,
+  "training_parameters_changed": false,
+  "refitting_performed": false,
+  "raw_data_changed": false,
+  "processed_data_changed": false,
+  "split_assignments_changed": false,
+  "model_bytes_changed": false,
+  "prediction_or_metric_bytes_changed": false,
+  "verification": "Original configuration bytes remain in source_commit. Release verification compares both JSON documents and permits only the context field to differ.",
+  "reviewer_annotation_revision": [
+    {
+      "path": "reports/audit/benchmark_2015_2025_20261009/family_review/approved_decisions.csv",
+      "recorded_review_sha256": "a9cd55b3c975683d734c8cba66e94700fb5a448f34bee2c83dbb97e582aaa911",
+      "published_sha256": "0422a7129f6b57c3b4d242e89be96d343a3cd8ccb37cfa14de2638bfdcd784d6",
+      "changed_fields": [
+        "reviewer"
+      ]
+    },
+    {
+      "path": "reports/audit/benchmark_2015_2025_20261009/family_review/final/family_components.csv",
+      "recorded_review_sha256": "df2f0728b14ea7259fa2c1f605343d0c93d5858fa5398f09c74bf1dbe5cb20a1",
+      "published_sha256": "18e2e5dd01d1cf9c42c20daa04bd7043499c3ad914e7c169cc595ce3d9b1a004",
+      "changed_fields": [
+        "reviewer"
+      ]
+    },
+    {
+      "path": "reports/audit/benchmark_2015_2025_20261009/family_review/final/review_decisions_template.csv",
+      "recorded_review_sha256": "a9cd55b3c975683d734c8cba66e94700fb5a448f34bee2c83dbb97e582aaa911",
+      "published_sha256": "0422a7129f6b57c3b4d242e89be96d343a3cd8ccb37cfa14de2638bfdcd784d6",
+      "changed_fields": [
+        "reviewer"
+      ]
+    },
+    {
+      "path": "reports/audit/benchmark_2015_2025_20261009/family_review/final/family_review_verification.json",
+      "recorded_review_sha256": "a6bf92e339f6b860764fda74f3aee29d9c9d343124f8cead0da0b4d8a9f095fc",
+      "published_sha256": "66c19cf4441afb9794403772983ab27bdacb8c59affcf5ba2fab9f929ff1416c",
+      "changed_fields": [
+        "reviewer"
+      ]
+    },
+    {
+      "path": "reports/audit/benchmark_2015_2025_20261009/review_decision.json",
+      "recorded_review_sha256": "61c043e86c49c213de553e3573fd687a1489a3d51c82406149389668c3209a02",
+      "published_sha256": "24322f6a0f08885262abd3d5a547e9feddfb968112395f3844c2ef167eddbcc1",
+      "changed_fields": [
+        "reviewer"
+      ]
+    }
+  ],
+  "experimental_invariants_checked_against_source_commit": [
+    "data/raw/",
+    "data/interim/",
+    "data/processed/",
+    "data/splits/",
+    "reports/tables/",
+    "all fitted .joblib files"
+  ]
+}

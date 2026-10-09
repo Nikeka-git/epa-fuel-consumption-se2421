@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-09T02:34:23.020376+00:00",
+  "built_at_utc": "2026-10-09T03:08:22.473779+00:00",
   "cleaning": {
     "snapshot_id": "benchmark_2015_2025_20261009",
     "built_at_utc": "2026-10-09T02:14:56.902720+00:00",
@@ -1569,6 +1569,12 @@
         "scikit-learn": "1.9.1",
         "joblib": "1.6.0",
         "threadpoolctl": "3.7.0"
+      },
+      "stage_config_annotation_revision": {
+        "evidence_relative_path": "evidence/editorial_revision.json",
+        "original_commit": "f474dd8bd406885579005a4fa3dad83ff868024b",
+        "published_stage_config_sha256": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5",
+        "published_saved_stage_config_sha256": "75febe894419ab624ed9e35b9fbec6af9a41222756be45b214fdb90fe355a6a5"
       }
     },
     {
@@ -2855,7 +2861,7 @@
   "development_report": false,
   "model_count": 11,
   "stage_count": 3,
-  "report_builder_sha256": "3115e498fea302e91f1aeffe95adf91679e258bd65f24ff38f4af07d5a308d19",
+  "report_builder_sha256": "46982b558be85a15d1bf4404658de856601bb1fdad09c756417f892f59f3f39b",
   "input_metrics_sha256": {
     "midterm_v1": "5f86ba3b51206d6075d5703a1c1169310de7f54b278a9c063df7bee88ffff681",
     "endterm_v1": "36a413a73b61373c78ee5fb780baa80e539a0340737297912073adde2c6adbed",
@@ -2864,7 +2870,7 @@
   "test_used_for_selection": false,
   "artifacts_sha256": {
     "all_models.csv": "a5588b6e7c412e133f350831ddc5276893bbd5d8e97377278f39ca945b806259",
-    "RESULTS.md": "759c5a0d78c2b843f99dc49083f24c848ee051929fa58ab1297369437c1e3408",
+    "RESULTS.md": "fede6ab517270c491362b22a539aa916e27f48b837dc7a28ad46bbb94ebe67d2",
     "test_mae_comparison.png": "1e82eeeaf001f24fb947475a04f0e04e67e47088ad80e9f0ad37d2d092ada14a",
     "training_segments.png": "7cd5ccb75bc7988f7f62b070b42b9c89bba5e55e7a6cd4e1d70f4a274b69e253"
   }

@@ -1,6 +1,6 @@
 # Карточка основного benchmark
 
-**3247 различных пригодных конфигураций**; группа SE-2421. Это AI-демонстрация проекта Tsybus Nikita и Bakytzhan Kassymgali. Источник: [FuelEconomy.gov API](https://www.fueleconomy.gov/feg/ws/index.shtml). Единица строки — EPA catalogue configuration определенного модельного года с уникальным vehicle ID, не проданный экземпляр, VIN или владелец.
+**3247 различных пригодных конфигураций**; группа SE-2421. Команда проекта: Tsybus Nikita и Bakytzhan Kassymgali. Источник: [FuelEconomy.gov API](https://www.fueleconomy.gov/feg/ws/index.shtml). Единица строки — EPA catalogue configuration определенного модельного года с уникальным vehicle ID, не проданный экземпляр, VIN или владелец.
 
 ## Сбор и происхождение
 

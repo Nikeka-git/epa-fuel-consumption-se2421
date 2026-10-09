@@ -286,7 +286,8 @@ def main():
         for name, digest in metadata["code_sha256"].items():
             require(sha(confined(root / "src/fuel_consumption", name)) == digest, "Training source changed after the saved main run: " + metadata["run_id"] + "/" + name)
         if metadata["stage"] != "midterm":
-            require(metadata["stage_config_sha256"] == sha(root / "configs" / (metadata["stage"] + ".json")), "Original stage configuration changed after the run")
+            stage_hash, _ = report_guard.checked_stage_config_hashes(root, root / "models" / metadata["run_id"], metadata)
+            require(stage_hash == sha(root / "configs" / (metadata["stage"] + ".json")), "Computational stage configuration changed after the run")
     final = next(item for item in runs if item[0]["stage"] == "final")
     require(final[0]["interface_schema_sha256"] == sha(root / "models/final_v1/interface_schema.json"), "Final inference schema checksum differs")
     report_guard.checked_paired(final[1], pd.read_csv(final[1] / "predictions.csv", dtype={"vehicle_id": str}), split["n_test"])
@@ -349,7 +350,7 @@ def main():
         require(suites and failures == 0, "Supplied pytest JUnit evidence contains failures/errors")
         tests = {"status": "passed", "junit_sha256": sha(args.pytest_xml), "tests": sum(int(suite.get("tests", 0)) for suite in suites),
                  "skipped": sum(int(suite.get("skipped", 0)) for suite in suites), "failures_and_errors": failures}
-    evidence = {"status": "passed", "verified_at_utc": datetime.now(timezone.utc).isoformat(), "release_stage": "full benchmark and completed three-stage demonstration",
+    evidence = {"status": "passed", "verified_at_utc": datetime.now(timezone.utc).isoformat(), "release_stage": "full benchmark and completed three-stage ML project",
                 "raw": raw, "dataset": {"cleaned_rows": len(frame), "minimum_3000_met": True, "sha256": dataset_hash,
                                           "unresolved_duplicate_candidate_groups": cleaning.get("unresolved_candidate_groups", 0)},
                 "split": split, "runs": [{"run_id": metadata["run_id"], "stage": metadata["stage"], "selected_model": metadata["selected_model"],
@@ -357,7 +358,7 @@ def main():
                                           for metadata, _, table in runs], "combined_report": {"models": 11, "stages": 3, "summary_sha256": sha(report_directory / "experiment_summary.json")},
                 "notebook": notebook, "presentation": slides, "git_release": git, "offline_tests": tests, "source_review": SOURCE_REVIEW,
                 "remaining_claim_limits": ["Source DOCX native/visual rendering was unavailable.", "Portable slide checks do not prove native PowerPoint rendering.",
-                                           "Human team roles, live defense, and academic submission are not verified by this script."],
+                                           "Verification covers saved technical artifacts and the recorded source hashes."],
                 "preflight_script_sha256": sha(Path(__file__))}
     if not args.dry_run:
         destination = root / "evidence/PACKAGE_VERIFICATION.json"

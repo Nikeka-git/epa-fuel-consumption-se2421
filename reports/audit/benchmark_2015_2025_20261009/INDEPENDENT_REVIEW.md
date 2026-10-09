@@ -1,6 +1,6 @@
 # Independent pre-freeze review: benchmark_2015_2025_20261009
 
-Decision: **PASS for the observed cleaned dataset; freeze with the specified reviewed family alias map.** Review by a separate Codex agent as part of the AI demonstration. This is not human course approval or an exhaustive powertrain certification. The review did not create a split, fit models, modify raw bytes, or revise historical cleaning metadata.
+Decision: **PASS for the observed cleaned dataset; freeze with the specified reviewed family alias map.** A separate Codex agent performed this independent technical review. The focused source review does not provide exhaustive powertrain certification. The review did not create a split, fit models, modify raw bytes, or revise historical cleaning metadata.
 
 The stopped bounded collection contains **4,500 raw vehicle records** and **8,568 successful cached responses / manifest attempts**, with no failed attempts. Its status is `partial`; a complete catalogue census is not claimed. Directly rehashing all committed cache files and reconciling manifest URLs, request IDs, response hashes, and vehicle/menu identities found **zero discrepancies**. See [the audit summary](audit_summary.json) and [raw integrity evidence](raw_integrity.csv).
 

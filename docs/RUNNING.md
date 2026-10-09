@@ -1,6 +1,6 @@
 # Запуск проекта
 
-Все команды выполняются из корня репозитория в активированном окружении проекта. Проверенное окружение: Python 3.12; точные версии библиотек находятся в requirements.lock.txt. Сетевой сбор использует стандартную библиотеку; очистка и моделирование требуют установленного пакета. Это демонстрационный проект проверки ИИ; команды воспроизводят pipeline, а не подтверждают фактическую университетскую сдачу или защиту.
+Все команды выполняются из корня репозитория в активированном окружении проекта. Проверенное окружение: Python 3.12; точные версии библиотек находятся в requirements.lock.txt. Сетевой сбор использует стандартную библиотеку; очистка и моделирование требуют установленного пакета.
 
 ## Установка в PowerShell
 
@@ -107,7 +107,7 @@ python scripts/build_project_report.py --root . --runs midterm_v1 endterm_v1 fin
 
 Четыре Ridge arms сравниваются на тех же IDs: structured; structured + model name; structured + engine description; оба text fields. Sanitizer удаляет leakage-bearing текст; TF-IDF fit внутри training folds. Alpha и arm выбираются только по train grouped CV. Эти CV scores являются **selection CV**, поскольку участвуют в выборе параметров и признаков; они не выдаются за unbiased estimate tuning. Test scores, per-row predictions и paired absolute-error differences сохранены; negative text-minus-structured delta означает меньшую ошибку text arm на этих test IDs.
 
-Полный pipeline, stage config, checksum и training-only interface schema находятся в `models/final_v1/`; результаты — в `reports/tables/final_v1/`. Combined report проверяет исходные hashes и использует выполненные артефакты трех этапов без обучения. Один и тот же test после Midterm уже раскрыт; это сравнительный benchmark, не свежая независимая проверка дальнейшего исследования. Отдельные Endterm/Final course briefs не предоставлены, поэтому эти стадии реализуют исходную постановку демонстрационного проекта.
+Полный pipeline, stage config, checksum и training-only interface schema находятся в `models/final_v1/`; результаты — в `reports/tables/final_v1/`. Combined report проверяет исходные hashes и использует выполненные артефакты трех этапов без обучения. Один и тот же test после Midterm уже раскрыт; это сравнительный benchmark, не свежая независимая проверка дальнейшего исследования. Endterm и Final реализуют программу моделей и текстовых экспериментов из исходной постановки проекта.
 
 ## Локальное приложение и повторный прогноз
 
@@ -152,7 +152,7 @@ python scripts/prepare_slide_summary.py --dataset data/processed/vehicles.parque
 
 Notebook в режиме `--run-dir` читает и проверяет сохраненные результаты без retraining. Без этого аргумента notebook заново обучает четыре модели во временной папке. Report generator сохраняет Markdown, четыре scientific figures и таблицы; не перезаписывает существующий report directory. После генерации выполнить notebook сверху вниз в kernel установленного проекта, сохранить все outputs.
 
-`scripts/build_midterm_slides.mjs` создает editable PPTX из slide summary и использует bundled `@oai/artifact-tool` и finalizer Codex; это дополнительная среда для сборки слайдов, не зависимость collection/ML pipeline. Готовые слайды читаются в обычном PowerPoint. Восемь слайдов и speaker notes рассчитаны на 9 минут 20 секунд как демонстрационный сценарий; фактическая защита или репетиция не заявляются.
+`scripts/build_midterm_slides.mjs` создает editable PPTX из slide summary и использует bundled `@oai/artifact-tool` и finalizer Codex; это дополнительная среда для сборки слайдов, не зависимость collection/ML pipeline. Готовые слайды читаются в обычном PowerPoint. Восемь слайдов и speaker notes рассчитаны на выступление продолжительностью 9 минут 20 секунд.
 
 ## Проверка опубликованного пакета
 
@@ -163,6 +163,8 @@ python scripts/verify_release.py --slides reports/slides/midterm_v1.pptx --slide
 ```
 
 Проверка сверяет raw response hashes, provenance, dataset/split, параметры и сохраненные результаты всех этапов, notebook, PPTX, ссылки и состав tracked files. Она не собирает данные и не обучает модели. `--pytest-json` проверяет evidence фактически выполненных 213 tests и неизменность исходников; новые tests этот скрипт не запускает. Без `--dry-run` после всех успешных проверок обновляется `evidence/PACKAGE_VERIFICATION.json`. Изменения tracked files сначала следует stage; ZIP без `.git` для этой проверки нужно распаковать в Git checkout либо проверить по его опубликованному commit.
+
+Редакционная правка описаний и поля `context` в Endterm config записана в [editorial_revision.json](../evidence/editorial_revision.json). Исходные training hashes сохранены; verifier сравнивает оригинальные bytes из указанного Git commit с опубликованным JSON и допускает различие только в этом текстовом поле. Параметры, данные, split, модели, predictions и metrics остаются прежними.
 
 ## Технический пример
 

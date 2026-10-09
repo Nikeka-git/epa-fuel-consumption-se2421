@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import json
 from pathlib import Path
 import re
+import subprocess
 
 import matplotlib
 matplotlib.use("Agg")
@@ -79,6 +81,45 @@ def checked_predictions(predictions: pd.DataFrame, metrics: pd.DataFrame, frame:
         close_number(row.cv_mae_std, np.std(fold_mae, ddof=0), f"{row.model}/cv_mae_std")
 
 
+def checked_stage_config_hashes(root: Path, run_dir: Path, metadata: dict) -> tuple[str, str]:
+    """Validate a documented context-only edit against original Git bytes.
+
+    Training fingerprints remain in their original fields. Editorial publication
+    never permits a change to model grids, preprocessing, or selection settings.
+    """
+    recorded = (metadata["stage_config_sha256"], metadata["saved_stage_config_sha256"])
+    annotation = metadata.get("stage_config_annotation_revision")
+    if annotation is None:
+        return recorded
+    if metadata["stage"] != "endterm" or annotation["evidence_relative_path"] != "evidence/editorial_revision.json":
+        raise ValueError("Unsupported stage-configuration annotation revision")
+    evidence = load_config(root / annotation["evidence_relative_path"])
+    commit = evidence["source_commit"]
+    if not re.fullmatch(r"[0-9a-f]{40}", commit) or commit != annotation["original_commit"]:
+        raise ValueError("Invalid editorial source commit")
+    records = evidence["stage_config_annotation_revision"]
+    expected_names = ["configs/endterm.json", "models/endterm_v1/stage_config.json"]
+    if [entry["path"] for entry in records] != expected_names or run_dir.resolve() != (root / "models/endterm_v1").resolve():
+        raise ValueError("Unexpected editorial configuration paths")
+    published = []
+    for entry, recorded_hash in zip(records, recorded):
+        original = subprocess.check_output(["git", "show", f"{commit}:{entry['path']}"], cwd=root)
+        current_path = root / entry["path"]
+        if hashlib.sha256(original).hexdigest() != recorded_hash or entry["recorded_training_sha256"] != recorded_hash:
+            raise ValueError("Original training-configuration fingerprint differs")
+        old_config, new_config = json.loads(original), load_config(current_path)
+        old_context, new_context = old_config.pop("context"), new_config.pop("context")
+        if old_config != new_config or not isinstance(new_context, str) or new_context == old_context or entry["changed_json_fields"] != ["context"]:
+            raise ValueError("Editorial revision changed computational configuration")
+        digest = sha256_file(current_path)
+        if entry["published_sha256"] != digest:
+            raise ValueError("Published annotation fingerprint differs")
+        published.append(digest)
+    if published != [annotation["published_stage_config_sha256"], annotation["published_saved_stage_config_sha256"]]:
+        raise ValueError("Run annotation fingerprints differ from revision evidence")
+    return tuple(published)
+
+
 def checked_run(root: Path, name: str, dataset_hash: str, split_hash: str, *, allow_development=False,
                 config_hash=None, split_metadata_hash=None, frame=None, manifest=None):
     path = Path(name)
@@ -106,8 +147,10 @@ def checked_run(root: Path, name: str, dataset_hash: str, split_hash: str, *, al
             raise ValueError(f"Model checksum differs: {name}/{model}")
     if sha256_file(run_dir / "config.json") != metadata["saved_config_sha256"]:
         raise ValueError(f"Saved configuration differs: {name}")
-    if metadata["stage"] != "midterm" and sha256_file(run_dir / "stage_config.json") != metadata["saved_stage_config_sha256"]:
-        raise ValueError(f"Saved stage configuration differs: {name}")
+    if metadata["stage"] != "midterm":
+        _, saved_stage_hash = checked_stage_config_hashes(root, run_dir, metadata)
+        if sha256_file(run_dir / "stage_config.json") != saved_stage_hash:
+            raise ValueError(f"Saved stage configuration differs: {name}")
     selection = load_config(run_dir / "cv_selection.json")
     if selection.get("selected_model") != metadata["selected_model"] or selection.get("selection_source") != expected_source or selection.get("test_evaluation_started") is not False:
         raise ValueError(f"Pre-test selection evidence differs: {name}")
@@ -229,8 +272,8 @@ def build(args):
     metrics.to_csv(output / "all_models.csv", index=False)
     selected = metrics.loc[metrics.selected_by_cv]
     report = ["# EPA fuel-consumption regression: project results", "",
-              "Demonstration project for SE-2421, Tsybus Nikita and Bakytzhan Kassymgali. "
-              "Team roles are simulated; data collection and the following numerical results are real.", "",
+              "A reproducible machine-learning study of EPA combined fuel consumption. "
+              "SE-2421 team: Tsybus Nikita and Bakytzhan Kassymgali.", "",
               "## Data and evaluation", "",
               f"Own individual-record FuelEconomy.gov API collection retained **{len(frame):,} valid configurations after complete-source duplicate checks** "
               f"from {cleaning['raw_vehicle_files']:,} raw vehicle records. "
@@ -316,8 +359,8 @@ def build(args):
                "See the [data card](../../docs/DATA_CARD.md) and [powertrain review](../../docs/POWERTRAIN_REVIEW.md).", "",
                "All stages reuse the same test set as requested. Test results are comparisons, not a fresh independent confirmation "
                "of a later development process. No parameter, seed or feature choice is made from these reported test scores. "
-               "Rounded source MPG creates a discrete converted target. Separate Endterm/Final course briefs were not supplied; "
-               "these stages implement the user’s proposal. Live defense and submission are outside this demonstration.", ""]
+               "Rounded source MPG creates a discrete converted target. The three stages implement the project’s "
+               "predeclared progression from structured regressors to tuned models and controlled text comparisons.", ""]
     report += ["## Descriptive errors of the application model", "",
                "The following groups come from saved test diagnostics of the Final CV-selected arm. "
                "`small_support=True` means fewer than 30 observations; such groups do not establish a stable reliability ranking.", "",

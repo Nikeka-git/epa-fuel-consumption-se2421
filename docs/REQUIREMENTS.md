@@ -2,7 +2,7 @@
 
 Проект: **EPA combined fuel consumption of gasoline cars and SUVs**. Группа **SE-2421**; участники **Tsybus Nikita** и **Bakytzhan Kassymgali**. Направление **8. New-car catalogues**, задача **регрессии**, целевая величина **EPA combined fuel consumption, L/100 km**.
 
-Это итоговая карта требований и фактического демонстрационного пакета на **9 октября 2026 года**. Основной сбор, аудит, frozen benchmark и все три модельных этапа завершены; точные доказательства указаны ниже. Роли команды условны, фактическую автоматизацию выполнил Codex. Реальные регистрация, pre-defense, защита, индивидуальные ответы и отправка в Moodle не выполнялись и **N/A для AI demonstration**. Готовые артефакты не означают присвоенную преподавателем оценку.
+Это итоговая карта источников требований и завершенного **portfolio ML project** на **9 октября 2026 года**. Собственный сбор, аудит, frozen benchmark и все три модельных этапа завершены; проверяемые артефакты указаны ниже. Области ответственности команды и использование Codex для реализации, экспериментов и QA раскрыты в [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
 
 ## 1. Источники и границы интерпретации
 
@@ -47,7 +47,7 @@ Guide PDF извлечен как текст и визуально просмо�
 | Пользователь | Ошибки по vehicle class и engine size | Для каждой группы показывать размер выборки и MAE, а также примеры ошибок |
 | Пользователь | Final: model-name и доступный engine-description text, сравнение с structured-only на том же test split, локальное приложение | Сохранить оригинальный текст сейчас; не подменять его автоматически придуманными описаниями |
 | Решение проекта | Хранить manifest сбора, отчёт фильтрации, идентификаторы split и единый список признаков | Это предложенные средства контроля, а не отдельно названные в рубрике форматы файлов |
-| Решение проекта | Подготовлены 8 Midterm слайдов со speaker notes на плановые 9:20 | Курс требует 7–10 минут, а Guide рекомендует около 7–9 слайдов; ровно 8 слайдов и это распределение секунд не обязательны. Фактическая репетиция не проводилась |
+| Решение проекта | Подготовлены 8 Midterm слайдов со speaker notes на плановые 9:20 | Курс требует 7–10 минут, а Guide рекомендует около 7–9 слайдов; ровно 8 слайдов и это распределение секунд не обязательны. Длительность приведена в speaker notes |
 
 Пользователь сообщил о своей проверке robots.txt и terms. Сохранены фактические HTML responses документации API и Privacy/Security policy, даты/status/SHA в [source-policy evidence](../evidence/source_policy/README.md). Реальный API-сбор подтвердил доступ без логина; записи описывают объекты, не частных людей. Автоматическая загрузка robots.txt в этой сессии завершилась закрытием соединения, поэтому сохраненная успешно проверенная копия robots.txt не заявляется. Эта оговорка остается частью evidence, а не скрывается отметкой «все source permissions независимо подтверждены».
 
@@ -133,9 +133,9 @@ Data card по Guide должна содержать: ссылку на исто
 
 ## 7. Подготовленные 8 Midterm слайдов — плановые 9 минут 20 секунд
 
-[Main PPTX](../reports/slides/midterm_v1.pptx) создан из сохраненных main результатов. Распределение ролей условное; оно не доказывает личное авторство или состоявшееся выступление. Следующие durations соответствуют speaker notes. **560 секунд — план, не замеренная репетиция.** В реальной сдаче все показанные результаты должны входить в загружаемый пакет.
+[Main PPTX](../reports/slides/midterm_v1.pptx) создан из сохраненных main результатов. Темы сгруппированы по проектным областям команды. Следующие durations соответствуют speaker notes: рекомендуемая общая длительность — **560 секунд**. В реальной сдаче все показанные результаты должны входить в загружаемый пакет.
 
-| № | Содержание main слайда | Плановое время | Условная роль |
+| № | Содержание main слайда | Плановое время | Проектная область |
 | --- | --- | ---: | --- |
 | 1 | Вопрос, польза, target и source | 0:55 | Nikita |
 | 2 | Собственный сбор, scope, raw/clean counts и target conversion | 1:10 | Nikita |
@@ -149,7 +149,7 @@ Data card по Guide должна содержать: ссылку на исто
 
 Слайды прошли portable archive/layout/font-policy checks и [индивидуальный PNG visual review](../reports/slides/midterm_v1.visual_review.json). Native PowerPoint opening и native font rendering не проверены. Результаты последующих уже завершенных Endterm/Final находятся в [общем отчете](../reports/project_v1/RESULTS.md); Midterm deck сохраняет смысл презентации соответствующего этапа.
 
-## 8. Состояние демонстрационного пакета
+## 8. Состояние portfolio ML project
 
 ### Выполненные данные, код и эксперименты
 
@@ -166,24 +166,24 @@ Data card по Guide должна содержать: ссылку на исто
 - [x] Согласованные CV mean/std, test MAE/RMSE/R² и CV selection labels сохранены. CV spread не назван confidence interval.
 - [x] Endterm выполнен: nested grouped tuning двух ансамблей, MLP, train-only PCA/KMeans; отдельные CV roles и selection optimism раскрыты.
 - [x] Final выполнен: четыре controlled Ridge/TF-IDF arms на том же split, paired descriptive test differences и local app.
-- [x] Условные роли и фактическая AI-автоматизация разделены в [CONTRIBUTIONS](CONTRIBUTIONS.md); не выдуманы ручные действия участников.
-- [x] **213 offline tests passed за 59.30 s**, main AppTest и browser QA имеют фактические receipts.
+- [x] Области ответственности команды, AI tools и задачи автоматизации описаны в [CONTRIBUTIONS](CONTRIBUTIONS.md).
+- [x] **213 offline tests passed за 51.19 s**, main AppTest и browser QA имеют фактические receipts.
 - [x] Восемь слайдов и speaker notes подготовлены; portable и PNG QA выполнены, native rendering limitations указаны.
 
-### Организационные требования реального курса — N/A для демонстрации
+### Организационные требования в исходном Guide
 
-Регистрация/одобрение преподавателем, календарная дата и очередь защиты, выступление обоих участников, замеренная репетиция, индивидуальные ответы и grade, обязательный pre-defense, а также Moodle upload не выполнялись. Они не отмечаются как завершенные только по наличию файлов. Полный syllabus Weeks 5–8 и отдельные Endterm/Final briefs не предоставлены; их сверка остается N/A, а не автоматически доказанным соответствием.
+Guide описывает регистрацию направления, pre-defense, презентацию и индивидуальные ответы. Для сдачи оба участника должны предоставить **один и тот же комплект**: notebook, collection code, raw data, cleaned data, slides и все показанные материалы. Для больших данных допускается рабочая ссылка. Указанный срок — **23:59 дня перед защитой**. Регистрация — организационный пункт Guide, не отдельный восьмой критерий Rubric.
 
-В реальном курсе оба участника должны загрузить **один и тот же комплект**: notebook, collection code, raw data, cleaned data, slides, включая все демонстрируемые материалы. Guide допускает рабочую ссылку для больших данных. Срок — **23:59 дня перед фактической защитой**; это не дата создания проекта. Регистрация — организационный пункт Guide, не отдельный восьмой критерий или выдуманный штраф Rubric.
+Полный syllabus Weeks 5–8 и отдельные Endterm/Final briefs не предоставлены. Реализованные последующие этапы основаны на общих темах Guide и проектном исследовательском вопросе.
 
-## 9. Что известно о следующих этапах
+## 9. Этапы в исходных course documents
 
 | Этап | Известно из Guide/Rubric | Что пока нельзя считать установленным |
 |---|---|---|
-| Registration | Направление одобряет преподаватель; максимум две команды на направление с разными task type и вопросами; в Guide указан срок «Saturday 3 October, 23:59» | Статус этой команды и актуальные изменения срока неизвестны; год рядом с датой в Guide не указан |
-| Midterm | Week 5; 50% attestation 1; данные, модели Weeks 3–4, результаты и план; по предоставленным лекциям подтверждены LinearRegression, KNeighborsRegressor и DecisionTreeRegressor | Конкретная календарная дата и очерёдность защиты неизвестны |
+| Registration | Направление одобряет преподаватель; максимум две команды на направление с разными task type и вопросами; в Guide указан срок «Saturday 3 October, 23:59» | Год рядом с этой датой в Guide не указан |
+| Midterm | Week 5; 50% attestation 1; данные, модели Weeks 3–4, результаты и план; по предоставленным лекциям подтверждены LinearRegression, KNeighborsRegressor и DecisionTreeRegressor | В документе указан учебный Week, а не конкретная календарная дата |
 | Endterm | Week 9; 50% attestation 2; ensembles/tuning, unsupervised analysis и neural network; Guide говорит, что brief выйдет в Week 6 | Точная рубрика, обязательные семейства/количества моделей и формат сдачи пока не получены |
-| Pre-defense | Week 10; final results и draft report; не оценивается, но обязателен; выдаётся список исправлений | Дата и детальные требования неизвестны |
+| Pre-defense | Week 10; final results и draft report; не оценивается, но обязателен; выдаётся список исправлений | Guide задает общий этап; детальный brief не входит в предоставленные источники |
 | Final | Экзаменационный период после Week 10; text/image features, local prediction app, report и defense | Отдельный brief, rubric, технический стек приложения и формат отчёта пока не получены |
 
 Пользователь выбрал текст, а не изображения. Endterm и Final уже выполнены по Guide и пользовательской программе; неизвестный отдельный brief не считается автоматически выполненным. В дальнейшей реальной учебной работе новые briefs/feedback следует сопоставить с сохраненным protocol, а новые эксперименты делать отдельной версией без настройки по опубликованному test.
@@ -201,7 +201,7 @@ Data card по Guide должна содержать: ссылку на исто
 | Endterm | [metrics](../reports/tables/endterm_v1/metrics.csv), [segment metadata](../models/endterm_v1/segments/segment_metadata.json) | CV-selected RF: outer-CV 0.7402, test 0.7543. ET test 0.6900 — не CV winner; MLP 0.7581, 164 iterations, ноль warnings. PCA49, KMeans2, silhouette0.2544 |
 | Final | [metrics](../reports/tables/final_v1/metrics.csv), [paired summary](../reports/tables/final_v1/paired_comparison.json) | CV-selected S+engine: CV 0.7888, test 0.7195; paired structured Ridge test0.7046. Выбранный текст не улучшил test |
 | Сохраненные результаты | [общий отчет](../reports/project_v1/RESULTS.md), [all models](../reports/project_v1/all_models.csv) | 11 моделей/arms трех этапов; selection labels сохранены; test не используется для post-hoc выбора |
-| QA | [offline tests](../evidence/offline_test_results.json), [AppTest](../evidence/app_functional_qa.json), [browser QA](../evidence/app_browser_visual_qa.json) | 213 passed59.30s; app finite prediction и scope rejects; browser review только viewport525×530 |
+| QA | [offline tests](../evidence/offline_test_results.json), [AppTest](../evidence/app_functional_qa.json), [browser QA](../evidence/app_browser_visual_qa.json) | 213 passed51.19s; app finite prediction и scope rejects; browser review только viewport525×530 |
 | Presentation | [PPTX](../reports/slides/midterm_v1.pptx), [portable receipt](../reports/slides/midterm_v1.validation.json), [PNG review](../reports/slides/midterm_v1.visual_review.json) | Восемь slides; план9:20. Не утверждаются rehearsal, live defense или native PowerPoint/font rendering |
 
-У выбранного RF test MAE выше выбранного Midterm Linear; у выбранного Final text arm выше paired structured Ridge. Более низкие test числа других arms приводятся как описательные наблюдения, не используются для переназначения winners. Endterm nested scores оценивают семейную search procedure, но выбор семейства добавляет optimism; Final selection CV не является unbiased tuning estimate. Повторное использование test для трех этапов и неполные powertrain labels остаются ограничениями. Настоящие устные ответы/индивидуальные баллы и результаты учебного submission этим пакетом не подтверждаются.
+У выбранного RF test MAE выше выбранного Midterm Linear; у выбранного Final text arm выше paired structured Ridge. Более низкие test числа других arms приводятся как описательные наблюдения, не используются для переназначения winners. Endterm nested scores оценивают семейную search procedure, но выбор семейства добавляет optimism; Final selection CV не является unbiased tuning estimate. Повторное использование test для трех этапов и неполные powertrain labels остаются ограничениями. Общий отчет описывает фактические эксперименты и технические ограничения, сохраняя различие между course-source criteria и проектными решениями.

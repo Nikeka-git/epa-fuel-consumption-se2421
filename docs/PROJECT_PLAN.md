@@ -1,8 +1,8 @@
-# План и структура завершенного проекта
+# План и структура portfolio ML project
 
-Группа **SE-2421**. Участники демонстрационного сценария: **Tsybus Nikita** и **Bakytzhan Kassymgali**. Название: **Predicting EPA Combined Fuel Consumption from Vehicle Specifications**. Направление — 8. New-car catalogues; задача — регрессия.
+Группа **SE-2421**. Team members: **Tsybus Nikita** и **Bakytzhan Kassymgali**. Название: **Predicting EPA Combined Fuel Consumption from Vehicle Specifications**. Направление — 8. New-car catalogues; задача — регрессия.
 
-На 9 октября 2026 года завершены собственный API-сбор, очистка и независимый аудит, фиксированный grouped benchmark, Midterm, Endterm, Final text experiments и локальное приложение. Это демонстрация выполнения задания с помощью Codex: роли участников условные, исходные ответы API и результаты экспериментов реальные. Регистрация, выступление, pre-defense и Moodle submission не выполнялись; для демонстрации они N/A.
+На 9 октября 2026 года завершены собственный API-сбор, очистка и независимый аудит, фиксированный grouped benchmark, Midterm, Endterm, Final text experiments и локальное приложение. Проект объединяет воспроизводимый сбор данных, сравнение моделей и локальное прогнозирование. Использование Codex для реализации, экспериментов и QA раскрыто в [CONTRIBUTIONS.md](CONTRIBUTIONS.md); области ответственности команды описаны отдельно от AI log.
 
 ## Вопрос и границы данных
 
@@ -25,7 +25,7 @@
 | Midterm | Train EDA, Dummy/Linear/KNN/Tree, grouped CV, test и error analysis | [исполненный notebook](../notebooks/01_midterm.ipynb), [report](../reports/midterm/midterm_v1/report.md), четыре PNG и восемь слайдов |
 | Endterm | Nested grouped ensemble tuning, MLP, train-fitted PCA/KMeans | [metrics](../reports/tables/endterm_v1/metrics.csv); сохраненные модели и segments |
 | Final | Четыре контролируемых Ridge/TF-IDF arms, paired test comparison, приложение | [metrics](../reports/tables/final_v1/metrics.csv); [Streamlit app](../app/streamlit_app.py) |
-| Итоговая передача | Общий отчет, данные, pipelines, evidence, инструкции и условные роли | [общий отчет](../reports/project_v1/RESULTS.md), [HANDOFF.md](HANDOFF.md), [CONTRIBUTIONS.md](CONTRIBUTIONS.md) |
+| Итоговая передача | Общий отчет, данные, pipelines, evidence, инструкции и области ответственности | [общий отчет](../reports/project_v1/RESULTS.md), [HANDOFF.md](HANDOFF.md), [CONTRIBUTIONS.md](CONTRIBUTIONS.md) |
 
 Отдельные Endterm/Final briefs и полный syllabus Weeks 5–8 не предоставлены. Эти этапы реализуют программу Guide и предложение пользователя; соответствие неизвестной отдельной рубрике не утверждается. В реальном курсе Midterm приходится на Week 5, Endterm на Week 9, обязательный неоцениваемый pre-defense на Week 10, Final — после Week 10. Конкретная календарная дата защиты неизвестна.
 
@@ -66,14 +66,14 @@ PCA обучена на train structured representation с масштабиро�
 
 ## Проверки и ограничения передачи
 
-Полный offline suite: **213 passed за 59.30 s**, [запись реального выполнения и source hashes](../evidence/offline_test_results.json). Main notebook выполнен: **12 code cells, ноль errors**; report содержит четыре PNG. Слайды имеют восемь страниц, speaker notes, portable package/layout/font-policy evidence и [индивидуальный PNG review](../reports/slides/midterm_v1.visual_review.json). Native PowerPoint opening и native font rendering не проверялись. Timing в notes — план, не замеренная репетиция.
+Полный offline suite: **213 passed за 51.19 s**, [запись реального выполнения и source hashes](../evidence/offline_test_results.json). Main notebook выполнен: **12 code cells, ноль errors**; report содержит четыре PNG. Слайды имеют восемь страниц, speaker notes, portable package/layout/font-policy evidence и [индивидуальный PNG review](../reports/slides/midterm_v1.visual_review.json). Native PowerPoint opening и native font rendering не проверялись. Timing в speaker notes задает рекомендуемую длительность презентации.
 
 Main app функционально проверено [Streamlit AppTest](../evidence/app_functional_qa.json); отдельный [browser review](../evidence/app_browser_visual_qa.json) проверил читаемость/scrolling при viewport 525×530. Приложение загружает CV-selected `structured_engine`, принимает семь specifications и доступный текст, проверяет scope и возвращает L/100 km. Оно не переобучает модель при запуске и не заявляется глобально лучшей архитектурой.
 
-Из 95 raw fields семь encoding meanings остаются честно unconfirmed и исключены из predictors. Все семь X заполнены; engine description отсутствует у **777** строк, которые сохраняются в text comparison. Rounded source MPG, неполные powertrain labels, неравное покрытие и редкие группы ограничивают выводы. Роли людей условны; фактическую автоматизацию и проверки выполнил Codex. Исходный DOCX изучен по OOXML text/tables, но visual rendering не выполнен из-за отсутствия bundled LibreOffice. Сохранены source-policy responses; автоматическая загрузка robots.txt не удалась, предшествующая проверка заявлена пользователем.
+Из 95 raw fields семь encoding meanings остаются честно unconfirmed и исключены из predictors. Все семь X заполнены; engine description отсутствует у **777** строк, которые сохраняются в text comparison. Rounded source MPG, неполные powertrain labels, неравное покрытие и редкие группы ограничивают выводы. Codex использовался для автоматизации реализации, экспериментов и проверок; подробности приведены в AI log. Исходный DOCX изучен по OOXML text/tables, но visual rendering не выполнен из-за отсутствия bundled LibreOffice. Сохранены source-policy responses; автоматическая загрузка robots.txt не удалась, предшествующая проверка заявлена пользователем.
 
 ## Продолжение работы
 
 Следующая модель может воспроизвести pipeline offline по [RUNNING.md](RUNNING.md), проверить [общий отчет](../reports/project_v1/RESULTS.md) и изучить subgroup errors. Для нового эксперимента нужна отдельная версия/run с заранее заданным train-only protocol; нельзя перезаписывать frozen benchmark или подбирать решения по уже опубликованному test. Новый доступный course brief следует сопоставить с [матрицей требований](REQUIREMENTS.md).
 
-В демонстрационном распределении Nikita завершает data/collection часть, Bakytzhan — modeling, analysis, presentation и app. Это назначение ролей, а не утверждение личного авторства AI-generated code. Реальная регистрация, live defense, индивидуальные ответы и Moodle upload остаются N/A для этого сценария.
+Области ответственности команды: **Tsybus Nikita — data и collection; Bakytzhan Kassymgali — modeling, analysis, presentation и app**. Соответствующие компоненты проекта, результаты и использование AI перечислены в [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
