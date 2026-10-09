@@ -1,0 +1,384 @@
+"""Small, polite FuelEconomy.gov client with an immutable response cache.
+
+Domain eligibility belongs to ``clean``. This module validates the transport,
+the documented menu shape, and vehicle identity against discovery provenance.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+import os
+import random
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import uuid
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+from typing import Any, Callable, Mapping
+
+from .utils import write_json
+
+
+class SchemaError(ValueError):
+    """The response is JSON, but is not the expected API resource."""
+
+
+class CorruptCacheError(RuntimeError):
+    """Cached evidence no longer matches its original recorded checksum."""
+
+
+class RequestLimitReached(RuntimeError):
+    """The invocation's explicit network-attempt budget has been reached."""
+
+
+class APIError(RuntimeError):
+    def __init__(self, message: str, *, status: int | None = None,
+                 retryable: bool = False, category: str = "http") -> None:
+        super().__init__(message)
+        self.status = status
+        self.retryable = retryable
+        self.category = category
+
+
+@dataclass(frozen=True)
+class HTTPResponse:
+    status: int
+    headers: Mapping[str, str]
+    body: bytes
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def parse_menu(payload: Any) -> list[dict[str, str]]:
+    """Normalize documented None/single/list menu items; reject malformed JSON."""
+    if payload is None:
+        return []
+    if not isinstance(payload, dict) or "menuItem" not in payload:
+        raise SchemaError("Expected a menu object with a menuItem property")
+    items = payload["menuItem"]
+    if items is None:
+        return []
+    if isinstance(items, dict):
+        items = [items]
+    if not isinstance(items, list):
+        raise SchemaError("menuItem must be null, an object, or a list")
+    normalized = []
+    for item in items:
+        if not isinstance(item, dict):
+            raise SchemaError("Every menuItem must be an object")
+        row = {}
+        for key in ("text", "value"):
+            value = item.get(key)
+            if isinstance(value, bool) or not isinstance(value, (str, int)):
+                raise SchemaError(f"Menu {key} must be a nonempty string or integer")
+            value = str(value).strip()
+            if not value:
+                raise SchemaError(f"Menu {key} must not be empty")
+            row[key] = value
+        normalized.append(row)
+    return normalized
+
+
+def validate_vehicle(payload: Any, *, vehicle_id: str | int | None = None,
+                     year: int | None = None, make: str | None = None,
+                     model: str | None = None) -> dict[str, Any]:
+    if not isinstance(payload, dict):
+        raise SchemaError("Expected an individual vehicle JSON object")
+    actual_id = payload.get("id")
+    if isinstance(actual_id, bool) or not isinstance(actual_id, (str, int)):
+        raise SchemaError("Vehicle id must be a positive integer identifier")
+    actual_id = str(actual_id)
+    if not actual_id.isdigit() or int(actual_id) <= 0:
+        raise SchemaError("Vehicle id must be a positive integer identifier")
+    actual_year = payload.get("year")
+    if isinstance(actual_year, bool) or not isinstance(actual_year, (str, int)):
+        raise SchemaError("Vehicle year must be an integer")
+    try:
+        actual_year = int(actual_year)
+    except (ValueError, TypeError) as exc:
+        raise SchemaError("Vehicle year must be an integer") from exc
+    if not 1900 <= actual_year <= 2100:
+        raise SchemaError("Vehicle year is outside the catalogue's plausible range")
+    for key in ("make", "model"):
+        if not isinstance(payload.get(key), str) or not payload[key].strip():
+            raise SchemaError(f"Vehicle {key} must be a nonempty string")
+    checks = (("id", actual_id, None if vehicle_id is None else str(vehicle_id)),
+              ("year", actual_year, year), ("make", payload["make"], make),
+              ("model", payload["model"], model))
+    for key, actual, expected in checks:
+        if expected is not None and actual != expected:
+            raise SchemaError(f"Vehicle {key} disagrees with its options menu: {actual!r} != {expected!r}")
+    return payload
+
+
+def default_transport(url: str, headers: Mapping[str, str], timeout: float) -> HTTPResponse:
+    request = urllib.request.Request(url, headers=dict(headers))
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return HTTPResponse(response.status, dict(response.headers), response.read())
+    except urllib.error.HTTPError as exc:
+        # HTTPError is still an HTTP response, whose exact bytes are evidence.
+        return HTTPResponse(exc.code, dict(exc.headers or {}), exc.read())
+
+
+def _safe_relative(path: str | Path) -> str:
+    path = Path(path)
+    if path.is_absolute() or not path.parts or ".." in path.parts:
+        raise ValueError("Response filenames must be relative paths inside the snapshot")
+    return path.as_posix()
+
+
+def _immutable_bytes(path: Path, body: bytes) -> None:
+    """Flush a new response then atomically publish it; never replace evidence."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        raise CorruptCacheError(f"Refusing to overwrite existing raw evidence: {path}")
+    temporary = path.with_name(path.name + f".{uuid.uuid4().hex}.tmp")
+    try:
+        with temporary.open("xb") as stream:
+            stream.write(body)
+            stream.flush()
+            os.fsync(stream.fileno())
+        if path.exists():
+            raise CorruptCacheError(f"Raw evidence appeared while writing: {path}")
+        os.replace(temporary, path)
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+
+
+class RawAPIClient:
+    """A single-worker client. Callers must hold the snapshot collector lock.
+
+    ``max_requests`` counts new network attempts in this invocation, including
+    retries. Cached reads do not consume that budget. A pending journal closes
+    the body/manifest crash window; checksums are always rechecked on reuse.
+    """
+    def __init__(self, snapshot_dir: Path, source_config: Mapping[str, Any], *,
+                 transport: Callable = default_transport, monotonic: Callable = time.monotonic,
+                 sleep: Callable = time.sleep, now: Callable = utc_now,
+                 rng: random.Random | None = None, max_requests: int | None = None) -> None:
+        self.root = Path(snapshot_dir)
+        self.root.mkdir(parents=True, exist_ok=True)
+        self.source = dict(source_config)
+        self.base_url = self.source["base_url"].rstrip("/") + "/"
+        self.min_interval = float(self.source.get("min_interval_seconds", 1.0))
+        self.timeout = float(self.source.get("timeout_seconds", 30))
+        self.max_attempts = int(self.source.get("max_attempts", 5))
+        if not math.isfinite(self.min_interval) or self.min_interval < 1:
+            raise ValueError("min_interval_seconds must be at least 1")
+        if not math.isfinite(self.timeout) or self.timeout <= 0:
+            raise ValueError("timeout_seconds must be positive")
+        if not 1 <= self.max_attempts <= 5 or int(self.source.get("workers", 1)) != 1:
+            raise ValueError("Collector supports one worker and at most five attempts")
+        if max_requests is not None and max_requests < 0:
+            raise ValueError("max_requests must be nonnegative")
+        self.transport, self.monotonic, self.sleep, self.now = transport, monotonic, sleep, now
+        self.rng = rng or random.Random()
+        self.max_requests, self.request_count, self.cache_hits = max_requests, 0, 0
+        self.last_start: float | None = None
+        self.index_path = self.root / "cache_index.json"
+        self.manifest_path = self.root / "requests.jsonl"
+        self.entries: dict[str, dict[str, Any]] = {}
+        self._recover_and_index()
+
+    def _append_manifest(self, entry: dict[str, Any]) -> None:
+        with self.manifest_path.open("a", encoding="utf-8", newline="\n") as stream:
+            stream.write(json.dumps(entry, ensure_ascii=False, allow_nan=False) + "\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+
+    def _save_index(self) -> None:
+        write_json(self.index_path, {"schema_version": "1", "entries": self.entries})
+
+    def _manifest_entries(self) -> list[dict[str, Any]]:
+        if not self.manifest_path.exists():
+            return []
+        entries = []
+        with self.manifest_path.open(encoding="utf-8") as stream:
+            for line_number, line in enumerate(stream, 1):
+                if not line.strip():
+                    continue
+                try:
+                    entry = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    raise CorruptCacheError(f"Invalid requests.jsonl line {line_number}; preserve evidence and inspect") from exc
+                if not isinstance(entry, dict):
+                    raise CorruptCacheError(f"Invalid requests.jsonl entry {line_number}")
+                entries.append(entry)
+        return entries
+
+    def _recover_and_index(self) -> None:
+        entries = self._manifest_entries()
+        completed = {entry.get("request_id") for entry in entries}
+        journal_dir = self.root / "pending_requests"
+        for journal in sorted(journal_dir.glob("*.json")) if journal_dir.exists() else []:
+            entry = json.loads(journal.read_text(encoding="utf-8"))
+            if entry.get("request_id") not in completed:
+                raw_path = self.root / _safe_relative(entry["file"])
+                if raw_path.exists():
+                    if hashlib.sha256(raw_path.read_bytes()).hexdigest() != entry["sha256"]:
+                        raise CorruptCacheError(f"Interrupted response checksum mismatch: {raw_path}")
+                    entry["recovered_after_interruption"] = True
+                else:
+                    entry.update(file=None, sha256=None, valid=False,
+                                 error="Interrupted before publishing response bytes",
+                                 error_category="interrupted", retryable=True)
+                self._append_manifest(entry)
+                entries.append(entry)
+            journal.unlink()
+        for entry in entries:
+            if entry.get("valid") is True and entry.get("status") == 200:
+                url = entry.get("url")
+                if not url or not entry.get("file") or not entry.get("sha256"):
+                    raise CorruptCacheError("A successful manifest entry has incomplete provenance")
+                previous = self.entries.get(url)
+                if previous and (previous["sha256"], previous["file"]) != (entry["sha256"], entry["file"]):
+                    raise CorruptCacheError(f"Conflicting immutable responses for {url}")
+                self.entries[url] = entry
+        # Completed enumeration is represented in collector state, so some menus
+        # will not be reread by that layer on resume. Verify every successful
+        # response here before trusting any state that depends on the cache.
+        for url, entry in self.entries.items():
+            resource_kind = entry.get("kind")
+            if resource_kind not in ("menu", "vehicle"):
+                raise CorruptCacheError(f"Successful cache lacks a resource kind: {url}")
+            self.cached_payload(url, kind=resource_kind, expected=entry.get("expected"))
+        # Manifest is authoritative; rebuilding also recovers an interrupted index write.
+        self._save_index()
+
+    def _url(self, endpoint: str, params: Mapping[str, Any] | None) -> str:
+        if "://" in endpoint or endpoint.startswith("/") or ".." in Path(endpoint).parts:
+            raise ValueError("Use a relative, documented API endpoint")
+        url = self.base_url + endpoint
+        if params:
+            url += "?" + urllib.parse.urlencode(params)
+        return url
+
+    @staticmethod
+    def _validate(body: bytes, kind: str, expected: Mapping[str, Any] | None) -> Any:
+        try:
+            payload = json.loads(body)
+        except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise SchemaError("Expected UTF-8 JSON, received a different or malformed body") from exc
+        if kind == "menu":
+            items = parse_menu(payload)
+            menu_name = (expected or {}).get("menu")
+            if menu_name in ("year", "options"):
+                for item in items:
+                    if not item["value"].isdigit() or int(item["value"]) <= 0:
+                        raise SchemaError(f"{menu_name} menu must contain positive integer values")
+        elif kind == "vehicle":
+            validate_vehicle(payload, **dict(expected or {}))
+        else:
+            raise ValueError(f"Unknown resource kind: {kind}")
+        return payload
+
+    def cached_payload(self, url: str, *, kind: str, expected: Mapping[str, Any] | None = None) -> Any | None:
+        entry = self.entries.get(url)
+        if entry is None:
+            return None
+        path = self.root / _safe_relative(entry["file"])
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
+            raise CorruptCacheError(f"Checksum mismatch or missing successful cache: {path}; use a new snapshot")
+        try:
+            return self._validate(path.read_bytes(), kind, expected)
+        except SchemaError as exc:
+            raise CorruptCacheError(f"Successful cache failed current schema validation: {path}: {exc}") from exc
+
+    def _retry_after(self, headers: Mapping[str, str]) -> float | None:
+        value = next((v for k, v in headers.items() if k.lower() == "retry-after"), None)
+        if value is None or not self.source.get("respect_retry_after", True):
+            return None
+        try:
+            seconds = float(value)
+            return max(0.0, seconds) if math.isfinite(seconds) else None
+        except (ValueError, TypeError):
+            try:
+                date = parsedate_to_datetime(value)
+                if date.tzinfo is None:
+                    date = date.replace(tzinfo=timezone.utc)
+                return max(0.0, (date - datetime.fromisoformat(self.now())).total_seconds())
+            except (ValueError, TypeError, OverflowError):
+                return None
+
+    def fetch_json(self, endpoint: str, *, params: Mapping[str, Any] | None = None,
+                   file: str | Path, kind: str, expected: Mapping[str, Any] | None = None) -> Any:
+        url = self._url(endpoint, params)
+        relative_file = _safe_relative(file)
+        # A null JSON menu is legitimate, so membership (rather than payload != None) detects a hit.
+        if url in self.entries:
+            payload = self.cached_payload(url, kind=kind, expected=expected)
+            self.cache_hits += 1
+            return payload
+        if (self.root / relative_file).exists():
+            raise CorruptCacheError(f"Unindexed raw evidence already exists: {relative_file}")
+        headers = {"Accept": "application/json", "User-Agent": "SE-2421-fuel-consumption-research/0.1"}
+        last_error: APIError | None = None
+        for attempt in range(1, self.max_attempts + 1):
+            if self.max_requests is not None and self.request_count >= self.max_requests:
+                raise RequestLimitReached(f"Reached --max-requests={self.max_requests}")
+            if self.last_start is not None:
+                wait = self.min_interval - (self.monotonic() - self.last_start)
+                if wait > 0:
+                    self.sleep(wait)
+            self.last_start = self.monotonic()
+            self.request_count += 1
+            entry = {"request_id": uuid.uuid4().hex, "url": url, "params": dict(params or {}),
+                     "requested_at_utc": self.now(), "requested_accept": "application/json",
+                     "attempt": attempt, "status": None, "valid": False, "file": None,
+                     "sha256": None, "kind": kind, "expected": dict(expected or {})}
+            response: HTTPResponse | None = None
+            payload = None
+            try:
+                response = self.transport(url, headers, self.timeout)
+                if response.status != 200:
+                    retryable = response.status in (408, 429) or 500 <= response.status <= 599
+                    raise APIError(f"HTTP {response.status} for {url}", status=response.status,
+                                   retryable=retryable)
+                try:
+                    payload = self._validate(response.body, kind, expected)
+                except SchemaError as exc:
+                    raise APIError(str(exc), status=200, category="schema") from exc
+                entry["valid"] = True
+            except (urllib.error.URLError, TimeoutError, OSError) as exc:
+                last_error = APIError(f"Network failure for {url}: {exc}", retryable=True, category="network")
+            except APIError as exc:
+                last_error = exc
+            entry["received_at_utc"] = self.now()
+            if not entry["valid"]:
+                assert last_error is not None
+                entry.update(error=str(last_error), error_category=last_error.category,
+                             retryable=last_error.retryable)
+            if response is not None:
+                destination = relative_file if entry["valid"] else f"failures/{entry['request_id']}.body"
+                entry.update(status=response.status, response_headers=dict(response.headers),
+                             content_type=next((v for k, v in response.headers.items() if k.lower() == "content-type"), None),
+                             file=destination, sha256=hashlib.sha256(response.body).hexdigest(),
+                             byte_count=len(response.body))
+                journal = self.root / "pending_requests" / f"{entry['request_id']}.json"
+                write_json(journal, entry)
+                _immutable_bytes(self.root / destination, response.body)
+                self._append_manifest(entry)
+                journal.unlink()
+            else:
+                self._append_manifest(entry)
+            if entry["valid"]:
+                self.entries[url] = entry
+                self._save_index()
+                return payload
+            assert last_error is not None
+            if not last_error.retryable or attempt == self.max_attempts:
+                raise last_error
+            backoff = 2 ** (attempt - 1) + self.rng.uniform(0, 1)
+            retry_after = self._retry_after(response.headers) if response else None
+            self.sleep(max(backoff, retry_after or 0.0))
+        assert last_error is not None
+        raise last_error

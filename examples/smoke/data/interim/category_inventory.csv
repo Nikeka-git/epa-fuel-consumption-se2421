@@ -1,0 +1,158 @@
+field,value,count,scope
+manufacturer,Honda,55,included_rows
+manufacturer,Toyota,47,included_rows
+manufacturer,Ford,44,included_rows
+transmission,Automatic (S6),36,included_rows
+transmission,Automatic (variable gear ratios),20,included_rows
+transmission,Automatic (S8),17,included_rows
+transmission,Manual 6-spd,16,included_rows
+transmission,Automatic (S10),15,included_rows
+transmission,Automatic (AV-S7),9,included_rows
+transmission,Automatic 8-spd,5,included_rows
+transmission,Automatic (S5),4,included_rows
+transmission,Automatic (S9),4,included_rows
+transmission,Automatic 5-spd,3,included_rows
+transmission,Manual 5-spd,3,included_rows
+transmission,Automatic 6-spd,3,included_rows
+transmission,Automatic (AV-S10),3,included_rows
+transmission,Automatic 10-spd,2,included_rows
+transmission,Manual 7-spd,2,included_rows
+transmission,Automatic (AM6),1,included_rows
+transmission,Automatic 4-spd,1,included_rows
+transmission,Automatic (AM7),1,included_rows
+transmission,Automatic (AM-S8),1,included_rows
+drivetrain,Front-Wheel Drive,72,included_rows
+drivetrain,All-Wheel Drive,35,included_rows
+drivetrain,Part-time 4-Wheel Drive,17,included_rows
+drivetrain,Rear-Wheel Drive,17,included_rows
+drivetrain,4-Wheel Drive,5,included_rows
+vehicle_class,Small Sport Utility Vehicle 4WD,29,included_rows
+vehicle_class,Small Sport Utility Vehicle 2WD,26,included_rows
+vehicle_class,Standard Sport Utility Vehicle 4WD,20,included_rows
+vehicle_class,Compact Cars,19,included_rows
+vehicle_class,Midsize Cars,15,included_rows
+vehicle_class,Large Cars,9,included_rows
+vehicle_class,Subcompact Cars,9,included_rows
+vehicle_class,Small Station Wagons,7,included_rows
+vehicle_class,Standard Sport Utility Vehicle 2WD,4,included_rows
+vehicle_class,Two Seaters,4,included_rows
+vehicle_class,Minicompact Cars,4,included_rows
+fuel_type_primary,Regular Gasoline,128,included_rows
+fuel_type_primary,Premium Gasoline,18,included_rows
+atv_type,<MISSING>,146,included_rows
+vehicle_class_atv_pair,Small Station Wagons::<EMPTY>,7,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::<EMPTY>,9,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,"Vans, Passenger Type::FFV",1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::<EMPTY>,26,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::<EMPTY>,29,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::<EMPTY>,9,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::<EMPTY>,19,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 2WD::<EMPTY>,5,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minivan - 2WD::<EMPTY>,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::Hybrid,6,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::<EMPTY>,15,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::Hybrid,11,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::<EMPTY>,20,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::<EMPTY>,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Two Seaters::Hybrid,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::Hybrid,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::<EMPTY>,8,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::FFV,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Large Cars::Hybrid,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::CNG,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::<EMPTY>,15,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Compact Cars::EV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Two Seaters::<EMPTY>,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minivan - 4WD::<EMPTY>,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 2WD::<EMPTY>,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Special Purpose Vehicle 2WD::FFV,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::Plug-in Hybrid,3,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Minicompact Cars::<EMPTY>,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 4WD::<EMPTY>,4,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::FFV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::Hybrid,5,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::Diesel,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::Diesel,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Midsize Cars::FCV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Subcompact Cars::FCV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::Hybrid,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 2WD::Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::EV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 2WD::Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Pickup Trucks 4WD::Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Pickup Trucks 4WD::Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::Hybrid,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 4WD::EV,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 4WD::EV,2,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Standard Sport Utility Vehicle 2WD::EV,1,all_parseable_raw_records_including_excluded
+vehicle_class_atv_pair,Small Sport Utility Vehicle 2WD::eFCV,1,all_parseable_raw_records_including_excluded
+VClass,Compact Cars,25,all_parseable_raw_records_including_excluded
+VClass,Large Cars,13,all_parseable_raw_records_including_excluded
+VClass,Midsize Cars,30,all_parseable_raw_records_including_excluded
+VClass,Minicompact Cars,4,all_parseable_raw_records_including_excluded
+VClass,Minivan - 2WD,4,all_parseable_raw_records_including_excluded
+VClass,Minivan - 4WD,1,all_parseable_raw_records_including_excluded
+VClass,Small Pickup Trucks 2WD,6,all_parseable_raw_records_including_excluded
+VClass,Small Pickup Trucks 4WD,5,all_parseable_raw_records_including_excluded
+VClass,Small Sport Utility Vehicle 2WD,29,all_parseable_raw_records_including_excluded
+VClass,Small Sport Utility Vehicle 4WD,36,all_parseable_raw_records_including_excluded
+VClass,Small Station Wagons,7,all_parseable_raw_records_including_excluded
+VClass,Special Purpose Vehicle 2WD,6,all_parseable_raw_records_including_excluded
+VClass,Standard Pickup Trucks 2WD,11,all_parseable_raw_records_including_excluded
+VClass,Standard Pickup Trucks 4WD,21,all_parseable_raw_records_including_excluded
+VClass,Standard Sport Utility Vehicle 2WD,6,all_parseable_raw_records_including_excluded
+VClass,Standard Sport Utility Vehicle 4WD,29,all_parseable_raw_records_including_excluded
+VClass,Subcompact Cars,10,all_parseable_raw_records_including_excluded
+VClass,Two Seaters,6,all_parseable_raw_records_including_excluded
+VClass,"Vans, Passenger Type",1,all_parseable_raw_records_including_excluded
+fuelType1,<EMPTY>,1,all_parseable_raw_records_including_excluded
+fuelType1,Diesel,2,all_parseable_raw_records_including_excluded
+fuelType1,Electricity,7,all_parseable_raw_records_including_excluded
+fuelType1,Hydrogen,2,all_parseable_raw_records_including_excluded
+fuelType1,Natural Gas,1,all_parseable_raw_records_including_excluded
+fuelType1,Premium Gasoline,18,all_parseable_raw_records_including_excluded
+fuelType1,Regular Gasoline,219,all_parseable_raw_records_including_excluded
+fuelType2,<EMPTY>,238,all_parseable_raw_records_including_excluded
+fuelType2,E85,9,all_parseable_raw_records_including_excluded
+fuelType2,Electricity,3,all_parseable_raw_records_including_excluded
+atvType,<EMPTY>,187,all_parseable_raw_records_including_excluded
+atvType,CNG,1,all_parseable_raw_records_including_excluded
+atvType,Diesel,2,all_parseable_raw_records_including_excluded
+atvType,EV,7,all_parseable_raw_records_including_excluded
+atvType,FCV,2,all_parseable_raw_records_including_excluded
+atvType,FFV,9,all_parseable_raw_records_including_excluded
+atvType,Hybrid,38,all_parseable_raw_records_including_excluded
+atvType,Plug-in Hybrid,3,all_parseable_raw_records_including_excluded
+atvType,eFCV,1,all_parseable_raw_records_including_excluded
+evMotor,1 and 242 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,107 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,113 kW AC Synchronous,1,all_parseable_raw_records_including_excluded
+evMotor,120 kW AC Synchronous,1,all_parseable_raw_records_including_excluded
+evMotor,130 kW AC PMSM,2,all_parseable_raw_records_including_excluded
+evMotor,135kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,144V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,144V Ni-MH,1,all_parseable_raw_records_including_excluded
+evMotor,180 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,202V Ni-MH,2,all_parseable_raw_records_including_excluded
+evMotor,207V Li-Ion,2,all_parseable_raw_records_including_excluded
+evMotor,210 and 210 kW AC PMSM,1,all_parseable_raw_records_including_excluded
+evMotor,210 kW ACPM,1,all_parseable_raw_records_including_excluded
+evMotor,216V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,222V Li-Ion,3,all_parseable_raw_records_including_excluded
+evMotor,234V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,245V Ni-MH,3,all_parseable_raw_records_including_excluded
+evMotor,259V Li-Ion,6,all_parseable_raw_records_including_excluded
+evMotor,263V Li-Ion,4,all_parseable_raw_records_including_excluded
+evMotor,266V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,280V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,281V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,288V Ni-MH,6,all_parseable_raw_records_including_excluded
+evMotor,48V Li-Ion,1,all_parseable_raw_records_including_excluded
+evMotor,67 and 180 kW ACPM,2,all_parseable_raw_records_including_excluded
+evMotor,68 kW DCPM,1,all_parseable_raw_records_including_excluded
+evMotor,<EMPTY>,199,all_parseable_raw_records_including_excluded
+make,Ford,85,all_parseable_raw_records_including_excluded
+make,Honda,82,all_parseable_raw_records_including_excluded
+make,Toyota,83,all_parseable_raw_records_including_excluded

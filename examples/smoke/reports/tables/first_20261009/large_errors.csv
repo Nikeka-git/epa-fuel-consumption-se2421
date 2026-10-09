@@ -1,0 +1,41 @@
+vehicle_id,model,split,model_year,manufacturer,model_name,displacement_l,cylinders,transmission,drivetrain,vehicle_class,engine_size_bin,y_true,y_pred,residual,abs_error
+35952,dummy,test,2015,Ford,Flex AWD,3.5,6,Automatic (S6),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",13.06747685185185,9.408583333333333,-3.658893518518518,3.658893518518518
+35951,dummy,test,2015,Ford,Flex AWD,3.5,6,Automatic (S6),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",12.3797149122807,9.408583333333333,-2.971131578947368,2.971131578947368
+48493,dummy,test,2025,Toyota,Corolla,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.720416666666666,9.408583333333333,2.6881666666666666,2.6881666666666666
+48494,dummy,test,2025,Toyota,Corolla,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,9.408583333333333,2.4905073529411768,2.4905073529411768
+48495,dummy,test,2025,Toyota,Corolla,2.0,4,Automatic (AV-S10),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,9.408583333333333,2.4905073529411768,2.4905073529411768
+48496,dummy,test,2025,Toyota,Corolla FX,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,9.408583333333333,2.4905073529411768,2.4905073529411768
+35048,dummy,test,2015,Honda,Pilot 2WD,3.5,6,Automatic 5-spd,Front-Wheel Drive,Small Sport Utility Vehicle 2WD,"(3,4] L",11.760729166666666,9.408583333333333,-2.352145833333333,2.352145833333333
+35054,dummy,test,2015,Honda,Pilot 4WD,3.5,6,Automatic 5-spd,All-Wheel Drive,Small Sport Utility Vehicle 4WD,"(3,4] L",11.760729166666666,9.408583333333333,-2.352145833333333,2.352145833333333
+47755,dummy,test,2025,Honda,Pilot AWD TrailSport,3.5,6,Automatic (S10),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",11.760729166666666,9.408583333333333,-2.352145833333333,2.352145833333333
+42094,dummy,test,2020,Toyota,Corolla Hatchback XSE,2.0,4,Automatic (AV-S10),Front-Wheel Drive,Compact Cars,"(0,2] L",7.1277146464646455,9.408583333333333,2.280868686868687,2.280868686868687
+35048,knn,test,2015,Honda,Pilot 2WD,3.5,6,Automatic 5-spd,Front-Wheel Drive,Small Sport Utility Vehicle 2WD,"(3,4] L",11.760729166666666,9.96859052426089,-1.792138642405776,1.792138642405776
+47967,knn,test,2025,Toyota,GR Supra,3.0,6,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(2,3] L",9.046714743589742,10.783529651215993,1.7368149076262505,1.7368149076262505
+48595,knn,test,2025,Toyota,GR Corolla,1.6,3,Automatic (S8),All-Wheel Drive,Subcompact Cars,"(0,2] L",10.691571969696968,8.99759363453057,-1.6939783351663973,1.6939783351663973
+48821,knn,test,2025,Toyota,GR 86,2.4,4,Manual 6-spd,Rear-Wheel Drive,Minicompact Cars,"(2,3] L",10.691571969696968,9.076090656416005,-1.615481313280963,1.615481313280963
+41309,knn,test,2020,Toyota,GR Supra,3.0,6,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(2,3] L",9.046714743589742,10.52190221230574,1.4751874687159976,1.4751874687159976
+35952,knn,test,2015,Ford,Flex AWD,3.5,6,Automatic (S6),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",13.06747685185185,11.882493685490491,-1.1849831663613577,1.1849831663613577
+48493,knn,test,2025,Toyota,Corolla,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.720416666666666,7.815890262865353,1.095473596198687,1.095473596198687
+48495,knn,test,2025,Toyota,Corolla,2.0,4,Automatic (AV-S10),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,7.97040217182673,1.0523261914345738,1.0523261914345738
+35691,knn,test,2015,Honda,Crosstour 2WD,2.4,4,Automatic 5-spd,Front-Wheel Drive,Small Sport Utility Vehicle 2WD,"(2,3] L",9.408583333333333,8.486440238676094,-0.9221430946572386,0.9221430946572386
+48494,knn,test,2025,Toyota,Corolla,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,7.815890262865353,0.8978142824731972,0.8978142824731972
+48595,linear,test,2025,Toyota,GR Corolla,1.6,3,Automatic (S8),All-Wheel Drive,Subcompact Cars,"(0,2] L",10.691571969696968,7.431892433762498,-3.259679535934469,3.259679535934469
+48596,linear,test,2025,Toyota,GR Corolla,1.6,3,Manual 6-spd,All-Wheel Drive,Subcompact Cars,"(0,2] L",9.800607638888888,8.210762896715732,-1.589844742173156,1.589844742173156
+35698,linear,test,2015,Honda,Crosstour 4WD,3.5,6,Automatic (S6),All-Wheel Drive,Small Sport Utility Vehicle 4WD,"(3,4] L",10.691571969696968,12.224841345200506,1.5332693755035385,1.5332693755035385
+35692,linear,test,2015,Honda,Crosstour 2WD,3.5,6,Automatic (S6),Front-Wheel Drive,Small Sport Utility Vehicle 2WD,"(3,4] L",10.226721014492751,11.5758050885052,1.3490840740124472,1.3490840740124472
+47967,linear,test,2025,Toyota,GR Supra,3.0,6,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(2,3] L",9.046714743589742,10.178303939031116,1.1315891954413733,1.1315891954413733
+47753,linear,test,2025,Honda,Pilot AWD,3.5,6,Automatic (S10),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",11.200694444444444,12.270815905670704,1.0701214612262628,1.0701214612262628
+47754,linear,test,2025,Honda,Pilot AWD Touring/Elite/Black,3.5,6,Automatic (S10),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",11.200694444444444,12.270815905670704,1.0701214612262628,1.0701214612262628
+41309,linear,test,2020,Toyota,GR Supra,3.0,6,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(2,3] L",9.046714743589742,9.974182547397294,0.927467803807552,0.927467803807552
+47728,linear,test,2025,Honda,Pilot FWD,3.5,6,Automatic (S10),Front-Wheel Drive,Small Sport Utility Vehicle 2WD,"(3,4] L",10.691571969696968,11.611398188922632,0.9198262192256657,0.9198262192256657
+42094,linear,test,2020,Toyota,Corolla Hatchback XSE,2.0,4,Automatic (AV-S10),Front-Wheel Drive,Compact Cars,"(0,2] L",7.1277146464646455,6.369036847933232,-0.758677798531413,0.758677798531413
+47966,tree,test,2025,Toyota,GR Supra,2.0,4,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(0,2] L",8.711651234567901,10.981628739282282,2.2699775047143813,2.2699775047143813
+48493,tree,test,2025,Toyota,Corolla,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.720416666666666,8.831406522658474,2.110989855991808,2.110989855991808
+48494,tree,test,2025,Toyota,Corolla,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,8.831406522658474,1.9133305422663185,1.9133305422663185
+48495,tree,test,2025,Toyota,Corolla,2.0,4,Automatic (AV-S10),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,8.831406522658474,1.9133305422663185,1.9133305422663185
+48496,tree,test,2025,Toyota,Corolla FX,2.0,4,Automatic (variable gear ratios),Front-Wheel Drive,Compact Cars,"(0,2] L",6.918075980392156,8.831406522658474,1.9133305422663185,1.9133305422663185
+42094,tree,test,2020,Toyota,Corolla Hatchback XSE,2.0,4,Automatic (AV-S10),Front-Wheel Drive,Compact Cars,"(0,2] L",7.1277146464646455,8.831406522658474,1.703691876193829,1.703691876193829
+35048,tree,test,2015,Honda,Pilot 2WD,3.5,6,Automatic 5-spd,Front-Wheel Drive,Small Sport Utility Vehicle 2WD,"(3,4] L",11.760729166666666,10.361882531241903,-1.3988466354247624,1.3988466354247624
+35054,tree,test,2015,Honda,Pilot 4WD,3.5,6,Automatic 5-spd,All-Wheel Drive,Small Sport Utility Vehicle 4WD,"(3,4] L",11.760729166666666,10.361882531241903,-1.3988466354247624,1.3988466354247624
+47755,tree,test,2025,Honda,Pilot AWD TrailSport,3.5,6,Automatic (S10),All-Wheel Drive,Standard Sport Utility Vehicle 4WD,"(3,4] L",11.760729166666666,10.361882531241903,-1.3988466354247624,1.3988466354247624
+41309,tree,test,2020,Toyota,GR Supra,3.0,6,Automatic (S8),Rear-Wheel Drive,Two Seaters,"(2,3] L",9.046714743589742,10.361882531241903,1.315167787652161,1.315167787652161

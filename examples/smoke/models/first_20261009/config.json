@@ -1,0 +1,173 @@
+{
+  "schema_version": "0.1",
+  "status": "implemented_initial_version_full_benchmark_pending",
+  "project": {
+    "name": "EPA combined fuel consumption",
+    "group": "SE-2421",
+    "members": [
+      "Tsybus Nikita",
+      "Bakytzhan Kassymgali"
+    ],
+    "direction": "8. New-car catalogues",
+    "task_type": "regression"
+  },
+  "source": {
+    "base_url": "https://www.fueleconomy.gov/ws/rest/",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "individual_records_required": true,
+    "accept": "application/json",
+    "workers": 1,
+    "min_interval_seconds": 1.0,
+    "timeout_seconds": 30,
+    "max_attempts": 5,
+    "respect_retry_after": true
+  },
+  "scope": {
+    "minimum_distinct_rows": 1000,
+    "desired_distinct_rows": 3000,
+    "collection_policy": "enumerate_all_then_fetch_all_unique_ids",
+    "fuel_type_primary_allowlist": [
+      "Regular Gasoline",
+      "Premium Gasoline",
+      "Midgrade Gasoline"
+    ],
+    "require_empty_fuel_type_secondary": true,
+    "require_empty_atv_type": true,
+    "require_empty_electric_motor": true,
+    "exclude_phev_blended": true,
+    "include_station_wagons": true,
+    "unknown_powertrain_metadata_policy": "quarantine",
+    "class_allowlist_status": "verify_against_full_inventory_before_freeze",
+    "vehicle_class_allowlist": [
+      "Two Seaters",
+      "Minicompact Cars",
+      "Subcompact Cars",
+      "Compact Cars",
+      "Midsize Cars",
+      "Large Cars",
+      "Small Station Wagons",
+      "Midsize Station Wagons",
+      "Large Station Wagons",
+      "Small Sport Utility Vehicle 2WD",
+      "Small Sport Utility Vehicle 4WD",
+      "Standard Sport Utility Vehicle 2WD",
+      "Standard Sport Utility Vehicle 4WD"
+    ],
+    "missing_both_engine_numeric_fields": "exclude",
+    "missing_required_fields": "exclude",
+    "required_fields": [
+      "vehicle_id",
+      "model_year",
+      "manufacturer",
+      "model_name",
+      "vehicle_class",
+      "combined_mpg"
+    ]
+  },
+  "target": {
+    "name": "target_l100km",
+    "api_field": "comb08",
+    "unit": "L/100 km",
+    "us_mpg_conversion_constant": 235.2145833333333,
+    "allow_comb08u_fallback": false,
+    "imputation": "forbidden"
+  },
+  "features": {
+    "numeric": [
+      "model_year",
+      "displacement_l",
+      "cylinders"
+    ],
+    "categorical": [
+      "manufacturer",
+      "transmission",
+      "drivetrain",
+      "vehicle_class"
+    ],
+    "final_text": [
+      "model_name",
+      "engine_description"
+    ],
+    "selection_policy": "strict_allowlist",
+    "text_in_midterm": false
+  },
+  "split": {
+    "group_fields": [
+      "manufacturer",
+      "base_model"
+    ],
+    "fallback_group_field": "model_name",
+    "group_alias_audit_required": true,
+    "group_across_years": true,
+    "method": "GroupShuffleSplit",
+    "n_splits": 1,
+    "test_group_fraction": 0.2,
+    "random_state": 42,
+    "cv_method": "GroupKFold",
+    "cv_n_splits": 5,
+    "cv_shuffle": false,
+    "reuse_manifest_across_stages": true
+  },
+  "evaluation": {
+    "primary_metric": "mae",
+    "secondary_metrics": [
+      "rmse",
+      "r2"
+    ],
+    "residual_definition": "prediction_minus_actual",
+    "cv_std_ddof": 0,
+    "selection_source": "train_group_cv",
+    "small_subgroup_threshold": 30,
+    "displacement_bins_l": [
+      0,
+      2,
+      3,
+      4,
+      null
+    ],
+    "bins_closed": "right"
+  },
+  "midterm_models": {
+    "dummy": {
+      "class": "DummyRegressor",
+      "params": {
+        "strategy": "median"
+      }
+    },
+    "linear": {
+      "class": "LinearRegression",
+      "params": {
+        "fit_intercept": true
+      }
+    },
+    "knn": {
+      "class": "KNeighborsRegressor",
+      "params": {
+        "n_neighbors": 15,
+        "weights": "distance",
+        "p": 2
+      }
+    },
+    "tree": {
+      "class": "DecisionTreeRegressor",
+      "params": {
+        "criterion": "squared_error",
+        "max_depth": 8,
+        "min_samples_leaf": 10,
+        "random_state": 42
+      }
+    }
+  }
+}

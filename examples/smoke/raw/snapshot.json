@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "snapshot_id": "smoke_20261009",
+  "started_at_utc": "2026-10-09T00:30:07.318989+00:00",
+  "collection_timezone": "Asia/Qyzylorda",
+  "source_base_url": "https://www.fueleconomy.gov/ws/rest/",
+  "requested_scope": {
+    "years": [
+      2015,
+      2020,
+      2025
+    ],
+    "makes": [
+      "Ford",
+      "Honda",
+      "Toyota"
+    ],
+    "seed": 42,
+    "ordering": "seeded_round_robin"
+  },
+  "full_scope_requested": false,
+  "config_sha256": "2eca1e4c28bdbf54f868c594c571a8cdcf33fae623cee691c703a6a8e2497f25",
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-09T00:30:07.326994+00:00",
+      "resume": false,
+      "limits": {
+        "max_models_per_make": 3,
+        "max_vehicles_total_in_snapshot": 100,
+        "max_requests_this_invocation": 250
+      },
+      "finished_at_utc": "2026-10-09T00:31:28.639976+00:00",
+      "new_request_attempts": 81,
+      "cache_hits": 0,
+      "stop_reason": null
+    },
+    {
+      "started_at_utc": "2026-10-09T00:33:15.055574+00:00",
+      "resume": true,
+      "limits": {
+        "max_models_per_make": 20,
+        "max_vehicles_total_in_snapshot": 250,
+        "max_requests_this_invocation": 500
+      },
+      "finished_at_utc": "2026-10-09T00:39:07.505820+00:00",
+      "new_request_attempts": 348,
+      "cache_hits": 4,
+      "stop_reason": "Reached --max-vehicles=250 successful records total"
+    },
+    {
+      "started_at_utc": "2026-10-09T00:39:38.300155+00:00",
+      "resume": true,
+      "limits": {
+        "max_models_per_make": 20,
+        "max_vehicles_total_in_snapshot": 250,
+        "max_requests_this_invocation": 1
+      },
+      "finished_at_utc": "2026-10-09T00:39:43.343168+00:00",
+      "new_request_attempts": 0,
+      "cache_hits": 0,
+      "stop_reason": "max_vehicles_total_reached"
+    }
+  ],
+  "status": "partial",
+  "finished_at_utc": "2026-10-09T00:39:43.343168+00:00",
+  "collection_mode": "interleaved_bounded",
+  "last_updated_at_utc": "2026-10-09T00:39:43.374166+00:00",
+  "discovered_vehicle_ids": 253,
+  "fetched_vehicle_records": 250,
+  "failed_vehicle_records": 0,
+  "enumeration_complete": false,
+  "completed_model_menus": 166,
+  "stop_reason": "max_vehicles_total_reached",
+  "collection_complete_for_discovered_ids": false,
+  "full_catalogue_complete": false,
+  "request_attempts_total": 429,
+  "successful_http_responses": 429
+}

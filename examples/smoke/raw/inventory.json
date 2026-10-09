@@ -1,0 +1,3547 @@
+{
+  "schema_version": "1",
+  "records": {
+    "35679": {
+      "vehicle_id": "35679",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 2WD",
+          "option_text": "Auto (S6), 8 cyl, 4.6 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tundra+2WD"
+        }
+      ]
+    },
+    "35680": {
+      "vehicle_id": "35680",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 2WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tundra+2WD"
+        }
+      ]
+    },
+    "41474": {
+      "vehicle_id": "41474",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Transit Connect USPS",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Transit+Connect+USPS"
+        }
+      ]
+    },
+    "48897": {
+      "vehicle_id": "48897",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD HEV",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+Pickup+4WD+HEV"
+        }
+      ]
+    },
+    "35925": {
+      "vehicle_id": "35925",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD FFV",
+          "option_text": "Auto (S6), 8 cyl, 5.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=F150+Pickup+4WD+FFV"
+        }
+      ]
+    },
+    "35924": {
+      "vehicle_id": "35924",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD FFV",
+          "option_text": "Auto 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=F150+Pickup+4WD+FFV"
+        }
+      ]
+    },
+    "42032": {
+      "vehicle_id": "42032",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 4WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Tacoma+4WD"
+        }
+      ]
+    },
+    "42034": {
+      "vehicle_id": "42034",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 4WD",
+          "option_text": "Auto (S6), 4 cyl, 2.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Tacoma+4WD"
+        }
+      ]
+    },
+    "42033": {
+      "vehicle_id": "42033",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 4WD",
+          "option_text": "Man 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Tacoma+4WD"
+        }
+      ]
+    },
+    "47753": {
+      "vehicle_id": "47753",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Pilot AWD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Pilot+AWD"
+        }
+      ]
+    },
+    "35692": {
+      "vehicle_id": "35692",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Crosstour 2WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Crosstour+2WD"
+        }
+      ]
+    },
+    "35691": {
+      "vehicle_id": "35691",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Crosstour 2WD",
+          "option_text": "Auto 5-spd, 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Crosstour+2WD"
+        }
+      ]
+    },
+    "42502": {
+      "vehicle_id": "42502",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "CR-V Hybrid AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=CR-V+Hybrid+AWD"
+        }
+      ]
+    },
+    "48858": {
+      "vehicle_id": "48858",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Prius AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Prius+AWD"
+        }
+      ]
+    },
+    "42270": {
+      "vehicle_id": "42270",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Expedition MAX 4WD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Expedition+MAX+4WD"
+        }
+      ]
+    },
+    "48873": {
+      "vehicle_id": "48873",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Maverick HEV AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Maverick+HEV+AWD"
+        }
+      ]
+    },
+    "48247": {
+      "vehicle_id": "48247",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Ridgeline AWD TrailSport",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Ridgeline+AWD+TrailSport"
+        }
+      ]
+    },
+    "42397": {
+      "vehicle_id": "42397",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Ridgeline FWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Ridgeline+FWD"
+        }
+      ]
+    },
+    "48822": {
+      "vehicle_id": "48822",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR 86",
+          "option_text": "Auto (S6), 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+86"
+        }
+      ]
+    },
+    "48821": {
+      "vehicle_id": "48821",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR 86",
+          "option_text": "Man 6-spd, 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+86"
+        }
+      ]
+    },
+    "35556": {
+      "vehicle_id": "35556",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Prius",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Prius"
+        }
+      ]
+    },
+    "41471": {
+      "vehicle_id": "41471",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Transit Connect Wagon LWB FFV",
+          "option_text": "Auto (S8), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Transit+Connect+Wagon+LWB+FFV"
+        }
+      ]
+    },
+    "48118": {
+      "vehicle_id": "48118",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Explorer AWD",
+          "option_text": "Auto (S10), 6 cyl, 3.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Explorer+AWD"
+        }
+      ]
+    },
+    "48119": {
+      "vehicle_id": "48119",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Explorer AWD",
+          "option_text": "Auto 10-spd, 6 cyl, 3.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Explorer+AWD"
+        }
+      ]
+    },
+    "48120": {
+      "vehicle_id": "48120",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Explorer AWD",
+          "option_text": "Auto 10-spd, 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Explorer+AWD"
+        }
+      ]
+    },
+    "35068": {
+      "vehicle_id": "35068",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Explorer AWD FFV",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Explorer+AWD+FFV"
+        }
+      ]
+    },
+    "50270": {
+      "vehicle_id": "50270",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "CR-V e-FCEV",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=CR-V+e-FCEV"
+        }
+      ]
+    },
+    "35553": {
+      "vehicle_id": "35553",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Auto (AV-S7), 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "35550": {
+      "vehicle_id": "35550",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "35552": {
+      "vehicle_id": "35552",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "35549": {
+      "vehicle_id": "35549",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Auto 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "35548": {
+      "vehicle_id": "35548",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Man 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "35551": {
+      "vehicle_id": "35551",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Man 6-spd, 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "42400": {
+      "vehicle_id": "42400",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Ridgeline AWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Ridgeline+AWD"
+        }
+      ]
+    },
+    "35648": {
+      "vehicle_id": "35648",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Sequoia 2WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Sequoia+2WD"
+        }
+      ]
+    },
+    "35969": {
+      "vehicle_id": "35969",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Focus SFE FWD",
+          "option_text": "Man 6-spd, 3 cyl, 1.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Focus+SFE+FWD"
+        }
+      ]
+    },
+    "42181": {
+      "vehicle_id": "42181",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4",
+          "option_text": "Auto (S8), 4 cyl, 2.5 L, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=RAV4"
+        }
+      ]
+    },
+    "42182": {
+      "vehicle_id": "42182",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4",
+          "option_text": "Auto (S8), 4 cyl, 2.5 L, SIDI & PFI; Stop-Start",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=RAV4"
+        }
+      ]
+    },
+    "48496": {
+      "vehicle_id": "48496",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla FX",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Corolla+FX"
+        }
+      ]
+    },
+    "42012": {
+      "vehicle_id": "42012",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Camry XSE",
+          "option_text": "Auto (S8), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Camry+XSE"
+        }
+      ]
+    },
+    "35671": {
+      "vehicle_id": "35671",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic HF",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic+HF"
+        }
+      ]
+    },
+    "35456": {
+      "vehicle_id": "35456",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 2WD",
+          "option_text": "Auto 4-spd, 4 cyl, 2.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tacoma+2WD"
+        }
+      ]
+    },
+    "35455": {
+      "vehicle_id": "35455",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 2WD",
+          "option_text": "Auto 5-spd, 6 cyl, 4.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tacoma+2WD"
+        }
+      ]
+    },
+    "35454": {
+      "vehicle_id": "35454",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 2WD",
+          "option_text": "Man 5-spd, 4 cyl, 2.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tacoma+2WD"
+        }
+      ]
+    },
+    "35453": {
+      "vehicle_id": "35453",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 2WD",
+          "option_text": "Man 6-spd, 6 cyl, 4.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tacoma+2WD"
+        }
+      ]
+    },
+    "42519": {
+      "vehicle_id": "42519",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD XL/XLT",
+          "option_text": "Auto (S10), 6 cyl, 3.0 L, Diesel, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=F150+Pickup+4WD+XL%2FXLT"
+        }
+      ]
+    },
+    "49146": {
+      "vehicle_id": "49146",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco Sasquatch 4WD",
+          "option_text": "Auto (S10), 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+Sasquatch+4WD"
+        }
+      ]
+    },
+    "49147": {
+      "vehicle_id": "49147",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco Sasquatch 4WD",
+          "option_text": "Man 7-spd, 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+Sasquatch+4WD"
+        }
+      ]
+    },
+    "35031": {
+      "vehicle_id": "35031",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Taurus AWD FFV",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Taurus+AWD+FFV"
+        }
+      ]
+    },
+    "41880": {
+      "vehicle_id": "41880",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Sequoia 2WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Sequoia+2WD"
+        }
+      ]
+    },
+    "47728": {
+      "vehicle_id": "47728",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Pilot FWD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Pilot+FWD"
+        }
+      ]
+    },
+    "34836": {
+      "vehicle_id": "34836",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Fit",
+          "option_text": "Auto (AV-S7), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Fit"
+        }
+      ]
+    },
+    "34855": {
+      "vehicle_id": "34855",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Fit",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Fit"
+        }
+      ]
+    },
+    "34837": {
+      "vehicle_id": "34837",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Fit",
+          "option_text": "Man 6-spd, 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Fit"
+        }
+      ]
+    },
+    "42064": {
+      "vehicle_id": "42064",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Accord 2.0T Sport/Touring",
+          "option_text": "Auto (S10), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Accord+2.0T+Sport%2FTouring"
+        }
+      ]
+    },
+    "49014": {
+      "vehicle_id": "49014",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Prius PHEV",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Prius+PHEV"
+        }
+      ]
+    },
+    "41472": {
+      "vehicle_id": "41472",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Transit Connect Van 2WD",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Transit+Connect+Van+2WD"
+        }
+      ]
+    },
+    "41468": {
+      "vehicle_id": "41468",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Transit Connect Van 2WD",
+          "option_text": "Auto (S8), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Transit+Connect+Van+2WD"
+        }
+      ]
+    },
+    "36027": {
+      "vehicle_id": "36027",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge AWD",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+AWD"
+        }
+      ]
+    },
+    "36028": {
+      "vehicle_id": "36028",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge AWD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+AWD"
+        }
+      ]
+    },
+    "36029": {
+      "vehicle_id": "36029",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge AWD",
+          "option_text": "Auto (S6), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+AWD"
+        }
+      ]
+    },
+    "41949": {
+      "vehicle_id": "41949",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "86",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=86"
+        }
+      ]
+    },
+    "41950": {
+      "vehicle_id": "41950",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "86",
+          "option_text": "Man 6-spd, 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=86"
+        }
+      ]
+    },
+    "48504": {
+      "vehicle_id": "48504",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Accord",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Accord"
+        }
+      ]
+    },
+    "41754": {
+      "vehicle_id": "41754",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Pilot FWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Pilot+FWD"
+        }
+      ]
+    },
+    "41755": {
+      "vehicle_id": "41755",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Pilot FWD",
+          "option_text": "Auto 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Pilot+FWD"
+        }
+      ]
+    },
+    "48910": {
+      "vehicle_id": "48910",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4",
+          "option_text": "Auto (S8), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=RAV4"
+        }
+      ]
+    },
+    "48601": {
+      "vehicle_id": "48601",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Escape FWD HEV",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Escape+FWD+HEV"
+        }
+      ]
+    },
+    "47782": {
+      "vehicle_id": "47782",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "HR-V AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=HR-V+AWD"
+        }
+      ]
+    },
+    "48948": {
+      "vehicle_id": "48948",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Grand Highlander Hybrid",
+          "option_text": "Auto (AV-S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Grand+Highlander+Hybrid"
+        }
+      ]
+    },
+    "42256": {
+      "vehicle_id": "42256",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Escape AWD",
+          "option_text": "Auto (S8), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Escape+AWD"
+        }
+      ]
+    },
+    "42257": {
+      "vehicle_id": "42257",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Escape AWD",
+          "option_text": "Auto 8-spd, 3 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Escape+AWD"
+        }
+      ]
+    },
+    "49081": {
+      "vehicle_id": "49081",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Mustang Mach-E Rally",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Mustang+Mach-E+Rally"
+        }
+      ]
+    },
+    "41940": {
+      "vehicle_id": "41940",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S5), 6 cyl, 4.0 L, Part-time 4WD",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "41942": {
+      "vehicle_id": "41942",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S5), 6 cyl, 4.0 L, AWD",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "47956": {
+      "vehicle_id": "47956",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "CR-V AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=CR-V+AWD"
+        }
+      ]
+    },
+    "47957": {
+      "vehicle_id": "47957",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "CR-V AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=CR-V+AWD"
+        }
+      ]
+    },
+    "35657": {
+      "vehicle_id": "35657",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "CR-Z",
+          "option_text": "Auto (AV-S7), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=CR-Z"
+        }
+      ]
+    },
+    "35658": {
+      "vehicle_id": "35658",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "CR-Z",
+          "option_text": "Man 6-spd, 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=CR-Z"
+        }
+      ]
+    },
+    "41749": {
+      "vehicle_id": "41749",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Auto (AV-S7), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "41748": {
+      "vehicle_id": "41748",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "41747": {
+      "vehicle_id": "41747",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Man 6-spd, 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "42501": {
+      "vehicle_id": "42501",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Man 6-spd, 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "48976": {
+      "vehicle_id": "48976",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S8), 4 cyl, 2.4 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "48982": {
+      "vehicle_id": "48982",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S8), 4 cyl, 2.4 L, Turbo, SIDI & PFI; with Stop-Start",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "49062": {
+      "vehicle_id": "49062",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S8), 4 cyl, 2.4 L, Turbo, SIDI & PFI; Hybrid",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "49063": {
+      "vehicle_id": "49063",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S8), 4 cyl, 2.4 L, Turbo, SIDI & PFI; Hybrid",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "35526": {
+      "vehicle_id": "35526",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Highlander Hybrid AWD LE Plus",
+          "option_text": "Auto (AV-S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Highlander+Hybrid+AWD+LE+Plus"
+        }
+      ]
+    },
+    "48869": {
+      "vehicle_id": "48869",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Maverick HEV FWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Maverick+HEV+FWD"
+        }
+      ]
+    },
+    "35027": {
+      "vehicle_id": "35027",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Taurus AWD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Taurus+AWD"
+        }
+      ]
+    },
+    "35032": {
+      "vehicle_id": "35032",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Taurus AWD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Taurus+AWD"
+        }
+      ]
+    },
+    "35682": {
+      "vehicle_id": "35682",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 4WD FFV",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Tundra+4WD+FFV"
+        }
+      ]
+    },
+    "42265": {
+      "vehicle_id": "42265",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Expedition 2WD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Expedition+2WD"
+        }
+      ]
+    },
+    "48958": {
+      "vehicle_id": "48958",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco Outer Banks 4WD",
+          "option_text": "Auto (S10), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+Outer+Banks+4WD"
+        }
+      ]
+    },
+    "42511": {
+      "vehicle_id": "42511",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Camry AWD XLE/XSE",
+          "option_text": "Auto (S8), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Camry+AWD+XLE%2FXSE"
+        }
+      ]
+    },
+    "49090": {
+      "vehicle_id": "49090",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Prologue AWD Elite",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Prologue+AWD+Elite"
+        }
+      ]
+    },
+    "35669": {
+      "vehicle_id": "35669",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic",
+          "option_text": "Auto (AV-S7), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic"
+        }
+      ]
+    },
+    "35668": {
+      "vehicle_id": "35668",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic"
+        }
+      ]
+    },
+    "35670": {
+      "vehicle_id": "35670",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic",
+          "option_text": "Man 5-spd, 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic"
+        }
+      ]
+    },
+    "35672": {
+      "vehicle_id": "35672",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic",
+          "option_text": "Man 6-spd, 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic"
+        }
+      ]
+    },
+    "35651": {
+      "vehicle_id": "35651",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Sequoia 4WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Sequoia+4WD"
+        }
+      ]
+    },
+    "42338": {
+      "vehicle_id": "42338",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Ranger 2WD",
+          "option_text": "Auto (S10), 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Ranger+2WD"
+        }
+      ]
+    },
+    "48898": {
+      "vehicle_id": "48898",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 RAPTOR 4WD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+RAPTOR+4WD"
+        }
+      ]
+    },
+    "35036": {
+      "vehicle_id": "35036",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Transit T150 Wagon FFV",
+          "option_text": "Auto (S6), 6 cyl, 3.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Transit+T150+Wagon+FFV"
+        }
+      ]
+    },
+    "41917": {
+      "vehicle_id": "41917",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Prius Eco",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Prius+Eco"
+        }
+      ]
+    },
+    "48497": {
+      "vehicle_id": "48497",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Accord Hybrid Sport/Touring",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Accord+Hybrid+Sport%2FTouring"
+        }
+      ]
+    },
+    "35514": {
+      "vehicle_id": "35514",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Highlander 2WD",
+          "option_text": "Auto (S6), 4 cyl, 2.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Highlander+2WD"
+        }
+      ]
+    },
+    "35515": {
+      "vehicle_id": "35515",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Highlander 2WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Highlander+2WD"
+        }
+      ]
+    },
+    "42342": {
+      "vehicle_id": "42342",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Ranger 2WD Incomplete",
+          "option_text": "Auto (S10), 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Ranger+2WD+Incomplete"
+        }
+      ]
+    },
+    "48895": {
+      "vehicle_id": "48895",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+Pickup+4WD"
+        }
+      ]
+    },
+    "48896": {
+      "vehicle_id": "48896",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD",
+          "option_text": "Auto (S10), 8 cyl, 5.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+Pickup+4WD"
+        }
+      ]
+    },
+    "49143": {
+      "vehicle_id": "49143",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD",
+          "option_text": "Auto (S10), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+Pickup+4WD"
+        }
+      ]
+    },
+    "35706": {
+      "vehicle_id": "35706",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Expedition 4WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Expedition+4WD"
+        }
+      ]
+    },
+    "42016": {
+      "vehicle_id": "42016",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Camry Hybrid LE",
+          "option_text": "Auto (AV-S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Camry+Hybrid+LE"
+        }
+      ]
+    },
+    "47949": {
+      "vehicle_id": "47949",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "CR-V FWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=CR-V+FWD"
+        }
+      ]
+    },
+    "47950": {
+      "vehicle_id": "47950",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "CR-V FWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=CR-V+FWD"
+        }
+      ]
+    },
+    "42480": {
+      "vehicle_id": "42480",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Clarity Plug-in Hybrid",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Clarity+Plug-in+Hybrid"
+        }
+      ]
+    },
+    "47966": {
+      "vehicle_id": "47966",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR Supra",
+          "option_text": "Auto (S8), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+Supra"
+        }
+      ]
+    },
+    "47967": {
+      "vehicle_id": "47967",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR Supra",
+          "option_text": "Auto (S8), 6 cyl, 3.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+Supra"
+        }
+      ]
+    },
+    "47968": {
+      "vehicle_id": "47968",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR Supra",
+          "option_text": "Man 6-spd, 6 cyl, 3.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+Supra"
+        }
+      ]
+    },
+    "42178": {
+      "vehicle_id": "42178",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "F150 RAPTOR 4WD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=F150+RAPTOR+4WD"
+        }
+      ]
+    },
+    "35970": {
+      "vehicle_id": "35970",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Focus Electric",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Focus+Electric"
+        }
+      ]
+    },
+    "41387": {
+      "vehicle_id": "41387",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Sienna AWD",
+          "option_text": "Auto (S8), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Sienna+AWD"
+        }
+      ]
+    },
+    "42140": {
+      "vehicle_id": "42140",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 2Dr",
+          "option_text": "Auto (AV-S7), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+2Dr"
+        }
+      ]
+    },
+    "42143": {
+      "vehicle_id": "42143",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 2Dr",
+          "option_text": "Auto (AV-S7), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+2Dr"
+        }
+      ]
+    },
+    "42141": {
+      "vehicle_id": "42141",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 2Dr",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+2Dr"
+        }
+      ]
+    },
+    "42144": {
+      "vehicle_id": "42144",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 2Dr",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+2Dr"
+        }
+      ]
+    },
+    "41884": {
+      "vehicle_id": "41884",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 2Dr",
+          "option_text": "Man 6-spd, 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+2Dr"
+        }
+      ]
+    },
+    "42142": {
+      "vehicle_id": "42142",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Civic 2Dr",
+          "option_text": "Man 6-spd, 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Civic+2Dr"
+        }
+      ]
+    },
+    "35891": {
+      "vehicle_id": "35891",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Avalon",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Avalon"
+        }
+      ]
+    },
+    "41469": {
+      "vehicle_id": "41469",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Transit Connect Van FFV",
+          "option_text": "Auto (S8), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Transit+Connect+Van+FFV"
+        }
+      ]
+    },
+    "36024": {
+      "vehicle_id": "36024",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge FWD",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L, Turbo, SIDI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+FWD"
+        }
+      ]
+    },
+    "36025": {
+      "vehicle_id": "36025",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge FWD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+FWD"
+        }
+      ]
+    },
+    "36026": {
+      "vehicle_id": "36026",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge FWD",
+          "option_text": "Auto (S6), 6 cyl, 2.7 L, Turbo, SIDI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+FWD"
+        }
+      ]
+    },
+    "36123": {
+      "vehicle_id": "36123",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Edge FWD",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L, Turbo, SIDI; Stop-Start",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Edge+FWD"
+        }
+      ]
+    },
+    "41309": {
+      "vehicle_id": "41309",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "GR Supra",
+          "option_text": "Auto (S8), 6 cyl, 3.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=GR+Supra"
+        }
+      ]
+    },
+    "49089": {
+      "vehicle_id": "49089",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Prologue AWD Touring",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Prologue+AWD+Touring"
+        }
+      ]
+    },
+    "35886": {
+      "vehicle_id": "35886",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic Natural Gas",
+          "option_text": "Auto 5-spd, 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic+Natural+Gas"
+        }
+      ]
+    },
+    "35786": {
+      "vehicle_id": "35786",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4 LE/XLE",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=RAV4+LE%2FXLE"
+        }
+      ]
+    },
+    "42139": {
+      "vehicle_id": "42139",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Shelby GT500 Mustang",
+          "option_text": "Auto (AM7), 8 cyl, 5.2 L, Sup Charg",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Shelby+GT500+Mustang"
+        }
+      ]
+    },
+    "48828": {
+      "vehicle_id": "48828",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Mustang GTD",
+          "option_text": "Auto (AM-S8), 8 cyl, 5.2 L, Sup Charg",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Mustang+GTD"
+        }
+      ]
+    },
+    "42094": {
+      "vehicle_id": "42094",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla Hatchback XSE",
+          "option_text": "Auto (AV-S10), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Corolla+Hatchback+XSE"
+        }
+      ]
+    },
+    "48254": {
+      "vehicle_id": "48254",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Odyssey",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Odyssey"
+        }
+      ]
+    },
+    "35054": {
+      "vehicle_id": "35054",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Pilot 4WD",
+          "option_text": "Auto 5-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Pilot+4WD"
+        }
+      ]
+    },
+    "48972": {
+      "vehicle_id": "48972",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Grand Highlander Hybrid AWD",
+          "option_text": "Auto (AV-S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Grand+Highlander+Hybrid+AWD"
+        }
+      ]
+    },
+    "48973": {
+      "vehicle_id": "48973",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Grand Highlander Hybrid AWD",
+          "option_text": "Auto (S6), 4 cyl, 2.4 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Grand+Highlander+Hybrid+AWD"
+        }
+      ]
+    },
+    "35596": {
+      "vehicle_id": "35596",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Land Cruiser Wagon 4WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Land+Cruiser+Wagon+4WD"
+        }
+      ]
+    },
+    "42169": {
+      "vehicle_id": "42169",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "F150 2WD FFV BASE PAYLOAD LT",
+          "option_text": "Auto (S10), 8 cyl, 5.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=F150+2WD+FFV+BASE+PAYLOAD+LT"
+        }
+      ]
+    },
+    "48706": {
+      "vehicle_id": "48706",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F-150 Lightning 4WD PRO ER1",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F-150+Lightning+4WD+PRO+ER1"
+        }
+      ]
+    },
+    "41716": {
+      "vehicle_id": "41716",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Prius c",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Prius+c"
+        }
+      ]
+    },
+    "47783": {
+      "vehicle_id": "47783",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "HR-V FWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=HR-V+FWD"
+        }
+      ]
+    },
+    "35627": {
+      "vehicle_id": "35627",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Accord Hybrid",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Accord+Hybrid"
+        }
+      ]
+    },
+    "35297": {
+      "vehicle_id": "35297",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Yaris",
+          "option_text": "Auto 4-spd, 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Yaris"
+        }
+      ]
+    },
+    "35298": {
+      "vehicle_id": "35298",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Yaris",
+          "option_text": "Man 5-spd, 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Yaris"
+        }
+      ]
+    },
+    "42258": {
+      "vehicle_id": "42258",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Escape AWD HEV",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Escape+AWD+HEV"
+        }
+      ]
+    },
+    "48602": {
+      "vehicle_id": "48602",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Escape FWD",
+          "option_text": "Auto 8-spd, 3 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Escape+FWD"
+        }
+      ]
+    },
+    "42479": {
+      "vehicle_id": "42479",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Highlander Hybrid AWD LTD/PLAT",
+          "option_text": "Auto (AV-S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Highlander+Hybrid+AWD+LTD%2FPLAT"
+        }
+      ]
+    },
+    "48017": {
+      "vehicle_id": "48017",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 4Dr",
+          "option_text": "Auto (AV-S7), 4 cyl, 2.0 L, SIDI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+4Dr"
+        }
+      ]
+    },
+    "48016": {
+      "vehicle_id": "48016",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 4Dr",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L, SIDI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+4Dr"
+        }
+      ]
+    },
+    "48018": {
+      "vehicle_id": "48018",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 4Dr",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L, SIDI; Hybrid",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+4Dr"
+        }
+      ]
+    },
+    "48178": {
+      "vehicle_id": "48178",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 4Dr",
+          "option_text": "Man 6-spd, 4 cyl, 1.5 L, Turbo, SIDI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+4Dr"
+        }
+      ]
+    },
+    "35698": {
+      "vehicle_id": "35698",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Crosstour 4WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Crosstour+4WD"
+        }
+      ]
+    },
+    "48595": {
+      "vehicle_id": "48595",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR Corolla",
+          "option_text": "Auto (S8), 3 cyl, 1.6 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+Corolla"
+        }
+      ]
+    },
+    "48596": {
+      "vehicle_id": "48596",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "GR Corolla",
+          "option_text": "Man 6-spd, 3 cyl, 1.6 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=GR+Corolla"
+        }
+      ]
+    },
+    "42075": {
+      "vehicle_id": "42075",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Edge FWD",
+          "option_text": "Auto 8-spd, 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Edge+FWD"
+        }
+      ]
+    },
+    "49057": {
+      "vehicle_id": "49057",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco Sport Sasquatch 4WD",
+          "option_text": "Auto 8-spd, 3 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+Sport+Sasquatch+4WD"
+        }
+      ]
+    },
+    "35918": {
+      "vehicle_id": "35918",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 2WD",
+          "option_text": "Auto (S6), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=F150+Pickup+2WD"
+        }
+      ]
+    },
+    "35919": {
+      "vehicle_id": "35919",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 2WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=F150+Pickup+2WD"
+        }
+      ]
+    },
+    "41832": {
+      "vehicle_id": "41832",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 2WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Tundra+2WD"
+        }
+      ]
+    },
+    "35667": {
+      "vehicle_id": "35667",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Civic Hybrid",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Civic+Hybrid"
+        }
+      ]
+    },
+    "35780": {
+      "vehicle_id": "35780",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Avalon Hybrid",
+          "option_text": "Auto (AV-S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Avalon+Hybrid"
+        }
+      ]
+    },
+    "41899": {
+      "vehicle_id": "41899",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Fusion Energi Plug-in Hybrid",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Fusion+Energi+Plug-in+Hybrid"
+        }
+      ]
+    },
+    "48609": {
+      "vehicle_id": "48609",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Escape AWD HEV",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Escape+AWD+HEV"
+        }
+      ]
+    },
+    "41214": {
+      "vehicle_id": "41214",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla Hybrid",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Corolla+Hybrid"
+        }
+      ]
+    },
+    "35463": {
+      "vehicle_id": "35463",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Odyssey",
+          "option_text": "Auto 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Odyssey"
+        }
+      ]
+    },
+    "41649": {
+      "vehicle_id": "41649",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Insight Touring",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Insight+Touring"
+        }
+      ]
+    },
+    "48495": {
+      "vehicle_id": "48495",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla",
+          "option_text": "Auto (AV-S10), 4 cyl, 2.0 L, SIDI & PFI; 3-mode",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Corolla"
+        }
+      ]
+    },
+    "48493": {
+      "vehicle_id": "48493",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L, SIDI & PFI; 1-mode",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Corolla"
+        }
+      ]
+    },
+    "48494": {
+      "vehicle_id": "48494",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Corolla"
+        }
+      ]
+    },
+    "35579": {
+      "vehicle_id": "35579",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4 Limited AWD",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=RAV4+Limited+AWD"
+        }
+      ]
+    },
+    "41955": {
+      "vehicle_id": "41955",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Mustang Convertible",
+          "option_text": "Auto (S10), 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Mustang+Convertible"
+        }
+      ]
+    },
+    "41957": {
+      "vehicle_id": "41957",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Mustang Convertible",
+          "option_text": "Auto (S10), 8 cyl, 5.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Mustang+Convertible"
+        }
+      ]
+    },
+    "41954": {
+      "vehicle_id": "41954",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Mustang Convertible",
+          "option_text": "Man 6-spd, 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Mustang+Convertible"
+        }
+      ]
+    },
+    "49078": {
+      "vehicle_id": "49078",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Mustang Mach-E AWD",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Mustang+Mach-E+AWD"
+        }
+      ]
+    },
+    "35180": {
+      "vehicle_id": "35180",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Fiesta FWD",
+          "option_text": "Auto (AM6), 4 cyl, 1.6 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Fiesta+FWD"
+        }
+      ]
+    },
+    "35416": {
+      "vehicle_id": "35416",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Fiesta FWD",
+          "option_text": "Man 5-spd, 4 cyl, 1.6 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Fiesta+FWD"
+        }
+      ]
+    },
+    "41882": {
+      "vehicle_id": "41882",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Sequoia 4WD",
+          "option_text": "Auto (S6), 8 cyl, 5.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Sequoia+4WD"
+        }
+      ]
+    },
+    "35787": {
+      "vehicle_id": "35787",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "CR-V 4WD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=CR-V+4WD"
+        }
+      ]
+    },
+    "47535": {
+      "vehicle_id": "47535",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Clarity FCV",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Clarity+FCV"
+        }
+      ]
+    },
+    "35734": {
+      "vehicle_id": "35734",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Camry",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Camry"
+        }
+      ]
+    },
+    "35735": {
+      "vehicle_id": "35735",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Camry",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Camry"
+        }
+      ]
+    },
+    "48893": {
+      "vehicle_id": "48893",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup Tremor 4WD",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+Pickup+Tremor+4WD"
+        }
+      ]
+    },
+    "48894": {
+      "vehicle_id": "48894",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup Tremor 4WD",
+          "option_text": "Auto (S10), 8 cyl, 5.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=F150+Pickup+Tremor+4WD"
+        }
+      ]
+    },
+    "47538": {
+      "vehicle_id": "47538",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "Mirai",
+          "option_text": "Auto (variable gear ratios)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=Mirai"
+        }
+      ]
+    },
+    "48246": {
+      "vehicle_id": "48246",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Ridgeline AWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Ridgeline+AWD"
+        }
+      ]
+    },
+    "35784": {
+      "vehicle_id": "35784",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "CR-V 2WD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.4 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=CR-V+2WD"
+        }
+      ]
+    },
+    "41761": {
+      "vehicle_id": "41761",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Pilot AWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Pilot+AWD"
+        }
+      ]
+    },
+    "41762": {
+      "vehicle_id": "41762",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Pilot AWD",
+          "option_text": "Auto 6-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Pilot+AWD"
+        }
+      ]
+    },
+    "35702": {
+      "vehicle_id": "35702",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Expedition 2WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Expedition+2WD"
+        }
+      ]
+    },
+    "42187": {
+      "vehicle_id": "42187",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4 Hybrid AWD",
+          "option_text": "Auto (AV-S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=RAV4+Hybrid+AWD"
+        }
+      ]
+    },
+    "48502": {
+      "vehicle_id": "48502",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Auto (AV-S7), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "48503": {
+      "vehicle_id": "48503",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "48042": {
+      "vehicle_id": "48042",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Civic 5Dr",
+          "option_text": "Man 6-spd, 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Civic+5Dr"
+        }
+      ]
+    },
+    "35048": {
+      "vehicle_id": "35048",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Honda",
+          "model_name": "Pilot 2WD",
+          "option_text": "Auto 5-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Honda&model=Pilot+2WD"
+        }
+      ]
+    },
+    "48510": {
+      "vehicle_id": "48510",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 2WD",
+          "option_text": "Auto (S10), 6 cyl, 3.4 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Tundra+2WD"
+        }
+      ]
+    },
+    "48511": {
+      "vehicle_id": "48511",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 2WD",
+          "option_text": "Auto (S10), 6 cyl, 3.4 L, Turbo, SIDI & PFI; 3-mode (Sport/Normal/Eco)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Tundra+2WD"
+        }
+      ]
+    },
+    "48512": {
+      "vehicle_id": "48512",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Tundra 2WD",
+          "option_text": "Auto (S10), 6 cyl, 3.4 L, Turbo, SIDI & PFI; Hybrid",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Tundra+2WD"
+        }
+      ]
+    },
+    "35516": {
+      "vehicle_id": "35516",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Venza 4WD",
+          "option_text": "Auto (S6), 4 cyl, 2.7 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Venza+4WD"
+        }
+      ]
+    },
+    "35517": {
+      "vehicle_id": "35517",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Venza 4WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Venza+4WD"
+        }
+      ]
+    },
+    "42078": {
+      "vehicle_id": "42078",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Edge AWD",
+          "option_text": "Auto (S8), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Edge+AWD"
+        }
+      ]
+    },
+    "42079": {
+      "vehicle_id": "42079",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Edge AWD",
+          "option_text": "Auto (S8), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Edge+AWD"
+        }
+      ]
+    },
+    "42080": {
+      "vehicle_id": "42080",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "Edge AWD",
+          "option_text": "Auto 8-spd, 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=Edge+AWD"
+        }
+      ]
+    },
+    "48892": {
+      "vehicle_id": "48892",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Ranger RAPTOR 4WD",
+          "option_text": "Auto (S10), 6 cyl, 3.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Ranger+RAPTOR+4WD"
+        }
+      ]
+    },
+    "35951": {
+      "vehicle_id": "35951",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Flex AWD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Flex+AWD"
+        }
+      ]
+    },
+    "35952": {
+      "vehicle_id": "35952",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Flex AWD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Flex+AWD"
+        }
+      ]
+    },
+    "42188": {
+      "vehicle_id": "42188",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4 AWD TRD OFFROAD",
+          "option_text": "Auto (S8), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Toyota&model=RAV4+AWD+TRD+OFFROAD"
+        }
+      ]
+    },
+    "42135": {
+      "vehicle_id": "42135",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Accord Hybrid",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Accord+Hybrid"
+        }
+      ]
+    },
+    "49046": {
+      "vehicle_id": "49046",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Ranger 4WD",
+          "option_text": "Auto (S10), 4 cyl, 2.3 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Ranger+4WD"
+        }
+      ]
+    },
+    "49142": {
+      "vehicle_id": "49142",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Ranger 4WD",
+          "option_text": "Auto (S10), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Ranger+4WD"
+        }
+      ]
+    },
+    "41895": {
+      "vehicle_id": "41895",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Odyssey",
+          "option_text": "Auto 10-spd, 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Odyssey"
+        }
+      ]
+    },
+    "35577": {
+      "vehicle_id": "35577",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "RAV4",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=RAV4"
+        }
+      ]
+    },
+    "35696": {
+      "vehicle_id": "35696",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Escape AWD",
+          "option_text": "Auto (S6), 4 cyl, 1.6 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Escape+AWD"
+        }
+      ]
+    },
+    "35697": {
+      "vehicle_id": "35697",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Escape AWD",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Escape+AWD"
+        }
+      ]
+    },
+    "47754": {
+      "vehicle_id": "47754",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Pilot AWD Touring/Elite/Black",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Pilot+AWD+Touring%2FElite%2FBlack"
+        }
+      ]
+    },
+    "42254": {
+      "vehicle_id": "42254",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Passport FWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Passport+FWD"
+        }
+      ]
+    },
+    "48912": {
+      "vehicle_id": "48912",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Highlander",
+          "option_text": "Auto (S8), 4 cyl, 2.4 L, Turbo, SIDI & PFI; with Stop-Start",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Highlander"
+        }
+      ]
+    },
+    "48913": {
+      "vehicle_id": "48913",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Highlander",
+          "option_text": "Auto (S8), 4 cyl, 2.4 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Highlander"
+        }
+      ]
+    },
+    "35686": {
+      "vehicle_id": "35686",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Sienna 2WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Sienna+2WD"
+        }
+      ]
+    },
+    "41630": {
+      "vehicle_id": "41630",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "EcoSport AWD",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=EcoSport+AWD"
+        }
+      ]
+    },
+    "49053": {
+      "vehicle_id": "49053",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco 4WD",
+          "option_text": "Auto (S10), 4 cyl, 2.3 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+4WD"
+        }
+      ]
+    },
+    "49054": {
+      "vehicle_id": "49054",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco 4WD",
+          "option_text": "Auto (S10), 6 cyl, 2.7 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+4WD"
+        }
+      ]
+    },
+    "49058": {
+      "vehicle_id": "49058",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco 4WD",
+          "option_text": "Auto (S10), 6 cyl, 2.7 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+4WD"
+        }
+      ]
+    },
+    "49055": {
+      "vehicle_id": "49055",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Ford",
+          "model_name": "Bronco 4WD",
+          "option_text": "Man 7-spd, 4 cyl, 2.3 L, Turbo, SIDI & PFI",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Ford&model=Bronco+4WD"
+        }
+      ]
+    },
+    "48092": {
+      "vehicle_id": "48092",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Passport AWD",
+          "option_text": "Auto (S9), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Passport+AWD"
+        }
+      ]
+    },
+    "42298": {
+      "vehicle_id": "42298",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "CR-V FWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=CR-V+FWD"
+        }
+      ]
+    },
+    "35595": {
+      "vehicle_id": "35595",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S5), 6 cyl, 4.0 L, Part-time 4WD",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "35597": {
+      "vehicle_id": "35597",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "4Runner 4WD",
+          "option_text": "Auto (S5), 6 cyl, 4.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=4Runner+4WD"
+        }
+      ]
+    },
+    "42518": {
+      "vehicle_id": "42518",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Ford",
+          "model_name": "F150 2WD BASE PAYLOAD LT TIRE",
+          "option_text": "Auto (S10), 6 cyl, 3.0 L, Diesel, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Ford&model=F150+2WD+BASE+PAYLOAD+LT+TIRE"
+        }
+      ]
+    },
+    "35738": {
+      "vehicle_id": "35738",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "C-MAX Hybrid FWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=C-MAX+Hybrid+FWD"
+        }
+      ]
+    },
+    "49091": {
+      "vehicle_id": "49091",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Prologue FWD",
+          "option_text": "Auto (A1)",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Prologue+FWD"
+        }
+      ]
+    },
+    "41648": {
+      "vehicle_id": "41648",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "Insight",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=Insight"
+        }
+      ]
+    },
+    "49139": {
+      "vehicle_id": "49139",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla Hybrid (Normal/Eco Modes)",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Corolla+Hybrid+%28Normal%2FEco+Modes%29"
+        }
+      ]
+    },
+    "35922": {
+      "vehicle_id": "35922",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD",
+          "option_text": "Auto (S6), 6 cyl, 2.7 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=F150+Pickup+4WD"
+        }
+      ]
+    },
+    "35923": {
+      "vehicle_id": "35923",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "F150 Pickup 4WD",
+          "option_text": "Auto (S6), 6 cyl, 3.5 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=F150+Pickup+4WD"
+        }
+      ]
+    },
+    "47755": {
+      "vehicle_id": "47755",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Honda",
+          "model_name": "Pilot AWD TrailSport",
+          "option_text": "Auto (S10), 6 cyl, 3.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Honda&model=Pilot+AWD+TrailSport"
+        }
+      ]
+    },
+    "42204": {
+      "vehicle_id": "42204",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "HR-V AWD",
+          "option_text": "Auto (AV-S7), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=HR-V+AWD"
+        }
+      ]
+    },
+    "42203": {
+      "vehicle_id": "42203",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2020,
+          "manufacturer": "Honda",
+          "model_name": "HR-V AWD",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 1.8 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2020&make=Honda&model=HR-V+AWD"
+        }
+      ]
+    },
+    "48911": {
+      "vehicle_id": "48911",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Corolla Cross",
+          "option_text": "Auto (AV-S10), 4 cyl, 2.0 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Corolla+Cross"
+        }
+      ]
+    },
+    "35736": {
+      "vehicle_id": "35736",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Toyota",
+          "model_name": "Camry Hybrid LE",
+          "option_text": "Auto (variable gear ratios), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Toyota&model=Camry+Hybrid+LE"
+        }
+      ]
+    },
+    "48877": {
+      "vehicle_id": "48877",
+      "status": "fetched",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2025,
+          "manufacturer": "Toyota",
+          "model_name": "Tacoma 4WD MT",
+          "option_text": "Man 6-spd, 4 cyl, 2.4 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2025&make=Toyota&model=Tacoma+4WD+MT"
+        }
+      ]
+    },
+    "35688": {
+      "vehicle_id": "35688",
+      "status": "discovered",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Escape FWD",
+          "option_text": "Auto (S6), 4 cyl, 1.6 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Escape+FWD"
+        }
+      ]
+    },
+    "35689": {
+      "vehicle_id": "35689",
+      "status": "discovered",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Escape FWD",
+          "option_text": "Auto (S6), 4 cyl, 2.0 L, Turbo",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Escape+FWD"
+        }
+      ]
+    },
+    "35690": {
+      "vehicle_id": "35690",
+      "status": "discovered",
+      "error": null,
+      "provenance": [
+        {
+          "model_year": 2015,
+          "manufacturer": "Ford",
+          "model_name": "Escape FWD",
+          "option_text": "Auto (S6), 4 cyl, 2.5 L",
+          "options_url": "https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=2015&make=Ford&model=Escape+FWD"
+        }
+      ]
+    }
+  }
+}

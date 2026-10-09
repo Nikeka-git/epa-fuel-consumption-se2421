@@ -1,0 +1,3 @@
+# Dataset, response and run manifests verify exact bytes with SHA-256.
+# Keep those bytes unchanged when checking out on Windows or POSIX.
+* -text

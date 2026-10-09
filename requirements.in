@@ -1,0 +1,14 @@
+# Human-readable installed stack. Exact tested versions are in requirements.lock.txt.
+# Network collection uses only the Python standard library.
+numpy
+pandas
+pyarrow
+scikit-learn
+matplotlib
+seaborn
+nbformat
+nbconvert
+ipykernel
+joblib
+pytest
+# Final stage optional dependency is declared as the app extra in pyproject.toml.

@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "verification_date": "2026-10-09",
+  "release_stage": "initial implementation and limited real example; full benchmark pending",
+  "checked": [
+    "Python syntax",
+    "JSON parsing",
+    "local Markdown links",
+    "no credential-like values in release files",
+    "Git release file size limits",
+    "429 cached response SHA-256 hashes",
+    "4 provided source hashes",
+    "processed example dataset SHA-256",
+    "executed notebook outputs"
+  ],
+  "offline_tests": {
+    "passed": 91,
+    "cleaning": 47,
+    "api_and_collector": 36,
+    "modeling": 8
+  },
+  "limited_example": {
+    "raw_vehicle_records": 250,
+    "cleaned_rows": 146,
+    "excluded_rows": 104,
+    "minimum_1000_met": false,
+    "full_catalogue_complete": false
+  },
+  "notebook": {
+    "executed_code_cells": 8,
+    "errors": 0,
+    "plots_visually_inspected": 4
+  },
+  "local_markdown_links": 22,
+  "source_review": {
+    "guide_pdf": "text and all 3 pages visually inspected",
+    "rubric_docx": "OOXML text and all 4 tables inspected; no comments or tracked changes; visual rendering unavailable because bundled LibreOffice is absent",
+    "lecture_pdfs": "text extracted and key regression pages visually inspected"
+  },
+  "remaining": [
+    "full collection and subject-matter audit",
+    "main benchmark freeze",
+    "full Midterm report and slides",
+    "Endterm and Final experiments",
+    "local prediction application"
+  ]
+}

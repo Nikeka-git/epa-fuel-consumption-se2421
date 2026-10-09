@@ -1,0 +1,15 @@
+stage,before,removed,after
+raw_integrity,250,0,250
+required_identity,250,0,250
+model_year,250,0,250
+powertrain_metadata,250,0,250
+primary_fuel,250,13,237
+secondary_fuel,237,12,225
+alternative_technology,225,38,187
+electric_motor,187,0,187
+phev,187,0,187
+hybrid_text,187,0,187
+vehicle_class,187,41,146
+target,146,0,146
+engine_specs,146,0,146
+confirmed_complete_source_duplicates,146,0,146

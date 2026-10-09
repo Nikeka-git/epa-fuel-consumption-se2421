@@ -1,0 +1,147 @@
+vehicle_id,manufacturer,model_name,base_model,normalized_manufacturer,canonical_family,model_group,group_source
+34836,Honda,Fit,Fit,honda,fit,5:honda|fit,base_model
+34837,Honda,Fit,Fit,honda,fit,5:honda|fit,base_model
+34855,Honda,Fit,Fit,honda,fit,5:honda|fit,base_model
+35027,Ford,Taurus AWD,Taurus,ford,taurus,4:ford|taurus,base_model
+35032,Ford,Taurus AWD,Taurus,ford,taurus,4:ford|taurus,base_model
+35048,Honda,Pilot 2WD,Pilot,honda,pilot,5:honda|pilot,base_model
+35054,Honda,Pilot 4WD,Pilot,honda,pilot,5:honda|pilot,base_model
+35180,Ford,Fiesta FWD,Fiesta,ford,fiesta,4:ford|fiesta,base_model
+35297,Toyota,Yaris,Yaris,toyota,yaris,6:toyota|yaris,base_model
+35298,Toyota,Yaris,Yaris,toyota,yaris,6:toyota|yaris,base_model
+35416,Ford,Fiesta FWD,Fiesta,ford,fiesta,4:ford|fiesta,base_model
+35514,Toyota,Highlander 2WD,Highlander,toyota,highlander,6:toyota|highlander,base_model
+35515,Toyota,Highlander 2WD,Highlander,toyota,highlander,6:toyota|highlander,base_model
+35516,Toyota,Venza 4WD,Venza,toyota,venza,6:toyota|venza,base_model
+35517,Toyota,Venza 4WD,Venza,toyota,venza,6:toyota|venza,base_model
+35548,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+35549,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+35550,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+35551,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+35552,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+35553,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+35577,Toyota,RAV4,RAV4,toyota,rav4,6:toyota|rav4,base_model
+35579,Toyota,RAV4 Limited AWD,RAV4,toyota,rav4,6:toyota|rav4,base_model
+35595,Toyota,4Runner 4WD,4Runner,toyota,4runner,6:toyota|4runner,base_model
+35596,Toyota,Land Cruiser Wagon 4WD,Land Cruiser,toyota,land cruiser,6:toyota|land cruiser,base_model
+35597,Toyota,4Runner 4WD,4Runner,toyota,4runner,6:toyota|4runner,base_model
+35648,Toyota,Sequoia 2WD,Sequoia,toyota,sequoia,6:toyota|sequoia,base_model
+35651,Toyota,Sequoia 4WD,Sequoia,toyota,sequoia,6:toyota|sequoia,base_model
+35668,Honda,Civic,Civic,honda,civic,5:honda|civic,base_model
+35669,Honda,Civic,Civic,honda,civic,5:honda|civic,base_model
+35670,Honda,Civic,Civic,honda,civic,5:honda|civic,base_model
+35671,Honda,Civic HF,Civic,honda,civic,5:honda|civic,base_model
+35672,Honda,Civic,Civic,honda,civic,5:honda|civic,base_model
+35691,Honda,Crosstour 2WD,Crosstour,honda,crosstour,5:honda|crosstour,base_model
+35692,Honda,Crosstour 2WD,Crosstour,honda,crosstour,5:honda|crosstour,base_model
+35696,Ford,Escape AWD,Escape,ford,escape,4:ford|escape,base_model
+35697,Ford,Escape AWD,Escape,ford,escape,4:ford|escape,base_model
+35698,Honda,Crosstour 4WD,Crosstour,honda,crosstour,5:honda|crosstour,base_model
+35702,Ford,Expedition 2WD,Expedition,ford,expedition,4:ford|expedition,base_model
+35706,Ford,Expedition 4WD,Expedition,ford,expedition,4:ford|expedition,base_model
+35734,Toyota,Camry,Camry,toyota,camry,6:toyota|camry,base_model
+35735,Toyota,Camry,Camry,toyota,camry,6:toyota|camry,base_model
+35784,Honda,CR-V 2WD,CR-V,honda,cr-v,5:honda|cr-v,base_model
+35786,Toyota,RAV4 LE/XLE,RAV4,toyota,rav4,6:toyota|rav4,base_model
+35787,Honda,CR-V 4WD,CR-V,honda,cr-v,5:honda|cr-v,base_model
+35891,Toyota,Avalon,Avalon,toyota,avalon,6:toyota|avalon,base_model
+35951,Ford,Flex AWD,Flex,ford,flex,4:ford|flex,base_model
+35952,Ford,Flex AWD,Flex,ford,flex,4:ford|flex,base_model
+35969,Ford,Focus SFE FWD,Focus,ford,focus,4:ford|focus,base_model
+36024,Ford,Edge FWD,Edge,ford,edge,4:ford|edge,base_model
+36025,Ford,Edge FWD,Edge,ford,edge,4:ford|edge,base_model
+36026,Ford,Edge FWD,Edge,ford,edge,4:ford|edge,base_model
+36027,Ford,Edge AWD,Edge,ford,edge,4:ford|edge,base_model
+36028,Ford,Edge AWD,Edge,ford,edge,4:ford|edge,base_model
+36029,Ford,Edge AWD,Edge,ford,edge,4:ford|edge,base_model
+36123,Ford,Edge FWD,Edge,ford,edge,4:ford|edge,base_model
+41309,Toyota,GR Supra,GR Supra,toyota,gr supra,6:toyota|gr supra,base_model
+41630,Ford,EcoSport AWD,EcoSport,ford,ecosport,4:ford|ecosport,base_model
+41747,Honda,Civic 5Dr,Civic,honda,civic,5:honda|civic,base_model
+41748,Honda,Civic 5Dr,Civic,honda,civic,5:honda|civic,base_model
+41749,Honda,Civic 5Dr,Civic,honda,civic,5:honda|civic,base_model
+41754,Honda,Pilot FWD,Pilot,honda,pilot,5:honda|pilot,base_model
+41755,Honda,Pilot FWD,Pilot,honda,pilot,5:honda|pilot,base_model
+41761,Honda,Pilot AWD,Pilot,honda,pilot,5:honda|pilot,base_model
+41762,Honda,Pilot AWD,Pilot,honda,pilot,5:honda|pilot,base_model
+41880,Toyota,Sequoia 2WD,Sequoia,toyota,sequoia,6:toyota|sequoia,base_model
+41882,Toyota,Sequoia 4WD,Sequoia,toyota,sequoia,6:toyota|sequoia,base_model
+41884,Honda,Civic 2Dr,Civic,honda,civic,5:honda|civic,base_model
+41940,Toyota,4Runner 4WD,4Runner,toyota,4runner,6:toyota|4runner,base_model
+41942,Toyota,4Runner 4WD,4Runner,toyota,4runner,6:toyota|4runner,base_model
+41949,Toyota,86,86,toyota,86,6:toyota|86,base_model
+41950,Toyota,86,86,toyota,86,6:toyota|86,base_model
+41954,Ford,Mustang Convertible,Mustang,ford,mustang,4:ford|mustang,base_model
+41955,Ford,Mustang Convertible,Mustang,ford,mustang,4:ford|mustang,base_model
+41957,Ford,Mustang Convertible,Mustang,ford,mustang,4:ford|mustang,base_model
+42012,Toyota,Camry XSE,Camry,toyota,camry,6:toyota|camry,base_model
+42064,Honda,Accord 2.0T Sport/Touring,Accord,honda,accord,5:honda|accord,base_model
+42075,Ford,Edge FWD,Edge,ford,edge,4:ford|edge,base_model
+42078,Ford,Edge AWD,Edge,ford,edge,4:ford|edge,base_model
+42079,Ford,Edge AWD,Edge,ford,edge,4:ford|edge,base_model
+42080,Ford,Edge AWD,Edge,ford,edge,4:ford|edge,base_model
+42094,Toyota,Corolla Hatchback XSE,Corolla,toyota,corolla,6:toyota|corolla,base_model
+42139,Ford,Shelby GT500 Mustang,Mustang,ford,mustang,4:ford|mustang,base_model
+42140,Honda,Civic 2Dr,Civic,honda,civic,5:honda|civic,base_model
+42141,Honda,Civic 2Dr,Civic,honda,civic,5:honda|civic,base_model
+42142,Honda,Civic 2Dr,Civic,honda,civic,5:honda|civic,base_model
+42143,Honda,Civic 2Dr,Civic,honda,civic,5:honda|civic,base_model
+42144,Honda,Civic 2Dr,Civic,honda,civic,5:honda|civic,base_model
+42181,Toyota,RAV4,RAV4,toyota,rav4,6:toyota|rav4,base_model
+42182,Toyota,RAV4,RAV4,toyota,rav4,6:toyota|rav4,base_model
+42188,Toyota,RAV4 AWD TRD OFFROAD,RAV4,toyota,rav4,6:toyota|rav4,base_model
+42203,Honda,HR-V AWD,HR-V,honda,hr-v,5:honda|hr-v,base_model
+42204,Honda,HR-V AWD,HR-V,honda,hr-v,5:honda|hr-v,base_model
+42254,Honda,Passport FWD,Passport,honda,passport,5:honda|passport,base_model
+42256,Ford,Escape AWD,Escape,ford,escape,4:ford|escape,base_model
+42257,Ford,Escape AWD,Escape,ford,escape,4:ford|escape,base_model
+42265,Ford,Expedition 2WD,Expedition,ford,expedition,4:ford|expedition,base_model
+42270,Ford,Expedition MAX 4WD,Expedition,ford,expedition,4:ford|expedition,base_model
+42298,Honda,CR-V FWD,CR-V,honda,cr-v,5:honda|cr-v,base_model
+42501,Honda,Civic 5Dr,Civic,honda,civic,5:honda|civic,base_model
+42511,Toyota,Camry AWD XLE/XSE,Camry,toyota,camry,6:toyota|camry,base_model
+47728,Honda,Pilot FWD,Pilot,honda,pilot,5:honda|pilot,base_model
+47753,Honda,Pilot AWD,Pilot,honda,pilot,5:honda|pilot,base_model
+47754,Honda,Pilot AWD Touring/Elite/Black,Pilot,honda,pilot,5:honda|pilot,base_model
+47755,Honda,Pilot AWD TrailSport,Pilot,honda,pilot,5:honda|pilot,base_model
+47782,Honda,HR-V AWD,HR-V,honda,hr-v,5:honda|hr-v,base_model
+47783,Honda,HR-V FWD,HR-V,honda,hr-v,5:honda|hr-v,base_model
+47949,Honda,CR-V FWD,CR-V,honda,cr-v,5:honda|cr-v,base_model
+47956,Honda,CR-V AWD,CR-V,honda,cr-v,5:honda|cr-v,base_model
+47966,Toyota,GR Supra,GR Supra,toyota,gr supra,6:toyota|gr supra,base_model
+47967,Toyota,GR Supra,GR Supra,toyota,gr supra,6:toyota|gr supra,base_model
+47968,Toyota,GR Supra,GR Supra,toyota,gr supra,6:toyota|gr supra,base_model
+48016,Honda,Civic 4Dr,Civic,honda,civic,5:honda|civic,base_model
+48017,Honda,Civic 4Dr,Civic,honda,civic,5:honda|civic,base_model
+48042,Honda,Civic 5Dr,Civic,honda,civic,5:honda|civic,base_model
+48092,Honda,Passport AWD,Passport,honda,passport,5:honda|passport,base_model
+48118,Ford,Explorer AWD,Explorer,ford,explorer,4:ford|explorer,base_model
+48119,Ford,Explorer AWD,Explorer,ford,explorer,4:ford|explorer,base_model
+48120,Ford,Explorer AWD,Explorer,ford,explorer,4:ford|explorer,base_model
+48178,Honda,Civic 4Dr,Civic,honda,civic,5:honda|civic,base_model
+48493,Toyota,Corolla,Corolla,toyota,corolla,6:toyota|corolla,base_model
+48494,Toyota,Corolla,Corolla,toyota,corolla,6:toyota|corolla,base_model
+48495,Toyota,Corolla,Corolla,toyota,corolla,6:toyota|corolla,base_model
+48496,Toyota,Corolla FX,Corolla,toyota,corolla,6:toyota|corolla,base_model
+48502,Honda,Civic 5Dr,Civic,honda,civic,5:honda|civic,base_model
+48504,Honda,Accord,Accord,honda,accord,5:honda|accord,base_model
+48595,Toyota,GR Corolla,Corolla,toyota,corolla,6:toyota|corolla,base_model
+48596,Toyota,GR Corolla,Corolla,toyota,corolla,6:toyota|corolla,base_model
+48602,Ford,Escape FWD,Escape,ford,escape,4:ford|escape,base_model
+48821,Toyota,GR 86,GR 86,toyota,gr 86,6:toyota|gr 86,base_model
+48822,Toyota,GR 86,GR 86,toyota,gr 86,6:toyota|gr 86,base_model
+48828,Ford,Mustang GTD,Mustang,ford,mustang,4:ford|mustang,base_model
+48910,Toyota,RAV4,RAV4,toyota,rav4,6:toyota|rav4,base_model
+48911,Toyota,Corolla Cross,Corolla Cross,toyota,corolla cross,6:toyota|corolla cross,base_model
+48912,Toyota,Highlander,Highlander,toyota,highlander,6:toyota|highlander,base_model
+48913,Toyota,Highlander,Highlander,toyota,highlander,6:toyota|highlander,base_model
+48958,Ford,Bronco Outer Banks 4WD,Bronco,ford,bronco,4:ford|bronco,base_model
+48976,Toyota,4Runner 4WD,4Runner,toyota,4runner,6:toyota|4runner,base_model
+48982,Toyota,4Runner 4WD,4Runner,toyota,4runner,6:toyota|4runner,base_model
+49053,Ford,Bronco 4WD,Bronco,ford,bronco,4:ford|bronco,base_model
+49054,Ford,Bronco 4WD,Bronco,ford,bronco,4:ford|bronco,base_model
+49055,Ford,Bronco 4WD,Bronco,ford,bronco,4:ford|bronco,base_model
+49057,Ford,Bronco Sport Sasquatch 4WD,Bronco Sport,ford,bronco sport,4:ford|bronco sport,base_model
+49058,Ford,Bronco 4WD,Bronco,ford,bronco,4:ford|bronco,base_model
+49146,Ford,Bronco Sasquatch 4WD,Bronco,ford,bronco,4:ford|bronco,base_model
+49147,Ford,Bronco Sasquatch 4WD,Bronco,ford,bronco,4:ford|bronco,base_model

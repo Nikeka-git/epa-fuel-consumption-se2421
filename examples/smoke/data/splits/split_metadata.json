@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "frozen_at_utc": "2026-10-09T00:40:42.212564+00:00",
+  "dataset_path": "C:\\Users\\Nikeka\\Documents\\Codex\\2026-10-09\\group-se-2421-team-members-tsybus\\outputs\\fuel_consumption_project\\examples\\smoke\\data\\processed\\vehicles.parquet",
+  "dataset_sha256": "f03e84f68e8e15daab31e6a1ce6e1e0886e5c33bac95a551ec5ecc6d19bfb665",
+  "config_sha256": "fcd05f90aed6318fe9245272f5f23202ee4bb50c23388a12fb472638bb37f017",
+  "artifact_sha256": {
+    "group_mapping.csv": "fe12855deae3bc02da50c19d5efb3f55737d81298f5edc11c76f83306ca1c07b",
+    "group_alias_audit.csv": "a931d8abe96c1879646e823f11bad5634e82405c8609da68f831bf2b1544014b",
+    "split_manifest.csv": "670cddb2508c011e750aed105eef6ba79c46ba144e8e91bd1067ab983098cb4a",
+    "split_coverage.csv": "655cbaa626057d9c5dd0643efe79de0a6f00708a9032bc15a89960ea49fea691"
+  },
+  "alias_map_sha256": null,
+  "group_definition": "normalized manufacturer + base_model; fallback full model_name; across years",
+  "method": "GroupShuffleSplit",
+  "test_group_fraction": 0.2,
+  "random_state": 42,
+  "cv_method": "GroupKFold",
+  "cv_n_splits": 5,
+  "cv_shuffle": false,
+  "python_version": "3.12.14",
+  "sklearn_version": "1.9.1",
+  "development_small_dataset": true,
+  "unresolved_fallback_rows": 0,
+  "alias_limitation": "Unresolved full-name fallbacks may represent related families; inspect group_alias_audit.csv before claims of family independence.",
+  "n_train": 116,
+  "n_test": 30,
+  "n_train_groups": 27,
+  "n_test_groups": 7,
+  "test_row_fraction": 0.2054794520547945,
+  "train_test_id_overlap": 0,
+  "train_test_group_overlap": 0,
+  "cv_group_overlap": 0,
+  "fold_sizes": {
+    "0": {
+      "n_train": 92,
+      "n_valid": 24
+    },
+    "1": {
+      "n_train": 93,
+      "n_valid": 23
+    },
+    "2": {
+      "n_train": 93,
+      "n_valid": 23
+    },
+    "3": {
+      "n_train": 93,
+      "n_valid": 23
+    },
+    "4": {
+      "n_train": 93,
+      "n_valid": 23
+    }
+  }
+}

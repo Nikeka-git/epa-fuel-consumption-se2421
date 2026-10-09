@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://www.fueleconomy.gov/robots.txt",
+    "fetched_at_utc": "2026-10-09T00:26:48.837703+00:00",
+    "error": "RemoteDisconnected",
+    "message": "Remote end closed connection without response"
+  },
+  {
+    "url": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+    "fetched_at_utc": "2026-10-09T00:26:49.741264+00:00",
+    "file": "api_documentation.html",
+    "status": 200,
+    "content_type": "text/html",
+    "sha256": "5fd3a6c0bef33459c408510dd717cbb58a7b7143929d583d9647dc33e65a915d"
+  },
+  {
+    "url": "https://www.fueleconomy.gov/feg/printCopyright.shtml",
+    "fetched_at_utc": "2026-10-09T00:26:50.832569+00:00",
+    "error": "HTTPError",
+    "message": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.fueleconomy.gov/feg/ORNL-disclaimer.htm",
+    "file": "ORNL-disclaimer.html",
+    "status": 200,
+    "fetched_at_utc": "2026-10-09T00:27:30.648045+00:00",
+    "sha256": "5ccccc187a4a6478a4d957ddf9258e1046999200ed7270e16680a43d61210460"
+  }
+]

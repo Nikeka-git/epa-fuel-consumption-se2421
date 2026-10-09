@@ -1,0 +1,49 @@
+ПРОВЕРКА ЛЕКЦИЙ 3–4 — 2026-10-09
+
+Проверены предоставленные пользователем локальные PDF:
+1) C:/Users/Nikeka/Downloads/lecture 3.pdf — 45 страниц, титул «Linear regression», Dr. Darkhan Zholtayev, Machine Learning.
+2) C:/Users/Nikeka/Downloads/Lecture 4 (2).pdf — 41 страница, титул «Classification Algorithms», тот же преподаватель, Machine Learning Algorithms.
+Ниже номера именно PDF-страниц, начиная с 1. Встроенная нумерация импортированных слайдов местами другая (например PDF p27 содержит маленькое «31»).
+Текст: work/lecture3_extracted.txt и work/lecture4_extracted.txt. Ключевые страницы дополнительно отрендерены Poppler и визуально просмотрены, поскольку часть формул/схем — изображения. Численные примеры лекций не являются результатами проекта.
+
+Подтверждённые модели для Midterm
+
+LinearRegression (multiple linear regression): lecture3 PDF p13 различает simple/multiple/polynomial forms; p18 метод наименьших квадратов; p28 импорт sklearn LinearRegression; p32 fit; p35 код с двумя предикторами; p36–37 визуализации multiple linear regression.
+DecisionTreeRegressor: lecture4 PDF p4–20 — деревья. Хотя много примеров классификационные, p15 прямо говорит, что leaf содержит average value в regression; p40 прямо называет пригодность деревьев и для classification, и для regression. Регрессионный вариант дерева соответствует показанному семейству; конкретный sklearn класс и регрессионный splitting criterion — техническая реализация проекта.
+KNeighborsRegressor: lecture4 PDF p22–28 — KNN. P23 объясняет k как hyperparameter; p25 прямо описывает regression как среднее targets соседей с численным примером; p28 озаглавлена «KNN regression». Следовательно KNN regression подтверждён явно.
+
+Итого основной обязательный набор: dummy median + LinearRegression + KNeighborsRegressor + DecisionTreeRegressor. Это три самостоятельных изученных подхода, подходящие непрерывному target. Dummy не входит в счёт трёх. Теперь не нужно оставлять их как неподтверждённые кандидаты до получения Weeks 3–4.
+Polynomial regression действительно представлена, в том числе p13 с квадратичным членом (подтверждено изображением), но для минимального набора не требуется. Можно добавить четвёртый необязательный experiment PolynomialFeatures(degree=2) только над числовыми признаками + LinearRegression; не раздувать one-hot категорий квадратами без причины. Simple и multiple linear regression не стоит считать двумя разными алгоритмами для выполнения требования «три модели».
+Ridge/Lasso/ElasticNet в предоставленных лекциях не подтверждены. Ridge допустим позже как расширение/регуляризация, но его нельзя использовать вместо подтверждённой третьей модели, называя изученным по этим файлам.
+SVM в lecture4 p30–40 объясняется на classification, включая margin/kernel и chess classification. SVR прямо не подтверждён. Не брать SVR как основной третий алгоритм и не переводить continuous fuel target в классы ради SVM. Polynomial и SVM упомянуты в материалах с разной глубиной; этого достаточно для optional extension, не для заявления о полном курсовом покрытии SVR.
+
+Фиксированные стартовые настройки (НАШЕ решение, не указание лекций)
+
+DummyRegressor(strategy='median'): соответствует primary MAE, медиана заново fit в каждом train fold. Lecture3 p40 объясняет median; выбор dummy и MAE исходит из rubric и вопроса проекта.
+LinearRegression(fit_intercept=True): простая интерпретируемая линейная связь нескольких specs с расходом. Numeric median imputation; optional StandardScaler для численной устойчивости; categorical constant imputation и OneHotEncoder(handle_unknown='ignore', drop='first') для отсутствия dummy-variable collinearity с intercept. Не объявлять коэффициенты причинными эффектами; корреляция displacement/cylinders и категории осложняет interpretation. Не использовать model/baseModel/ID в X.
+KNeighborsRegressor(n_neighbors=15, weights='uniform', p=2): усреднение по 15 соседям снижает чувствительность к единичной похожей комплектации. Число 15 предварительное, не «оптимальное» и не извлечено из лекции; оно должно быть < размера каждого fold-training. Numeric median imputation + StandardScaler обязательны для meaningful distance; categorical constant imputation + полный OneHotEncoder(handle_unknown='ignore', drop=None). Оставить равные веса для прямого соответствия описанному averaging. Расстояние по mixed numeric/one-hot данным и неизвестные категории — конкретные ограничения. Не использовать LabelEncoder для упорядочивания make/drive/class.
+DecisionTreeRegressor(criterion='squared_error', max_depth=6, min_samples_leaf=5, random_state=42): ограничить рост дерева, получить nonlinear splits/interactions. Лекция p15 прямо обсуждает max depth и minimum samples как stopping criteria, но выбранные числа принадлежат проекту. Numeric median imputation + categorical constant imputation/one-hot; scaling для дерева не обязателен. Gini/entropy из классификационных слайдов не являются criterion для нашего regression tree; squared_error соответствует leaf mean. Одинаковые исходные features и IDs для всех подходов, preprocessing может быть обоснованно model-specific.
+
+Для Midterm достаточно заранее зафиксированных осмысленных настроек и одинакового 5-fold group CV; большой search не требуется. Если пробовать маленькую sensitivity grid, явно отделить selection CV от независимой performance evaluation: например k={5,15,30}, tree depth={4,6,10} и leaf={5,10}, без test feedback. Это дополнительная нагрузка и не нужно для закрытия минимального rubric.
+
+Метрики и важное отличие от формулы лекции
+
+Primary по user request — MAE в L/100 km, объясняется средним модулем отклонения от EPA estimate. Это не конфликтует с обучением OLS на squared loss: training objective и evaluation metric не обязаны совпадать. Secondary RMSE на той же шкале связывает анализ с квадратичными ошибками и сильнее подчёркивает крупные промахи; R² дополнительный относительный показатель, не accuracy %.
+Lecture3 PDF p18 минимизирует сумму квадратов residuals. P26 «Estimation of variance» содержит MSE=sum(r_i^2)/(n−2) для НЕСМЕЩЁННОЙ ОЦЕНКИ ДИСПЕРСИИ ОШИБКИ В SIMPLE LINEAR REGRESSION. Эту формулу нельзя копировать как test MSE/RMSE проекта: predictive MSE на m held-out observations = sum((y−pred)^2)/m. RMSE = sqrt этой predictive MSE. Для multivariate regression n−2 также не является общим числом степеней свободы. MAE = sum(abs(y−pred))/m.
+P26 использует residual r=y_true−y_pred. Можно принять именно эту конвенцию для согласованности с лекцией: positive residual = модель занижает расход, negative = завышает. Предыдущая проектная заметка использовала противоположную конвенцию pred−true; математически обе допустимы, но нельзя смешивать. В финальном плане, коде и графиках выбрать одну и явно подписать. MAE/RMSE от знака не зависят.
+MAE, RMSE и R² как обязательный набор эти лекции не задают; их выбор относится к задаче и rubric. Ошибочно приписывать им заранее определённый порог «хорошей» метрики. Требования split/pipeline/CV уже заданы rubric и продолжают действовать, даже если демонстрационный код лекции fit всей таблицы без holdout.
+
+Чем обновить plan/handoff
+
+1. Заменить «нужно узнать модели Weeks3–4» на подтверждённую тройку LinearRegression, KNeighborsRegressor, DecisionTreeRegressor с указанными PDF-страницами.
+2. Оставить неизвестными полные Weeks5–8 syllabus, Endterm/Final briefs и конкретную дату защиты; новые лекции их не заменяют.
+3. Ridge оставить optional Final text estimator, не выдавать за обязательно изученный Midterm algorithm.
+4. Добавить защите вопросы: why scale KNN; regression leaf mean versus classification majority; squared-error splitting versus Gini; why evaluate MAE after squared-loss training; difference between n−2 variance estimator and test MSE; how group split avoids same-family overlap.
+5. Не расширять обязательный scope до SVR/polynomial grid/advanced statistics — минимальная тройка уже найдена.
+
+Официальные справочники реализации scikit-learn (проверено 2026-10-09):
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html
+https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html
+
+Файлы — источник сведений о составе курса; внешние API docs — только источник синтаксиса и поведения реализации.

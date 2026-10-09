@@ -1,0 +1,1143 @@
+{
+  "UCity": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field UCity; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "UCityA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field UCityA; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "UHighway": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field UHighway; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "UHighwayA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field UHighwayA; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "VClass": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field VClass; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "vehicle_class",
+    "disposition": "structured_predictor"
+  },
+  "atvType": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 187,
+    "description": "Raw source field atvType; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "atv_type",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "barrels08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field barrels08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "barrelsA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field barrelsA08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "baseModel": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field baseModel; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "base_model",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "battery": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field battery; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "c240Dscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 250,
+    "description": "Raw source field c240Dscr; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "c240bDscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 250,
+    "description": "Raw source field c240bDscr; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "charge120": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field charge120; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "charge240": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field charge240; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "charge240b": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field charge240b; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "city08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field city08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "city08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field city08U; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityA08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityA08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityA08U; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityCD": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityCD; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityE": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityE; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityMpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityMpk; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityUF": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityUF; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "cityUmpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cityUmpk; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "co2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field co2; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "co2A": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field co2A; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "co2TailpipeAGpm": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field co2TailpipeAGpm; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "co2TailpipeGpm": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field co2TailpipeGpm; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "comb08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field comb08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "combined_mpg",
+    "disposition": "target_or_target_audit_only"
+  },
+  "comb08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field comb08U; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "combined_mpg_unrounded",
+    "disposition": "target_or_target_audit_only"
+  },
+  "combA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combA08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "combA08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combA08U; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "combE": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combE; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "combMpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combMpk; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "combUmpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combUmpk; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "combinedCD": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combinedCD; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "combinedUF": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field combinedUF; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "createdOn": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field createdOn; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "cylDeact": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 10,
+    "description": "Raw source field cylDeact; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "cylDeactYesNo": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field cylDeactYesNo; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "cylinders": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 10,
+    "description": "Raw source field cylinders; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "cylinders",
+    "disposition": "structured_predictor"
+  },
+  "displ": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 10,
+    "description": "Raw source field displ; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "displacement_l",
+    "disposition": "structured_predictor"
+  },
+  "drive": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field drive; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "drivetrain",
+    "disposition": "structured_predictor"
+  },
+  "emissionsList": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "dict": 243,
+      "NoneType": 7
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 7,
+    "description": "Raw source field emissionsList; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "engId": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field engId; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "engine_id",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "eng_dscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 74,
+    "description": "Raw source field eng_dscr; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "engine_description",
+    "disposition": "preserve_original_text_for_final_sanitization"
+  },
+  "evMotor": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 199,
+    "description": "Raw source field evMotor; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "electric_motor",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "feScore": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field feScore; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "fuelCost08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field fuelCost08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "fuelCostA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field fuelCostA08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "fuelType": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field fuelType; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "fuelType1": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 1,
+    "description": "Raw source field fuelType1; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "fuel_type_primary",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "fuelType2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 238,
+    "description": "Raw source field fuelType2; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "fuel_type_secondary",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "ghgScore": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field ghgScore; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "ghgScoreA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field ghgScoreA; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "guzzler": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 248,
+    "description": "Raw source field guzzler; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highway08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highway08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highway08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highway08U; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayA08": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayA08; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayA08U": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayA08U; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayCD": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayCD; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayE": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayE; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayMpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayMpk; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayUF": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayUF; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "highwayUmpk": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field highwayUmpk; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "hlv": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field hlv; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "hpv": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field hpv; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "id": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field id; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "vehicle_id",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "lv2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field lv2; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "lv4": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field lv4; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "make": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field make; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "manufacturer",
+    "disposition": "structured_predictor"
+  },
+  "mfrCode": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field mfrCode; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "model": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field model; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "model_name",
+    "disposition": "preserve_original_text_for_final_sanitization"
+  },
+  "modifiedOn": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field modifiedOn; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "mpgData": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field mpgData; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "mpgRevised": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field mpgRevised; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "phevBlended": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field phevBlended; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "phev_blended",
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "phevCity": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field phevCity; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "phevComb": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field phevComb; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "phevHwy": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field phevHwy; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "pv2": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field pv2; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "pv4": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field pv4; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "range": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field range; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "rangeA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 237,
+    "description": "Raw source field rangeA; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "rangeCity": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field rangeCity; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "rangeCityA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field rangeCityA; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "rangeHwy": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field rangeHwy; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "rangeHwyA": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field rangeHwyA; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  },
+  "sCharger": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 248,
+    "description": "Raw source field sCharger; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "startStop": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field startStop; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "tCharger": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 168,
+    "description": "Raw source field tCharger; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "trans_dscr": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 250,
+    "description": "Raw source field trans_dscr; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "source_audit_only_excluded_from_predictors"
+  },
+  "trany": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field trany; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "transmission",
+    "disposition": "structured_predictor"
+  },
+  "year": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field year; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": "model_year",
+    "disposition": "structured_predictor"
+  },
+  "youSaveSpend": {
+    "source": "FuelEconomy.gov individual vehicle JSON",
+    "observed_json_types": {
+      "str": 250
+    },
+    "present_count": 250,
+    "missing_or_empty_count": 0,
+    "description": "Raw source field youSaveSpend; complete source meaning still requires data-dictionary review.",
+    "meaning_review_status": "unreviewed_raw_field",
+    "internal_field": null,
+    "disposition": "excluded_from_predictors_leakage_or_output"
+  }
+}

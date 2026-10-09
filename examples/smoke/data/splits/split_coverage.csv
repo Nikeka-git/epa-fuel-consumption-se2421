@@ -1,0 +1,63 @@
+split,field,value,n
+test,model_year,2015,7
+test,model_year,2020,8
+test,model_year,2025,15
+train,model_year,2015,49
+train,model_year,2020,37
+train,model_year,2025,30
+test,manufacturer,Ford,2
+test,manufacturer,Honda,13
+test,manufacturer,Toyota,15
+train,manufacturer,Ford,42
+train,manufacturer,Honda,42
+train,manufacturer,Toyota,32
+test,vehicle_class,Compact Cars,5
+test,vehicle_class,Minicompact Cars,4
+test,vehicle_class,Small Sport Utility Vehicle 2WD,6
+test,vehicle_class,Small Sport Utility Vehicle 4WD,4
+test,vehicle_class,Standard Sport Utility Vehicle 4WD,5
+test,vehicle_class,Subcompact Cars,2
+test,vehicle_class,Two Seaters,4
+train,vehicle_class,Compact Cars,14
+train,vehicle_class,Large Cars,9
+train,vehicle_class,Midsize Cars,15
+train,vehicle_class,Small Sport Utility Vehicle 2WD,20
+train,vehicle_class,Small Sport Utility Vehicle 4WD,25
+train,vehicle_class,Small Station Wagons,7
+train,vehicle_class,Standard Sport Utility Vehicle 2WD,4
+train,vehicle_class,Standard Sport Utility Vehicle 4WD,15
+train,vehicle_class,Subcompact Cars,7
+test,group_size,4:ford|flex,2
+test,group_size,5:honda|crosstour,3
+test,group_size,5:honda|pilot,10
+test,group_size,6:toyota|86,2
+test,group_size,6:toyota|corolla,7
+test,group_size,6:toyota|gr 86,2
+test,group_size,6:toyota|gr supra,4
+train,group_size,4:ford|bronco,7
+train,group_size,4:ford|bronco sport,1
+train,group_size,4:ford|ecosport,1
+train,group_size,4:ford|edge,11
+train,group_size,4:ford|escape,5
+train,group_size,4:ford|expedition,4
+train,group_size,4:ford|explorer,3
+train,group_size,4:ford|fiesta,2
+train,group_size,4:ford|focus,1
+train,group_size,4:ford|mustang,5
+train,group_size,4:ford|taurus,2
+train,group_size,5:honda|accord,8
+train,group_size,5:honda|civic,20
+train,group_size,5:honda|cr-v,5
+train,group_size,5:honda|fit,3
+train,group_size,5:honda|hr-v,4
+train,group_size,5:honda|passport,2
+train,group_size,6:toyota|4runner,6
+train,group_size,6:toyota|avalon,1
+train,group_size,6:toyota|camry,4
+train,group_size,6:toyota|corolla cross,1
+train,group_size,6:toyota|highlander,4
+train,group_size,6:toyota|land cruiser,1
+train,group_size,6:toyota|rav4,7
+train,group_size,6:toyota|sequoia,4
+train,group_size,6:toyota|venza,2
+train,group_size,6:toyota|yaris,2

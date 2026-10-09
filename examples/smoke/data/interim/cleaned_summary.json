@@ -1,0 +1,31 @@
+{
+  "snapshot_id": "smoke_20261009",
+  "built_at_utc": "2026-10-09T00:40:41.900563+00:00",
+  "raw_vehicle_files": 250,
+  "accepted_before_duplicate_resolution": 146,
+  "collector_inventory_validation": "checked",
+  "excluded_records": 104,
+  "confirmed_duplicate_records_removed": 0,
+  "unresolved_candidate_groups": 0,
+  "cleaned_rows": 146,
+  "unique_vehicle_ids": 146,
+  "minimum_distinct_rows": 1000,
+  "minimum_rows_met": false,
+  "desired_rows_met": false,
+  "distinct_count_status": "source_configurations_after_confirmed_duplicates",
+  "independent_reason_counts": {
+    "secondary_fuel_present": 12,
+    "alternative_technology_present": 63,
+    "vehicle_class_out_of_scope": 55,
+    "electric_motor_present": 51,
+    "hybrid_text_signal": 40,
+    "primary_fuel_out_of_scope": 13,
+    "insufficient_engine_specs": 10,
+    "phev_blended": 3
+  },
+  "category_allowlist_status": "verify_against_full_inventory_before_freeze",
+  "processed_csv_sha256": "c82db991ad75b28d2bf706bb09a885d6c8be8faa75a8c8fa64078f575ba5add5",
+  "processed_parquet_sha256": "f03e84f68e8e15daab31e6a1ce6e1e0886e5c33bac95a551ec5ecc6d19bfb665",
+  "config_sha256": "d876d30c32d588b3d761e3f8ab3460d328aa6e8c2cc7efd16e46a17681ff810f",
+  "cleaning_module_sha256": "c152484f5a0456e4b9a9aaa3e97c92ed6ae19e45420df1259fc530af423dc968"
+}
