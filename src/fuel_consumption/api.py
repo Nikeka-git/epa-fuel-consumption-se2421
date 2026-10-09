@@ -10,12 +10,14 @@ import json
 import math
 import os
 import random
+import threading
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import uuid
 from dataclasses import dataclass
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -155,7 +157,7 @@ def _immutable_bytes(path: Path, body: bytes) -> None:
 
 
 class RawAPIClient:
-    """A single-worker client. Callers must hold the snapshot collector lock.
+    """An immutable-evidence client. Callers hold the snapshot collector lock.
 
     ``max_requests`` counts new network attempts in this invocation, including
     retries. Cached reads do not consume that budget. A pending journal closes
@@ -172,18 +174,23 @@ class RawAPIClient:
         self.min_interval = float(self.source.get("min_interval_seconds", 1.0))
         self.timeout = float(self.source.get("timeout_seconds", 30))
         self.max_attempts = int(self.source.get("max_attempts", 5))
-        if not math.isfinite(self.min_interval) or self.min_interval < 1:
-            raise ValueError("min_interval_seconds must be at least 1")
+        self.workers = int(self.source.get("workers", 1))
+        if not 1 <= self.workers <= 4:
+            raise ValueError("workers must be between one and four")
+        if not math.isfinite(self.min_interval) or self.min_interval < 1 / self.workers:
+            raise ValueError("min_interval_seconds must be at least 1 / workers")
         if not math.isfinite(self.timeout) or self.timeout <= 0:
             raise ValueError("timeout_seconds must be positive")
-        if not 1 <= self.max_attempts <= 5 or int(self.source.get("workers", 1)) != 1:
-            raise ValueError("Collector supports one worker and at most five attempts")
+        if not 1 <= self.max_attempts <= 5:
+            raise ValueError("Collector supports at most five attempts")
         if max_requests is not None and max_requests < 0:
             raise ValueError("max_requests must be nonnegative")
         self.transport, self.monotonic, self.sleep, self.now = transport, monotonic, sleep, now
         self.rng = rng or random.Random()
         self.max_requests, self.request_count, self.cache_hits = max_requests, 0, 0
         self.last_start: float | None = None
+        self._admission_lock = threading.Lock()
+        self._not_before = 0.0
         self.index_path = self.root / "cache_index.json"
         self.manifest_path = self.root / "requests.jsonl"
         self.entries: dict[str, dict[str, Any]] = {}
@@ -309,6 +316,138 @@ class RawAPIClient:
             except (ValueError, TypeError, OverflowError):
                 return None
 
+    def _batch_attempt(self, request: Mapping[str, Any], attempt: int) -> tuple[dict[str, Any], HTTPResponse | None, Any, APIError | None]:
+        """Network worker: coordinate starts and return evidence, never write files."""
+        url = request["url"]
+        while True:
+            with self._admission_lock:
+                if self.max_requests is not None and self.request_count >= self.max_requests:
+                    raise RequestLimitReached(f"Reached --max-requests={self.max_requests}")
+                earliest = max(self._not_before, (self.last_start + self.min_interval) if self.last_start is not None else 0.0)
+                wait = earliest - self.monotonic()
+                if wait <= 0:
+                    self.last_start = self.monotonic()
+                    self.request_count += 1
+                    requested_at = self.now()
+                    break
+            # Sleeping outside the lock lets an in-flight 429 response install
+            # its global cooldown immediately. Recheck after every wake-up.
+            self.sleep(wait)
+        entry = {"request_id": uuid.uuid4().hex, "url": url, "params": {},
+                 "requested_at_utc": requested_at, "requested_accept": "application/json",
+                 "attempt": attempt, "status": None, "valid": False, "file": None,
+                 "sha256": None, "kind": "vehicle", "expected": dict(request.get("expected") or {})}
+        response, payload, error = None, None, None
+        try:
+            response = self.transport(url, {"Accept": "application/json", "User-Agent": "SE-2421-fuel-consumption-research/0.1"}, self.timeout)
+            if response.status != 200:
+                raise APIError(f"HTTP {response.status} for {url}", status=response.status,
+                               retryable=response.status in (408, 429) or 500 <= response.status <= 599)
+            try:
+                payload = self._validate(response.body, "vehicle", request.get("expected"))
+            except SchemaError as exc:
+                raise APIError(str(exc), status=200, category="schema") from exc
+            entry["valid"] = True
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            error = APIError(f"Network failure for {url}: {exc}", retryable=True, category="network")
+        except APIError as exc:
+            error = exc
+        entry["received_at_utc"] = self.now()
+        if error is not None:
+            entry.update(error=str(error), error_category=error.category, retryable=error.retryable)
+        # Retry-After applies to every later request, not only this vehicle's retry.
+        if response is not None and response.status != 200:
+            retry_after = self._retry_after(response.headers)
+            if retry_after is not None:
+                with self._admission_lock:
+                    self._not_before = max(self._not_before, self.monotonic() + retry_after)
+        return entry, response, payload, error
+
+    def _commit_batch_attempt(self, request: Mapping[str, Any], entry: dict[str, Any], response: HTTPResponse | None) -> None:
+        """Main-thread-only durable publication, with the same crash journal as fetch_json."""
+        if response is not None:
+            destination = request["file"] if entry["valid"] else f"failures/{entry['request_id']}.body"
+            entry.update(status=response.status, response_headers=dict(response.headers),
+                         content_type=next((v for k, v in response.headers.items() if k.lower() == "content-type"), None),
+                         file=destination, sha256=hashlib.sha256(response.body).hexdigest(), byte_count=len(response.body))
+            journal = self.root / "pending_requests" / f"{entry['request_id']}.json"
+            write_json(journal, entry)
+            _immutable_bytes(self.root / destination, response.body)
+            self._append_manifest(entry)
+            journal.unlink()
+        else:
+            self._append_manifest(entry)
+        if entry["valid"]:
+            self.entries[request["url"]] = entry
+            self._save_index()
+
+    def fetch_vehicles(self, requests: list[Mapping[str, Any]]) -> list[tuple[Any, APIError | RequestLimitReached | None]]:
+        """Fetch at most ``workers`` individual records, returning results in input order.
+
+        Each request has endpoint, file, and optional expected identity. All raw
+        bytes and successful responses are committed by the calling thread;
+        worker threads only perform bounded HTTP attempts. Retries form waves,
+        with a shared cooldown. Failed records remain separate from valid cache.
+        """
+        if not requests or len(requests) > self.workers:
+            raise ValueError("A vehicle batch must contain between one and workers requests")
+        prepared = []
+        urls, filenames = set(), set()
+        results: list[tuple[Any, APIError | RequestLimitReached | None] | None] = [None] * len(requests)
+        for position, item in enumerate(requests):
+            endpoint = item["endpoint"]
+            if not endpoint.startswith("vehicle/") or not endpoint.removeprefix("vehicle/").isdigit():
+                raise ValueError("Batches support individual vehicle endpoints only")
+            request = {"url": self._url(endpoint, None), "file": _safe_relative(item["file"]),
+                       "expected": dict(item.get("expected") or {}), "position": position}
+            if request["url"] in urls or request["file"] in filenames:
+                raise ValueError("A batch must contain distinct URLs and raw filenames")
+            urls.add(request["url"])
+            filenames.add(request["file"])
+            if request["url"] in self.entries:
+                results[position] = (self.cached_payload(request["url"], kind="vehicle", expected=request["expected"]), None)
+                self.cache_hits += 1
+            elif (self.root / request["file"]).exists():
+                raise CorruptCacheError(f"Unindexed raw evidence already exists: {request['file']}")
+            else:
+                prepared.append(request)
+        pending = prepared
+        with ThreadPoolExecutor(max_workers=self.workers, thread_name_prefix="epa-http") as executor:
+            for attempt in range(1, self.max_attempts + 1):
+                futures = [(request, executor.submit(self._batch_attempt, request, attempt)) for request in pending]
+                retry = []
+                fatal = None
+                for request, future in futures:
+                    try:
+                        entry, response, payload, error = future.result()
+                    except RequestLimitReached as exc:
+                        results[request["position"]] = (None, exc)
+                        continue
+                    except BaseException as exc:
+                        # Drain and commit the other completed responses before
+                        # propagating an interruption or unexpected worker failure.
+                        fatal = fatal or exc
+                        continue
+                    self._commit_batch_attempt(request, entry, response)
+                    if error is None:
+                        results[request["position"]] = (payload, None)
+                    elif error.retryable and attempt < self.max_attempts:
+                        retry.append(request)
+                    else:
+                        results[request["position"]] = (None, error)
+                if fatal is not None:
+                    raise fatal
+                if not retry:
+                    break
+                # A conservative batch-wide backoff prevents another vehicle
+                # from bypassing a retry pause. Jitter is sampled by the writer.
+                backoff = 2 ** (attempt - 1) + self.rng.uniform(0, 1)
+                with self._admission_lock:
+                    self._not_before = max(self._not_before, self.monotonic() + backoff)
+                pending = retry
+        assert all(result is not None for result in results)
+        return results  # type: ignore[return-value]
+
     def fetch_json(self, endpoint: str, *, params: Mapping[str, Any] | None = None,
                    file: str | Path, kind: str, expected: Mapping[str, Any] | None = None) -> Any:
         url = self._url(endpoint, params)
@@ -325,10 +464,10 @@ class RawAPIClient:
         for attempt in range(1, self.max_attempts + 1):
             if self.max_requests is not None and self.request_count >= self.max_requests:
                 raise RequestLimitReached(f"Reached --max-requests={self.max_requests}")
-            if self.last_start is not None:
-                wait = self.min_interval - (self.monotonic() - self.last_start)
-                if wait > 0:
-                    self.sleep(wait)
+            earliest = max(self._not_before, (self.last_start + self.min_interval) if self.last_start is not None else 0.0)
+            wait = earliest - self.monotonic()
+            if wait > 0:
+                self.sleep(wait)
             self.last_start = self.monotonic()
             self.request_count += 1
             entry = {"request_id": uuid.uuid4().hex, "url": url, "params": dict(params or {}),

@@ -298,6 +298,41 @@ class Collector:
             row.update(status="fetched", error=None)
         self._report()
 
+    def _download_many(self, vehicle_ids: list[str]) -> None:
+        """Apply a small batch in discovery order; only this thread mutates inventory."""
+        if self.max_vehicles is not None:
+            remaining = self.max_vehicles - self._fetched_count()
+            if remaining <= 0:
+                raise RequestLimitReached(f"Reached --max-vehicles={self.max_vehicles} successful records total")
+            vehicle_ids = vehicle_ids[:remaining]
+        requests = []
+        for vehicle_id in vehicle_ids:
+            row = self.inventory[vehicle_id]
+            self.attempted_ids.add(vehicle_id)
+            requests.append({"endpoint": f"vehicle/{vehicle_id}", "file": f"vehicles/{vehicle_id}.json",
+                             "expected": self._expected(vehicle_id, row["provenance"][0])})
+        results = self.client.fetch_vehicles(requests)
+        budget_error = None
+        for vehicle_id, (payload, error) in zip(vehicle_ids, results, strict=True):
+            row = self.inventory[vehicle_id]
+            if isinstance(error, RequestLimitReached):
+                # A request which never started remains eligible on resume.
+                self.attempted_ids.discard(vehicle_id)
+                budget_error = error
+                continue
+            if error is not None:
+                row.update(status="failed", error=str(error))
+                self.failures.append({"kind": "vehicle", "vehicle_id": vehicle_id, "error": str(error),
+                                      "error_category": error.category, "retryable": error.retryable, "http_status": error.status})
+            else:
+                for provenance in row["provenance"]:
+                    validate_vehicle(payload, **self._expected(vehicle_id, provenance))
+                row.update(status="fetched", error=None)
+        self._save()
+        self._report()
+        if budget_error is not None:
+            raise budget_error
+
     def _report(self, force: bool = False) -> None:
         now = datetime.now(timezone.utc)
         if force or (now - self.last_report).total_seconds() >= 30:
@@ -333,15 +368,25 @@ class Collector:
     def _fetch_discovered(self, pairs: list[tuple[int, str]]) -> None:
         queues = {(year, make): deque(self._pending(year, make)) for year, make in pairs}
         while any(queues.values()):
+            batch = []
             for ids in queues.values():
                 if ids:
-                    self._download(ids.popleft())
+                    if self.client.workers == 1:
+                        self._download(ids.popleft())
+                    else:
+                        batch.append(ids.popleft())
+                        if len(batch) == self.client.workers:
+                            self._download_many(batch)
+                            batch = []
+            if batch:
+                self._download_many(batch)
             self._save()
 
     def _interleave(self, pairs: list[tuple[int, str]]) -> None:
         active = set(pairs)
         attempted_models = set()
         while active:
+            batch = []
             for year, make in pairs:
                 if (year, make) not in active:
                     continue
@@ -364,7 +409,15 @@ class Collector:
                         continue
                     pending = self._pending(year, make)
                 if pending:
-                    self._download(pending[0])
+                    if self.client.workers == 1:
+                        self._download(pending[0])
+                    else:
+                        batch.append(pending[0])
+                        if len(batch) == self.client.workers:
+                            self._download_many(batch)
+                            batch = []
+            if batch:
+                self._download_many(batch)
             self._save()
         self.state["enumeration_complete"] = self.max_models is None and not any(failure["kind"] in ("menu", "scope") for failure in self.failures)
         self._save()

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "status": "implemented_initial_version_full_benchmark_pending",
+  "status": "benchmark_collection_and_audit_in_progress",
   "project": {
     "name": "EPA combined fuel consumption",
     "group": "SE-2421",
@@ -28,8 +28,8 @@
     ],
     "individual_records_required": true,
     "accept": "application/json",
-    "workers": 1,
-    "min_interval_seconds": 1.0,
+    "workers": 4,
+    "min_interval_seconds": 0.25,
     "timeout_seconds": 30,
     "max_attempts": 5,
     "respect_retry_after": true
@@ -37,7 +37,9 @@
   "scope": {
     "minimum_distinct_rows": 1000,
     "desired_distinct_rows": 3000,
-    "collection_policy": "enumerate_all_then_fetch_all_unique_ids",
+    "collection_policy": "seeded_round_robin_bounded_all_years_all_manufacturers",
+    "initial_raw_record_budget": 6000,
+    "collection_seed": 42,
     "fuel_type_primary_allowlist": [
       "Regular Gasoline",
       "Premium Gasoline",

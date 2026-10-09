@@ -183,7 +183,169 @@ def test_interrupted_body_manifest_window_recovers_with_original_hash(tmp_path):
     assert json.loads((tmp_path / "requests.jsonl").read_text())["recovered_after_interruption"] is True
 
 
-@pytest.mark.parametrize("config_change", [{"min_interval_seconds": 0.1}, {"workers": 2}, {"max_attempts": 6}])
+@pytest.mark.parametrize("config_change", [{"min_interval_seconds": 0.1}, {"workers": 5}, {"workers": 0},
+                                          {"workers": 4, "min_interval_seconds": 0.1}, {"max_attempts": 6}])
 def test_polite_collection_settings_cannot_be_weakened(tmp_path, config_change):
     with pytest.raises(ValueError):
         RawAPIClient(tmp_path, {**source_config(), **config_change})
+
+
+def batch_requests(ids=(1, 2, 3, 4)):
+    return [{"endpoint": f"vehicle/{vehicle_id}", "file": f"vehicles/{vehicle_id}.json",
+             "expected": {"vehicle_id": str(vehicle_id), "year": 2025, "make": "Honda", "model": "Civic"}}
+            for vehicle_id in ids]
+
+
+def batch_response(vehicle_id):
+    return response({"id": str(vehicle_id), "year": "2025", "make": "Honda", "model": "Civic"})
+
+
+def batch_client(tmp_path, transport, clock=None, **kwargs):
+    config = {**source_config(), "workers": 4, "min_interval_seconds": .25}
+    if clock is None:
+        return RawAPIClient(tmp_path, config, transport=transport, rng=random.Random(42), **kwargs)
+    return RawAPIClient(tmp_path, config, transport=transport, monotonic=clock.monotonic,
+                        sleep=clock.sleep, now=clock.now, rng=random.Random(42), **kwargs)
+
+
+def test_batch_overlaps_requests_global_rate_and_single_writer(tmp_path):
+    import threading
+    import time
+    lock = threading.Lock()
+    starts, active, peak = [], 0, 0
+    def transport(url, headers, timeout):
+        nonlocal active, peak
+        with lock:
+            starts.append(time.monotonic())
+            active += 1
+            peak = max(peak, active)
+        time.sleep(.8)
+        with lock:
+            active -= 1
+        return batch_response(url.rsplit("/", 1)[-1])
+    api = batch_client(tmp_path, transport)
+    writer_threads = []
+    append_manifest = api._append_manifest
+    def observed_write(entry):
+        writer_threads.append(threading.get_ident())
+        append_manifest(entry)
+    api._append_manifest = observed_write
+    results = api.fetch_vehicles(batch_requests())
+    assert peak >= 2 and peak <= 4
+    assert all(b - a >= .23 for a, b in zip(starts, starts[1:]))
+    assert [payload["id"] for payload, error in results] == ["1", "2", "3", "4"]
+    assert all(error is None for _, error in results)
+    assert writer_threads == [threading.get_ident()] * 4
+    for entry in api.entries.values():
+        assert hashlib.sha256((tmp_path / entry["file"]).read_bytes()).hexdigest() == entry["sha256"]
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("Resume must use immutable cache"))
+    assert resumed.fetch_vehicles(batch_requests()) == results
+    assert resumed.request_count == 0 and resumed.cache_hits == 4
+
+
+def test_batch_retry_after_pauses_every_later_admission_and_logs_failure(tmp_path):
+    import threading
+    clock = FakeClock()
+    observed = []
+    lock = threading.Lock()
+    attempts = {}
+    def transport(url, headers, timeout):
+        vehicle_id = url.rsplit("/", 1)[-1]
+        with lock:
+            observed.append((vehicle_id, clock.seconds))
+            attempts[vehicle_id] = attempts.get(vehicle_id, 0) + 1
+            if vehicle_id == "1" and attempts[vehicle_id] == 1:
+                return response(b"busy", 429, {"Retry-After": "7"})
+        return batch_response(vehicle_id)
+    api = batch_client(tmp_path, transport, clock)
+    results = api.fetch_vehicles(batch_requests())
+    assert all(error is None for _, error in results)
+    assert observed[0] == ("1", 0.0)
+    assert all(start >= 7 for _, start in observed[1:])
+    assert api.request_count == 5
+    lines = [json.loads(line) for line in api.manifest_path.read_text().splitlines()]
+    failed = next(row for row in lines if row["status"] == 429)
+    assert failed["retryable"] and (tmp_path / failed["file"]).read_bytes() == b"busy"
+    assert all(row["kind"] == "vehicle" for row in lines)
+
+
+def test_batch_inflight_retry_after_interrupts_other_workers_waiting_for_slots(tmp_path):
+    import threading
+    import time
+    lock = threading.Lock()
+    starts = {}
+    first_response_at = []
+    def transport(url, *args):
+        vehicle_id = url.rsplit("/", 1)[-1]
+        with lock:
+            starts[vehicle_id] = time.monotonic()
+        if vehicle_id == "1":
+            time.sleep(.1)
+            first_response_at.append(time.monotonic())
+            return response(b"busy", 429, {"Retry-After": ".4"})
+        return batch_response(vehicle_id)
+    api = RawAPIClient(tmp_path, {**source_config(), "workers": 4, "min_interval_seconds": .25,
+                                 "max_attempts": 1}, transport=transport)
+    results = api.fetch_vehicles(batch_requests())
+    assert isinstance(results[0][1], APIError)
+    assert min(start for vehicle_id, start in starts.items() if vehicle_id != "1") >= first_response_at[0] + .35
+
+
+def test_batch_worker_interruption_commits_other_completed_responses_before_raising(tmp_path):
+    def transport(url, *args):
+        vehicle_id = url.rsplit("/", 1)[-1]
+        if vehicle_id == "1":
+            raise KeyboardInterrupt()
+        return batch_response(vehicle_id)
+    api = batch_client(tmp_path, transport, FakeClock())
+    with pytest.raises(KeyboardInterrupt):
+        api.fetch_vehicles(batch_requests())
+    assert len(api.entries) == 3
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("Committed responses must resume"), FakeClock())
+    results = resumed.fetch_vehicles(batch_requests((2, 3, 4)))
+    assert all(error is None for _, error in results) and resumed.request_count == 0
+
+
+def test_batch_request_budget_is_global_and_preserves_completed_responses(tmp_path):
+    api = batch_client(tmp_path, lambda url, *args: batch_response(url.rsplit("/", 1)[-1]),
+                       FakeClock(), max_requests=2)
+    results = api.fetch_vehicles(batch_requests())
+    assert api.request_count == 2 and len(api.entries) == 2
+    assert sum(error is None for _, error in results) == 2
+    assert sum(isinstance(error, RequestLimitReached) for _, error in results) == 2
+    assert len(api.manifest_path.read_text().splitlines()) == 2
+
+
+def test_batch_individual_schema_failure_is_not_a_successful_raw_record(tmp_path):
+    def transport(url, *args):
+        vehicle_id = url.rsplit("/", 1)[-1]
+        return batch_response(99 if vehicle_id == "2" else vehicle_id)
+    api = batch_client(tmp_path, transport, FakeClock())
+    results = api.fetch_vehicles(batch_requests())
+    assert isinstance(results[1][1], APIError) and results[1][1].category == "schema"
+    assert not (tmp_path / "vehicles/2.json").exists()
+    assert len(api.entries) == 3
+
+
+def test_batch_manifest_crash_recovers_journal_without_changing_original_bytes(tmp_path):
+    api = batch_client(tmp_path, lambda url, *args: batch_response(url.rsplit("/", 1)[-1]), FakeClock())
+    def crash(entry):
+        raise OSError("simulated manifest crash")
+    api._append_manifest = crash
+    with pytest.raises(OSError, match="manifest crash"):
+        api.fetch_vehicles(batch_requests())
+    original = (tmp_path / "vehicles/1.json").read_bytes()
+    assert len(list((tmp_path / "pending_requests").glob("*.json"))) == 1
+    resumed = batch_client(tmp_path, lambda *args: pytest.fail("Published response must recover"), FakeClock())
+    results = resumed.fetch_vehicles(batch_requests((1,)))
+    assert results[0][1] is None and resumed.cache_hits == 1
+    assert (tmp_path / "vehicles/1.json").read_bytes() == original
+
+
+@pytest.mark.parametrize("requests", [batch_requests((1, 1)), batch_requests((1, 2, 3, 4, 5)),
+                                       [{"endpoint": "vehicle/menu/year", "file": "menus/year.json"}]])
+def test_batch_guards_reject_duplicates_oversized_and_menu_requests(tmp_path, requests):
+    api = batch_client(tmp_path, lambda *args: pytest.fail("Invalid batch must not request"), FakeClock())
+    with pytest.raises(ValueError):
+        api.fetch_vehicles(requests)
+    assert api.request_count == 0

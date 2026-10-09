@@ -31,8 +31,8 @@
 
 Production collector должен:
 
-1. Обойти годы 2015–2025, все доступные make/model/options; дедуплицировать discovered IDs. Сохранить связь ID с меню.
-2. Получить individual vehicle record для каждого unique ID. Начальная политика: один worker, интервал не менее 1 секунды между запросами, timeout 30 s, максимум 5 попыток на запрос. Это наша настройка, не заявленный лимит сайта.
+1. Обнаруживать конфигурации через документированные меню годов 2015–2025 и доступных manufacturers; дедуплицировать discovered IDs. Сохранить связь ID с меню. Для основного benchmark до его первого freeze выбран bounded seeded round-robin всех годов/марок с исходным бюджетом 6 000 raw records и seed 42. Чередование и порядок не используют target. Это выборка с неодинаковыми вероятностями включения, не полный census и не выборка продаж. Полный обход остается отдельным режимом collector.
+2. Получать individual vehicle records собственным кодом. Первая версия использовала один worker и интервал 1 s; перед новым benchmark выбраны максимум четыре одновременных запроса и общий минимальный интервал старта HTTP attempts 0.25 s. Timeout 30 s, максимум 5 попыток; Retry-After при ограничении сервера вводит общий cooldown. Запись raw/manifests/cache выполняется одним потоком. Это настройки проекта, не заявленный лимит сайта. Frozen config исторического smoke не меняется.
 3. Для сетевых ошибок, 408, 429 и временных 5xx использовать ограниченный exponential backoff с jitter; учитывать Retry-After. Неповторяемые 4xx не запускать бесконечно. Не обходить ограничения сервера.
 4. Сохранять exact response bytes атомарно. Metadata: request URL и params, HTTP status, UTC fetched_at, content type, SHA-256, файл, attempt, error. Сохранять raw menus тоже.
 5. Проверять успешный status, JSON parse, ожидаемую схему и совпадение id/year/make/model с меню. HTML response при status 200 не считать записью.

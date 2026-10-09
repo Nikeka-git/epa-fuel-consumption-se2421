@@ -61,7 +61,9 @@ def make_collector(tmp_path, catalogue, **kwargs):
         return RawAPIClient(path, config, transport=catalogue,
                             monotonic=clock.monotonic, sleep=clock.sleep,
                             now=clock.now, **client_kwargs)
-    config = {"source": {**source_config(), "years": [2015, 2025]}}
+    workers = kwargs.pop("workers", 1)
+    config = {"source": {**source_config(), "years": [2015, 2025], "workers": workers,
+                         "min_interval_seconds": 1 / workers}}
     return Collector(tmp_path, config, "test_snapshot", client_factory=factory, progress=silent, **kwargs)
 
 
@@ -263,3 +265,45 @@ def test_model_cap_partial_status_and_existing_lock(tmp_path):
         with pytest.raises(RuntimeError, match="lock"):
             with SnapshotLock(collector.path, resume=True):
                 pass
+
+
+def test_batch_bounded_collection_keeps_round_robin_scope_and_exact_record_cap(tmp_path):
+    catalogue = FakeCatalogue()
+    collector = make_collector(tmp_path, catalogue, max_vehicles=5, seed=42, workers=4)
+    metadata = collector.run()
+    records = [json.loads(path.read_text()) for path in (collector.path / "vehicles").glob("*.json")]
+    assert len(records) == metadata["fetched_vehicle_records"] == 5
+    assert {(int(row["year"]), row["make"]) for row in records} == {
+        (2015, "Honda"), (2015, "Toyota"), (2025, "Honda"), (2025, "Toyota")}
+    assert metadata["full_catalogue_complete"] is False
+    calls = len(catalogue.calls)
+    resumed = make_collector(tmp_path, catalogue, resume=True, max_vehicles=5, seed=42, workers=4)
+    result = resumed.run()
+    assert result["fetched_vehicle_records"] == 5 and len(catalogue.calls) == calls
+
+
+def test_batch_request_budget_reports_success_before_pause_and_resume(tmp_path):
+    catalogue = FakeCatalogue()
+    first = make_collector(tmp_path, catalogue, max_requests=12, max_vehicles=8, seed=42, workers=4)
+    result = first.run()
+    assert first.client.request_count == 12
+    # 11 menu requests discover the first round; only one network slot remains.
+    assert result["fetched_vehicle_records"] == 1
+    first_urls = {url for url in catalogue.calls if url.rsplit("/", 1)[-1].isdigit()}
+    resumed = make_collector(tmp_path, catalogue, resume=True, max_requests=100, max_vehicles=8, seed=42, workers=4)
+    result = resumed.run()
+    assert result["fetched_vehicle_records"] == 8
+    assert all(catalogue.calls.count(url) == 1 for url in first_urls)
+
+
+def test_batch_unbounded_collection_schema_failure_and_resumed_record(tmp_path):
+    catalogue = FakeCatalogue()
+    catalogue.wrong_identity = "201501"
+    first = make_collector(tmp_path, catalogue, workers=4)
+    metadata = first.run()
+    assert metadata["failed_vehicle_records"] == 1 and metadata["fetched_vehicle_records"] == 15
+    assert first.inventory["201501"]["status"] == "failed"
+    catalogue.wrong_identity = None
+    resumed = make_collector(tmp_path, catalogue, resume=True, workers=4)
+    metadata = resumed.run()
+    assert metadata["status"] == "complete" and metadata["fetched_vehicle_records"] == 16
